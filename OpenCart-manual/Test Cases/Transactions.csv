@@ -1,0 +1,69 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_TR_01,TS_022 (Transactions),Verify navigating to Transactions page from My Account Transactions link,1) Open the site in any supported browser and login,"1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click 'Your transactions!' link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Transactions Page,,
+TC_TR_02,TS_022 (Transactions),Verify navigating to Transactions page from Transactions right column options,1) Open the site in any supported browser and login,"1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Transactions Page,,
+TC_TR_03,TS_022 (Transactions),Verify Transactions Page when there are no Transactions,1) Open the site in any supported browser and login,"1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to Transactions Page and a text ""You do not have any Transactions!"" should be shown",,
+TC_TR_04,TS_022 (Transactions),Verify Continue button in Transactions page,1) Open the site in any supported browser and login,"1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options
+4) Click Continue button","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page,,
+TC_TR_05,TS_022 (Transactions),Verify Transactions when there are a few Transactions,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The details of Transactions should be shown in table format,,
+TC_TR_06,TS_022 (Transactions),Verify the breadcrumb of the Transactions page,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The breadcrumb should be displayed and working in the pages,,
+TC_TR_07,TS_022 (Transactions),Verify the all the fields are present,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The fields should be according to requirements in all the pages,,
+TC_TR_08,TS_022 (Transactions),Verify the all the place holders are present,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The placeholders should be according to requirements in all the pages,,
+TC_TR_09,TS_022 (Transactions),Verify the labels are correct,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The labels should be according to requirements in all the pages,,
+TC_TR_10,TS_022 (Transactions),Verify the Transactions Page functionality in all the supported environments,"1) Open the site in any supported browser and login
+2) Place a few orders and complete a few transactions","1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Transactions in right column options
+4) Repeat from Step-1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Transactions Page should work in all supported environments,,

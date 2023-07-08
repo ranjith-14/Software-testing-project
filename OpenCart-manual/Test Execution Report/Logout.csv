@@ -1,0 +1,53 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_LO_01,TS_003 (Logout),Verify the ability to Log out using My account dropdown,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click logout in My Account drop down (ER-01)
+4) Click continue in Log out screen (ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The user should be Logged out
+2) The user should be taken to HomePage","1) The user is Logged out
+2) The user is taken to HomePage",Pass
+TC_LO_02,TS_003 (Logout),Verify the ability to Log out using right column options,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click My Account in My Account dropdown
+4) Click Log out in right column options (ER-01)
+5) Click continue in Log out screen (ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The user should be Logged out
+2) The user should be taken to HomePage","1) The user is Logged out
+2) The user is taken to HomePage",Pass
+TC_LO_03,TS_003 (Logout),Verify clicking Back button does not logout user,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click back button in browser (ER-01)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",1) The User should not get Logged out,1) The User not gets Logged out,Pass
+TC_LO_04,TS_003 (Logout),Verify the clicking Back button after log out does not log in again,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Log out
+4) Click back button in browser (ER-01)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",1) The User should not get Logged in,1) The User not gets Logged in,Pass
+TC_LO_05,TS_003 (Logout),Verify log out button is shown in My Account dropdown after Log in,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click My Account Dropdown (ER-01)
+4) Click My Account option and observe right column (ER-01)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",1) The Log out option should be shown,1) The Log out option is shown,Pass
+TC_LO_06,TS_003 (Logout),Verify logout button is not visible before Login,1) Open the site in any supported browser,"1) Click My Account Dropdown (ER-01)
+2) Click Login option and observe right column (ER-01)",Not Applicable,1) The Log out option should not be shown,1) The Log out option is not shown,Pass
+TC_LO_07,TS_003 (Logout),Verify the UI of Logout page,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click logout in My Account drop down (ER-01)",Not Applicable,1) The UI should be as per the requirement,1) The UI is as per the requirement,Pass
+TC_LO_08,TS_003 (Logout),Verify the logout functionality in different environments,1) Open the site in any supported browser,"1) Click on My Account and Click Login
+2) Enter valid values in required fields and Click continue
+3) Click logout in My Account drop down
+4) Click continue in Log out screen (ER-01)
+5) Repeat from Step-1 in other supported environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",1) The User should be able to logout in other supported environments,1) The User is able to logout in other supported environments,Pass

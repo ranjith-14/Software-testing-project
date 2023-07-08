@@ -1,0 +1,247 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_AF_01,TS_023 (Affiliate),Verify navigating to Affiliates Page from footer,1) Open the site in any supported browser and login,1) Click Affiliates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Affiliates page,The User is taken to Affiliates page,Pass
+TC_AF_02,TS_023 (Affiliate),Verify navigating to Affiliates Page from My Account ,1) Open the site in any supported browser and login,1) Click Register for an affiliate account from My Account Page,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Affiliates page,The User is taken to Affiliates page,Pass
+TC_AF_03,TS_023 (Affiliate),Verify Registering the Affiliate account by providing mandatory fields,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) Fill the mandatory fields
+3) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_04,TS_023 (Affiliate),Verify Registering the Affiliate account by providing all fields,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) Fill all fields
+3) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_05,TS_023 (Affiliate),Verify Registering the Affiliate account by providing no values,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) Do not fill any fields
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",Proper filed level warning should be shown,Proper filed level warning is shown,Pass
+TC_AF_06,TS_023 (Affiliate),Verify Registering the Affiliate account by providing mandatory fields with Cheque as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Cheque
+3) Fill mandatory fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_07,TS_023 (Affiliate),Verify Registering the Affiliate account by providing all fields with Cheque as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Cheque
+3) Fill all fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_08,TS_023 (Affiliate),Verify Registering the Affiliate account by providing mandatory fields with Paypal as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Paypal
+3) Fill mandatory fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_09,TS_023 (Affiliate),Verify Registering the Affiliate account by providing all fields with Paypal as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Paypal
+3) Fill all fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_10,TS_023 (Affiliate),Verify Registering the Affiliate account by providing mandatory fields with Bank Transfer as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Bank Transfer
+3) Fill mandatory fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_11,TS_023 (Affiliate),Verify Registering the Affiliate account by providing all fields with Bank Transfer as Payment method,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Bank Transfer
+3) Fill all fields
+4) Click Continue (ER-01,ER-02)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown
+2) The Register for an affiliate account should disappear and Edit your affiliate account should appear","1) The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown
+2) The Register for an affiliate account disappears and Edit your affiliate account appears",Pass
+TC_AF_12,TS_023 (Affiliate),Verify only spaces is rejected in Cheque Payee name,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Cheque
+3) Fill Cheque Payee name with only spaces
+4) Click Continue
+","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The field Cheque payee name should show ""Cheque Payee Name required!""","The field Cheque payee name shows ""Cheque Payee Name required!""",Pass
+TC_AF_13,TS_023 (Affiliate),Verify invalid values for Paypal Email address,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Paypal
+3) Fill Paypal email address with invalid values
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo
+
+Test mail address:
+1) test
+2) test@
+3) test@mail
+3) test@mail.","The field Paypal email address should show ""PayPal Email Address does not appear to be valid!"" ","The field Paypal email address shows ""PayPal Email Address does not appear to be valid!"" ",Pass
+TC_AF_14,TS_023 (Affiliate),Verify only spaces is rejected in Account name and Account Number,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Bank Transfer
+3) Fill Account name and Account Number with only spaces
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The field Account name and Account number should show warning,The field Account name and Account number shows warning,Pass
+TC_AF_15,TS_023 (Affiliate),Verify editing the Affiliate account by providing mandatory fields,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) Fill the mandatory fields
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_16,TS_023 (Affiliate),Verify editing the Affiliate account by providing all fields,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) Fill all fields
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_17,TS_023 (Affiliate),Verify editing the Affiliate account by providing no values,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) Do not fill any fields
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",Proper filed level warning should be shown,Proper filed level warning is shown,Pass
+TC_AF_18,TS_023 (Affiliate),Verify editing the Affiliate account by providing mandatory fields with Cheque as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Cheque
+3) Fill mandatory fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_19,TS_023 (Affiliate),Verify editing the Affiliate account by providing all fields with Cheque as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Cheque
+3) Fill all fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_20,TS_023 (Affiliate),Verify editing the Affiliate account by providing mandatory fields with Paypal as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Paypal
+3) Fill mandatory fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_21,TS_023 (Affiliate),Verify editing the Affiliate account by providing all fields with Paypal as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Paypal
+3) Fill all fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_22,TS_023 (Affiliate),Verify editing the Affiliate account by providing mandatory fields with Bank Transfer as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Bank Transfer
+3) Fill mandatory fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_23,TS_023 (Affiliate),Verify editing the Affiliate account by providing all fields with Bank Transfer as Payment method,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click Affiliates in footer under Extras label
+2) The Payment method should be selected as Bank Transfer
+3) Fill all fields
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to My Account Page and a message 'Success: Your account has been successfully updated.' should be shown,The User is taken to My Account Page and a message 'Success: Your account has been successfully updated.' is shown,Pass
+TC_AF_24,TS_023 (Affiliate),Verify the breadcrumb of Affiliates page,1) Open the site in any supported browser and login,1) Click Affiliates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Breadcrumb should be displayed and working,The Breadcrumb is displayed and working,Pass
+TC_AF_25,TS_023 (Affiliate),Verify the all the fields are present for Affiliates Page,1) Open the site in any supported browser and login,"1) Open the site in any supported browser
+1) Click Affiliates in footer under Extras label","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The fields should be according to requirements in all the pages,The fields are according to requirements in all the pages,Pass
+TC_AF_26,TS_023 (Affiliate),Verify the all the place holders are present for Affiliates Page,1) Open the site in any supported browser and login,1) Click Affiliates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The placeholders should be according to requirements in all the pages,The placeholders are according to requirements in all the pages,Pass
+TC_AF_27,TS_023 (Affiliate),Verify the labels are correct for Affiliates Page,1) Open the site in any supported browser and login,1) Click Affiliates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The labels should be according to requirements in all the pages,The labels are according to requirements in all the pages,Pass
+TC_AF_28,TS_023 (Affiliate),Verify the Affiliates Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Click Affiliates in footer under Extras label
+2) Repeat from Step-1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Affiliates Page should work in all supported environments,The Affiliates Page works in all supported environments,Pass
+TC_AF_29,TS_023 (Affiliate),Verify generating Affiliate link by providing all fields,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link (ER-01)
+3) Click Tracking Link generator and select a product (ER-02)
+4) Click continue (ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The user should be taken to link generator field with your tracking code already filled with some value
+2) The link should be generated in Tracking link textfield
+3) The user should be taken to My Account Page","1) The user is taken to link generator field with your tracking code already filled with some value
+2) The link is generated in Tracking link textfield
+3) The user is taken to My Account Page",Pass
+TC_AF_30,TS_023 (Affiliate),Verify the breadcrumb of Affiliates link generator page,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Breadcrumb should be displayed and working,The Breadcrumb is displayed and working,Pass
+TC_AF_31,TS_023 (Affiliate),Verify the all the fields are present for Affiliates link generator Page,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The fields should be according to requirements in all the pages,The fields are according to requirements in all the pages,Pass
+TC_AF_32,TS_023 (Affiliate),Verify the all the place holders are present for Affiliates link generator Page,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The placeholders should be according to requirements in all the pages,The placeholders are according to requirements in all the pages,Pass
+TC_AF_33,TS_023 (Affiliate),Verify the labels are correct for Affiliates link generator Page,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The labels should be according to requirements in all the pages,The labels are according to requirements in all the pages,Pass
+TC_AF_34,TS_023 (Affiliate),Verify the Affiliates link generator Page functionality in all the supported environments,"1) Open the site in any supported browser and login
+2) Register an affiliate account","1) Click My Account dropdown in header and click My Account
+2) Click 'Custom Affiliate Tracking Code' link
+3) Repeat from step 1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Affiliates link generator Page should work in all supported environments,The Affiliates link generator Page works in all supported environments,Pass

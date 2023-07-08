@@ -1,0 +1,42 @@
+Project Name,Open Cart ,,,
+Client,Open Cart ,,,
+Reference,FRS,,,
+Created By,Ranjith,,,
+Creation Date,23-06-2023,,,
+Approval Date,24-06-2023,,,
+Site,"https://demo.opencart.com
+",,,
+,,,,
+,,,,
+Test Scenario ID, Reference,Test Scenario Description,Priority,Number of Test Cases
+TS_001,FRS,Validate the working of 'Login' functionality,P0,18
+TS_002,FRS,Validate the working of 'Forgot Password' functionality,P0,23
+TS_003,FRS,Validate the working of 'Logout' functionality,P0,8
+TS_004,FRS,Validate the working of 'Register' functionality,P0,29
+TS_005,FRS,Validate the working of 'Wish List' functionality,P3,23
+TS_006,FRS,Validate the working of 'Shopping Cart' and 'Add to Cart' functionality,P1,55
+TS_007,FRS,Validate the working of 'Currency' Selection functonality,P2,4
+TS_008,FRS,Validate the working of 'Search' functionality,P1,27
+TS_009,FRS,Validate the working of 'Checkout' functionality,P1,25
+TS_010,FRS,Validate the working of 'Home Page' functionality,P1,16
+TS_011,FRS,Validate the working of 'Categories Page' functionality,P2,20
+TS_012,FRS,Validate the working of 'Product Page' functionality,P1,25
+TS_013,FRS,Validate the working of 'Product Compare' functionality,P3,30
+TS_014,FRS,Validate the working of 'My Account' and 'Edit your account information' functionality,P2,18
+TS_015,FRS,Validate the working of 'Change your password' functionality,P3,16
+TS_016,FRS,Validate the working of 'Modify your address book entries' functionality,P3,21
+TS_017,FRS,Validate the working of 'Order History' functionality,P3,15
+TS_018,FRS,Validate the working of 'Downloads' functionality,P3,11
+TS_019,FRS,Validate the working of 'Subscriptions' functionality,P3,10
+TS_020,FRS,Validate the working of 'Reward Points' functionality,P3,10
+TS_021,FRS,Validate the working of 'Returns' functionality,P3,12
+TS_022,FRS,Validate the working of 'Your Transactions' functionality,P3,10
+TS_023,FRS,Validate the working of 'Affiliate' functionality,P3,34
+TS_024,FRS,Validate the working of 'Newsletter' functionality,P3,12
+TS_025,FRS,Validate the working of 'Cusomer Services' Contact us' page functionality,P4,17
+TS_026,FRS,Validate the working of 'Customer Sevices' Site Map' page functionality,P4,21
+TS_027,FRS,Validate the working of 'Gift Certificate' page functionality,P4,15
+TS_028,FRS,Validate the working of 'Specials' page functionality,P4,13
+TS_029,FRS,Validate the working of 'Brands' page functionality,P4,16
+TS_030,FRS,Validate the working of 'Header' options and 'Footer' options,P4,13
+,,,Total:,567

@@ -1,0 +1,458 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Start date),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field ([CHART] Date of First Response),Status Category
+The Desktop category has mobiles and audio devices,OP-95,10106,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:25 PM,07/Jul/23 8:25 PM,08/Jul/23 8:18 PM,,,0,"Expected Result:
+The User should be taken to the proper Categories page for selected category for all the categories and the products should be relevant
+
+Actual Result:
+The User is taken to the proper Categories page for selected category for all the categories and the Desktop category has mobiles and audio devices
+
+Steps to reproduce:
+1) Click on the categories dropdown button below the search bar and select the show all button",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000mn:,,,,,,,,,,To Do
+The Email ID field accepts space as first value,OP-94,10105,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:24 PM,07/Jul/23 8:24 PM,07/Jul/23 8:24 PM,,,0,"Expected Result:
+1) The Welcome page should be visible
+2) The Register Page should be visible
+3) An error message ""E-Mail Address does not appear to be valid!"" must be shown
+
+Actual Result:
+1) The Welcome page is visible
+2) The Register Page is visible
+3) The Email ID field accepts space as first value
+
+Steps to reproduce:
+1) Click on 'My Account' dropdown (ER-01)
+2) Click on Register (ER-02)
+3) Enter space as first value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (ER-03)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000mf:,,,,,,,,,,To Do
+The Email ID field accepts space as first value,OP-93,10104,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:23 PM,07/Jul/23 8:23 PM,07/Jul/23 8:23 PM,,,0,"Expected Result:
+1) The Welcome page should be visible
+2) The Register Page should be visible
+3) An error message ""E-Mail Address does not appear to be valid!"" must be shown
+
+Actual Result:
+1) The Welcome page is visible
+2) The Register Page is visible
+3) The Email ID field accepts space as first value
+
+Steps to reproduce:
+1) Click on 'My Account' dropdown (ER-01)
+2) Click on Register (ER-02)
+3) Enter space as first value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (ER-03)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000m7:,,,,,,,,,,To Do
+"The User is taken to login Page with a text showing ""Your password has been successfully updated.""",OP-92,10103,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:22 PM,07/Jul/23 8:22 PM,07/Jul/23 8:22 PM,,,0,"Expected Result:
+1) A mail with password reset link should be received in the entered Email address
+2) Password reset message should be shown and Mail should be received with Password Change notification
+
+Actual Result:
+The User is taken to login Page with a text showing ""Your password has been successfully updated.""
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue (ER-01)
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid and same values for Password and confirm password
+7) Click continue (ER-02)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000lz:,,,,,,,,,,To Do
+The User is navigated to Search Page  with text saying 'There is no product that matches the search criteria.',OP-91,10102,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:21 PM,07/Jul/23 8:21 PM,07/Jul/23 8:21 PM,,,0,"Expected Result: 
+The Search field should not proceed any further
+
+Actual Result:
+The User is navigated to Search Page  with text saying 'There is no product that matches the search criteria.'
+
+Steps to reproduce:
+1) Click search button near search text field",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000lr:,,,,,,,,,,To Do
+A text 'There is no product that matches the search criteria.' is displayed but the rsults should have been displayed as Mac is a subcategory of Desktop category,OP-90,10101,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:10 PM,07/Jul/23 8:10 PM,07/Jul/23 8:10 PM,,,0,"Expected Result:
+The Results should be displayed for keyword and correct category
+
+Actual Result:
+A text 'There is no product that matches the search criteria.' is displayed but the rsults should have been displayed as Mac is a subcategory of Desktop category
+
+Steps to reproduce:
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click category and select category
+5) Click search in subcategories
+6) Click search button",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000lj:,,,,,,,,,,To Do
+A text 'There is no product that matches the search criteria.' is displayed but the rsults should have been displayed as Mac is a subcategory of Desktop category,OP-89,10100,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:08 PM,07/Jul/23 8:08 PM,07/Jul/23 8:08 PM,,,0,"Expected Result:
+The Results should be displayed for keyword and correct category
+
+Actual Result:
+A text 'There is no product that matches the search criteria.' is displayed but the rsults should have been displayed as Mac is a subcategory of Desktop category
+
+Steps to reproduce:
+
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click category and select category
+5) Click search in subcategories
+6) Click search button",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000lb:,,,,,,,,,,To Do
+The Order is not returned,OP-88,10099,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 8:07 PM,07/Jul/23 8:07 PM,07/Jul/23 8:07 PM,,,0,"Expected Result:
+1) The User should be take to cancellation page
+2) The Order should be returned
+3) The Order status should be changed as cancelled for that order
+
+Actual Result:
+1) The User is taken to cancellation page
+2) The Order is not returned
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Order History in right column options
+3) Click view button in any order
+4) Click Return button (ER-01)
+5) Fill the mandatory fields and Click Continue (ER-02)
+6) Go to Order History (ER-03)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000l3:,,,,,,,,,,To Do
+The User is navigated to Terms and conditions page and relevant information is not shown,OP-87,10098,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:18 PM,07/Jul/23 7:18 PM,07/Jul/23 7:18 PM,,,0,"Expected Result:
+The User should be navigated to Terms and conditions page and relevant information should be shown
+
+Actual Result:
+The User is navigated to Terms and conditions page and relevant information is not shown
+
+Steps to reproduce:
+1) Click Terms and Conditions under Information label in Footer",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000kv:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-86,10097,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:18 PM,07/Jul/23 7:18 PM,07/Jul/23 7:18 PM,,,0,"Expected Result:
+The User should be navigated to Shopping cart page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Shopping cart",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000kn:,,,,,,,,,,To Do
+The User is navigated to Privacy Policy page and relevant information is not shown,OP-85,10096,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:17 PM,07/Jul/23 7:17 PM,07/Jul/23 7:17 PM,,,0,"Expected Result:
+The User should be navigated to Privacy Policy page and relevant information should be shown
+
+Actual Result:
+The User is navigated to Privacy Policy page and relevant information is not shown
+
+Steps to reproduce:
+1) Click Privacy Policy under Information label in Footer",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000kf:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-84,10095,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:16 PM,07/Jul/23 7:16 PM,07/Jul/23 7:16 PM,,,0,"Expected Result:
+The User should be navigated to Password page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Password",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000k7:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-83,10094,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:16 PM,07/Jul/23 7:16 PM,07/Jul/23 7:16 PM,,,0,"Expected Result:
+The User should be navigated to Order History page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Order History",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000jz:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-82,10093,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:15 PM,07/Jul/23 7:15 PM,07/Jul/23 7:15 PM,,,0,"Expected Result:
+The User should be navigated to Downloads page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Downloads",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000jr:,,,,,,,,,,To Do
+The User is navigated to Delivery Information page and relevant information is not shown,OP-81,10092,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:14 PM,07/Jul/23 7:14 PM,07/Jul/23 7:14 PM,,,0,"Expected Result: 
+The User should be navigated to Delivery Information page and relevant information should be shown
+
+Actual Result:
+The User is navigated to Delivery Information page and relevant information is not shown
+
+Steps to reproduce:
+1) Click Delivery Information under Information label in Footer",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000jj:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-80,10091,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:13 PM,07/Jul/23 7:13 PM,07/Jul/23 7:13 PM,,,0,"Expected Result:
+The User should be navigated to Address Book page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Address Book",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000jb:,,,,,,,,,,To Do
+The User is taken to My Account page,OP-79,10090,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:13 PM,07/Jul/23 7:13 PM,07/Jul/23 7:13 PM,,,0,"Expected Result:
+The User should be navigated to Account information page
+
+Actual Result:
+The User is taken to My Account page
+
+Steps to reproduce:
+1) Click the Site Map in footer under Customer Services label
+2) Click Account information",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000j3:,,,,,,,,,,To Do
+The User is navigated to About Us page and relevant information is not shown,OP-78,10089,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:12 PM,07/Jul/23 7:12 PM,07/Jul/23 7:12 PM,,,0,"Expected Result:
+The User should be navigated to About Us page and relevant information should be shown
+
+Actual Result:
+The User is navigated to About Us page and relevant information is not shown
+
+Steps to reproduce:
+1) Click About Us under Information label in Footer",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000iv:,,,,,,,,,,To Do
+The products are not relevant for subcategoris under Laptops section,OP-77,10088,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:12 PM,07/Jul/23 7:12 PM,07/Jul/23 7:12 PM,,,0,"Expected Result:
+1) The Product listing should change accordingly for selected category
+2) The categories button should expand and show all subcategories
+3) The Product listing should change accordingly for selected subcategory
+4) The products should be relevant
+
+Actual Result:
+1) The Product listing changes accordingly for selected category
+2) The categories button expands and show all subcategories
+3) The Product listing changes accordingly for selected subcategory
+4) The products are not relevant for subcategoris under Laptops section
+
+Steps to reproduce:
+1) Click on the categories dropdown button below the search bar
+2) Click a subcategory
+3) Click a category in the left column (ER-01,ER-02)
+4) Click a subcategory (ER-03, ER-04)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000in:,,,,,,,,,,To Do
+The Products are not relevant for Desktop category,OP-76,10087,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:11 PM,07/Jul/23 7:11 PM,07/Jul/23 7:11 PM,,,0,"Expected Result:
+1) The Product listing should change accordingly for selected category
+2) The categories button should expand and show all subcategories
+3) The Products should be relevant
+
+Actual Result:
+1) The Product listing change accordingly for selected category
+2) The categories button expand and show all subcategories
+3) The Products are not relevant for Desktop category
+
+Steps to reproduce:
+1) Click on the categories dropdown button below the search bar
+2) Click a subcategory
+3) Click a category in the left column",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000if:,,,,,,,,,,To Do
+"The User is taken to My Account page and A text ""Success: Your password has been successfully updated.' is shown",OP-75,10086,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:10 PM,07/Jul/23 7:10 PM,07/Jul/23 7:10 PM,,,0,"Expected Result:
+The Password should not be changed and Warning should be shown for giving new password
+
+Actual Result:
+The User is taken to My Account page and A text ""Success: Your password has been successfully updated.' is shown
+
+Steps to reproduce:
+1) Click My account dropdown in header and click My Account
+2) Click change password right column
+3) Enter already set old password for password and confirm password field
+4) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000i7:,,,,,,,,,,To Do
+The second hero image is not clickable,OP-74,10085,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:09 PM,07/Jul/23 7:09 PM,07/Jul/23 7:09 PM,,,0,"Expected Result:
+All the hero images should take user to the respective product page
+
+Actual Result:
+1) The first hero image takes user to wrong product page
+2) The second hero image is not clickable
+
+Steps to reproduce:
+1) Click the hero images",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000hz:,,,,,,,,,,To Do
+The Default address is not selected automatically in existing address field,OP-73,10084,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 7:09 PM,07/Jul/23 7:09 PM,07/Jul/23 7:09 PM,,,0,"Expected Result:
+1) New Address should be added to Address display page
+2) The Default address should be selected automatically in existing address field
+
+Actual Result:
+1) New Address is added to Address display page
+2) The Default address is not selected automatically in existing address field
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Address Book in right column options
+3) Click New Address
+4) Fill only mandatory fields
+5) Select 'yes' in default address radio button
+6) Click continue (ER-01)
+7) Add some products to cart
+8) Click checkout (ER-02)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000hr:,,,,,,,,,,To Do
+Cannot place downloadable orders,OP-72,10083,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:58 PM,07/Jul/23 6:58 PM,07/Jul/23 7:00 PM,,,0,"Expected Result:
+The User should be taken to Order details page
+
+Actual Result:
+Cannot place downloadable orders
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Downloads in right column options
+3) Click View button
+",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000hj:,,,,,,,,,,To Do
+Cannot place downloadable orders,OP-71,10082,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:57 PM,07/Jul/23 6:57 PM,07/Jul/23 6:57 PM,,,0,"Expected Result:
+The Downloads Page should work in all supported environments
+
+Actual Result:
+Cannot place downloadable orders
+
+Steps to reproduce:
+1) Open the site in any supported browser
+2) Click My account header and click My Account
+3) Click Downloads in right column options
+4) Repeat from Step-1 for other environments
+",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000hb:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-70,10081,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:53 PM,07/Jul/23 6:53 PM,07/Jul/23 6:53 PM,,,0,"Expected Result: 
+A Warning message 'The Password is Invalid' should be displayed under Password field
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid value for Confirm Password and leave Password field empty
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000h3:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-69,10080,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:53 PM,07/Jul/23 6:53 PM,07/Jul/23 6:53 PM,,,0,"Expected Result:
+A Warning message 'The Password is Invalid' should be displayed under both fields
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter only spaces as values for Password and confirm password
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000gv:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-68,10079,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:52 PM,07/Jul/23 6:52 PM,07/Jul/23 6:52 PM,,,0,"Expected Result:
+A Warning message 'The Password is Invalid' should be displayed under both fields
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter first space as value for Password and confirm password
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000gn:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-67,10078,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:47 PM,07/Jul/23 6:47 PM,07/Jul/23 6:47 PM,,,0,"Expected Result:
+A Warning message 'The Password is Invalid' should be displayed under both fields
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter only spaces as values for Password and confirm password
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000gf:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-66,10077,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:46 PM,07/Jul/23 6:46 PM,07/Jul/23 6:46 PM,,,0,"Expected Result:
+A Warning message 'The Password is Invalid' should be displayed under both fields
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter empty values for Password and confirm password
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000g7:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-65,10076,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:45 PM,07/Jul/23 6:45 PM,07/Jul/23 6:45 PM,,,0,"Expected Result:
+A Warning message 'Both Password and Confirm Password should be same' should be displayed
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid and different values for Password and confirm password
+7) Click continue",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000fz:,,,,,,,,,,To Do
+Cannot place downloadable orders,OP-64,10075,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 6:44 PM,07/Jul/23 6:44 PM,07/Jul/23 6:44 PM,,,0,"Expected Result:
+The Table should be shown with necessary details
+
+Actual Result:
+Cannot place downloadable orders
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Downloads in right column options",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000fr:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-63,10074,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:48 AM,07/Jul/23 12:48 AM,07/Jul/23 12:48 AM,,,0,"Expected Result:
+The user should not be logged in
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid and same values for Password and confirm password
+7) Click continue
+8) Go to Login Page
+9) Login using valid Email address and Old password",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000fj:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-62,10073,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:47 AM,07/Jul/23 12:47 AM,07/Jul/23 12:47 AM,,,0,"Expected Result:
+The user should be logged in
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid and same values for Password and confirm password
+7) Click continue
+8) Go to Login Page
+9) Login using valid Email address and Newly created password",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000fb:,,,,,,,,,,To Do
+The functionality to add subscription is not available,OP-61,10072,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:46 AM,07/Jul/23 12:46 AM,07/Jul/23 12:46 AM,,,0,"Expected Result:
+The details of Subscriptions should be shown
+
+Actual Result:
+The functionality to add subscription is not available
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Subscriptions in right column options",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000f3:,,,,,,,,,,To Do
+The orders are not getting fulfilled,OP-60,10071,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:45 AM,07/Jul/23 12:45 AM,07/Jul/23 12:45 AM,,,0,"Expected Result:
+The details of Reward Points should be shown in table format
+
+Actual Result:
+The orders are not getting fulfilled
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Reward Points in right column options",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000ev:,,,,,,,,,,To Do
+The Order is added to returns page but not disappear from order history,OP-59,10070,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:45 AM,07/Jul/23 12:45 AM,07/Jul/23 12:45 AM,,,0,"Expected Result:
+1) The User should be take to cancellation page
+2) The Order should be returned
+3) The Order status should be changed as cancelled for that order
+
+Actual Result:
+1) The User is taken to cancellation page
+2) The Order is added to returns page but not disappear from order history
+
+Steps to reproduce:
+1) Click My account header and click My Account
+2) Click Order History in right column options
+3) Click view button in any order
+4) Click Return button (ER-01)
+5) Fill the all fields and Click Continue (ER-02)
+6) Go to Order History (ER-03)",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000en:,,,,,,,,,,To Do
+No mail is recieved. The Email  system does not work in OpenCart,OP-58,10069,Bug,To Do,OP,OpenCart,software,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,Medium,,,,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,07/Jul/23 12:39 AM,07/Jul/23 12:39 AM,07/Jul/23 12:39 AM,,,0,"Expected Result:
+A Warning message 'The Password is Invalid' should be displayed under Confirm password field
+
+Actual Result:
+No mail is recieved. The Email  system does not work in OpenCart
+
+Steps to reproduce:
+1) Click on Login in 'My Account' dropdown
+2) Click on Forgotten Password Link
+3) Enter valid value in Email ID field in forgottern password page and click Continue
+4) Open the Mail Id inbox and select the message received from opencart
+5) Click on the password reset link from opencart
+6) Enter valid value for Password and leave Conform Password field empty
+7) Click continue
+",,Ranjith C,712020:636c0502-f635-4052-aa59-3cd2e1380656,,,,,,,,,,,,,,,,,,,,,0|i000ef:,,,,,,,,,,To Do

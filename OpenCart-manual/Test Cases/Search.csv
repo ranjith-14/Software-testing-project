@@ -1,0 +1,139 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_SE_01,TS_008 (Search),Verify Searching with existing product name,1) Open site in any supported browser,"1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button","Search Term:
+Canon EOS 5D",The User should be navigated to Search Page  with search results,,
+TC_SE_02,TS_008 (Search),Verify Searching by using ENTER button in keyboard,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click ENTER button in keyboard","Search Term:
+Canon EOS 5D",The User should be navigated to Search Page  with search results,,
+TC_SE_03,TS_008 (Search),Verify Searching with non existing product name,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for non existing product
+3) Click search button","Search Term:
+Orange",The User should be navigated to Search Page  with text saying 'There is no product that matches the search criteria.',,
+TC_SE_04,TS_008 (Search),Verify Searching without any keywords,1) Open site in any supported browser,"
+1) Click search button near search text field",Not Applicable,The Search field should not proceed any further,,
+TC_SE_05,TS_008 (Search),Verify Searching with only spaces,1) Open site in any supported browser,"
+1) Click search bar and input only a few spaces 
+2) Click search button",Not Applicable,The Search field should not proceed any further,,
+TC_SE_06,TS_008 (Search),Verify Search function trims leading and trailing spaces,1) Open site in any supported browser,"
+1) Click search bar
+2) Input few spaces and a keyword for existing product and iput few spaces again 
+2) Click search button","Search Term:
+        Canon EOS 5D      ",The User should be taken to Search Page and the search results should be displayed for the keyword after trimming spaces,,
+TC_SE_07,TS_008 (Search),Verify by using keyword that results in multiple results,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword that results in multiple results
+3) Click search button","Search Term:
+Mac",The User should be navigated to Search Page  with several search results that are relevent to keyword,,
+TC_SE_08,TS_008 (Search),Verify by searching using search criteria field,1) Open site in any supported browser,"
+1) Click search button near search text field
+2) Input keyword for existing product in search criteria field
+3) Click search button","Search Term:
+Canon EOS 5D",The relevant results should be displayed for keywords,,
+TC_SE_09,TS_008 (Search),Verify by searching using search criteria field with product description,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term and click search button
+2) Input keyword which is a keyword from product description in search criteria field
+3) Click Search in product descriptions checkbox
+4) Click search button","Search Term:
+Intel Core 2",The relevant results should be displayed for keywords,,
+TC_SE_10,TS_008 (Search),Verify by searching using search criteria field with product description with ENTER button from keyboard,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term and click search button
+2) Input keyword which is a keyword from product description in search criteria field
+3) Click Search in product descriptions checkbox
+4) Click ENTER in keyboard","Search Term:
+Intel Core 2",The results should be displayed for keywords,,
+TC_SE_11,TS_008 (Search),Verify the List and Grid layout for single product,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click the Grid button (ER-01)
+5) Click the List button (ER-02)","Search Term:
+Canon EOS 5D","1) The product should be displayed in Grid format with button layout properly arranged
+2) The product should be displayed in List format with button layout properly arranged",,
+TC_SE_12,TS_008 (Search),Verify the List and Grid layout for multiple product,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click the Grid button (ER-01)
+5) Click the List button (ER-02)","Search Term:
+Mac","1) The products should be displayed in Grid format with button layout properly arranged
+2) The products should be displayed in List format with button layout properly arranged",,
+TC_SE_13,TS_008 (Search),Verify entering to product page from search results by clicking product name,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click product name","Search Term:
+Mac",The User should be navigated to the product page of clicked product name,,
+TC_SE_14,TS_008 (Search),Verify entering to product page from search results by clicking product image,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click product image","Search Term:
+Mac",The User should be navigated to the product page of clicked product image,,
+TC_SE_15,TS_008 (Search),Verify searching by correct selecting the category of the product,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click category and select correct category
+5) Click search button","Product name: iMac
+Product category: Mac",The Results should be displayed for keyword and correct category,,
+TC_SE_16,TS_008 (Search),Verify searching by incorrect selecting the category of the product,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click category and select incorrect category
+5) Click search button","Product name: iMac
+Product category: Pc",A text 'There is no product that matches the search criteria.' should be displayed,,
+TC_SE_17,TS_008 (Search),Verify searching by selecting the subcategory of the product,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click category and select category
+5) Click search in subcategories
+6) Click search button","Product name: iMac
+Product category: Desktop",The Results should be displayed for keyword and correct category,,
+TC_SE_18,TS_008 (Search),Verify the sort by function of Search Page,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product
+3) Click search button
+4) Click sort by dropdown and select the options one by one","Search Term:
+Mac",The results should be displayed as per the selected sort by option,,
+TC_SE_19,TS_008 (Search),Verify selecting the number of results that is displayed,1) Open site in any supported browser,"
+1) Select the Search Bar
+2) Enter a search keyword for existing product that results in multiple results
+3) Click search button
+4) Click show dropdown and select the options one by one","Search Term:
+Mac",The results should be displayed as per the selected show option,,
+TC_SE_20,TS_008 (Search),Verify the Product compare button in Search Page,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button
+3) Click product compare button","Search Term:
+Mac",The User should be navigated to Product Compare Page,,
+TC_SE_21,TS_008 (Search),Verify the breadcrumb of the Search Page,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button","Search Term:
+Mac",The Breadcrumb should be properly displayed and working,,
+TC_SE_22,TS_008 (Search),Verify the Search Bar is present in all pages,1) Open site in any supported browser,"
+1) Navigate to various pages",Not Applicable,The Search Bar should be displayed in top in all pages,,
+TC_SE_23,TS_008 (Search),Verify the UI of Search Bar,1) Open site in any supported browser,"
+1) Observe Search Bar",Not Applicable,The Search Bar should be according to specifications,,
+TC_SE_24,TS_008 (Search),Verify the labels are correct,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button","Search Term:
+Mac",The labels should be according to requirements,,
+TC_SE_25,TS_008 (Search),Verify the all the fields are present,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button","Search Term:
+Mac",The fields should be according to requirements,,
+TC_SE_26,TS_008 (Search),Verify the all the place holders are present,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button","Search Term:
+Mac",The placeholders should be according to requirements,,
+TC_SE_27,TS_008 (Search),Verify the Search Page functionality in all the supported environments,1) Open site in any supported browser,"
+1) Select the Search Bar and enter a search term
+2) Click search button
+3) Repeat from Step-1 for other environments","Search Term:
+Mac",The Search page should work in all supported environments,,

@@ -1,0 +1,127 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_SM_01,"TS_026 
+(Site Map)",Verify the ways to navigate to Site Map from footer link,1) Open the site in any supported browser and login,1) Click the Site Map in footer under Customer Services label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The user should be navigated to site map page,The user is navigated to site map page,Pass
+TC_SM_02,"TS_026 
+(Site Map)",Verify breadcrumb of Site Map,1) Open the site in any supported browser and login,1) Click the Site Map in footer under Customer Services label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Breadcrumb should be displayed and working,The Breadcrumb is displayed and working,Pass
+TC_SM_03,"TS_026 
+(Site Map)",Verify navigating to Category pages from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click a category in the Site map listing
+3) Repeat step 2 for all categories","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to selected Category page,The User is taken to selected Category page,Pass
+TC_SM_04,"TS_026 
+(Site Map)",Verify navigating to Subcategory pages from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click a subcategory in the Site map listing
+3) Repeat step 2 for all Subcategories","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to selected Subcategory page,The User is taken to selected Subcategory page,Pass
+TC_SM_05,"TS_026 
+(Site Map)",Verify navigating to Special Offers from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Special offers","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to specials page,The User is taken to specials page,Pass
+TC_SM_06,"TS_026 
+(Site Map)",Verify navigating to My Account from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click My Account","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to My Account page,The User is taken to My Account page,Pass
+TC_SM_07,"TS_026 
+(Site Map)",Verify navigating to Account information from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Account information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Account information page,The User is taken to My Account page,Fail
+TC_SM_08,"TS_026 
+(Site Map)",Verify navigating to Password Page from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Password","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Password page,The User is taken to My Account page,Fail
+TC_SM_09,"TS_026 
+(Site Map)",Verify navigating to Address Book from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Address Book","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Address Book page,The User is taken to My Account page,Fail
+TC_SM_10,"TS_026 
+(Site Map)",Verify navigating to Order History from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Order History","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Order History page,The User is taken to My Account page,Fail
+TC_SM_11,"TS_026 
+(Site Map)",Verify navigating to Downloads from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Downloads","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Downloads page,The User is taken to My Account page,Fail
+TC_SM_12,"TS_026 
+(Site Map)",Verify navigating to Shopping cart from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Shopping cart","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Shopping cart page,The User is taken to My Account page,Fail
+TC_SM_13,"TS_026 
+(Site Map)",Verify navigating to Checkout from Site Map,1) Open the site in any supported browser and login,"1) Add a product to cart
+2) Click the Site Map in footer under Customer Services label
+3) Click Checkout","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Checkout page,The User is taken to Checkout page,Pass
+TC_SM_14,"TS_026 
+(Site Map)",Verify navigating to Search from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Search","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Search page,The User is taken to Search page,Pass
+TC_SM_15,"TS_026 
+(Site Map)",Verify navigating to Terms and Conditions from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Terms and Conditions under Information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Terms and conditions page,The User is taken to Terms and conditions page,Pass
+TC_SM_16,"TS_026 
+(Site Map)",Verify navigating to Delivery Information from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Delivery Information under Information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Delivery Information page,The User is taken to Delivery Information page,Pass
+TC_SM_17,"TS_026 
+(Site Map)",Verify navigating to About Us from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click About Us under Information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to About Us page,The User is taken to About Us page,Pass
+TC_SM_18,"TS_026 
+(Site Map)",Verify navigating to Privacy Policy from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Privacy Policy under Information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Privacy Policy page,The User is taken to Privacy Policy page,Pass
+TC_SM_19,"TS_026 
+(Site Map)",Verify navigating to Contact Us from Site Map,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Click Contact Us under Information","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Contact Us page,The User is taken to Contact Us page,Pass
+TC_SM_20,"TS_026 
+(Site Map)",Verify the links are correct,1) Open the site in any supported browser and login,1) Click the Site Map in footer under Customer Services label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Links displayed should be according to requirements,The Links displayed are according to requirements,Pass
+TC_SM_21,"TS_026 
+(Site Map)",Verify the Site Map Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Click the Site Map in footer under Customer Services label
+2) Repeat from Step-1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Site Map Page should work in all supported environments,The Site Map Page works in all supported environments,Pass

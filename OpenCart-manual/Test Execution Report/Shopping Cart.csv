@@ -1,0 +1,266 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_SC_01,TS_006 (Shopping Cart),Verify the product is properly added to Shopping Cart when added from Featured section HomePage,1) Open the site in any supported browser and login,"1) Click the add to cart (cart) button on iphone (ER-01)
+2) Open Shopping Cart page by clicking Shopping Cart header (ER-02)","Product to add:
+Iphone","1) A Success message 'You have added the Iphone to your shopping cart' should be displayed
+2) The Iphone should be added to cart","1) A Success message 'You have added the Iphone to your shopping cart' is displayed
+2) The Iphone is added to cart",Pass
+TC_SC_02,TS_006 (Shopping Cart),Verify the product is properly added to Shopping Cart when added from Product Page,1) Open the site in any supported browser and login,"1) Select MacBook in HomePage
+2) Click the add to cart (cart) button on product page (ER-01)
+3) Open Shopping Cart page by clicking Shopping Cart header (ER-02)","Product to add:
+MacBook ","1) A Success message 'You have added the MacBook to your shopping cart' should be displayed
+2) The MacBook should be added to Shopping Cart","1) A Success message 'You have added the MacBook to your shopping cart' is displayed
+2) The MacBook is added to Shopping Cart",Pass
+TC_SC_03,TS_006 (Shopping Cart),Verify the ability to add to Shopping Cart in Search results Page in Grid Layout,1) Open the site in any supported browser and login,"1) Search MacBook  Air in search field
+2) Select layout as Grid
+3) Click the add to cart (cart) button (ER-01)
+4) Open Shopping Cart page by clicking Shopping Cart header (ER-02)","Search Term:
+MacBook  Air","1) A Success message 'You have added the MacBook  Airto your shopping cart' should be displayed
+2) The MacBook  Air should be added to Shopping Cart","1) A Success message 'You have added the MacBook  Airto your shopping cart' is displayed
+2) The MacBook  Air is added to Shopping Cart",Pass
+TC_SC_04,TS_006 (Shopping Cart),Verify the ability to add to Shopping Cart in Search results Page in List Layout,1) Open the site in any supported browser and login,"1) Search MacBook  Pro in search field
+2) Select layout as List
+3) Click the add to cart (cart) button (ER-01)
+4) Open Shopping Cart page by clicking Shopping Cart header (ER-02)","Search Term:
+MacBook  Pro","1) A Success message 'You have added the MacBook  Pro to your shopping cart' should be displayed
+2) The MacBook  Pro should be added to Shopping Cart","1) A Success message 'You have added the MacBook  Pro to your shopping cart' is displayed
+2) The MacBook  Pro is added to Shopping Cart",Pass
+TC_SC_05,TS_006 (Shopping Cart),Verify the items can be removed from Shopping Cart page,1) Open the site in any supported browser and login,"1) Add some items to Shopping Cart
+2) Click Shopping Cart header button
+3) Click remove button in Shopping Cart page for a product","Products to add:
+Iphone, Macbook",The product should be removed,The product should is removed,Pass
+TC_SC_06,TS_006 (Shopping Cart),Verify the items can be removed from Shopping Cart Button,1) Open the site in any supported browser and login,"1) Add some items to Shopping Cart
+2) Click Shopping cart button in top right corner
+3) Click remove button","Products to add:
+Iphone, Macbook",The product should be removed,The product should is removed,Pass
+TC_SC_07,TS_006 (Shopping Cart),Verify the Breadcrumb in Shopping Cart Page,1) Open the site in any supported browser and login,1) Open Shopping Cart Page,Not Applicable,A proper breadcrumb should displayed and working,A proper breadcrumb is displayed and working,Pass
+TC_SC_08,TS_006 (Shopping Cart),Verify the ability to go to Shopping Cart by clicking the link in success message,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click the Shopping Cart link on the message appeared when adding a product to Shopping Cart","Product to add: 
+Iphone",The user should be taken to Shopping Cart,The user is taken to Shopping Cart,Pass
+TC_SC_09,TS_006 (Shopping Cart),Verify the ability to go to Shopping Cart by clicking on the Shopping Cart Header,1) Open the site in any supported browser and login,1) Click the Shopping Cart button in header,Not Applicable,The user should be taken to Shopping Cart,The user is taken to Shopping Cart,Pass
+TC_SC_10,TS_006 (Shopping Cart),Verify the ability to go to Shopping Cart by clicking on the Shopping Cart Button in right top corner,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click the Shopping Cart button in right top corner and click view cart","Product to add: 
+Iphone",The user should be taken to Shopping Cart,The user is taken to Shopping Cart,Pass
+TC_SC_11,TS_006 (Shopping Cart),Verify the ability to go to Product page by clicking the link in success message,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click the product name on the message appeared when adding a product to shopping cart","Product to add: 
+Iphone",The user should be taken to Product page of added product,The user is taken to Product page of added product,Pass
+TC_SC_12,TS_006 (Shopping Cart),Verify the ability to navigate to product page from Shopping Cart page by clicking name of the product,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click the product name","Product to add: 
+Iphone",The user should be taken to Product page of the product,The user is taken to Product page of the product,Pass
+TC_SC_13,TS_006 (Shopping Cart),Verify the ability to navigate to product page from Shopping Cart page by clicking image of the product,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click the product image","Product to add: 
+Iphone",The user should be taken to Product page of the product,The user is taken to Product page of the product,Pass
+TC_SC_14,TS_006 (Shopping Cart),Verify the ability to navigate to product page from Shopping Cart button banner by clicking name of the product,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click Shopping Cart button in right top corner
+3) Click the product name","Product to add: 
+Iphone",The user should be taken to Product page of the product,The user is taken to Product page of the product,Pass
+TC_SC_15,TS_006 (Shopping Cart),Verify the ability to navigate to product page from Shopping Cart button banner by clicking image of the product,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click Shopping Cart button in right top corner
+3) Click the product image","Product to add: 
+Iphone",The user should be taken to Product page of the product,The user is taken to Product page of the product,Pass
+TC_SC_16,TS_006 (Shopping Cart),Verify the function of continue button in Shopping Cart,1) Open the site in any supported browser and login,"1) Open Shopping Cart page
+2) Click the Continue button","Product to add: 
+Iphone",The User should be navigated to Home Page,The User is navigated to Home Page,Pass
+TC_SC_17,TS_006 (Shopping Cart),Verify adding multiple items to Shopping Cart from Home Page,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart by clicking add to cart button multiple times from HomePage
+2) Click shopping Cart button in right top corner (ER-01)
+3) Click view cart button in the banner (ER-01)","Product to add: 
+Iphone",The number of items added to cart should be same as the number of times add to cart button was clicked,The number of items added to cart is same as the number of times add to cart button was clicked,Pass
+TC_SC_18,TS_006 (Shopping Cart),Verify adding a product multiple times to Shopping Cart from Search Page in Grid format,1) Open the site in any supported browser and login,"1) Search for an existing product and set view as grid
+2) Click add to cart button multiple times for a product
+3) Click shopping Cart button in right top corner (ER-01)
+4) Click view cart button in the banner (ER-01)","Product to add: 
+Iphone",The number of items added to cart should be same as the number of times add to cart button was clicked,The number of items added to cart is same as the number of times add to cart button was clicked,Pass
+TC_SC_19,TS_006 (Shopping Cart),Verify adding a product multiple times to Shopping Cart from Search Page in List format,1) Open the site in any supported browser and login,"1) Search for an existing product and set view as list
+2) Click add to cart button multiple times for a product
+3) Click shopping Cart button in right top corner (ER-01)
+4) Click view cart button in the banner (ER-01)","Product to add: 
+Iphone",The number of items added to cart should be same as the number of times add to cart button was clicked,The number of items added to cart is same as the number of times add to cart button was clicked,Pass
+TC_SC_20,TS_006 (Shopping Cart),Verify adding multiple items to Shopping Cart from Product Page,1) Open the site in any supported browser and login,"1) Open Product Page of any product
+2) Enter a number under Qty textfield
+3) Click add to Cart button
+4) Click shopping Cart button in right top corner (ER-01)
+5) Click view cart button in the banner (ER-01)","Product to add: 
+Iphone",The number of items added to cart should be same as the number we entered on Qty textfield,The number of items added to cart is same as the number we entered on Qty textfield,Pass
+TC_SC_21,TS_006 (Shopping Cart),Verify the default quantity of Qty textfield,1) Open the site in any supported browser and login,1) Open Product Page of any product,"Product to add: 
+Iphone",The number under Qty textfield should be 1,The number under Qty textfield is 1,Pass
+TC_SC_22,TS_006 (Shopping Cart),Verify empty Shopping Cart,1) Open the site in any supported browser and login,"1) Click the top right corner Shopping Cart button (ER-01)
+2) Click Shopping Cart header (ER-01)",Not Applicable,1) A text 'Shopping Cart is empty' should be shown,1) A text 'Shopping Cart is empty' is shown,Pass
+TC_SC_23,TS_006 (Shopping Cart),Verify the number of items in cart by adding from various pages for same product,1) Open the site in any supported browser and login,"1) Click add to cart button 5 times from HomePage (ER-01)
+2) Search for the same product and click add to cart 3 times (ER-02)
+3) Open the product's page and add 5 in qty field
+4) Click add to cart (ER-03)
+5) Click Shopping Cart button in right top button (ER-03)
+6) Click view cart (ER-03)","Product to add: 
+Iphone","1) The number of items in Shopping Cart Button should be 5
+2) The number of items in Shopping Cart Button should be 8
+3) The number of items in Shopping Cart Button should be 13","1) The number of items in Shopping Cart Button is 5
+2) The number of items in Shopping Cart Button is 8
+3) The number of items in Shopping Cart Button is 13",Pass
+TC_SC_24,TS_006 (Shopping Cart),Verify the number of items in cart by adding from various pages for various products,1) Open the site in any supported browser and login,"1) Click add to cart button 5 times each from HomePage for 3 various products (ER-01)
+2) Search for 4 various products and click add to cart 3 times for each (ER-02)
+3) Open the 3 products' pages and add 5 in qty field
+4) Click add to cart (ER-03)
+5) Click Shopping Cart button in right top button (ER-04)
+6) Click view cart (ER-04)","Product to add: 
+Iphone","1) The number of items in Shopping Cart Button should be 15
+2) The number of items in Shopping Cart Button should be 27
+3) The number of items in Shopping Cart Button should be 42
+4) The qty in each product should be same as the number of times we added each of them","1) The number of items in Shopping Cart Button is 15
+2) The number of items in Shopping Cart Button is 27
+3) The number of items in Shopping Cart Button is 42
+4) The qty in each product is same as the number of times we added each of them",Pass
+TC_SC_25,TS_006 (Shopping Cart),Verify the Amount fields in Shopping cart page and banner is accurate for a single product with quantity as 1,1) Open the site in any supported browser and login,"1) Add a product to shopping cart with quantity as 1 (ER-01)
+2) Click the Shopping cart button in top right corner (ER-02)
+3) Click the view cart button (ER-02)","Product to add: 
+Iphone","1) The price in shopping cart button should be the same as the price of the product added
+2) The price near the product name should be accurate and the Sub total, Eco Tax, VAT, Total fields should be accurate","1) The price in shopping cart button is the same as the price of the product added
+2) The price near the product name should be accurate and the Sub total, Eco Tax, VAT, Total fields is accurate",Pass
+TC_SC_26,TS_006 (Shopping Cart),Verify the Amount fields in Shopping cart page and banner is accurate for a single product with multiple quantities,1) Open the site in any supported browser and login,"1) Add a product to shopping cart with multiple quantities (ER-01)
+2) Click the Shopping cart button in top right corner (ER-02)
+3) Click the view cart button (ER-02)","Product to add: 
+Iphone","1) The price in shopping cart button should be the same as the price of the product added and multiplied with quantity
+2) The price near the product name should be accurate for multiple quantities and the Sub total, Eco Tax, VAT, Total fields should be accurate","1) The price in shopping cart button is the same as the price of the product added and multiplied with quantity
+2) The price near the product name is accurate for multiple quantities and the Sub total, Eco Tax, VAT, Total fields should be accurate",Pass
+TC_SC_27,TS_006 (Shopping Cart),Verify the Amount fields in Shopping cart page and banner is accurate for multiple product with 1 quantity,1) Open the site in any supported browser and login,"1) Add multiples products to shopping cart with 1 quantity (ER-01)
+2) Click the Shopping cart button in top right corner (ER-02)
+3) Click the view cart button (ER-02)","Products to add: 
+Macbook Air, Macbook Pro, HTC Touch HD","1) The price in shopping cart button should be the sum of prices of products added
+2) The price near the each product name should be accurate and the Sub total, Eco Tax, VAT, Total fields should be accurate","1) The price in shopping cart button is the sum of prices of products added
+2) The price near the each product name is accurate and the Sub total, Eco Tax, VAT, Total fields is accurate",Pass
+TC_SC_28,TS_006 (Shopping Cart),Verify the Amount fields in Shopping cart page and banner is accurate for multiple product with multiple quantities,1) Open the site in any supported browser and login,"1) Add multiples products to shopping cart with multiple quantities (ER-01)
+2) Click the Shopping cart button in top right corner (ER-02)
+3) Click the view cart button (ER-02)","Products to add: 
+Macbook Air, Macbook Pro, HTC Touch HD","1) The price in shopping cart button should be the sum of prices of products added multiplies by their quantity
+2) The price near the each product name should be accurate for multiple quantities and the Sub total, Eco Tax, VAT, Total fields should be accurate","1) The price in shopping cart button is the sum of prices of products added multiplies by their quantity
+2) The price near the each product name is accurate for multiple quantities and the Sub total, Eco Tax, VAT, Total fields is accurate",Pass
+TC_SC_29,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart for non numerical inputs,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field with each value from test data
+4) Click Enter","Product to add: 
+Iphone
+Qty field:
+qwe
+!@#",An error message 'The quantity is not valid' should be shown,"A message is shown ""Success: You have modified your shopping cart!"" and the product is removd from cart.",Fail
+TC_SC_30,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart for numerical inputs,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field with a numerical value
+4) Click Enter","Product to add: 
+Iphone",The Quantity should be updated and the Prices and other fields should be updated to reflect the change,The Quantity is updated and the Prices and other fields is updated to reflect the change,Pass
+TC_SC_31,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart for empty values,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Leave the Quantity field as empty
+4) Click Enter","Product to add: 
+Iphone",An error message 'The quantity is not valid' should be shown,"A message is shown ""Success: You have modified your shopping cart!"" and the product is removd from cart.",Fail
+TC_SC_32,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart for 0 Quantity,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Quantity field as 0
+4) Click Enter","Product to add: 
+Iphone",An error message 'The quantity is not valid' should be shown,"A message is shown ""Success: You have modified your shopping cart!"" and the product is removd from cart.",Fail
+TC_SC_33,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart for non empty spaces,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field empty spaces
+4) Click Enter","Product to add: 
+Iphone",An error message 'The quantity is not valid' should be shown,"A message is shown ""Success: You have modified your shopping cart!"" and the product is removd from cart.",Fail
+TC_SC_34,TS_006 (Shopping Cart),Verify the quantity field in Shopping Cart can trim leading and trailing spaces,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field with numerical value with leading and trailing spaces
+4) Click Enter","Product to add: 
+Iphone",The Quantity should be updated and the Prices and other fields should be updated to reflect the change,The Quantity is updated and the Prices and other fields is updated to reflect the change,Pass
+TC_SC_35,TS_006 (Shopping Cart),Verify the quantity can be changed by using ENTER button,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field with a numerical value
+4) Click Enter","Product to add: 
+Iphone",The Quantity should be updated and the Prices and other fields should be updated to reflect the change,The Quantity is updated and the Prices and other fields is updated to reflect the change,Pass
+TC_SC_36,TS_006 (Shopping Cart),Verify the quantity can be changed by using update button,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Enter the Qty field with a numerical value
+4) Click the Update button","Product to add: 
+Iphone",The Quantity should be updated and the Prices and other fields should be updated to reflect the change,The Quantity is updated and the Prices and other fields is updated to reflect the change,Pass
+TC_SC_37,TS_006 (Shopping Cart),Verify Checkout Button in Shopping cart Page,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Click checkout button","Product to add: 
+Iphone",The user should be navigated to Checkout button,The user is navigated to Checkout button,Pass
+TC_SC_38,TS_006 (Shopping Cart),Verify Checkout Button in Shopping cart Banner in shopping cart button,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click Shopping Cart Button in top right corner
+3) Click checkout button","Product to add: 
+Iphone",The user should be navigated to Checkout button,The user is navigated to Checkout button,Pass
+TC_SC_39,TS_006 (Shopping Cart),Verify Estimate Shipping and taxes section for valid postcode,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click Shopping Cart Button in top right corner
+3) Click checkout button
+4) Click Shipping and taxes
+5) Fill valid values and click get quotes (ER-01)
+6) Select a shipping free radio button and click apply shipping (ER-02)","Product to add: 
+Iphone","1) A popup with radio buttons with shipping details should appear
+2) The price should be added to price field","1) A popup with radio buttons with shipping details appears
+2) The price is added to price field",Pass
+TC_SC_40,TS_006 (Shopping Cart),Verify Estimate Shipping and taxes section for empty values,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click Shopping Cart Button in top right corner
+3) Click checkout button
+4) Click Shipping and taxes
+5)Click get quotes","Product to add: 
+Iphone",Field level warning should be shown,Field level warning should is shown,Pass
+TC_SC_41,TS_006 (Shopping Cart),Verify the Coupon Code in Shopping Cart for valid code,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Coupon Code' section
+4) Enter any valid Coupon code into the 'Enter your coupon here' text field
+5) Click on 'Apply Coupon' button (ER-1)",Test Data Not Available,Coupon code should be applied successfully and the price details should successfully change.,,
+TC_SC_42,TS_006 (Shopping Cart),Verify the Coupon Code in Shopping Cart for invalid code,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Coupon Code' section
+4) Enter an invalid Coupon code into the 'Enter your coupon here' text field
+5) Click on 'Apply Coupon' button (ER-1)",Test Data Not Available,"A Warning message 'Coupon is either invalid, expired or reached its usage limit!' should be shown",,
+TC_SC_43,TS_006 (Shopping Cart),Verify the Coupon Code in Shopping Cart for expired code,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Coupon Code' section
+4) Enter an expired Coupon code into the 'Enter your coupon here' text field
+5) Click on 'Apply Coupon' button (ER-1)",Test Data Not Available,"A Warning message 'Coupon is either invalid, expired or reached its usage limit!' should be shown",,
+TC_SC_44,TS_006 (Shopping Cart),Verify the Coupon Code in Shopping Cart for out of limit values,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Coupon Code' section
+4) Enter an out of limit Coupon code into the 'Enter your coupon here' text field
+5) Click on 'Apply Coupon' button (ER-1)",Test Data Not Available,"A Warning message 'Coupon is either invalid, expired or reached its usage limit!' should be shown",,
+TC_SC_45,TS_006 (Shopping Cart),Verify the Coupon Code in Shopping Cart for empty values,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Coupon Code' section
+4) Do not enter a value in the 'Enter your coupon here' text field
+5) Click on 'Apply Coupon' button (ER-1)",Test Data Not Available,Warning message 'Please enter a coupon code!' should be displayed,,
+TC_SC_46,TS_006 (Shopping Cart),Verify the Gift Certificate in Shopping Cart for valid code,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Gift Certificate' section
+4) Enter any valid Gift Certificate code into the 'Enter your gift certificate code here' text field
+5) Click on 'Apply Gift Certificate' button (ER-1)",Test Data Not Available,Gift Certificate should be applied successfully and the price details should successfully change.,,
+TC_SC_47,TS_006 (Shopping Cart),Verify the Gift Certificate in Shopping Cart for invalid code,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Gift Certificate' section
+4) Enter any invalid Gift Certificate Code into the 'Enter your gift certificate code here' text field
+5) Click on 'Apply Gift Certificate' button (ER-1)",Test Data Not Available,A Warning message 'Gift Certificate is either invalid or the balance has been used up!' should be shown,,
+TC_SC_48,TS_006 (Shopping Cart),Verify the Gift Certificate in Shopping Cart for Balance used up Gift Certificate,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Gift Certificate' section
+4) Enter any the Balance used up Gift Certificate Code into the 'Enter your gift certificate code here' text field
+5) Click on 'Apply Gift Certificate' button (ER-1)",Test Data Not Available,A Warning message 'Gift Certificate is either invalid or the balance has been used up!' should be shown,,
+TC_SC_49,TS_006 (Shopping Cart),Verify the Gift Certificate in Shopping Cart for No value,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart page
+3) Click on 'Use Gift Certificate' section
+4) Do not enter any value into the 'Enter your gift certificate code here' text field
+5) Click on 'Apply Gift Certificate' button (ER-1)",Test Data Not Available,A Warning message 'Please enter a Gift Certificate code!' should be shown,,
+TC_SC_50,TS_006 (Shopping Cart),Verify Closing the Messages by Clicking x button,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Click x in the message displayed","Product to add: 
+Iphone",The message should be disappeared,The message is disappeared,Pass
+TC_SC_51,TS_006 (Shopping Cart),Verify Closing the Messages after certain time,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Observe","Product to add: 
+Iphone",The message should be disappeared after certain time,The message is disappeared after certain time,Pass
+TC_SC_52,TS_006 (Shopping Cart),Verify the labels are correct,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page","Product to add: 
+Iphone",The labels should be according to requirements,The labels are according to requirements,Pass
+TC_SC_53,TS_006 (Shopping Cart),Verify the all the fields are present,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page","Product to add: 
+Iphone",The fields should be according to requirements,The fields are according to requirements,Pass
+TC_SC_54,TS_006 (Shopping Cart),Verify the all the place holders are present,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page","Product to add: 
+Iphone",The placeholders should be according to requirements,The placeholders are according to requirements,Pass
+TC_SC_55,TS_006 (Shopping Cart),Verify the Shopping Cart Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Add a product to Shopping Cart
+2) Open Shopping Cart Page
+3) Repeat from Step-1 for other environments","Product to add: 
+Iphone",The Shopping Cart page should work in all supported environments,The Shopping Cart page works in all supported environments,Pass

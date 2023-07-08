@@ -1,0 +1,64 @@
+Project Name,Open Cart ,,,
+Client,Open Cart ,,,
+Reference,FRS,,,
+Created By,Ranjith,,,
+Creation Date,23-06-2023,,,
+Approval Date,23-06-2023,,,
+Site,"https://demo.opencart.com
+",,,
+,,,,
+,,,,
+ Requirement ID,Requirement,Test Scenario ID,Test Scenario Description,Test Case ID'S
+RD_01,Login,"TS_001
+TS_002
+TS_003","Validate the working of 'Login' functionality
+Validate the working of 'Forgot Password' functionality
+Validate the working of 'Logout' functionality","TC_LF_01, TC_LF_02, TC_LF_03, TC_LF_04, TC_LF_05, TC_LF_06, TC_LF_07, TC_LF_08, TC_LF_09, TC_LF_10, TC_LF_11, TC_LF_12, TC_LF_13, TC_LF_14, TC_LF_15, TC_LF_16, TC_LF_17, TC_LF_18
+TC_FP_01, TC_FP_02, TC_FP_03, TC_FP_04, TC_FP_05, TC_FP_06, TC_FP_07, TC_FP_08, TC_FP_09, TC_FP_10, TC_FP_11, TC_FP_12, TC_FP_13, TC_FP_14, TC_FP_15, TC_FP_16, TC_FP_17, TC_FP_18, TC_FP_19, TC_FP_20, TC_FP_21, TC_FP_22, TC_FP_23
+TC_LO_01, TC_LO_02, TC_LO_03, TC_LO_04, TC_LO_05, TC_LO_06, TC_LO_07, TC_LO_08"
+RD_02,Registration,TS_004,Validate the working of 'Register' functionality,"TC_RG_01, TC_RG_02, TC_RG_03, TC_RG_04, TC_RG_05, TC_RG_06, TC_RG_07, TC_RG_08, TC_RG_09, TC_RG_10, TC_RG_11, TC_RG_12, TC_RG_13, TC_RG_14, TC_RG_15, TC_RG_16, TC_RG_17, TC_RG_18, TC_RG_19, TC_RG_20, TC_RG_21, TC_RG_22, TC_RG_23, TC_RG_24, TC_RG_25, TC_RG_26, TC_RG_27, TC_RG_28, TC_RG_29"
+RD_03,Wish List,TS_005,Validate the working of 'Wish List' functionality,"TC_WL_01, TC_WL_02, TC_WL_03, TC_WL_04, TC_WL_05, TC_WL_06, TC_WL_07, TC_WL_08, TC_WL_09, TC_WL_10, TC_WL_11, TC_WL_12, TC_WL_13, TC_WL_14, TC_WL_15, TC_WL_16, TC_WL_17, TC_WL_18, TC_WL_19, TC_WL_20, TC_WL_21, TC_WL_22, TC_WL_23"
+RD_04,Add to Cart,TS_006,Validate the working of 'Shopping Cart' and 'Add to Cart' functionality,"TC_SC_01, TC_SC_02, TC_SC_03, TC_SC_04, TC_SC_05, TC_SC_06, TC_SC_07, TC_SC_08, TC_SC_09, TC_SC_10, TC_SC_11, TC_SC_12, TC_SC_13, TC_SC_14, TC_SC_15, TC_SC_16, TC_SC_17, TC_SC_18, TC_SC_19, TC_SC_20, TC_SC_21, TC_SC_22, TC_SC_23, TC_SC_24, TC_SC_25, TC_SC_26, TC_SC_27, TC_SC_28, TC_SC_29, TC_SC_30, TC_SC_31, TC_SC_32, TC_SC_33, TC_SC_34, TC_SC_35, TC_SC_36, TC_SC_37, TC_SC_38, TC_SC_39, TC_SC_40, TC_SC_41, TC_SC_42, TC_SC_43, TC_SC_44, TC_SC_45, TC_SC_46, TC_SC_47, TC_SC_48, TC_SC_49, TC_SC_50, TC_SC_51, TC_SC_52, TC_SC_53, TC_SC_54, TC_SC_55"
+RD_05,Checkout,TS_009,Validate the working of 'Checkout' functionality,"TC_CH_01, TC_CH_02, TC_CH_03, TC_CH_04, TC_CH_05, TC_CH_06, TC_CH_07, TC_CH_08, TC_CH_09, TC_CH_10, TC_CH_11, TC_CH_12, TC_CH_13, TC_CH_14, TC_CH_15, TC_CH_16, TC_CH_17, TC_CH_18, TC_CH_19, TC_CH_20, TC_CH_21, TC_CH_22, TC_CH_23, TC_CH_24, TC_CH_25"
+RD_06,Orders,TS_017,Validate the working of 'Order History' functionality,"TC_OH_01, TC_OH_02, TC_OH_03, TC_OH_04, TC_OH_05, TC_OH_06, TC_OH_07, TC_OH_08, TC_OH_09, TC_OH_10, TC_OH_11, TC_OH_12, TC_OH_13, TC_OH_14, TC_OH_15"
+RD_07,Currency,TS_007,Validate the working of 'Currency' Selection functonality,"TC_CU_01, TC_CU_02, TC_CU_03, TC_CU_04"
+RD_08,Search,TS_008,Validate the working of 'Search' functionality,"TC_SE_01, TC_SE_02, TC_SE_03, TC_SE_04, TC_SE_05, TC_SE_06, TC_SE_07, TC_SE_08, TC_SE_09, TC_SE_10, TC_SE_11, TC_SE_12, TC_SE_13, TC_SE_14, TC_SE_15, TC_SE_16, TC_SE_17, TC_SE_18, TC_SE_19, TC_SE_20, TC_SE_21, TC_SE_22, TC_SE_23, TC_SE_24, TC_SE_25, TC_SE_26, TC_SE_27"
+RD_09,HomePage,TS_010,Validate the working of 'Home Page' functionality,"TC_HP_01, TC_HP_02, TC_HP_03, TC_HP_04, TC_HP_05, TC_HP_06, TC_HP_07, TC_HP_08, TC_HP_09, TC_HP_10, TC_HP_11, TC_HP_12, TC_HP_13, TC_HP_14, TC_HP_15, TC_HP_16"
+RD_10,Categories Page,TS_011,Validate the working of 'Categories Page' functionality,"TC_CP_01, TC_CP_02, TC_CP_03, TC_CP_04, TC_CP_05, TC_CP_06, TC_CP_07, TC_CP_08, TC_CP_09, TC_CP_10, TC_CP_11, TC_CP_12, TC_CP_13, TC_CP_14, TC_CP_15, TC_CP_16, TC_CP_17, TC_CP_18, TC_CP_19, TC_CP_20"
+RD_11,Product Page,TS_012,Validate the working of 'Product Page' functionality,"TC_PP_01, TC_PP_02, TC_PP_03, TC_PP_04, TC_PP_05, TC_PP_06, TC_PP_07, TC_PP_08, TC_PP_09, TC_PP_10, TC_PP_11, TC_PP_12, TC_PP_13, TC_PP_14, TC_PP_15, TC_PP_16, TC_PP_17, TC_PP_18, TC_PP_19, TC_PP_20, TC_PP_21, TC_PP_22, TC_PP_23, TC_PP_24, TC_PP_25"
+RD_12,Product Compare,TS_013,Validate the working of 'Product Compare' functionality,"TC_PC_01, TC_PC_02, TC_PC_03, TC_PC_04, TC_PC_05, TC_PC_06, TC_PC_07, TC_PC_08, TC_PC_09, TC_PC_10, TC_PC_11, TC_PC_12, TC_PC_13, TC_PC_14, TC_PC_15, TC_PC_16, TC_PC_17, TC_PC_18, TC_PC_19, TC_PC_20, TC_PC_21, TC_PC_22, TC_PC_23, TC_PC_24, TC_PC_25, TC_PC_26, TC_PC_27, TC_PC_28, TC_PC_29, TC_PC_30"
+RD_13,My Account,"TS_014
+TS_015
+TS_016
+TS_018
+TS_019
+TS_020
+TS_021
+TS_022","Validate the working of 'My Account' and 'Edit your account information' functionality
+Validate the working of 'Change your password' functionality
+Validate the working of 'Modify your address book entries' functionality
+Validate the working of 'Downloads' functionality
+Validate the working of 'Subscriptions' functionality
+Validate the working of 'Reward Points' functionality
+Validate the working of 'Returns' functionality
+Validate the working of 'Your Transactions' functionality","TC_ME_01, TC_ME_02, TC_ME_03, TC_ME_04, TC_ME_05, TC_ME_06, TC_ME_07, TC_ME_08, TC_ME_09, TC_ME_10, TC_ME_11, TC_ME_12, TC_ME_13, TC_ME_14, TC_ME_15, TC_ME_16, TC_ME_17, TC_ME_18
+TC_CP_01, TC_CP_02, TC_CP_03, TC_CP_04, TC_CP_05, TC_CP_06, TC_CP_07, TC_CP_08, TC_CP_09, TC_CP_10, TC_CP_11, TC_CP_12, TC_CP_13, TC_CP_14, TC_CP_15, TC_CP_16
+TC_AB_01, TC_AB_02, TC_AB_03, TC_AB_04, TC_AB_05, TC_AB_06, TC_AB_07, TC_AB_08, TC_AB_09, TC_AB_10, TC_AB_11, TC_AB_12, TC_AB_13, TC_AB_14, TC_AB_15, TC_AB_16, TC_AB_17, TC_AB_18, TC_AB_19, TC_AB_20, TC_AB_21
+TC_DL_01, TC_DL_02, TC_DL_03, TC_DL_04, TC_DL_05, TC_DL_06, TC_DL_07, TC_DL_08, TC_DL_09, TC_DL_10, TC_DL_11
+TC_SU_01, TC_SU_02, TC_SU_03, TC_SU_04, TC_SU_05, TC_SU_06, TC_SU_07, TC_SU_08, TC_SU_09, TC_SU_10
+TC_RP_01, TC_RP_02, TC_RP_03, TC_RP_04, TC_RP_05, TC_RP_06, TC_RP_07, TC_RP_08, TC_RP_09, TC_RP_10
+TC_RE_01, TC_RE_02, TC_RE_03, TC_RE_04, TC_RE_05, TC_RE_06, TC_RE_07, TC_RE_08, TC_RE_09, TC_RE_10, TC_RE_11, TC_RE_12
+TC_TR_01, TC_TR_02, TC_TR_03, TC_TR_04, TC_TR_05, TC_TR_06, TC_TR_07, TC_TR_08, TC_TR_09, TC_TR_10"
+RD_14,Affiliate,TS_023,Validate the working of 'Affiliate' functionality,"TC_AF_01, TC_AF_02, TC_AF_03, TC_AF_04, TC_AF_05, TC_AF_06, TC_AF_07, TC_AF_08, TC_AF_09, TC_AF_10, TC_AF_11, TC_AF_12, TC_AF_13, TC_AF_14, TC_AF_15, TC_AF_16, TC_AF_17, TC_AF_18, TC_AF_19, TC_AF_20, TC_AF_21, TC_AF_22, TC_AF_23, TC_AF_24, TC_AF_25, TC_AF_26, TC_AF_27, TC_AF_28, TC_AF_29, TC_AF_30, TC_AF_31, TC_AF_32, TC_AF_33, TC_AF_34"
+RD_15,Customer Services,"TS_025
+TS_026","Validate the working of 'Cusomer Services' Contact us' page functionality
+Validate the working of 'Customer Sevices' Site Map' page functionality","TC_CU_01, TC_CU_02, TC_CU_03, TC_CU_04, TC_CU_05, TC_CU_06, TC_CU_07, TC_CU_08, TC_CU_09, TC_CU_10, TC_CU_11, TC_CU_12, TC_CU_13, TC_CU_14, TC_CU_15, TC_CU_16, TC_CU_17
+TC_SM_01, TC_SM_02, TC_SM_03, TC_SM_04, TC_SM_05, TC_SM_06, TC_SM_07, TC_SM_08, TC_SM_09, TC_SM_10, TC_SM_11, TC_SM_12, TC_SM_13, TC_SM_14, TC_SM_15, TC_SM_16, TC_SM_17, TC_SM_18, TC_SM_19, TC_SM_20, TC_SM_21"
+RD_16,Extras,"TS_027
+TS_028
+TS_029","Validate the working of 'Gift Certificate' page functionality
+Validate the working of 'Specials' page functionality
+Validate the working of 'Brands' page functionality","TC_GC_01, TC_GC_02, TC_GC_03, TC_GC_04, TC_GC_05, TC_GC_06, TC_GC_07, TC_GC_08, TC_GC_09, TC_GC_10, TC_GC_11, TC_GC_12, TC_GC_13, TC_GC_14, TC_GC_15
+TC_SP_01, TC_SP_02, TC_SP_03, TC_SP_04, TC_SP_05, TC_SP_06, TC_SP_07, TC_SP_08, TC_SP_09, TC_SP_10, TC_SP_11, TC_SP_12, TC_SP_13
+TC_BR_01, TC_BR_02, TC_BR_03, TC_BR_04, TC_BR_05, TC_BR_06, TC_BR_07, TC_BR_08, TC_BR_09, TC_BR_10, TC_BR_11, TC_BR_12, TC_BR_13, TC_BR_14, TC_BR_15, TC_BR_16"
+RD_17,Header and Footer,TS_030,Validate the working of 'Header' options and 'Footer' options,"TC_HF_01, TC_HF_02, TC_HF_03, TC_HF_04, TC_HF_05, TC_HF_06, TC_HF_07, TC_HF_08, TC_HF_09, TC_HF_10, TC_HF_11, TC_HF_12, TC_HF_13"

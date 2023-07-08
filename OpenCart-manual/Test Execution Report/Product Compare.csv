@@ -1,0 +1,122 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_PC_01,TS_013 (Product Compare),Verify adding products to product comparison from homepage,1) Open the site in any supported browser and login,"1) Click compare this product button for a product from HomePage featured page (ER-01)
+2) Click product comparison in the success message displayed (ER-02)","Product to add:
+Iphone","1) A success message should be shown and the product is added to Product Comparison page
+2) The added products should be displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_02,TS_013 (Product Compare),Verify adding products to product comparison from Search Page in Grid format,1) Open the site in any supported browser and login,"1) Search for an existing product
+2) Select the Grid format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)","Search term:
+Mac","1) A success message should be shown and the product is added to Product Comparison page
+2) The added products should be displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_03,TS_013 (Product Compare),Verify adding products to product comparison from Search Page in List format,1) Open the site in any supported browser and login,"1) Search for an existing product
+2) Select the List format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)","Search term:
+Mac","1) A success message should be shown and the product is added to Product Comparison page
+2) The added products should be displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_04,TS_013 (Product Compare),Verify adding products to product comparison from Category Page in Grid format,1) Open the site in any supported browser and login,"1) Select a category option and click show all button
+2) Select the Grid format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)",Not Applicable,"1) A success message should be shown and the product is added to Product Comparison page
+2) The added products should be displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_05,TS_013 (Product Compare),Verify adding products to product comparison from Category Page in List format,1) Open the site in any supported browser and login,"1) Select a category option and click show all button
+2) Select the List format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)",Not Applicable,"1) A success message should be shown and the product is added to Product Comparison page
+2) The added products should be displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_06,TS_013 (Product Compare),Verify adding products to product comparison from Subcategory Page in List format,1) Open the site in any supported browser and login,"1) Select a category option and click a subcategory option
+2) Select the List format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)",Not Applicable,"1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_07,TS_013 (Product Compare),Verify adding products to product comparison from Subcategory Page in Grid format,1) Open the site in any supported browser and login,"1) Select a category option and click a subcategory option
+2) Select the Grid format
+3) Click compare this product button from the displayed product (ER-01)
+4) Click product comparison in the success message displayed (ER-02)",Not Applicable,"1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page","1) A success message is shown and the product is added to Product Comparison page
+2) The added products is displayed in the page",Pass
+TC_PC_08,TS_013 (Product Compare),Verify going to Product comparison Page from Search Results Page,1) Open the site in any supported browser and login,"1) Search for an existing product
+2) Click product compare button","Search term:
+Mac",The User should be taken to Product comparison page,The User is taken to Product comparison page,Pass
+TC_PC_09,TS_013 (Product Compare),Verify going to Product comparison Page from Categories Page,1) Open the site in any supported browser and login,"1) Select a category option and click show all button
+2) Click product compare button",Not Applicable,The User should be taken to Product comparison page,The User is taken to Product comparison page,Pass
+TC_PC_10,TS_013 (Product Compare),Verify going to Product comparison Page from Subcategory Page,1) Open the site in any supported browser and login,"1) Select a category option and click a subcategory option
+2) Click product compare button",Not Applicable,The User should be taken to Product comparison page,The User is taken to Product comparison page,Pass
+TC_PC_11,TS_013 (Product Compare),Verifying going to Product comparison page from link in Success message,1) Open the site in any supported browser and login,"1) Click compare this product button for a product from HomePage featured page
+2) Click product comparison in the success message displayed","Product to add:
+Iphone",The User should be taken to the product comparison page,The User is taken to Product comparison page,Pass
+TC_PC_12,TS_013 (Product Compare),Verify Product compare button shows the count of items added to product comparison page,1) Open the site in any supported browser and login,"1) Add a product to Product comparison page from homepage (ER-01) 
+2) Search for an existing product (ER-02)
+3) Add a product to Product comparison page from Search results page (ER-01)
+4) Select a category option and click show all button (ER-03)
+5) Add a product to Product comparison page from Category results page (ER-01)
+6) Select a subcategory option and click a subcategory option (ER-04)
+7) Add a product to Product comparison page from Subcategory results page (ER-01)
+8) Click product comparison link from Success messge displayed (ER-05)","Product to add:
+Iphone
+Search term:
+Mac","1) A success message should be shown and the product is added to Product Comparison page
+2) The User should be navigated to Search results page and Product compare button shows 1 as count
+3) The User should be navigated to Category results page and Product compare button shows 2 as count
+4) The User should be navigated to Subcategory results page and Product compare button shows 3 as count
+5) The added products should be displayed in the page and four product as displayed side by side","1) A success message is shown and the product is added to Product Comparison page
+2) The User is navigated to Search results page and Product compare button shows 1 as count
+3) The User is navigated to Category results page and Product compare button shows 2 as count
+4) The User is navigated to Subcategory results page and Product compare button shows 3 as count
+5) The added products is displayed in the page and four product as displayed side by side",Pass
+TC_PC_13,TS_013 (Product Compare),Verify going to Product page from link in Success message,1) Open the site in any supported browser and login,"1) Click compare this product button for a product from HomePage featured page
+2) Click product name in the success message displayed","Product to add:
+Iphone",The User should be taken to the the clicked product page,The User is taken to the the clicked product page,Pass
+TC_PC_14,TS_013 (Product Compare),Verify Product compare page for no added items,1) Open the site in any supported browser and login,"1) Select a category option and click a subcategory option
+2) Click product compare button",Not Applicable,The User should be taken to product comparison page and A text 'You have not chosen any products to compare.' should be shown,The User is taken to product comparison page and A text 'You have not chosen any products to compare.' is shown,Pass
+TC_PC_15,TS_013 (Product Compare),Verify adding a single product to Product comparison,1) Open the site in any supported browser and login,"1) Click compare this product button for a single product from HomePage featured page
+2) Click product comparison in the success message displayed","Product to add:
+Iphone",The User should be taken to product comparison page and the details of the single product is displayed,The User is taken to product comparison page and the details of the single product is displayed,Pass
+TC_PC_16,TS_013 (Product Compare),Verify adding two products to Product comparison,1) Open the site in any supported browser and login,"1) Click compare this product button for two products from HomePage featured page
+2) Click product comparison in the success message displayed","Products to add:
+Iphone, MacBook ",The User should be taken to product comparison page and the details of the two products is displayed side by side,The User is taken to product comparison page and the details of the two products is displayed side by side,Pass
+TC_PC_17,TS_013 (Product Compare),Verify adding three products to Product comparison,1) Open the site in any supported browser and login,"1) Click compare this product button for three products from HomePage featured page
+2) Click product comparison in the success message displayed","Products to add:
+Iphone, MacBook , Apple Cinema 30""",The User should be taken to product comparison page and the details of the three products is displayed side by side,The User is taken to product comparison page and the details of the three products is displayed side by side,Pass
+TC_PC_18,TS_013 (Product Compare),Verify adding four products to Product comparison,1) Open the site in any supported browser and login,"1) Click compare this product button for four products from HomePage featured page
+2) Click product comparison in the success message displayed","Products to add:
+Iphone, MacBook , Apple Cinema 30"", Canon EOS 5D",The User should be taken to product comparison page and the details of the four products is displayed side by side,The User is taken to product comparison page and the details of the four products is displayed side by side,Pass
+TC_PC_19,TS_013 (Product Compare),Verify no more than four products to product comparison,1) Open the site in any supported browser and login,"1) Select desktop category option and click show all desktop button
+2) Click compare this product button for four products from the Categories result page (ER-01)
+3) Click compare this product button for some product again (ER-01)
+4) Click product comparison in the success message displayed (ER-02)",Not Applicable,"1) A success message should be shown and the product is added to Product Comparison page
+2) The User should be taken to product comparison page and the details of the latest added four products should be displayed side by side","1) A success message is shown and the product is added to Product Comparison page
+2) The User should be taken to product comparison page and the details of the latest added four products is displayed side by side",Pass
+TC_PC_20,TS_013 (Product Compare),Verify Success message is displayed for adding products to products comparison page,1) Open the site in any supported browser and login,1) Click compare this product button for a product from HomePage featured page,Not Applicable,1) A success message should be shown as 'Success: You have added product to your product comparison!'and the product should be added to Product Comparison page,1) A success message is shown as 'Success: You have added product to your product comparison!'and the product is added to Product Comparison page,Pass
+TC_PC_21,TS_013 (Product Compare),Verify adding same products twice to product comparison page adds product only once,1) Open the site in any supported browser and login,"1) Click compare this product button for same products twice from HomePage featured page
+2) Click product comparison in the success message displayed",Not Applicable,The User should be taken to product comparison page and the details of only one product is shown,The User is taken to product comparison page and the details of only one product is shown,Pass
+TC_PC_22,TS_013 (Product Compare),Verifying removing products from product comparison page,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed
+3) Click remove button in a product listing",Not Applicable,The product should be removed from the product comparison page,The product is removed from the product comparison page,Pass
+TC_PC_23,TS_013 (Product Compare),Verifying add to cart from product comparison page,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed
+3) Click add to cart in a product listing",Not Applicable,The product should be added to the shopping cart,The product is added to the shopping cart,Pass
+TC_PC_24,TS_013 (Product Compare),Verifying continue button from empty product comparison page,1) Open the site in any supported browser and login,"1) Select a category option and click a subcategory option
+2) Click product compare button
+3) Click continue button",Not Applicable,The User should be taken to the Home Page,The User is taken to the Home Page,Pass
+TC_PC_25,TS_013 (Product Compare),Verify going to product page from Product comparison page,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed
+3) Click product name from a product listing",Not Applicable,The User should be taken to the clicked product page,The User is taken to the clicked product page,Pass
+TC_PC_26,TS_013 (Product Compare),Verify the breadcrumb of the product comparison page,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed",Not Applicable,THe breadcrumb should be displayed and working,THe breadcrumb is displayed and working,Pass
+TC_PC_27,TS_013 (Product Compare),Verify the labels are correct,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed",Not Applicable,The labels should be according to requirements,The labels are according to requirements,Pass
+TC_PC_28,TS_013 (Product Compare),Verify the all the fields are present,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed",Not Applicable,The fields should be according to requirements,The fields are according to requirements,Pass
+TC_PC_29,TS_013 (Product Compare),Verify the all the place holders are present,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed",Not Applicable,The placeholders should be according to requirements,The placeholders are according to requirements,Pass
+TC_PC_30,TS_013 (Product Compare),Verify the Product Comparison Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Click compare this product button for some products from HomePage featured page
+2) Click product comparison in the success message displayed
+3) Repeat from Step-1 for other environments",Not Applicable,The Product Comparison page should work in all supported environments,The Product Comparison page works in all supported environments,Pass

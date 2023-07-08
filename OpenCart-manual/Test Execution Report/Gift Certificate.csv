@@ -1,0 +1,106 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_GC_01,"TS_027 
+(Gift Certificate)",Verify navigating to Gift Certificates Page,1) Open the site in any supported browser and login,1) Click Gift Certificates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Gift Certificates page,The User is taken to Gift Certificates page,Pass
+TC_GC_02,"TS_027 
+(Gift Certificate)",Verify generating Gift Certificate by filling mandatory fields,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the mandatory fields with valid values and toggle 'I understand that gift certificates are non-refundable' button
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""","The User is taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""",Pass
+TC_GC_03,"TS_027 
+(Gift Certificate)",Verify generating Gift Certificate by filling all fields,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the all fields with valid values and toggle 'I understand that gift certificates are non-refundable' button
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""","The User is taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""",Pass
+TC_GC_04,"TS_027 
+(Gift Certificate)",Verify the continue button in Success page,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the all fields with valid values and toggle 'I understand that gift certificates are non-refundable' button
+3) Click Continue
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to Shopping Cart Page,The User is taken to Shopping Cart Page,Pass
+TC_GC_05,"TS_027 
+(Gift Certificate)",Verify the Email field in the Gift Certificate page for invalid values,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the recipient and user email with invalid values
+3) Click Continue
+4) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo
+
+Test Mail:
+1) test
+2) test@
+3) test@mail
+4) test@mail.","The email field should show the warning ""E-Mail Address does not appear to be valid!""","The email field shows the warning ""E-Mail Address does not appear to be valid!""",Pass
+TC_GC_06,"TS_027 
+(Gift Certificate)",Verify the recipient recieves mail with the Gift Certificate details,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the recipient and user email with invalid values
+3) Click Continue
+4) Open the mail inbox page of recipient mail ID (ER-01)
+4) Open the mail recieved from Opencart (ER-01)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The recipient recieves mails from OpenCart
+2) The mail should contain details on how to use Gift Certificate and Gift Certificate Id  ",Mail is not recived in Mail ID,Fail
+TC_GC_07,"TS_027 
+(Gift Certificate)",Verify setting the Gift Certifcate theme as  Birthday,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the mandatory fields with valid values and toggle Gift Certificate theme as ""Birthday""
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""","The User is taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""",Pass
+TC_GC_08,"TS_027 
+(Gift Certificate)",Verify setting the Gift Certifcate theme as  Christmas,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the mandatory fields with valid values and toggle Gift Certificate theme as ""Christmas""
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""","The User is taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""",Pass
+TC_GC_09,"TS_027 
+(Gift Certificate)",Verify setting the Gift Certifcate theme as  General,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the mandatory fields with valid values and toggle Gift Certificate theme as ""General""
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should be taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""","The User is taken to success page with text saying ""Thank you for purchasing a gift certificate! Once you have completed your order your gift certificate recipient will be sent an e-mail with details how to redeem their gift certificate.""",Pass
+TC_GC_10,"TS_027 
+(Gift Certificate)",Verify the breadcrumb of Gift Certificate page,1) Open the site in any supported browser and login,1) Click Gift Certificates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Breadcrumb should be displayed and working,The Breadcrumb is displayed and working,Pass
+TC_GC_11,"TS_027 
+(Gift Certificate)",Verify the breadcrumb of Purchase Gift Certificate page,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Fill the mandatory fields with valid values
+3) Click Continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Breadcrumb should be displayed and working,The Breadcrumb is displayed and working,Pass
+TC_GC_12,"TS_027 
+(Gift Certificate)",Verify the all the fields are present,1) Open the site in any supported browser and login,1) Click Gift Certificates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The fields should be according to requirements in all the pages,The fields are according to requirements in all the pages,Pass
+TC_GC_13,"TS_027 
+(Gift Certificate)",Verify the all the place holders are present,1) Open the site in any supported browser and login,1) Click Gift Certificates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The placeholders should be according to requirements in all the pages,The placeholders are according to requirements in all the pages,Pass
+TC_GC_14,"TS_027 
+(Gift Certificate)",Verify the labels are correct,1) Open the site in any supported browser and login,1) Click Gift Certificates in footer under Extras label,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The labels should be according to requirements in all the pages,The labels are according to requirements in all the pages,Pass
+TC_GC_15,"TS_027 
+(Gift Certificate)",Verify the Gift Certificates Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Click Gift Certificates in footer under Extras label
+2) Repeat from Step-1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Gift Certificates Page should work in all supported environments,The Gift Certificates Page works in all supported environments,Pass

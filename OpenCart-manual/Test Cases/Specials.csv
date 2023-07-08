@@ -1,0 +1,30 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_SP_01,TS_028 (Specials),Verify way to navigate to specials page from footer link,1) Open the site in any supported browser,1) Click the Specials in footer under extras label,Not Applicable,The User should be taken to Specials page,,
+TC_SP_02,TS_028 (Specials),Verify only the products whose prices are reduced appear in specials page,1) Open the site in any supported browser,1) Click the Specials in footer under extras label,Not Applicable,The products listed should have prices reduced than original price,,
+TC_SP_03,TS_028 (Specials),Verify sorting the products in specials page,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click sort by dropdown and select an option
+3) Repeat step 2 for all dropdown options",Not Applicable,The products should be sorted according to selected sort option,,
+TC_SP_04,TS_028 (Specials),Verify arranging the products in list and grid in specials page,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click List (ER-01)
+3) Click Grid (ER-02)",Not Applicable,"1) The products should be arranged in List format
+2) The products should be  arranged in Grid format",,
+TC_SP_05,TS_028 (Specials),Verify the show number of listings functionality,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click the dropdown in Show section and select an option",Not Applicable,The number of Product listings should be listed properly according to the selected option,,
+TC_SP_06,TS_028 (Specials),Verify the product compare button functionality,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click Product compare button",Not Applicable,The User should be taken to Product compare page,,
+TC_SP_07,TS_028 (Specials),Verify adding to cart from Specials page,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click add to cart button in any product",Not Applicable,The product should be added to cart and success message should be shown,,
+TC_SP_08,TS_028 (Specials),Verify adding to WishList from Specials page,1) Open the site in any supported browser and login,"1) Click the Specials in footer under extras label
+2) Click add to Wishlist button in any product","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The product should be added to Wish List and success message should be shown,,
+TC_SP_09,TS_028 (Specials),Verify adding to Product compare from Specials page,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click add to Product compare button in any product",Not Applicable,The product should be added to product compare page and success message should be shown,,
+TC_SP_10,TS_028 (Specials),Verify going to product page from specials by clicking product name,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click a product name",Not Applicable,The User should be taken to the product page of clicked product,,
+TC_SP_11,TS_028 (Specials),Verify going to product page from specials by clicking product image,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Click a product image",Not Applicable,The User should be taken to the product page of clicked product,,
+TC_SP_12,TS_028 (Specials),Verify the breadcrumb of specials page,1) Open the site in any supported browser,1) Click the Specials in footer under extras label,Not Applicable,The breadcrumb should be displayed and working,,
+TC_SP_13,TS_028 (Specials),Verify the Specials Page functionality in all the supported environments,1) Open the site in any supported browser,"1) Click the Specials in footer under extras label
+2) Repeat from Step-1 for other environments",Not Applicable,The Specials Page should work in all supported environments,,

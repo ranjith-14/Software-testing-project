@@ -1,0 +1,72 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_WL_01,TS_005 (Wish List),Verify the product is properly added to Wishlist when added from Featured section HomePage,1) Open the site in any supported browser and login,"1) Click the add to wishlist (heart) button on iphone (ER-01)
+2) Open WishList page by clicking WishList in header (ER-02)","Product to add:
+Iphone","1) A Success message 'You have added the Iphone to your Wishlist' should be displayed
+2) The Iphone should be added to wishlist",,
+TC_WL_02,TS_005 (Wish List),Verify the product is properly added to Wishlist when added from Product Page,1) Open the site in any supported browser and login,"1) Select MacBook in HomePage
+2) Click the add to wishlist (heart) button on product page (ER-01)
+3) Open WishList page by clicking WishList in header (ER-02)","Product to add:
+Macbook","1) A Success message 'You have added the MacBook to your Wishlist' should be displayed
+2) The MacBook should be added to wishlist",,
+TC_WL_03,TS_005 (Wish List),Verify the ability to add to WishList in Search results Page in Grid Layout,1) Open the site in any supported browser and login,"1) Search MacBook in search field
+2) Select layout as Grid
+3) Click the add to wishlist (heart) button (ER-01)
+4) Open WishList page by clicking WishList in header (ER-02)","Search term:
+MacBook Air","1) A Success message 'You have added the MacBook to your Wishlist' should be displayed
+2) The MacBook Air should be added to wishlist",,
+TC_WL_04,TS_005 (Wish List),Verify the ability to add to WishList in Search results Page in List Layout,1) Open the site in any supported browser and login,"1) Search MacBook in search field
+2) Select layout as List
+3) Click the add to wishlist (heart) button (ER-01)
+4) Open WishList page by clicking WishList in header (ER-02)","Search term:
+MacBook Pro","1) A Success message 'You have added the MacBook to your Wishlist' should be displayed
+2) The MacBook Pro should be added to wishlist",,
+TC_WL_05,TS_005 (Wish List),Verify the number of items in Wishlist is shown in header,1) Open the site in any supported browser and login,"1) Add two items to WishList and observe (ER-01)
+2) Add one more item to WishList and observe (ER-02)","Products to add:
+Iphone, Macbook , Canon EOS 5D","1) Two should be shown in header WishList Button
+2) Three should be shown in header WishList Button",,
+TC_WL_06,TS_005 (Wish List),Verify the items can be removed from WishList page,1) Open the site in any supported browser and login,"1) Add some items to WishList
+2) Click WishList header button
+3) Click remove button in WishList page for a product","Products to add:
+Iphone, Macbook , Canon EOS 5D",The product should be removed and a message should be shown,,
+TC_WL_07,TS_005 (Wish List),Verify MyWishList Page when no products are added,1) Open the site in any supported browser and login,1) Open WishList Page,Not Applicable, 'Your wish list is empty.' should be shown,,
+TC_WL_08,TS_005 (Wish List),Verify not adding duplicate products into wish list ,1) Open the site in any supported browser and login,"1) Add a product to wishlist from featured section in homepage
+2) Go to product page of the same product
+3) Click add to wishlist button
+4) Open WishList page","Product to add:
+Iphone",The product should be added only once to Wish List page,,
+TC_WL_09,TS_005 (Wish List),Verify adding product to cart from WishList Page,1) Open the site in any supported browser and login,"1) Add a product to WishList
+2) Open Wish List Page
+3) Click on add to cart on a product","Product to add:
+Iphone",The product should be added to cart,,
+TC_WL_10,TS_005 (Wish List),Verify the Breadcrumb in WishList Page,1) Open the site in any supported browser and login,1) Open Wish List Page,Not Applicable,A proper breadcrumb should displayed and working,,
+TC_WL_11,TS_005 (Wish List),Verify the ability to go to WishList by clicking the link in success message,1) Open the site in any supported browser and login,"1) Add a product to WishList
+2) Click the WishList link on the message appeared when adding a product to wishlist","Product to add:
+Iphone",The user should be taken to WishList,,
+TC_WL_12,TS_005 (Wish List),Verify the ability to go to WishList by clicking on the WishList Header,1) Open the site in any supported browser and login,1) Click the WishList button in header,Not Applicable,The user should be taken to WishList,,
+TC_WL_13,TS_005 (Wish List),Verify the ability to go to WishList by clicking on the WishList Footer,1) Open the site in any supported browser and login,1) Click the WishList button in Footer,Not Applicable,The user should be taken to WishList,,
+TC_WL_14,TS_005 (Wish List),Verify the ability to go to WishList by clicking the right column of options,1) Open the site in any supported browser and login,"1) Click My Account dropdown and My Account button in the dropdown
+2) Click WishList in the right column of options",Not Applicable,The user should be taken to WishList,,
+TC_WL_15,TS_005 (Wish List),Verify the ability to go to WishList by clicking the link in My account Page,1) Open the site in any supported browser and login,"1) Click My Account dropdown and My Account button in the dropdown
+2) Click 'Modify your wish list' in My account section",Not Applicable,The user should be taken to WishList,,
+TC_WL_16,TS_005 (Wish List),Verify the ability to go to Product page by clicking the link in success message,1) Open the site in any supported browser and login,"1) Add a product to WishList
+2) Click the product name on the message appeared when adding a product to wishlist","Product to add:
+Iphone",The user should be taken to Product page of added product,,
+TC_WL_17,TS_005 (Wish List),Verify the ability to navigate to product page from WishList by clicking name of the product,1) Open the site in any supported browser and login,"1) Add a product to WishList
+2) Open WishList page
+3) Click the product name","Product to add:
+Iphone",The user should be taken to Product page of the product,,
+TC_WL_18,TS_005 (Wish List),Verify the ability to navigate to product page from WishList by clicking image of the product,1) Open the site in any supported browser and login,"1) Add a product to WishList
+2) Open WishList page
+3) Click the product image","Product to add:
+Iphone",The user should be taken to Product page of the product,,
+TC_WL_19,TS_005 (Wish List),Verify the prices are maintained correctly on wishlist and product page,1) Open the site in any supported browser and login,"1) Add a product to WishList from Homepage
+2) Open the product page
+3) Open WishList page","Product to add:
+Iphone",The Prices should be same on all the pages,,
+TC_WL_20,TS_005 (Wish List),Verify the function of continue button in WishList,1) Open the site in any supported browser and login,"1) Open WishList page
+2) Click the Continue button",Not Applicable,The User should be navigated to My Account Page,,
+TC_WL_21,TS_005 (Wish List),Verify the UI of WishList Page,1) Open the site in any supported browser and login,1) Open Wish List Page,Not Applicable,The WishList Page UI should be according to requirements,,
+TC_WL_22,TS_005 (Wish List),Verify Multiple items can be added to WishList,1) Open the site in any supported browser and login,"1) Add multiple products to WishList
+2) Open WishList Page",Not Applicable,All the products that are added to Wishlist must be shown inspite of how many products are added,,
+TC_WL_23,TS_005 (Wish List),Verify the Functionality of WishList Page in any supported environment,1) Open the site in any supported browser and login,"1) Open Wish List Page
+2) Repeat from step-1 for other environments",Not Applicable,The WishList page should work in all supported environments,,

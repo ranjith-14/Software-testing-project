@@ -1,0 +1,129 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_LF_01,TS_001 (Login),Verify Email ID field accepts valid values,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter valid value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (Validate ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) No error should be shown and logged in",,
+TC_LF_02,TS_001 (Login),Verify the Email ID field does not accept empty value,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Do not enter value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (Validate ER-03)","Mail ID:
+
+Password:
+Dattebayo","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) An error message ""No match for E-Mail Address and/or Password"" must be shown",,
+TC_LF_03,TS_001 (Login),Verify the email field does not accept invalid email ID's,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter invalid Email address
+4) Enter valid password in Password Field
+5) Click Login (Validate ER-03)","Mail ID:
+test
+test@
+test@mail
+test@mail.","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) An error message ""No match for E-Mail Address and/or Password"" must be shown",,
+TC_LF_04,TS_001 (Login),Verify the Email ID Field accepts and trims leading and trailing spaces,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown
+2) Click on Login
+3) Enter space as first value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login","Mail ID:
+   naruto@leafvillage.com   
+Password:
+Dattebayo",No error should be shown and logged in,,
+TC_LF_05,TS_001 (Login),Verify the Email ID Field does not accept accept only spaces as values,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter multiple spaces as value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Login Page should be visible
+3) An error message ""No match for E-Mail Address and/or Password"" must be shown",,
+TC_LF_06,TS_001 (Login),Verify the Password fileld accepts only valid values,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter valid Email in Mail ID Field
+4) Enter valid password in Password Field
+5) Click Login (Validate ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) No error should be shown and logged in",,
+TC_LF_07,TS_001 (Login),Verify the Password fields does not accept blank values,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter valid Email in Mail ID Field
+4) Enter blank value in Password Field
+5) Click Login (Validate ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) An error message ""No match for E-Mail Address and/or Password"" must be shown",,
+TC_LF_08,TS_001 (Login),Verify the Password fields accepts and trims leading and trailing spaces,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown
+2) Click on Login
+3) Enter valid Email in Mail ID Field
+4) Enter valid password with first space in Password Field
+5) Click Login","Mail ID:
+naruto@leafvillage.com
+Password:
+  Dattebayo   ",No error should be shown and logged in,,
+TC_LF_09,TS_001 (Login),Verify the Password field is toggled to invisibilty,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (Validate ER-01)
+2) Click on Login (Validate ER-02)
+3) Enter valid Email in Mail ID Field
+4) Enter valid password (Validate ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The Welcome page should be visible
+2) The Login Page should be visible
+3) The password field should be toggled to invisibilty and only dots are shown",,
+TC_LF_10,TS_001 (Login),Verify the Forgotten Password Link works,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown and Click Login (ER-01, ER-02)
+2) Click Forgotten Password link (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Login Page should be visible
+3) The forgotten password page should be opened",,
+TC_LF_11,TS_001 (Login),Verify the labels are correct,1) Open the site in any supported browser,"1) Click on Login in 'My Account' dropdown (Validate ER-02)
+2) Verify the labels (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Log In page should be visible
+3) The labels should be according to requirements",,
+TC_LF_12,TS_001 (Login),Verify the all the fields are present,1) Open the site in any supported browser,"1) Click on Login in 'My Account' dropdown (Validate ER-02)
+2) Verify the fields (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Log In page should be visible
+3) The fields should be according to requirements",,
+TC_LF_13,TS_001 (Login),Verify the all the place holders are present,1) Open the site in any supported browser,"1) Click on Login in 'My Account' dropdown (Validate ER-02)
+2) Verify the placeholders (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Log In page should be visible
+3) The placeholders should be according to requirements",,
+TC_LF_14,TS_001 (Login),Verify the log in is still there after closing and reopening browser,1) Open the site in any supported browser,"1) Login into the browser (Validate ER-02)
+2) Close the browser
+3) Open the browser and open site (Validate ER-03)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","1) The Welcome page should be visible
+2) The Log In page should be visible
+3) The User should be still logged in",,
+TC_LF_15,TS_001 (Login),Verify the ability to navigate to login page by different ways ,1) Open the site in any supported browser,"1) Clicking Login in My Account Drop Down (Validate ER-01)
+2) Clicking Login in right column of options (Validate ER-01)
+3) Clicking login page in 'If you already have an account with us, please login at the login page.' section Register page (Validate ER-01)",Not Applicable,1) The Login page should be opened,,
+TC_LF_16,TS_001 (Login),Verify the ability to navigate different pages from Login Page without logging in,1) Open the site in any supported browser,"1) Click Login in My Account dropdown
+2) Click continue in new customer section (Validate ER-01)
+3) Click the Register button in right column (Validate ER-02)
+4) Click the Forgotten Password button in right column (Validate ER-03)
+5) Click the other buttons except Register and Forgotten Password button (Validate ER-04)",Not Applicable,"1) User should be navigated to Register page
+2) User should be navigated to Register page
+3) User should be navigated to Forgotten Password page
+4) User should be navigated to Login Page again",,
+TC_LF_17,TS_001 (Login),Verify the ability to login using only keyboard,1) Open the site in any supported browser,"1) Click Login in My Account dropdown
+2) Press Tab keyboard key until the control comes to the E-Mail Address text field and enter the valid email address
+3) Press Tab keyboard key to move the control to Password text field and enter the valid password
+4) Press Tab keyboard key until the control comes 'Login' button and press 'Enter' key to submit (Validate ER-1)","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",1) The User should be Logged in,,
+TC_LF_18,TS_001 (Login),Verify the Login Page functionality in all the supported environments,1) Open the site in any supported browser,"1) Click Login in My Account dropdown (Validate ER-01)
+2) Switch Environments
+3) Repeat from Step-1 for other environments",Not Applicable,1) The Login page should work in all supported environments,,

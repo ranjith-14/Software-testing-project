@@ -1,0 +1,170 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_RG_01,TS_004 (Register),Verify Register by providing mandatory fields,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter valid values in mandatory fields
+3) Accept privacy policy
+4) Click Continue (ER-01)
+5) Click Continue in Success Page (ER-02)","First Name: Naruto
+Last Name: Uzumaki
+E-Mail: naruto@leafvillage.com
+Password: Dattebayo","1) The user should be taken to account success page
+2) The user should be taken to My Account page",,
+TC_RG_02,TS_004 (Register),Verify not registering by not providing any values,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Do not enter values in mandatory fields
+3) Click Continue (ER-01)",Not Applicable,"Below error messages should be shown:
+For First Name field, the warning message 'First Name must be between 1 and 32 characters!' should be displayed
+For Last Name field, the warning message 'Last Name must be between 1 and 32 characters!' should be displayed
+For E-Mail field, the warning message 'E-Mail Address does not appear to be valid!' should be displayed
+For Password field, the warning message 'Password must be between 4 and 20 characters!' should be displayed
+For Privacy Policy field, the warning message 'Warning: You must agree to the Privacy Policy!' should be displayed on the top",,
+TC_RG_03,TS_004 (Register),Verify the First Name Field for valid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into First Name field one by one
+3) Click Continue (ER-01)","1) n
+2) name
+3) name must be below 32 character
+4) name must be below 32 characters",1) No errors should be shown under the First Name Field,,
+TC_RG_04,TS_004 (Register),Verify the First Name Field for invalid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into First Name field one by one
+3) Click Continue (ER-01)",1) name must be below 32 characterss,A Warning message 'First Name must be between 1 and 32 characters!' should be shown under First Name Field,,
+TC_RG_05,TS_004 (Register),Verify the Last Name Field for valid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Last Name field one by one
+3) Click Continue (ER-01)","1) n
+2) name
+3) name must be below 32 character
+4) name must be below 32 characters",1) No errors should be shown under the Last Name Field,,
+TC_RG_06,TS_004 (Register),Verify the Last Name Field for invalid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Last Name field one by one
+3) Click Continue (ER-01)",1) name must be below 32 characterss,1) A Warning message 'Last Name must be between 1 and 32 characters!' should be shown under Last Name Field,,
+TC_RG_07,TS_004 (Register),Verify the Email Field for Invalid values,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Email ID field one by one
+3) Click Continue (ER-01)","1) test
+2) test@
+3) test@mail
+4) test@mail.",1) Various Warning messages should be shown under Email ID field,,
+TC_RG_08,TS_004 (Register),Verify Email Field for valid values,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Email ID field one by one
+3) Click Continue (ER-01)","1) test@mail.com
+2) newtest@gmail.com",1) No error messages should be shown under Email ID field,,
+TC_RG_09,TS_004 (Register),Verify the Email ID Field does not accept spaces as first value,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (ER-01)
+2) Click on Register (ER-02)
+3) Enter space as first value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (ER-03)", test@mail.com,"1) The Welcome page should be visible
+2) The Register Page should be visible
+3) An error message ""E-Mail Address does not appear to be valid!"" must be shown",,
+TC_RG_10,TS_004 (Register),Verify the Email ID Field does not accept accept only spaces as values,1) Open the site in any supported browser,"1) Click on 'My Account' dropdown (ER-01)
+2) Click on Register (ER-02)
+3) Enter multiple spaces as value in Email ID Field
+4) Enter valid password in Password Field
+5) Click Login (ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Register Page should be visible
+3) An error message ""E-Mail Address does not appear to be valid!"" must be shown",,
+TC_RG_11,TS_004 (Register),Verify no account is created for existing Email ID,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter valid values in mandatory fields except Email
+3) Enter existing Email ID in Email Field
+4) Accept privacy policy
+5) Click Continue (ER-01)","naruto@leafvillage.com
+",An error message 'Email ID is already registered' shoiuld be shown,,
+TC_RG_12,TS_004 (Register),Verify no account is created not accepting privacy policy,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter valid values in mandatory fields
+3) Click Continue (ER-01)","First Name: Boruto
+Last Name: Uzumaki
+E-Mail: boruto@leafvillage.com
+Password: Dattebayo",A Warning 'You must agree to the Privacy Policy!' should be shown,,
+TC_RG_13,TS_004 (Register),Verify the Password Field for valid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Password field one by one
+3) Click Continue (ER-01)","1) pass
+2) passw
+3) password
+4) passwordisessential
+5) passwordisessentials",1) No errors should be shown under the Password Field,,
+TC_RG_14,TS_004 (Register),Verify the Password Field for invalid minimum and maximum number of characters,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the values from Test Data into Password field one by one
+3) Click Continue (ER-01)","1) pas
+2) passwordisessentials2",A Warning message 'Password must be between 4 and 20 characters!' should be shown under Password Field,,
+TC_RG_15,TS_004 (Register),Verify the Password Field does not accept spaces as First value,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter first value as space in Password field
+3) Click Continue (ER-01)",Not Applicable,A Warning message 'Password is invalid' should be shown under Password Field,,
+TC_RG_16,TS_004 (Register),Verify the Password Field does not spaces as Only value,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all value as spaces in Password field
+3) Click Continue (ER-01)",Not Applicable,A Warning message 'Password is invalid' should be shown under Password Field,,
+TC_RG_17,TS_004 (Register),Validate the Privacy Policy Field button is not checked by default,1) Open the site in any supported browser,1) Click Register from My Account dropdown,Not Applicable,Privacy Policy Field should not be checked by default,,
+TC_RG_18,TS_004 (Register),Validate registering an option when Newsletter option is activated,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the mandatory fields with valid values
+3) Click newsletter and Privacy Policy button
+4) Click Continue (ER-01)
+5) Click Continue in Account Success Page (ER-02)
+6) Click on 'Subscribe/unsubscribe to newsletter' option (ER-3)","First Name: Boruto
+Last Name: Uzumaki
+E-Mail: boruto@leafvillage.com
+Password: Dattebayo","1) User should be navigated to Account Success Page
+2) User should be navigated to My Account Page
+3) The Newsletter button should be activated",,
+TC_RG_19,TS_004 (Register),Validate registering an option when Newsletter option is not activated,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter all the mandatory fields with valid values
+3) Privacy Policy button
+4) Click Continue (ER-01)
+5) Click Continue in Account Success Page (ER-02)
+6) Click on 'Subscribe/unsubscribe to newsletter' option (ER-3)","First Name: Kushina
+Last Name: Uzumaki
+E-Mail: kushina@leafvillage.com
+Password: Dattebano","1) User should be navigated to Account Success Page
+2) User should be navigated to My Account Page
+3) The Newsletter button should not be activated",,
+TC_RG_20,TS_004 (Register),Verify User is automatically logged in after registering,1) Open the site in any supported browser,"1) Open the site in any supported browser
+2) Click Register from My Account dropdown
+3) Enter valid values in mandatory fields
+4) Accept privacy policy
+5) Click Continue (ER-01)
+6) Click Continue in Success Page (ER-02)","First Name: Minalto
+Last Name: Namikaze
+E-Mail: minato@leafvillage.com
+Password: Rasengan","1) The user should be taken to account success page
+2) The user should be taken to My Account page",,
+TC_RG_21,TS_004 (Register),Verify clicking back button does not log out user,1) Open the site in any supported browser,"1) Click Register from My Account dropdown
+2) Enter valid values in mandatory fields
+3) Accept privacy policy
+4) Click Continue (ER-01)
+5) Click Continue in Success Page (ER-02)
+6) Click Back button (ER-03)","First Name: Gaara
+Last Name: Sand
+E-Mail: gaara@sandvillage.com
+Password: Rasengan","1) The user should be taken to account success page
+2) The user should be taken to My Account page
+3) The user should not be logged out",,
+TC_RG_22,TS_004 (Register),Verify the labels are correct,1) Open the site in any supported browser,"1) Open the site in any supported browser (Validate ER-01)
+2) Click on Register in 'My Account' dropdown (Validate ER-02)
+3) Verify the labels (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Register page should be visible
+3) The labels should according to requirements",,
+TC_RG_23,TS_004 (Register),Verify all the fields are present,1) Open the site in any supported browser,"1) Click on Register in 'My Account' dropdown (Validate ER-02)
+2) Verify the fields (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Register page should be visible
+3) The fields should be according to requirements",,
+TC_RG_24,TS_004 (Register),Verify all the place holders are present,1) Open the site in any supported browser,"1) Click on Register in 'My Account' dropdown (Validate ER-02)
+2) Verify the placeholders (Validate ER-03)",Not Applicable,"1) The Welcome page should be visible
+2) The Register page should be visible
+3) The placeholders should be according to requirements",,
+TC_RG_25,TS_004 (Register),Verify the ability to navigate to Register page by different ways ,1) Open the site in any supported browser,"1) Clicking Register in My Account Drop Down (Validate ER-01)
+2) Clicking Register in right column of options (Validate ER-01)
+3) Clicking Continue in New customer section of Login Page (Validate ER-01)",Not Applicable,1) The Register page should be opened,,
+TC_RG_26,TS_004 (Register),Verify the ability to register using only keyboard,1) Open the site in any supported browser,"1) Click Register in My Account dropdown
+2) Press Tab keyboard key until the control comes to the First Name text field and enter the valid First name
+3) Press Tab keyboard key to move the control to Last Name text field and enter the valid Last Name
+4) Press Tab keyboard key to move the control to Email ID text field and enter the valid Email ID
+5) Press Tab keyboard key to move the control to Password text field and enter the valid Password
+6) Press Tab keyboard key to move the control to Privacy Policy text and click Spacebar
+7) Press Tab keyboard key until the control comes 'Continue' button and press 'Enter' key to submit (Validate ER-1)","First Name: Temari
+Last Name: Sand
+E-Mail: temari@sandvillage.com
+Password: windfan",1) The User should be navigated to Account Success Page,,
+TC_RG_27,TS_004 (Register),Verify all the mandatory fields are marked with red *,1) Open the site in any supported browser,1) Click Register in My Account dropdown,Not Applicable,All the mandatory fields should be marked with red *,,
+TC_RG_28,TS_004 (Register),Verify the ability to navigate different pages from Register Page without logging in,1) Open the site in any supported browser,"1) Click Register in My Account dropdown
+2) Click on login page in 'If you already have an account with us, please login at the login page.' section (ER-01) 
+3) Click the Login button in right column (ER-02)
+4) Click the Forgotten Password button in right column (ER-03)
+5) Click the other buttons except Register and Forgotten Password button (ER-04)",Not Applicable,"1) User should be navigated to Login page
+2) User should be navigated to Login page
+3) User should be navigated to Forgotten Password page
+4) User should be navigated to Login Page again",,
+TC_RG_29,TS_004 (Register),Verify the Register Page functionality in all the supported environments,1) Open the site in any supported browser,"1) Click Register in My Account dropdown (ER-01)
+2) Repeat from Step-1 for other environments",Not Applicable,1) The Register page should work in all supported environments,,

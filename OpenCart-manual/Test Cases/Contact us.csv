@@ -1,0 +1,111 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_CU_01,TS_025 (Contact Us),Verify navigating to Contact us page from footer link ,1) Open the site in any supported browser and login,1) Click Contact us under Customer Services Label in footer,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Contact Us page,,
+TC_CU_02,TS_025 (Contact Us),Verify navigating to Contact us page from header icon button ,1) Open the site in any supported browser and login,1) Click the Phone icon button in header,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Contact Us page,,
+TC_CU_03,TS_025 (Contact Us),Verify navigating to Contact us page from store owner button in order success page ,1) Open the site in any supported browser and login,"1) Place an order
+2) Click store owner link","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be navigated to Contact Us page,,
+TC_CU_04,TS_025 (Contact Us),Verify Contact us by providing all the fields,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill all the necessary values
+3) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","The User should shown text ""Your enquiry has been successfully sent to the store owner!"" and navigated to success page",,
+TC_CU_05,TS_025 (Contact Us),Verify Contact us by providing no fields,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Do not fill any values
+3) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",Proper field level warnings should be shown,,
+TC_CU_06,TS_025 (Contact Us),Verify Contact us by providing empty spaces,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill all values with only spaces
+3) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",Proper field level warnings should be shown,,
+TC_CU_07,TS_025 (Contact Us),Verify Contact us trims the leading and trailing spaces,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill all values with leading and trailing spaces
+3) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The enquiry should be sent with the spaces trimmed,,
+TC_CU_08,TS_025 (Contact Us),Verify Contact us Email field for invalid values,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill name field and enquiry with valid values
+3) Fill Email with invalid values
+4) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo
+
+Test Addresses:
+1) t
+2) test
+3) test@
+4) test@mail
+5) test@mail.","A warning under Name ""E-Mail Address does not appear to be valid!"" should be shown",,
+TC_CU_09,TS_025 (Contact Us),Verify name field for minimum and maximum invalid values,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill Email field and enquiry with valid values
+3) Fill Name with invalid values
+4) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo
+
+Test Names:
+1) n
+2) na
+3) name must be 32 characters goodss","A warning under Name ""Name must be between 3 and 32 characters!"" should be shown",,
+TC_CU_10,TS_025 (Contact Us),Verify name field for minimum and maximum valid values,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill Email field and enquiry with valid values
+3) Fill Name with invalid values
+4) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo
+
+Test Names:
+1) name
+2) name must be 32 characters goods
+3) name must be 32 characters good",No warning should be shown under name field,,
+TC_CU_11,TS_025 (Contact Us),Verify enquiry field for minimum and maximum invalid values,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill Email field and Name with valid values
+3) Fill Enquiry with invalid values
+4) Click Submit","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo","A warning under enquiry ""name must be 32 characters goods"" should be shown",,
+TC_CU_12,TS_025 (Contact Us),Verify Continue button in Contact us success page,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Fill all the necessary values
+3) Click Submit
+4) Click continue","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The User should be taken to HomePage,,
+TC_CU_13,TS_025 (Contact Us),Verify the breadcrumb in Contact Us,1) Open the site in any supported browser and login,1) Click the Phone icon button in header,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The breadcrumb should be displayed and working,,
+TC_CU_14,TS_025 (Contact Us),Verify the all the fields are present,1) Open the site in any supported browser and login,1) Click the Phone icon button in header,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The fields should be according to requirements,,
+TC_CU_15,TS_025 (Contact Us),Verify the all the place holders are present,1) Open the site in any supported browser and login,1) Click the Phone icon button in header,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The placeholders should be according to requirements,,
+TC_CU_16,TS_025 (Contact Us),Verify the labels are correct,1) Open the site in any supported browser and login,1) Click the Phone icon button in header,"Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The labels should be according to requirements,,
+TC_CU_17,TS_025 (Contact Us),Verify the Contact Us Page functionality in all the supported environments,1) Open the site in any supported browser and login,"1) Click the Phone icon button in header
+2) Repeat from Step-1 for other environments","Mail ID:
+naruto@leafvillage.com
+Password:
+Dattebayo",The Contact Us Page should work in all supported environments,,
