@@ -1,0 +1,93 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_LG_01,TS_01 (Login),Validate navigating to Login panel from HomePage,"1) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click Sign in dropdown / Login Button in the header,,The Login panel should open,The Login panel is opened,Pass
+TC_LG_02,TS_01 (Login),Validate navigating to Login panel from Sign Up,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown in the header and click Sign up
+2) Click ""Existing User? Log in""",,The Login panel should open,The Login panel is opened,Pass
+TC_LG_03,TS_01 (Login),Validate the Email/Mobile number field for valid existing Mobile number,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number
+3) Click Request OTP",Valid Existing Mobile Number,The User should be taken to OTP page and OTP should be sent to the mobile number,The User is taken to OTP page and OTP is sent to the mobile number,Pass
+TC_LG_04,TS_01 (Login),Validate OTP page for valid OTP for Mobile number,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number
+3) Click Request OTP
+4) Fill the OTP field with valid numerical value we recieved in SMS
+5) Click Verify",Valid OTP we recieved in SMS,The User shoud be taken to HomePage and the Sign in Button should be changed to Account Button,The User is taken to HomePage and the Sign in Button is changed to Account Button,Pass
+TC_LG_05,TS_01 (Login),Validate the Email/Mobile number field for valid existing Email ID,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP",Valid Existing Email ID,The User should be taken to OTP page and OTP should be sent to the Email ID,The User is taken to OTP page and OTP is sent to the Email ID,Pass
+TC_LG_06,TS_01 (Login),Validate OTP page for valid OTP for Mail ID,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP
+4) Fill the OTP field with valid numerical value we recieved in Mail
+5) Click Verify",Valid OTP we recieved in our Mail ID,The User shoud be taken to HomePage and the Sign in Button should be changed to Account Button,The User is taken to HomePage and the Sign in Button is changed to Account Button,Pass
+TC_LG_07,TS_01 (Login),Validatw OTP page for wrong OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP
+4) Fill the OTP field with wrong OTP
+5) Click Verify",,"It should show the error message ""OTP is incorrect"" and stay in the page","It shows the error message ""OTP is incorrect"" and stays in the page",Pass
+TC_LG_08,TS_01 (Login),Validate the Email/Mobile number field for invalid Mobile Number in Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with invalid Mobile Number
+3) Click Request OTP","Invalid Mobile Number:
+1) 2
+2) 12244
+3) 123456789
+4) 12345678901","The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_09,TS_01 (Login),Validate the Email/Mobile number field for invalid Email ID in Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with invalid Email ID
+3) Click Request OTP","Invalid Email Number:
+1) test
+2) test@
+3) test@mail
+4) test@mail.","The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_10,TS_01 (Login),Validate Filling Mobile Number reveals the ISD code selection dropdown,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Start Filling the Email/Mobile number with valid Mobile Number
+3) Click Request OTP",Valid Existing Mobile Number,The ISD code selection dropdown should appear and all the Valid ISD codes should be available to select,The ISD code selection dropdown appears and all the Valid ISD codes is available to select,Pass
+TC_LG_11,TS_01 (Login),Validate empty Email/Mobile number field is not allowed,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Do not fill the Email/Mobile number field
+3) Click Request OTP",,"The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_12,TS_01 (Login),Validate spaces is not allowed in Email/Mobile number field,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Start Filling the Email/Mobile number with spaces",,The spaces should not get filled in Email/Mobile Number field,The spaces is not filled in Email/Mobile Number field,Pass
+TC_LG_13,TS_01 (Login),Validate OTP page for not accepting non numerical OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Start filling the OTP page with non numerical characters",Valid Existing Mobile Number / Email ID,The non numerical values should not get filled in OTP field,The non numerical values is not filled in OTP field,Pass
+TC_LG_14,TS_01 (Login),Validate OTP page for not accepting spaces as OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Start filling the OTP page with spaces",Valid Existing Mobile Number / Email ID,The spaces should not get filled in OTP field,The spaces should not get filled in OTP field,Pass
+TC_LG_15,TS_01 (Login),Validate resend otp button functionality in OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Click Resend code button",Valid Existing Mobile Number / Email ID,A new OTP should be generated and should be sent to Email / Mobile number,A new OTP is generated and is sent to Email / Mobile number,Pass
+TC_LG_16,TS_01 (Login),Validate change button functionality in OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Click change button",Valid Existing Mobile Number / Email ID,The User should be taken to Login page and the Email/ Mobile Number field should be filled with previously filled Email/Mobile number and the user should be able to change it,The User is taken to Login page and the Email/ Mobile Number field is filled with previously filled Email/Mobile number and the user is able to change it,Pass
+TC_LG_17,TS_01 (Login),Validate clicking back button after login does not log out user,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Fill valid otp and click Verify
+5) Click Back button",Valid Existing Mobile Number / Email ID,The User should not be logged out or be taken to Login page,The User should not be logged out or be taken to Login page,Pass
+TC_LG_18,TS_01 (Login),Validate the OTP expires after 10 minutes,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Fill valid otp after 10 minutes and click Verify
+5) Click Back button",Valid Existing Mobile Number / Email ID,The User should not be logged in and should be shown error,The User is logged in and is shown error,Pass
+TC_LG_19,TS_01 (Login),Validate entering valid existing Mobile Number in Sign Up takes user to Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Mobile number with valid existing Mobile number
+3) Click Request OTP",,"It should show the error ""You are registered with us. Please Sign in"" and should be taken to Sign in page with provided mobile number already filled in Mobile number/Email field","It shows the error ""You are registered with us. Please Sign in"" and was taken to Sign in page with provided mobile number already filled in Mobile number/Email field",Pass
+TC_LG_20,TS_01 (Login),Validate entering valid non existing Mobile Number in Login page takes user to Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid non existent Mobile number
+3) Click Request OTP",,"It should show the error ""You are not registered with us. Please sign up"" and should be taken to Sign up page with provided mobile number already filled in Mobile number field","It shows the error ""You are not registered with us. Please sign up"" and was taken to Sign up page with provided mobile number already filled in Mobile number field",Pass
+TC_LG_21,TS_01 (Login),Validate entering valid non existent Email ID takes user to Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid non existent Email ID
+3) Click Request OTP",,"It should show the error ""You are not registered with us. Please sign up"" and should be taken to Sign up page","It shows the error ""You are not registered with us. Please sign up"" and was taken to Sign up page",Pass
+TC_LG_22,TS_01 (Login),Validate Terms of Use link functionality in Login page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Click Terms of Use",,The User should be taken to Terms of Use page,The User is taken to Terms of Use page,Pass
+TC_LG_23,TS_01 (Login),Validate Privacy policy link functionality in Login page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Click Privacy Policy",,The User should be taken to Privacy Policy page,The User is taken to Privacy Policy page,Pass
+TC_LG_24,TS_01 (Login),Validate the UI of Login and OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP",Valid Existing Mobile Number / Email ID,The UI of both the pages should be according to requirements,The UI of both the pages are according to requirements,Pass
+TC_LG_25,TS_01 (Login),Verify the Login Page and OTP page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Repeat from Step-1 for other environments",Valid Existing Mobile Number / Email ID,The Login page and OTP Page should work in all supported environments,The Login page and OTP page works in all supported environments,Pass

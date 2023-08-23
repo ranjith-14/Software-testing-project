@@ -1,0 +1,163 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_PP_01,"TS_05 
+(Product Page)",Validate navigating to product page from search results page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed ","Search text:
+Iphone 14 pro",The user should be taken to the product page,The user is taken to the product page,Pass
+TC_PP_02,"TS_05 
+(Product Page)",Validate adding products to wish list from product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click the heart button on the product listed (ER-01)
+6) Hover over My Account and click Wish List (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) The added product should be displayed in Wish List","1) A message is displayed ""Added to your Wishlist""
+2) The added product is displayed in Wish List",Pass
+TC_PP_03,"TS_05 
+(Product Page)",Validate clicking wish list second time removes the product from wishlist,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click the heart button on the product listed (ER-01)
+6) Click the heart button again (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) A message should be displayed ""Removed from Wishlist""","1) A message is displayed ""Added to your Wishlist""
+2) A message is displayed ""Removed from Wishlist""",Pass
+TC_PP_04,"TS_05 
+(Product Page)",Validate hovering over bigger thumbnail opens the image bigger,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Hover over bigger thumbnail","Search text:
+Iphone 14 pro",The image should be opened on the side,The image is opened on the side,Pass
+TC_PP_05,"TS_05 
+(Product Page)",Validate hovering over smaller thumbnail opens the selects the image,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Hover over smaller thumbnail (ER-01)
+6) Click on any smaller thumbnail (ER-01)","Search text:
+Iphone 14 pro",The image should be selected,The image is selected,Pass
+TC_PP_06,"TS_05 
+(Product Page)",Validate clicking the arrow buttons in list of thumbnails loads more images,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click on arrow buttons in list of thumbnails","Search text:
+Iphone 14 pro",More thumbnails should be loaded,More thumbnails is loaded,Pass
+TC_PP_07,"TS_05 
+(Product Page)",Validate the breadcrumb of product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed","Search text:
+Iphone 14 pro",The breadcrumb should be visible and working,The breadcrumb is visible and working,Pass
+TC_PP_08,"TS_05 
+(Product Page)",Validate Available offers section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to available section (ER-01)
+6) Click show more button (ER-02)
+7) Click T&C near any offer (ER-03)","Search text:
+Iphone 14 pro","1) The List of offers should be shown with show more button if many offers are available
+2) The full list of offers should be shown
+3) The full terms and conditions should be loaded in a small panel","1) The List of offers is shown with show more button if many offers are available
+2) The full list of offers is shown
+3) The full terms and conditions is loaded in a small panel",Pass
+TC_PP_09,"TS_05 
+(Product Page)",Validate warranty information,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to warranty information (ER-01)
+6) Click know more (ER-02)","Search text:
+Iphone 14 pro","1) The warranty information should be shown
+2) The warranty information should be expanded to show more information","1) The warranty information is shown
+2) The warranty information is expanded to show more information",Pass
+TC_PP_10,"TS_05 
+(Product Page)",Validate available option section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to available option and select any options","Search text:
+Iphone 14 pro",The product should be displayed according to selected option,The product is displayed according to selected option,Pass
+TC_PP_11,"TS_05 
+(Product Page)",Validate highlight options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to highlight sections","Search text:
+Iphone 14 pro",The highlighted specifications should be shown,The highlighted specifications are shown,Pass
+TC_PP_12,"TS_05 
+(Product Page)",Validate easy payment options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Easy payment options (ER-01)
+6) Click view details (ER-02)","Search text:
+Iphone 14 pro","1) The Emi option should be shown in short
+2) All available EMI options should be shown with detailed plans","1) The Emi option is shown in short
+2) All available EMI options are shown with detailed plans",Pass
+TC_PP_13,"TS_05 
+(Product Page)",Validate seller options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Seller options
+6) Click seller name (ER-01)
+7) Click see other sellers (ER-02)","Search text:
+Iphone 14 pro","1) Details of Seller should be shown in a panel
+2) A page with all other seller should be shown","1) Details of Seller is shown in a panel
+2) A page with all other seller is shown",Pass
+TC_PP_14,"TS_05 
+(Product Page)",Validate Specifications section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Specifications (ER-01)
+6) Click show more (ER-02)","Search text:
+Iphone 14 pro","1) Specifications of product should be shown in brief
+2) Full list of Specifiations should be shown","1) Specifications of product is shown in brief
+2) Full list of Specifiations is shown",Pass
+TC_PP_15,"TS_05 
+(Product Page)",Validate Ratings and Reviews section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Ratings and Reviews (ER-01)
+6) Click All reviews (ER-02)","Search text:
+Iphone 14 pro","1) A list with a few reviews should be shown with rating, review, buyer info
+2) The user should be taken to a page with full list of reviews ","1) A list with a few reviews is shown with rating, review, buyer info
+2) The user is taken to a page with full list of reviews ",Pass
+TC_PP_16,"TS_05 
+(Product Page)",Validate Question and Answer section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Questions and Answers (ER-01)
+6) Click All reviews (ER-02)","Search text:
+Iphone 14 pro","1) A list with a few Questions and Answers should be shown 
+2) The user should be taken to a page with full list of Questions and Answers ","1) A list with a few Questions and Answers is shown
+2) The user is taken to a page with full list of Questions and Answers ",Pass
+TC_PP_17,"TS_05 
+(Product Page)",Validate Similar Products section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Similar Products (ER-01)","Search text:
+Iphone 14 pro",1) A row with a list of similar products should be shown,1) A row with a list of similar products is shown,Pass
+TC_PP_18,"TS_05 
+(Product Page)",Validate the UI of Product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed","Search text:
+Iphone 14 pro",The UI of Product page should be according to requirements,The UI of Product page is according to requirements,Pass
+TC_PP_19,"TS_05 
+(Product Page)",Verify the Product page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Repeat from Step-1 for other environments","Search text:
+Iphone 14 pro",The Product page should work in all supported environments,The Product page works in all supported environments,Pass

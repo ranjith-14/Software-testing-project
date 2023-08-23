@@ -1,0 +1,17 @@
+Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,,Project Name,Flipkart
+,,Client,Flipkart
+,,Created By,Ranjith
+,,Creation Date,2023-06-28 00:00:00
+,,Approval Date,DD-MM-YYYY
+,,,
+,,,
+Test Scenario ID,Test Scenario Description,Priority,Number of Test Cases
+TS_01,Validate the working of 'Login' functionality,P0,25
+TS_02,Validate the working of 'Sign Up' functionality,P0,16
+TS_03,Validate the working of 'HomePage' functionality,P1,15
+TS_04,Validate the working of 'Search' functionality,P2,18
+TS_05,Validate the working of 'Product Page' functionality,P1,19
+TS_06,Validate the working of 'Shopping cart' functionality,P1,14
+TS_07,Validate the working of 'Checkout' functionality,P1,24
+,,Total,131

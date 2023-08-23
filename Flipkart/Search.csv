@@ -1,0 +1,81 @@
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_SE_01,TS_04 (Search),Validate searching existing product,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The User should be taken to product list page with list of products relevant to search text,The User is taken to product list page with list of products relevant to search text,Pass
+TC_SE_02,TS_04 (Search),Validate searching existing product by clicking ENTER button in keyboard,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the ENTER button in keyboard","Search text:
+Iphone 14 pro",The User should be taken to product list page with list of products relevant to search text,The User is taken to product list page with list of products relevant to search text,Pass
+TC_SE_03,TS_04 (Search),Validate searching non existing product,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with a non existing product
+3) Click the search icon",,"The User should be taken to product list page with ""Sorry, no results found!
+Please check the spelling or try searching for something else"" text","The User is taken to product list page with ""Sorry, no results found!
+Please check the spelling or try searching for something else"" text",Pass
+TC_SE_04,TS_04 (Search),Validate Search button for empty field,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Click the search icon or ENTER button",,Clicking the Search button should not do anything,Clicking the Search button does not do anything,Pass
+TC_SE_05,TS_04 (Search),Validate the Search button for empty spaces,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with only spaces
+3) Click the search icon",,Clicking the Search button should not do anything,Clicking the Search button does not do anything,Pass
+TC_SE_06,TS_04 (Search),Validate the Search button trims leading and trailing spaces,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with existing product with leading and trailing spaces
+3) Click the search icon","Search text:
+     Iphone 14 pro     ",The User should be taken to product list page with list of products relevant to search text after trimming spaces,The User is taken to product list page with list of products relevant to search text after trimming spaces,Pass
+TC_SE_07,TS_04 (Search),Validate the Search autocorrection,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with existing product with spelling mistakes
+3) Click the search icon (ER-01, ER-02)","Search Term:
+ipone 14 pro","1) The User should be taken to product list page with list of products relevant to search text after spelling mistakes
+2) The Producft list page should have search instead button with original text we entered",The User is taken to product list page with list of products relevant to search text after spelling mistakes,Pass
+TC_SE_08,TS_04 (Search),Validate the Search recommendation,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Start filling the textfield with an existing product","Search Term:
+iphone 14 pro",The Search field should show recommendation after typing a few a few alphabets,The Search field shows recommendation after typing a few a few alphabets,Pass
+TC_SE_09,TS_04 (Search),Validate empty Search bar shows discover more section,"1) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click on the Search Bar at the top,,The Search bar should show discover more section with a few products,The Search bar shows discover more section with a few products,Pass
+TC_SE_10,TS_04 (Search),Validate the breadcrumb of the product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The breadcrumb at the top should be visble and working,The breadcrumb at the top is visble and working,Pass
+TC_SE_11,TS_04 (Search),Validate hovering over the product highlights it,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Hover over any of the products listed","Search text:
+Iphone 14 pro",The hovered over products should be highlighted,The hovered over products is highlighted,Pass
+TC_SE_12,TS_04 (Search),Validate the sort by functionality,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Select all the options in sort by one by one","Search text:
+Iphone 14 pro",The products should be listed according to the selected sort by option,The products is listed according to the selected sort by option,Pass
+TC_SE_13,TS_04 (Search),Validate the filter functionality,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Select all the options in filter one by one","Search text:
+Iphone 14 pro",The products should be filtered according to the selected filter option,The products is filtered according to the selected filter option,Pass
+TC_SE_14,TS_04 (Search),Validate adding products to wish list from product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click the heart button on any of the product listed (ER-01)
+5) Hover over My Account and click Wish List (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) The added product should be displayed in Wish List","1) A message is displayed ""Added to your Wishlist""
+2) The added product is displayed in Wish List",Pass
+TC_SE_15,TS_04 (Search),Validate clicking wish list second time removes the product from wishlist,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click the heart button on any of the product listed (ER-01)
+5) Click the heart button again on the same product (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) A message should be displayed ""Removed from Wishlist""","1) A message is displayed ""Added to your Wishlist""
+2) A message is displayed ""Removed from Wishlist""",Pass
+TC_SE_16,TS_04 (Search),Validate clicking the product takes user to product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed ","Search text:
+Iphone 14 pro",The user should be taken to the product page,The user is taken to the product page,Pass
+TC_SE_17,TS_04 (Search),Validate the UI of Search Bar and Product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The UI of Search Bar and Product list page should be according to requirements,The UI of Search Bar and Product list page is according to requirements,Pass
+TC_SE_18,TS_04 (Search),Verify the Home page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Repeat from Step-1 for other environments","Search text:
+Iphone 14 pro",The Homepage should work in all supported environments,The Homepage works in all supported environments,Pass

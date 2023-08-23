@@ -5,7 +5,7 @@ This repository contains a list of all the projects completed during my manual t
 
 | Project Name | Description | Tools Used |
 |--------------|-------------|------------|
-| Opencart-manual    | Tested an ecommerce web app for Functional, Usability testing. | JIRA, Zephyr Shield, Excel |
+| Opencart-manual    | Tested an ecommerce web app for Functional, Usability testing. | JIRA, Zephyr Scale, Excel |
 
 ### Opencart-manual
 - Test Plan
