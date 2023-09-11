@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="474.647" tests="58" skipped="0" failures="8" errors="0">
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.7" time="39.944">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "Rei Penber" and "" and clicked Login.passed
+Then An error message is shown on "password" as "Required"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.1" time="42.627">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "Rei Penber" and "not Rei pass" and clicked Login.passed
+Then An error message is shown on "homepage" as "Invalid credentials".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="The Ability to Logout" time="45.88">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I logged in with valid credentials.....................................passed
+When The User is logged in..................................................passed
+When The User clicks log out................................................passed
+Then The User is logged out.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.6" time="37.522">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "" and "Rei@penber2" and clicked Login.passed
+Then An error message is shown on "username" as "Required"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.2" time="45.799">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "not Rei user" and "Rei@penber2" and clicked Login.passed
+Then An error message is shown on "homepage" as "Invalid credentials".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="The Ability of staying logged in after clicking back button" time="47.059">
+<system-out><![CDATA[
+Given The Login Page is Navigated...........................................passed
+When I logged in with valid credentials.....................................passed
+When The User is logged in..................................................passed
+When The Back Button is clicked.............................................passed
+Then The User is still logged in............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.3" time="42.461">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "not groot user" and "not groot pass" and clicked Login.passed
+Then An error message is shown on "homepage" as "Invalid credentials".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.5" time="38.267">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "" and "" and clicked Login.......passed
+Then An error message is shown on "both" as "Required"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Valid Login Scenario - Example #1.1" time="70.969">
+<failure type="java.lang.AssertionError" message="expected [false] but found [true]">
+<![CDATA[java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at stepdefinitions.LoginStepDefinition.the_user_is_logged_in(LoginStepDefinition.java:55)
+	at ✽.The User is logged in(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/Login.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+And I fill the valid Login Credentials "   Rei Penber    " and "Rei@penber2" and clicked Login.passed
+Then The User is logged in..................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="Invalid Login Scenario - Example #1.4" time="42.02">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I fill the invalid Login Credentials "Rei Penber" and "   Rei@penber2    " and clicked Login.passed
+Then An error message is shown on "homepage" as "Invalid credentials".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="The Ability of staying logged out after clicking back button" time="44.811">
+<system-out><![CDATA[
+Given The Login Page is Navigated...........................................passed
+When I logged in with valid credentials.....................................passed
+And The User is logged in...................................................passed
+And The User clicks log out.................................................passed
+And The Back Button is clicked..............................................passed
+Then The User is logged out.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality of OrangeHrm Site" name="The Ability to Stay logged in after closing and reopening browser" time="45.647">
+<system-out><![CDATA[
+Given The Login Page is Opened..............................................passed
+When I logged in with valid credentials.....................................passed
+When The User is logged in..................................................passed
+When The User closes and reopens the browser................................passed
+Then The User is still logged in............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify only some fields are editable" time="28.524">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+Then Only First Name, Middle Name, Last Name,Other Id, Licence Expiry date,Nationality, Marital Status, Gender are Editable.passed
+Then Employee Id, Driver Licence Number are not editable....................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.1" time="89.18">
+<failure type="java.lang.AssertionError" message="expected [Rei] but found [   Rei   ]">
+<![CDATA[java.lang.AssertionError: expected [Rei] but found [   Rei   ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "First name" field with "   Rei   "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:19)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "   Rei   "................passed
+Then Click save and Verify "First name" field with "   Rei   "..............failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.2" time="87.958">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "Exactly 29 characters!!!!!!!!".passed
+Then Click save and Verify "First name" field with "Exactly 29 characters!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.3" time="59.523">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "Exactly 30 characters!!!!!!!!!".passed
+Then Click save and Verify "First name" field with "Exactly 30 characters!!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.4" time="87.342">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "Naomi"....................passed
+Then Click save and Verify "First name" field with "Naomi"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.1" time="55.878">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "".........................passed
+Then Click save and Verify the "First name" field with error_message "Required".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.2" time="54.906">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "Exactly 31 characters!!!!!!!!!!".passed
+Then Click save and Verify the "First name" field with error_message "Should not exceed 30 characters".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the First Name Text Field - Example #1.3" time="44.588">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "First name" field with credential "     "....................passed
+Then Click save and Verify the "First name" field with error_message "Required".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.1" time="76.335">
+<failure type="java.lang.AssertionError" message="expected [new@1] but found [   new@1   ]">
+<![CDATA[java.lang.AssertionError: expected [new@1] but found [   new@1   ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "Other ID" field with "   new@1   "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:48)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "   new@1   "................passed
+Then Click save and Verify "Other ID" field with "   new@1   "..............failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.2" time="73.71">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "Exactly 29 characters!!!!!!!!".passed
+Then Click save and Verify "Other ID" field with "Exactly 29 characters!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.3" time="73.39">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "Exactly 30 characters!!!!!!!!!".passed
+Then Click save and Verify "Other ID" field with "Exactly 30 characters!!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.4" time="75.803">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "old@2"......................passed
+Then Click save and Verify "Other ID" field with "old@2"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.5" time="75.959">
+<failure type="java.lang.AssertionError" message="expected [] but found [     ]">
+<![CDATA[java.lang.AssertionError: expected [] but found [     ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "Other ID" field with "     "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:48)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "     "......................passed
+Then Click save and Verify "Other ID" field with "     "....................failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.6" time="76.068">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential ""...........................passed
+Then Click save and Verify "Other ID" field with "".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Other ID Text Field - Example #1.1" time="38.524">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Other ID" field with credential "Exactly 31 characters!!!!!!!!!!".passed
+Then Click save and Verify the "Other ID" field with error_message "Should not exceed 30 characters".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.1" time="74.988">
+<failure type="java.lang.AssertionError" message="expected [Yagami] but found [   Yagami   ]">
+<![CDATA[java.lang.AssertionError: expected [Yagami] but found [   Yagami   ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "Middle name" field with "   Yagami   "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:77)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "   Yagami   "............passed
+Then Click save and Verify "Middle name" field with "   Yagami   "..........failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.2" time="74.584">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "Exactly 29 characters!!!!!!!!".passed
+Then Click save and Verify "Middle name" field with "Exactly 29 characters!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.3" time="74.436">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "Exactly 30 characters!!!!!!!!!".passed
+Then Click save and Verify "Middle name" field with "Exactly 30 characters!!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.4" time="72.606">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "Moon"....................passed
+Then Click save and Verify "Middle name" field with "Moon"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.5" time="73.728">
+<failure type="java.lang.AssertionError" message="expected [] but found [     ]">
+<![CDATA[java.lang.AssertionError: expected [] but found [     ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "Middle name" field with "     "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:77)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "     "...................passed
+Then Click save and Verify "Middle name" field with "     ".................failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.6" time="73.841">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential ""........................passed
+Then Click save and Verify "Middle name" field with ""......................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Middle Name Text Field - Example #1.1" time="40.896">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Middle name" field with credential "Exactly 31 characters!!!!!!!!!!".passed
+Then Click save and Verify the "Middle name" field with error_message "Should not exceed 30 characters".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.1" time="77.073">
+<failure type="java.lang.AssertionError" message="expected [Penber] but found [   Penber   ]">
+<![CDATA[java.lang.AssertionError: expected [Penber] but found [   Penber   ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PersonalDetailsStepDefiniton.click_save_and_verify_field_with(PersonalDetailsStepDefiniton.java:108)
+	at ✽.Click save and Verify "Last name" field with "   Penber   "(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:106)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "   Penber   "..............passed
+Then Click save and Verify "Last name" field with "   Penber   "............failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.2" time="76.635">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "Exactly 29 characters!!!!!!!!".passed
+Then Click save and Verify "Last name" field with "Exactly 29 characters!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.3" time="77.076">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "Exactly 30 characters!!!!!!!!!".passed
+Then Click save and Verify "Last name" field with "Exactly 30 characters!!!!!!!!!".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.4" time="72.453">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "Misora"....................passed
+Then Click save and Verify "Last name" field with "Misora"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.1" time="41.14">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential ""..........................passed
+Then Click save and Verify the "Last name" field with error_message "Required".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.2" time="41.43">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "Exactly 31 characters!!!!!!!!!!".passed
+Then Click save and Verify the "Last name" field with error_message "Should not exceed 30 characters".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.3" time="41.046">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "Last name" field with credential "     ".....................passed
+Then Click save and Verify the "Last name" field with error_message "Required".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.1" time="43.66">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential "2020-09-01"......passed
+Then Click save and Verify "License Expiry Date" field with "2020-09-01"....passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.2" time="72.976">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential ""................passed
+Then Click save and Verify "License Expiry Date" field with ""..............passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.1" time="41.295">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential "09-01-2020"......passed
+Then Click save and Verify the "License Expiry Date" field with error_message "Should be a valid date in yyyy-mm-dd format".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.2" time="42.409">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential "2020-02-30"......passed
+Then Click save and Verify the "License Expiry Date" field with error_message "Should be a valid date in yyyy-mm-dd format".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.3" time="42.907">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential "                      ".passed
+Then Click save and Verify the "License Expiry Date" field with error_message "Should be a valid date in yyyy-mm-dd format".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Last Name Text Field - Example #1.4" time="14.267">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+When Fill the "License Expiry Date" field with credential "31-02-2020"......passed
+Then Click save and Verify the "License Expiry Date" field with error_message "Should be a valid date in yyyy-mm-dd format".passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Date Picker Buttons" time="78.61">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And The User clicks on Licence Expiry Date Field............................passed
+And The User clicks on close button to close the Date Picker................passed
+And The User clicks on Date Picker Icon Button..............................passed
+And The User clicks on Today Button and Verify..............................passed
+Then The User clicks on Clear Button and verify.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Date Picker functions" time="47.903">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And Picking a valid date as "2002-12-12" and Verify.........................passed
+Then Picking a valid date as "2023-09-09" and Verify........................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the functionality of Help Btn" time="53.455">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And Click the Help Button...................................................passed
+Then Verify the Help page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the functionality to select Nation" time="50.917">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And Select Nation as "Indian"...............................................passed
+Then Verify the Nation is selected as "Indian"..............................passed
+And Select Nation as "Egyptian".............................................passed
+Then Verify the Nation is selected as "Egyptian"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the functionality to select Nation" time="51.704">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And Select Marital Status as "Married"......................................passed
+Then Verify the Marital Status is selected as "Married".....................passed
+And Select Marital Status as "Other"........................................passed
+Then Verify the Marital Status is selected as "Other".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the Gender Radio buttons" time="109.417">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And Select the Male radio btn and verify....................................passed
+And Select the Female radio btn and verify..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the ability to add Attachements" time="203.118">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='oxd-table-body']/div/div/div[2])[last()]&quot;}
+  (Session info: headless chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [679dff959f7c086b66282efaf9e0c1b8, findElement {using=xpath, value=(//div[@class='oxd-table-body']/div/div/div[2])[last()]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Ranjith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4815/devtool..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 679dff959f7c086b66282efaf9e0c1b8">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='oxd-table-body']/div/div/div[2])[last()]"}
+  (Session info: headless chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [679dff959f7c086b66282efaf9e0c1b8, findElement {using=xpath, value=(//div[@class='oxd-table-body']/div/div/div[2])[last()]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Ranjith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4815/devtool..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 679dff959f7c086b66282efaf9e0c1b8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pageObjects.PersonalDetails.attachementVerifier(PersonalDetails.java:405)
+	at stepdefinitions.PersonalDetailsStepDefiniton.verify_the_file_size_as(PersonalDetailsStepDefiniton.java:255)
+	at ✽.Verify the "maximum_size.jpg" file size "Without Comment" as ""(file:///F:/Learning_Projects/eclipse-space/bdd-OrangeHrm/src/test/resources/Features/PersonalDetails.feature:224)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+And The User Upload a "small_size.png" file size "Without Comment" as ""....passed
+Then Verify the "small_size.png" file size "Without Comment" as ""..........passed
+And The User Upload a "small_size.png" file size "With Comment" as "A small file".passed
+Then Verify the "small_size.png" file size "With Comment" as "A small file".passed
+And The User Upload a "maximum_size.jpg" file size "Without Comment" as ""..passed
+Then Verify the "maximum_size.jpg" file size "Without Comment" as ""........failed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the ability to add Attachements - Example #1.1" time="39.072">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+Then The User attempts to upload the file_size "more_than_maximum_size.jpg" and verify the error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the ability to add Attachements - Example #1.2" time="39.146">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+Then The User attempts to upload the file_size "small_size_unsupported.exe" and verify the error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the ability to add Attachements - Example #1.3" time="38.806">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+Then The User attempts to upload the file_size "maximum_size_unsupported.exe" and verify the error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="The Ability to edit Personal Details in My Info" name="Verify the ability to add Attachements - Example #1.4" time="39.464">
+<system-out><![CDATA[
+Given The User is Logged in using valid ESS credentials.....................passed
+When The User Clicks My Info Button.........................................passed
+And The User Clicks on Personal Details Button..............................passed
+Then The User attempts to upload the file_size "more_than_maximum_size_unsupported.exe" and verify the error message.passed
+]]></system-out>
+</testcase>
+</testsuite>

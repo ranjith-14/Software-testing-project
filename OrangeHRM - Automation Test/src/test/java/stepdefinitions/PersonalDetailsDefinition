@@ -1,0 +1,216 @@
+package stepdefinitions;
+
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.*;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.PersonalDetails;
+import utils.ConfigReader;
+import utils.DriverFactory;
+
+public class PersonalDetailsDefinition {
+
+    public WebDriver driver;
+    public LoginPage loginPage;
+    public HomePage homePage;
+    public ConfigReader configs;
+    public Properties props;
+    public PersonalDetails personalDetails;
+    public JavascriptExecutor js;
+    
+
+
+    @Given("The User is Logged in using valid ESS credentials")
+    public void the_user_is_logged_in_using_valid_ess_credentials() {
+        driver = DriverFactory.getDriver();
+        loginPage = new LoginPage(driver);
+
+        configs = new ConfigReader();
+        props = configs.getProperties();
+
+//		loginPage.checkPrivateError();
+        Assert.assertTrue(loginPage.usernamefieldDisplayed());
+        loginPage.instantLogin();
+
+        homePage = new HomePage(driver);
+        Assert.assertFalse(homePage.getrowOfBtns().isEmpty());
+    }
+
+    @When("The User Clicks My Info Button")
+    public void the_user_clicks_my_info_button() {
+        homePage.clickMyInfoBtn();
+        Assert.assertTrue(homePage.getPersonalDetailsElement().isDisplayed());
+    }
+
+
+    @When("The User Clicks on Personal Details Button")
+    public void the_user_clicks_on_personal_details_button() {
+        homePage.clickPersonalDetailsBtn();
+        personalDetails = new PersonalDetails(driver);
+//        Assert.assertTrue(personalDetails.getfirstNamefield().isDisplayed());
+        personalDetails.waitFullSpinner();
+    }
+
+    @Then("Only First Name, Middle Name, Last Name,Other Id, Licence Expiry date,Nationality, Marital Status, Gender are Editable")
+    public void only_first_name_middle_name_last_name_other_id_licence_expiry_date_nationality_marital_status_gender_are_editable() {
+        Assert.assertTrue(personalDetails.getfirstNamefield().isEnabled());
+        Assert.assertTrue(personalDetails.getlastNamefield().isEnabled());
+        Assert.assertTrue(personalDetails.getmiddleNamefield().isEnabled());
+        Assert.assertTrue(personalDetails.getOtherIDfield().isEnabled());
+        Assert.assertTrue(personalDetails.getlicenceExpiryDatefield().isEnabled());
+        Assert.assertTrue(personalDetails.getnationalityDropdown().isEnabled());
+        Assert.assertTrue(personalDetails.getMaritalStatusDropdown().isEnabled());
+        Assert.assertTrue(personalDetails.getMaleRadioBtn().isEnabled());
+        Assert.assertTrue(personalDetails.getFemaleRadioBtn().isEnabled());
+    }
+
+    @Then("Employee Id, Driver Licence Number are not editable")
+    public void employee_id_driver_licence_number_are_not_editable() {
+        Assert.assertFalse(personalDetails.getEmpIdField().isEnabled());
+        Assert.assertFalse(personalDetails.getDriverLicenceField().isEnabled());
+        Assert.assertFalse(personalDetails.getDateOfBirthField().isEnabled());
+    }
+    
+
+    
+    @When("Fill the {string} field with credential {string}")
+    public void fill_the_field_with_credential(String whereTotest, String valueToFill) {
+    	personalDetails.clearAndFillField(whereTotest,valueToFill);
+    }
+
+    @Then("Click save and Verify {string} field with {string}")
+    public void click_save_and_verify_field_with(String whereToVerify, String value) {
+        personalDetails.clickSaveBtn();
+        personalDetails.waitFullSpinner();
+        Assert.assertEquals(personalDetails.fieldVerify(whereToVerify),value.strip());
+    }
+    
+
+    @Then("Click save and Verify the {string} field with error_message {string}")
+    public void click_save_and_verify_the_field_with_error_message(String whereToVerify, String errorMsg) {
+        personalDetails.clickSaveBtn();
+        Assert.assertEquals(personalDetails.fieldErrorMsgVerify(whereToVerify),errorMsg);
+    }
+
+    @When("The User clicks on Licence Expiry Date Field")
+    public void the_user_clicks_on_licence_expiry_date_field() {
+        personalDetails.clicklicenceExpiryDateField();
+        Assert.assertTrue(personalDetails.getlicenceExpiryDatePicker().isDisplayed());
+    }
+    @When("The User clicks on close button to close the Date Picker")
+    public void the_user_clicks_on_close_button_to_close_the_date_picker() {
+        personalDetails.clickDatePickerCloseBtn();
+        Assert.assertTrue(personalDetails.getlicenceExpiryDatePickerclosed());
+    }
+    @When("The User clicks on Date Picker Icon Button")
+    public void the_user_clicks_on_date_picker_icon_button() {
+        personalDetails.clickLicenceCalenderIcon();
+        Assert.assertTrue(personalDetails.getlicenceExpiryDatePicker().isDisplayed());
+    }
+    @When("The User clicks on Today Button and Verify")
+    public void the_user_clicks_on_today_button_and_verify() {
+        personalDetails.clickDatePickerTodayBtn();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd"); 
+//        LocalDateTime today = LocalDateTime.now();
+        Date date = new Date();
+        Assert.assertEquals(personalDetails.getlicenceExpiryDatefield().getAttribute("value"),formatter.format(date));
+    }
+
+    @Then("The User clicks on Clear Button and verify")
+    public void the_user_clicks_on_clear_button_and_verify() {
+        personalDetails.clickLicenceCalenderIcon();
+        personalDetails.clickDatePickerClearBtn();
+        Assert.assertEquals(personalDetails.getlicenceExpiryDatefield().getAttribute("value"),"");
+    }
+
+    @Then("Picking a valid date as {string} and Verify")
+    public void picking_a_valid_date_as_and_verify(String date) {
+        personalDetails.pickDateinDatePicker(date);
+        Assert.assertEquals(personalDetails.getlicenceExpiryDatefield().getAttribute("value"),date);
+    }
+    
+    @When("Click the Help Button")
+    public void click_the_help_button() {
+        personalDetails.clickHelpBtn();
+    }
+    
+    @Then("Verify the Help page")
+    public void verify_the_help_page() {
+        Set<String> windowHandles = driver.getWindowHandles();
+        for (String handle:windowHandles) {
+            if (!handle.equals(driver.getWindowHandle())) {
+                driver.switchTo().window(handle);
+            }
+        }
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("starterhelp.orangehrm.com"));
+    }
+
+    @When("Select Nation as {string}")
+    public void select_nation_as(String nation) {
+        personalDetails.selectNation(nation);
+    }
+    @Then("Verify the Nation is selected as {string}")
+    public void verify_the_nation_is_selected_as(String nation) {
+        Assert.assertEquals(personalDetails.getSelectedNation().getText(),nation);
+    }
+
+    @When("Select Marital Status as {string}")
+    public void select_marital_status_as(String maritalStatus) {
+        personalDetails.selectMaritalStatus(maritalStatus);
+    }
+    @Then("Verify the Marital Status is selected as {string}")
+    public void verify_the_marital_status_is_selected_as(String maritalStatus) {
+        Assert.assertEquals(personalDetails.getSelectedMaritalStatus().getText(),maritalStatus);
+    }
+
+    @When("Select the Male radio btn and verify")
+    public void select_the_male_radio_btn_and_verify() {
+    	js = (JavascriptExecutor) driver;
+    	js.executeScript("arguments[0].scrollIntoView(true);", personalDetails.genderMaleBtn());
+    	personalDetails.genderMaleBtn().click();
+        personalDetails.clickSaveBtn();
+        personalDetails.waitFullSpinner();
+        Assert.assertTrue(personalDetails.genderMaleInputBtn().isSelected());
+        Assert.assertFalse(personalDetails.genderFeMaleInputBtn().isSelected());
+    }
+
+    @When("Select the Female radio btn and verify")
+    public void select_the_female_radio_btn_and_verify() {
+    	js.executeScript("arguments[0].scrollIntoView(true);", personalDetails.genderFeMaleBtn());
+        personalDetails.genderFeMaleBtn().click();
+        personalDetails.clickSaveBtn();
+        personalDetails.waitFullSpinner();
+        Assert.assertTrue(personalDetails.genderFeMaleInputBtn().isSelected());
+        Assert.assertFalse(personalDetails.genderMaleInputBtn().isSelected());
+    }
+
+    @When("The User Upload a {string} file size {string} as {string}")
+    public void the_user_upload_a_file_size_as(String fileName, String commentVerification, String comment) {
+        personalDetails.attachementUploader(fileName,commentVerification,comment);
+    }
+
+    @Then("Verify the {string} file size {string} as {string}")
+    public void verify_the_file_size_as(String fileName, String commentVerification, String comment) {
+        String[] values = personalDetails.attachementVerifier();
+        Assert.assertEquals(values[0],fileName);
+        Assert.assertEquals(values[1],comment);
+    }
+    @Then("The User attempts to upload the file_size {string} and verify the error message")
+    public void the_user_attempts_to_upload_the_file_size_and_verify_the_error_message(String fileName) {
+    	personalDetails.attachementUploader(fileName,"","");
+    	Assert.assertTrue(personalDetails.getAttachementErrorMsg().isDisplayed());
+    }
+
+}
