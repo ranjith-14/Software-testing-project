@@ -9,7 +9,7 @@ This repository showcases my software testing skills, developed through a variet
 |--------------|-------------|------------|
 | [OrangeHRM - Automation Test](/OrangeHRM%20-%20Automation%20Test) | Automated testing for an HR management system. | Selenium WebDriver, TestNG, Java, Excel, Cucumber, Maven |
 | [OpenCart - Manual Test](/OpenCart%20-%20Manual%20Test) | Tested an ecommerce web app for Functional, Usability testing. | JIRA, Zephyr Scale, Excel |
-| [Other Apps & Websites](/Other%20Apps%20&%20Websites) | Test Cases for Various Apps & Sites | Manual Testing, Excel, Test Case creation |
+| [Other Apps & Websites](/Other%20Apps%20&%20Websites) | Test Cases for Various Apps & Sites | Manual Testing, Excel, Test Case Creation |
 
 
 ### OrangeHRM - Automation Test
