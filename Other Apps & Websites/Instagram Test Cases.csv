@@ -1,0 +1,365 @@
+Test Cases Overview,,,,,,,,,
+,,,,,,,,,
+Test Application ID,,TC_001,Test Application Description,,TESTING THE WEB PAGE,,,,
+System,,INSTAGRAM,Sub System,,LOGIN AND REGISTER PAGE,,,,
+Created By,,RANJITH C,Reviewed By,,RANJITH,,,,
+Date Created,,13-09-2023 00:00,Date Reviewed,,15-09-2023 00:00,,,,
+Pre-Conditions,,ABLE TO USE INSTAGRAM,Post Conditions,,Nil,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Scenario ID,Test Case,Test Scenario Description,,,,,,,
+TS_001,TC_IS_001,Verify the Sign up Scenario,,,,,,,
+TS_002,TC_IS_043,Verify the Login Scenario,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Case ID,Test Case ID/Test Scenario,Test Case Name,Test Steps,Expected Results,Actual Results,Status (Pass/Fail),Comments,Test Data,Prerequisites
+TC_IS_001,,Verify the user is ability to sign up using valid Email and Username,"1) Go to Instagram Sign up page
+2) Fill the Email/Full Name/ Username/ Password with valid values (ER-01)
+3) Click Sign up (ER-02)
+4} Choose Date of birth and click Next (ER-03)
+5) Fill the OTP field with otp from Mail
+6) Click Next (ER-04)","1) All fields should show tick icon
+2) The User should be Taken to Date of Birth Selection Page
+3) The User should be taken to Otp page and a mail is received in Mail Inbox
+4) A new account should be created and the user is Logged in","1) All fields should show tick icon
+2) The User is Taken to Date of Birth Selection Page
+3) The User is taken to Otp page and a mail is received in Mail Inbox
+4) A new account is created and the user is Logged in",Pass,Nil,"Email:savibaw642@twugg.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password: supersaiyangodvegeta",Nil
+TC_IS_002,,Verify the user is ability to sign up using valid Mobile Number and Username,"1) Go to Instagram Sign up page
+2) Fill the Mobile Number/Full Name/ Username/ Password with valid values (ER-01)
+3) Click Sign up (ER-02)
+4} Choose Date of birth and click Next (ER-03)
+5) Fill the OTP field with otp from Mail
+6) Click Next (ER-01)","1) All fields should show tick icon
+2) The User should be Taken to Date of Birth Selection Page
+3) The User should be taken to Otp page and a SMS is received in Messages
+4) A new account should be created and the user is Logged in","1) All fields should show tick icon
+2) The User is Taken to Date of Birth Selection Page
+3) The User is taken to Otp page and a SMS is received in Messages
+4) A new account is created and the user is Logged in",Pass,Nil,"Mobile Number:.............
+Full Name: Son Goku
+Username:supersaiyan4vegeta
+Password: supersaiyangodvegeta",Nil
+TC_IS_003,,Verify the user cannot sign up with Existing email address,"1) Go to Instagram Sign up page
+2) Fill the Email with already existing Email address (ER-01)
+3) Fill the Full Name/ Username/ Password with valid values
+4) Click Sign up (ER-02)","1) The Email Field should show red x icon
+2) The User should not proceed to next page and should show warning 'Another account is using the same email address.'","1) The Email Field shows red x icon
+2) The User does not proceed to next page and shows warning 'Another account is using the same email address.'",Pass,Nil,"Email:savibaw642@twugg.com
+Full Name: Son Goku
+Username:supersaiyangodegeta
+Password:..........",Nil
+TC_IS_004,,Verify the user cannot sign up with Existing Mobile number,"1) Go to Instagram Sign up page
+2) Fill the Mobile number with already existing Mobile number (ER-01)
+3) Fill the Full Name/ Username/ Password with valid values
+4) Click Sign up (ER-02)","1) The Mobile number Field should show red x icon
+2) The User should not proceed to next page and should show warning 'Another account is using the same Mobile number.'","1) The Mobile number Field shows red x icon
+2) The User does not proceed to next page and shows warning 'Another account is using the same Mobile number.'",Pass,Nil,"Mobile Number:.............
+Full Name: Son Goku
+Username:supersaiyan4bluevegeta
+Password:supersaiyangodvegeta",Nil
+TC_IS_005,,Verify the user cannot sign up with Existing Username,"1) Go to Instagram Sign up page
+2) Fill the Username with already existing Mobile number (ER-01)
+3) Fill the Email/Full Name/ Username with valid values
+4) Click Sign up (ER-02)","1) The Username  Field should show red x icon
+2) The User should not proceed to next page and should show warning 'This username isn't available. Please try another..'","1) The Username  Field shows red x icon
+2) The User does not proceed to next page and shows warning 'This username isn't available. Please try another.'",Pass,Nil,Username:supersaiyanvegeta,Nil
+TC_IS_006,,Verify the user cannot sign up with all blank fields,"1) Go to Instagram Sign up page
+2) Leave all the fields Blank
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,Not Applicable,Nil
+TC_IS_007,,Verify the user cannot be able to sign up with Email field as blank,"1) Go to Instagram Sign up page
+2) Fill the Full Name/ Username/ Password with valid values
+3) Leave the email field empty
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,"Full Name: Son Goku
+Username:supersaiyangodgogeta
+Password:..........",Nil
+TC_IS_008,,Verify the user cannot be able to sign up with invalid Email,"1) Go to Instagram Sign up page
+2) Fill the Full Name/ Username/ Password with valid values
+3) Fill the Email field with Invalid mail (ER-01)
+4) Click sign up (ER-02)","1) The Email Field should show red x icon
+2) The User should not proceed and should show the error 'Enter a valid email address.'","1) The Email Field should show red x icon
+2) The User does not proceed and shows the error 'Enter a valid email address.'",Pass,Nil,"Email:
+savibaw642
+savibaw642@
+savibaw642@twugg
+savibaw642@twugg.",Nil
+TC_IS_009,,Verify the user cannot be able to sign up with invalid Mobile Number,"1) Go to Instagram Sign up page
+2) Fill the Full Name/ Username/ Password with valid values
+3) Fill the Mobile Number field with Invalid Mobile number
+4) Click sign up","1) The Mobile number Field should show red x icon
+2) The User should not proceed and should show the error 'Looks like your phone number may be incorrect. Please try entering your full number, including the country code.'","1) The Mobile number Field should show red x icon
+2) The User does not proceed and shows the error 'Looks like your phone number may be incorrect. Please try entering your full number, including the country code.'",Pass,Nil,"Mobile Number:
+123456789
+12345678901",Nil
+TC_IS_010,,Verify the user cannot be able to sign up with Full Name field as blank,"1) Go to Instagram Sign up page
+2) Fill the Email/ Username/ Password with valid values
+3) Leave the Full Name field empty
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,"Email:savibaw642@twugg.com
+Username:supersaiyangodegeta
+Password:..........",Nil
+TC_IS_011,,Verify the user cannot be able to sign up with Username field as blank,"1) Go to Instagram Sign up page
+2) Fill the Email /Full Name/ Password with valid values
+3) Leave the Username field empty
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,"Email:savibaw642@twugg.com
+Full Name: Son Goku
+Password:..........",Nil
+TC_IS_012,,Verify the user cannot be able to sign up with Password field as blank,"1) Go to Instagram Sign up page
+2) Fill the Password/Full Name/ Username with valid values
+3) Leave the Password field empty
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,"Email:savibaw642@twugg.com
+Full Name: Son Goku
+Username:supersaiyangodegeta",Nil
+TC_IS_013,,Verify the user cannot be able to sign up with a Weak Password,"1) Go to Instagram Sign up page
+2) Fill the Password/Full Name/ Username with valid values
+3) Fill the password field with Weak password
+4) Try to Click sign up",The User Should not be able to click Sign up as the Sign Up button should be disabled,The User is not able to click Sign up as the Sign Up button is disabled,Pass,Nil,"Password:
+1234567890",Nil
+TC_IS_014,,Verify the ability to generate Username with generator icon,"1) Go to Instagram Sign up page
+2) Fill the Email field with valid values
+3) Click Generate icon in Username field (ER-01)
+4) Fill the Full Name with Valid values (ER-02)","1) A new username should be generated from email field and filled in Username field
+2) A new username should be generated from combination of email and full name field and filled in Username field ","1) A new username is generated from email field and filled in Username field
+2) A new username is generated from combination of email and full name field and filled in Username field ",Pass,Nil,"Email:savibaw642@twugg.com
+Full Name: Son Goku",Nil
+TC_IS_015,,Verify the 'Show' button in password field,"1) Go to Instagram Sign Up Page
+2) Fill the password field
+3) Click Show button in password field",The Password field should show the characters we filled into the password field,The Password field shows the characters we filled into the password field,Pass,Nil,"Password:
+1234567890",Nil
+TC_IS_016,,Verify the Login Button Takes user to Login Page,"1) Go to Instagram Sign Up Page
+2) Click Login Button",The User should be taken to Login Page,The User is taken to Login Page,Pass,Nil,Not Applicable,Nil
+TC_IS_017,,Verify 'Login with Facebook' button Logs in user,"1) Go to Instagram Sign Up Page
+2) Click Login with Facebook
+3) Fill the Login fields with valid values and Click Login",The User should be Logged in to account,The User is Logged in to account,Pass,Nil,Not Applicable,Nil
+TC_IS_018,,Verify the Logout function in Homepage,"1) Go to Instagram Sign up page
+2) Fill the Email/Full Name/ Username/ Password with valid values
+3) Click Sign up
+4} Choose Date of birth and click Next
+5) Fill the OTP field with otp from Mail
+6) Click Next
+7) Click Logout inside the Profile Picture",The User should be Logged out and taken to login page,The User is Logged out and taken to login page,Pass,Nil,"Email:savibaw642@twu.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password:..........",Nil
+TC_IS_019,,Verify clicking Back button does not log out user after Login,"1) Go to Instagram Sign up page
+2) Fill the Email/Full Name/ Username/ Password with valid values
+3) Click Sign up
+4} Choose Date of birth and click Next
+5) Fill the OTP field with otp from Mail
+6) Click Next
+7) Click Back button",The User should still be Logged in to Instagram,The User is still Logged in to Instagram,Pass,Nil,"Email:savibaw642@ugg.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password:supersaiyangodvegeta",Nil
+TC_IS_020,,Verify clicking Back button does not Login user after Logout,"1) Go to Instagram Sign up page
+2) Fill the Email/Full Name/ Username/ Password with valid values
+3) Click Sign up
+4} Choose Date of birth and click Next
+5) Fill the OTP field with otp from Mail
+6) Click Next
+7) Click Back Button",The User should still be Logged out and taken to login page,The User is still Logged out and taken to login page,Pass,Nil,"Email:savibaw642@tugg.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password:supersaiyangodvegeta",Nil
+TC_IS_021,,"Verify Login using Enter Button for Sign up after filling valid Email, Full Name, Password","1) Go to Instagram Sign up page
+2) Fill the Email/Full Name/ Username/ Password with valid values
+3) Press Enter
+4} Choose Date of birth and Press Enter
+5) Fill the OTP field with otp from Mail
+6) Click Press Enter",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,"Email:savibaw642@ugtg.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password:supersaiyangodvegeta",Nil
+TC_IS_022,,Verify Sign up using tab button to move through fields and Enter for Sign up Button,"1) Go to Instagram Sign up page
+2) Fill the Email field with valid value and press TAB
+3) Fill the Full Name field with valid value and Press TAB
+4) Fill the Username field with valid value and press TAB
+5) Fill the Password field with valid value and press TAB
+6) Press Enter
+7) Choose Date of birth and Press TAB and Press Enter
+8) Fill the OTP field with otp from Mail
+9) Click Press TAB and Press Enter
+10) Go to Instagram Login Page",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,"Email:savibaw6@ugtg.com
+Full Name: Son Goku
+Username:supersaiyan2vegeta
+Password:supersaiyangodvegeta",Nil
+TC_IS_023,,Verify clicking Learn More link button takes user to Privacy Page regarding Uploading contacts page,"1) Go to Instagram Sign Up Page
+2) Click 'Learn more' link in ""People who use our service may have uploaded your contact information to Instagram. Learn more"" ",A User should be taken to Privacy Page regarding Uploading contacts page in a new window,A User is taken to Privacy Page regarding Uploading contacts page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_024,,Verify clicking Terms link button takes user to Instagram Terms of Use page,"1) Go to Instagram Sign Up Page
+2) Click 'Terms' link in ""By signing up, you agree to our Terms, Privacy Policy and Cookies Policy."" ",A User should be taken to Instagram Terms of Use page in a new window,A User is taken to Instagram Terms of Use page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_025,,Verify clicking Privacy Policy link button takes user to Instagram Privacy Policy Page,"1) Go to Instagram Sign Up Page
+2)Click 'Privacy Policy' link in ""By signing up, you agree to our Terms, Privacy Policy and Cookies Policy.""",A User should be taken to Instagram Privacy Policy Page in a new window,A User is taken to Instagram Privacy Policy Page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_026,,Verify clicking Cookie Policy link button takes user to Instagram Privacy Policy Page,"1) Go to Instagram Sign Up Page
+2)Click 'Cookie Policy' link in ""By signing up, you agree to our Terms, Privacy Policy and Cookies Policy.""",A User should be taken to Instagram Cookie Policy Page in a new window,A User is taken to Instagram Cookie Policy Page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_027,,Verify Get on play store button,"1) Go to Instagram Sign Up Page
+2) Click Get on play store button (ER-01)
+3) Click Follow Link (ER_02)","1) The User should be taken to a page where Instagram asks user to Follow Link
+2) The User should be taken to Instagram Play store page","1) The User is taken to a page where Instagram asks user to Follow Link
+2) The User is taken to Instagram Play store page",Pass,Nil,Not Applicable,Nil
+TC_IS_028,,Verify Get it from microsoft button,"1) Go to Instagram Sign Up Page
+2) Click Get it from microsoft button",The User should be taken to Instagram Microsoft Store Page ,The User is taken to Instagram Microsoft Store Page ,Pass,Nil,Not Applicable,Nil
+TC_IS_029,,Verify Changing the language in Login Page,"1) Go to Instagram Sign Up Page
+2) Click Language dropdown in bottom of the page
+3) Select a Language and observe",The Page should change to selected language,The Page changes to selected language,Pass,Nil,Not Applicable,Nil
+TC_IS_030,,Verify clicking Meta link button takes user to About Meta page,"1) Go to Instagram Sign Up Page
+2) Click Meta Link in bottom of the page",A User should be taken to About Meta page in a new window,A User is taken to About Meta page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_031,,Verify clicking About link button takes user to About Instagram page,"1) Go to Instagram Sign Up Page
+2) Click About Link in bottom of the page",A User should be taken to About Instagram page in a new window,A User is taken to About Instagram page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_032,,Verify clicking Blog link button takes user to Instagram Blog page,"1) Go to Instagram Sign Up Page
+2) Click Blog Link in bottom of the page",A User should be taken to Instagram Blog page in a new window,A User is taken to Instagram Blog page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_033,,Verify clicking Jobs link button takes user to Instagram Career page,"1) Go to Instagram Sign Up Page
+2) Click Jobs Link in bottom of the page",A User should be taken to Instagram Careers page,A User is taken to Instagram Careers page,Pass,Nil,Not Applicable,Nil
+TC_IS_034,,Verify clicking Help link button takes user to Instagram Help page,"1) Go to Instagram Sign Up Page
+2) Click Help Link in bottom of the page",A User should be taken to Instagram Help page in a new window,A User is taken to Instagram Help page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_035,,Verify clicking API link button takes user to Instagram API page,"1) Go to Instagram Sign Up Page
+2) Click API Link in bottom of the page",A User should be taken to Instagram API page in a new window,A User is taken to Instagram API page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_036,,Verify clicking Privacy link button takes user to Instagram Privacy Policy Page,"1) Go to Instagram Sign Up Page
+2) Click Privacy Link in bottom of the page",A User should be taken to Instagram Privacy Policy Page,A User is taken to Instagram Privacy Policy Page,Pass,Nil,Not Applicable,Nil
+TC_IS_037,,Verify clicking Terms link button takes user to Instagram Terms of Use page,"1) Go to Instagram Sign Up Page
+2) Click Terms Link in bottom of the page",A User should be taken to Instagram Terms of Use page,A User is taken to Instagram Terms of Use page,Pass,Nil,Not Applicable,Nil
+TC_IS_038,,Verify clicking Locations link button takes user to Instagram Locations page,"1) Go to Instagram Sign Up Page
+2) Click Locations Link in bottom of the page",A User should be taken to Instagram Locations page,A User is taken to Instagram Locations page,Pass,Nil,Not Applicable,Nil
+TC_IS_039,,Verify clicking Instagram Lite button takes user to Instagram Lite page,"1) Go to Instagram Sign Up Page
+2) Click Instagram Lite Link in bottom of the page",A User should be taken to Instagram Lite where page,A User is taken to Instagram Lite page,Pass,Nil,Not Applicable,Nil
+TC_IS_040,,Verify clicking Threads link button takes user to Threads page,"1) Go to Instagram Sign Up Page
+2) Click Threads Link in bottom of the page",A User should be taken to Threads page in a new window,A User is taken to Threads page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_041,,Verify clicking Contact Uploading & Non-Users link button takes user to Privacy Page regarding Uploading contacts page,"1) Go to Instagram Sign Up Page
+2) Click Contact Uploading & Non-Users Link in bottom of the page",A User should be taken to Privacy Page regarding Uploading contacts page,A User is taken to Privacy Page regarding Uploading contacts page,Pass,Nil,Not Applicable,Nil
+TC_IS_042,,Verify clicking Meta Verified link button takes user to Meta Verified page,"1) Go to Instagram Sign Up Page
+2) Click Meta Verified Link in bottom of the page",A User should be taken to Meta Verified page in a new window,A User is taken to Meta Verified page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_043,TS_001 / Verify the Login Scenario,,,,,,,,
+TC_IS_044,,Verify Login with Valid email and valid password,"1) Go to Instagram Login Page
+2) Fill the email and password field with valid Email and Password
+3) Click Login",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,"Email:savibaw642@twugg.com
+Password:supersaiyangodvegeta",The User should have an account in Instagram
+TC_IS_045,,Verify Login with valid username and valid password,"1) Go to Instagram Login Page
+2) Fill the username and password field with valid Username and Password
+3) Click Login",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_046,,Verify Login with Save Login Info Checkbox Selected,"1) Go to Instagram Login Page
+2) Fill the username and password field with valid Username and Password
+3) Select Save Login info checkbox
+4) Click Login",The User should be Logged in to Instagram and Sign in info should be stored,The User is Logged in to Instagram and Sign in info is stored,Pass,Nil,"Email:savibaw642@twugg.com
+Password:supersaiyangodvegeta",The User should have an account in Instagram
+TC_IS_047,,Verify Login with valid mobile number and valid password,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with valid Mobile number and Password
+3) Click Login",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,"Mobile number :........
+Password: supersaiyangodvegeta",The User should have an account in Instagram
+TC_IS_048,,Verify the Logout function in Homepage,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with valid Mobile number and Password
+3) Click Login
+4) Click Logout inside the Profile Picture",The User should be Logged out and taken to login page,The User is Logged out and taken to login page,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_049,,Verify clicking Back button does not log out user after Login,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with valid Mobile number and Password
+3) Click Login
+4) Click Back button",The User should still be Logged in to Instagram,The User is still Logged in to Instagram,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_050,,Verify clicking Back button does not Login user after Logout,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with valid Mobile number and Password
+3) Click Login
+4) Click Logout inside the Profile Picture
+5) Click Back Button",The User should still be Logged out and taken to login page,The User is still Logged out and taken to login page,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_051,,Verify user cannot Login with valid email and invalid password,"1) Go to Instagram Login Page
+2) Fill the email and password field with valid email and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,"Email:savibaw642@twugg.com
+Password:supersaiyan",The User should have an account in Instagram
+TC_IS_052,,Verify user cannot Login with valid username and invalid password,"1) Go to Instagram Login Page
+2) Fill the username and password field with valid username and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyan,The User should have an account in Instagram
+TC_IS_053,,Verify user cannot Login with valid mobile number and invalid password,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with valid mobile number and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Mobile number:....... Password:supersaiyan,The User should have an account in Instagram
+TC_IS_054,,Verify user cannot Login with invalid email and valid password,"1) Go to Instagram Login Page
+2) Fill the email and password field with invalid email and valid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,"Email:
+savibaw@twugg.com
+savibaw642
+savibaw642@
+savibaw642@twugg
+savibaw642@twugg
+
+Password:supersaiyangodvegeta",The User should have an account in Instagram
+TC_IS_055,,Verify user cannot Login with invalid username and valid password,"1) Go to Instagram Login Page
+2) Fill the username and password field with invalid Username and valid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Username:supersa2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_056,,Verify user cannot Login with invalid mobile number and valid password,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with invalid Mobile number and valid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Mobile number:....... Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_057,,Verify user cannot Login with invalid email and invalid password,"1) Go to Instagram Login Page
+2) Fill the email and password field with invalid email and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,"Email:savibaw@twugg.com
+Password:supersaiyan",Nil
+TC_IS_058,,Verify user cannot Login with invalid username and invalid password,"1) Go to Instagram Login Page
+2) Fill the username and password field with invalid Username and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Username:supersa2vegeta Password:supersaiyan,Nil
+TC_IS_059,,Verify user cannot Login with invalid mobile number and invalid password,"1) Go to Instagram Login Page
+2) Fill the mobile number and password field with invalid Mobile number and invalid Password
+3) Click Login","The User should not be Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link","The User is not Logged in and Shown message ""Sorry, your password was incorrect. Please double-check your password."" under Login with Facebook link",Pass,Nil,Mobile number:....... Password:supersaiyan,Nil
+TC_IS_060,,Verify user cannot login with Username/Email/Mobile number field as blank,"1) Go to Instagram Login Page
+2) Fill the password field with valid value
+3) Leave the Username/Email/Mobile number as Blank
+4) Try to click Login Button",The Login button should be disabled and unable to click,The Login button is disabled and unable to click,Pass,Nil,Password:supersaiyangodvegeta,Nil
+TC_IS_061,,Verify user cannot login with Password field left empty,"1) Go to Instagram Login Page
+2) Fill the Username/Email/Mobile number field with valid value
+3) Leave the password  as Blank
+4) Try to click Login Button",The Login button should be disabled and unable to click,The Login button is disabled and unable to click,Pass,Nil,Username:supersa2vegeta ,Nil
+TC_IS_062,,Verify user cannot Login with all blank fields,"1) Go to Instagram Login Page
+2) Leave all the fields Blank
+3) Try to click Login Button",The Login button should be disabled and unable to click,The Login button is disabled and unable to click,Pass,Nil,Not Applicable,Nil
+TC_IS_063,,Verify Login using Enter Button for Login after filling valid Email/Username/Mobile number and Password,"1) Go to Instagram Login Page
+2) Fill the Email/Username/Mobile number and password field with valid Email/Username/Mobile number and valid Password
+3) Click Enter Button",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_064,,Verify Login using tab button to move through fields and Enter for Login Button,"1) Go to Instagram Login Page
+2) Fill the Email/Username/Mobile number with valid Email/Username/Mobile number
+3) Click Tab Button and Fill the password field with valid password
+4) Click Tab Button Twice and Click Enter Button",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,The User should have an account in Instagram
+TC_IS_065,,Verify the password fields is toggled to bullet points by default,"1) Go to Instagram Login Page
+2) Fill the password field
+3) Observe password field",The password field should show bullet points and the count of bullet points should be based on the number of characters we filled in the password field with,The password field shows bullet points and the count of bullet points is based on the number of characters we filled in the password field with,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,Nil
+TC_IS_066,,Verify the 'Show' button in password field,"1) Go to Instagram Login Page
+2) Fill the password field
+3) Click Show button in password field",The Password field should show the characters we filled into the password field,The Password field shows the characters we filled into the password field,Pass,Nil,Username:supersaiyan2vegeta Password:supersaiyangodvegeta,Nil
+TC_IS_067,,Verify Login with facebook link button for valid facebook login,"1) Go to Instagram Login Page
+2) Click Login with Facebook
+3) Fill the Facebook Login page and valid email and password
+4) Click Login",The User should be Logged in to Instagram,The User is Logged in to Instagram,Pass,Nil,Not Applicable,Nil
+TC_IS_068,,Verify 'Forgotten your password? ' button,"1) Go to Instagram Login Page
+2) Click Forgotten your password? link button",The User should be taken into Forgot password page,The User is taken into Forgot password page,Pass,Nil,Not Applicable,Nil
+TC_IS_069,,Verify 'Sign up' button,"1) Go to Instagram Login Page
+2) Click Sign up link button",The User should be taken into Sign up page,The User is  taken into Sign up page,Pass,Nil,Not Applicable,Nil
+TC_IS_070,,Verify Get on play store button,"1) Go to Instagram Login Page
+2) Click Get on play store button (ER-01)
+3) Click Follow Link (ER_02)","1) The User should be taken to a page where Instagram asks user to Follow Link
+2) The User should be taken to Instagram Play store page","1) The User is taken to a page where Instagram asks user to Follow Link
+2) The User is taken to Instagram Play store page",Pass,Nil,Not Applicable,Nil
+TC_IS_071,,Verify Get it from microsoft button,"1) Go to Instagram Login Page
+2) Click Get it from microsoft button",The User should be taken to Instagram Microsoft Store Page ,The User is taken to Instagram Microsoft Store Page ,Pass,Nil,Not Applicable,Nil
+TC_IS_072,,Verify Changing the language in Login Page,"1) Go to Instagram Login Page
+2) Click Language dropdown in bottom of the page
+3) Select a Language and observe",The Page should change to selected language,The Page changes to selected language,Pass,Nil,Not Applicable,Nil
+TC_IS_073,,Verify clicking Meta link button takes user to About Meta page,"1) Go to Instagram Login Page
+2) Click Meta Link in bottom of the page",A User should be taken to About Meta page in a new window,A User is taken to About Meta page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_074,,Verify clicking About link button takes user to About Instagram page,"1) Go to Instagram Login Page
+2) Click About Link in bottom of the page",A User should be taken to About Instagram page in a new window,A User is taken to About Instagram page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_075,,Verify clicking Blog link button takes user to Instagram Blog page,"1) Go to Instagram Login Page
+2) Click Blog Link in bottom of the page",A User should be taken to Instagram Blog page in a new window,A User is taken to Instagram Blog page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_076,,Verify clicking Jobs link button takes user to Instagram Career page,"1) Go to Instagram Login Page
+2) Click Jobs Link in bottom of the page",A User should be taken to Instagram Careers page,A User is taken to Instagram Careers page,Pass,Nil,Not Applicable,Nil
+TC_IS_077,,Verify clicking Help link button takes user to Instagram Help page,"1) Go to Instagram Login Page
+2) Click Help Link in bottom of the page",A User should be taken to Instagram Help page in a new window,A User is taken to Instagram Help page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_078,,Verify clicking API link button takes user to Instagram API page,"1) Go to Instagram Login Page
+2) Click API Link in bottom of the page",A User should be taken to Instagram API page in a new window,A User is taken to Instagram API page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_079,,Verify clicking Privacy link button takes user to Instagram Privacy Policy Page,"1) Go to Instagram Login Page
+2) Click Privacy Link in bottom of the page",A User should be taken to Instagram Privacy Policy Page,A User is taken to Instagram Privacy Policy Page,Pass,Nil,Not Applicable,Nil
+TC_IS_080,,Verify clicking Terms link button takes user to Instagram Terms of Use page,"1) Go to Instagram Login Page
+2) Click Terms Link in bottom of the page",A User should be taken to Instagram Terms of Use page,A User is taken to Instagram Terms of Use page,Pass,Nil,Not Applicable,Nil
+TC_IS_081,,Verify clicking Locations link button takes user to Instagram Locations page,"1) Go to Instagram Login Page
+2) Click Locations Link in bottom of the page",A User should be taken to Instagram Locations page,A User is taken to Instagram Locations page,Pass,Nil,Not Applicable,Nil
+TC_IS_082,,Verify clicking Instagram Lite button takes user to Instagram Lite page,"1) Go to Instagram Login Page
+2) Click Instagram Lite Link in bottom of the page",A User should be taken to Instagram Lite where page,A User is taken to Instagram Lite page,Pass,Nil,Not Applicable,Nil
+TC_IS_083,,Verify clicking Threads link button takes user to Threads page,"1) Go to Instagram Login Page
+2) Click Threads Link in bottom of the page",A User should be taken to Threads page in a new window,A User is taken to Threads page in a new window,Pass,Nil,Not Applicable,Nil
+TC_IS_084,,Verify clicking Contact Uploading & Non-Users link button takes user to Privacy Page regarding Uploading contacts page,"1) Go to Instagram Login Page
+2) Click Contact Uploading & Non-Users Link in bottom of the page",A User should be taken to Privacy Page regarding Uploading contacts page,A User is taken to Privacy Page regarding Uploading contacts page,Pass,Nil,Not Applicable,Nil
+TC_IS_085,,Verify clicking Meta Verified link button takes user to Meta Verified page,"1) Go to Instagram Login Page
+2) Click Meta Verified Link in bottom of the page",A User should be taken to Meta Verified page in a new window,A User is taken to Meta Verified page in a new window,Pass,Nil,Not Applicable,Nil

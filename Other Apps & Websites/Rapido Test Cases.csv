@@ -1,0 +1,916 @@
+Test Cases Overview,,,,,,,,,
+,,,,,,,,,
+Test Application ID,,TC_001,Test Application Description,,TESTING THE RAPIDO APP,,,,
+System,,RAPIDO,Sub System,,ALL RAPIDO FUNCTIONS,,,,
+Created By,,RANJITH C,Reviewed By,,RANJITH C,,,,
+Date Created,,19-09-2023 00:00,Date Reviewed,,23-09-2023 00:00,,,,
+Pre-Conditions,,ABLE TO USE RAPIDO,Post Conditions,,Nil,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Scenario ID,No of Test Cases,Test Scenario Description,,,,,,,
+TS_001,24,Verify the Login/Sign up Scenario,,,,,,,
+TS_002,40,Verify the HomePage Scenario,,,,,,,
+TS_003,29,Verify the Booking Page Scenario,,,,,,,
+TS_004,58,Verify the navigation drawer options,,,,,,,
+Total,151,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Case ID,Test Case ID/Test Scenario,Test Case Name,Test Steps,Expected Results,Actual Results,Status (Pass/Fail),Comments,Test Data,Prerequisites
+TC_LP_02,TS_001 / Verify the Login/Sign up Scenario,Verify Sign up using valid mobile number,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number (ER-01)
+3) Click the Proceed Button (ER-02)
+4) Fill the OTP field with valid otp received in the provided mobile number (ER-03)
+5) Fill the Name field with valid name and Select a gender button
+6) Click Proceed (ER-04)
+7) Click allow permission (ER-05)
+8) Click While using the app (ER-06)","1) The Proceed button should be enabled
+2) The User should be taken to OTP page
+3) The User should be taken Create Profile Page
+4) The User should be taken to Location permission page
+5) A Location Permission wizard should be Visible
+6) The User should be taken to Homepage with current location pinned","1) The Proceed button is enabled
+2) The User is taken to OTP page
+3) The User is taken Create Profile Page
+4) The User is taken to Location permission page
+5) A Location Permission wizard is Visible
+6) The User is taken to Homepage with current location pinned",Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_03,TS_001 / Verify the Login/Sign up Scenario,Verify not able to Sign up using invalid OTP,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Fill the OTP field with invalid otp","The User should not be logged in and a message ""Incorrect OTP. Please try again"" should be shown","The User is not logged in and a message ""Incorrect OTP. Try Again"" should be shown",Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_04,TS_001 / Verify the Login/Sign up Scenario,Verify Leaving name field in create profile page does not enable proceed button,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number 
+3) Click the Proceed Button 
+4) Fill the OTP field with valid otp received in the provided mobile number
+5) Leave the Name field blank and select a gender
+6) Try to click Proceed button",The Proceed button should be disabled and not clickable,The Proceed button is disabled and not clickable,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_05,TS_001 / Verify the Login/Sign up Scenario,Verify Leaving Gender button unchecked in create profile page does not enable proceed button,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number 
+3) Click the Proceed Button 
+4) Fill the OTP field with valid otp received in the provided mobile number
+5) Fill the Name field with a name and do not select a gender
+6) Try to click Proceed button",The Proceed button should be disabled and not clickable,The Proceed button is disabled and not clickable,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_06,TS_001 / Verify the Login/Sign up Scenario,Verify Sign up with Receive important updates on Whatdapp checked,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Fill the OTP field with valid otp received in the provided mobile number
+5) Fill the Name field with valid name and Select a gender button
+6) Check ""Receive important updates on Whatsapp"" checkbox
+7) Click Proceed
+8) Click allow permission
+9) Click While using the app",Important Updates should be received on Whatsapp from Rapido,Important Updates are received on Whatsapp from Rapido,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_07,TS_001 / Verify the Login/Sign up Scenario,Verify Sign up using referral code,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Fill the OTP field with valid otp received in the provided mobile number
+5) Fill the Name field with valid name and Select a gender button
+6) Click ""I have a referral code"" and fill a valid referral code
+7) Click Proceed
+8) Click allow permission
+9) Click While using the app",The Referral code should be accepted and credits should be given to referrer,The Referral code is accepted and credits are given to referrer,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_08,TS_001 / Verify the Login/Sign up Scenario,Verify Leaving all options blank in create profile page does not enable proceed button,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number 
+3) Click the Proceed Button 
+4) Fill the OTP field with valid otp received in the provided mobile number
+5) Leave the name field blank and do not select a gender
+6) Try to click Proceed button",The Proceed button should be disabled and not clickable,The Proceed button is disabled and not clickable,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_09,TS_001 / Verify the Login/Sign up Scenario,Verify the login function using invalid mobile number,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with invalid mobile number
+3) Try to click Proceed Button",The Proceed button should be disabled and not clickable,The Proceed button is disabled and not clickable,Pass,Nil,Mobile number:11212,The Rapido app should be installed in mobile
+TC_LP_10,TS_001 / Verify the Login/Sign up Scenario,Verify Proceed Button is not enabled with a blank mobile number,"1) Open the Rapido Mobile App
+2) Leave the mobile number field blank
+3) Try to click Proceed Button",The Proceed button should be disabled and not clickable,The Proceed button is disabled and not clickable,Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_LP_11,TS_001 / Verify the Login/Sign up Scenario,Verify Proceed Button enables after filling 10 digits,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid 10 digit number",The Proceed button should be clickable,The Proceed button is clickable,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_12,TS_001 / Verify the Login/Sign up Scenario,Verify Otp is auto filled in OTP field when the Mobile number is on the same mobile as Rapido,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Wait for the OTP",As soon as OTP is received in Mobile and it shoud be auto filled in the app,As soon as OTP is received in Mobile and it is auto filled in the app,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_13,TS_001 / Verify the Login/Sign up Scenario,Verify on Opening Rapido app the Mobile number field should be auto clicked and Number keyboard should open,"1) Open the Rapido Mobile App
+2) Observe",The Mobile number field should be autoclicked and Number Keyboard should be automatically opened,The Mobile number field is autoclicked and Number Keyboard is automatically opened,Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_LP_14,TS_001 / Verify the Login/Sign up Scenario,Verify resend OTP in SMS is working,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Wait for the OTP for 15s
+5) Click SMS button",A newly generated OTP should be sent to SMS,A newly generated OTP is sent to SMS,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_15,TS_001 / Verify the Login/Sign up Scenario,Verify resend OTP in WhatsApp is working,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Wait for the OTP for 15s
+5) Click WhatsApp button",A newly generated OTP should be sent to WhatsApp,A newly generated OTP is sent to WhatsApp,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_16,TS_001 / Verify the Login/Sign up Scenario,Verify the user is not allowed to Login using wrong OTP,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Fill with invalid OTP","The User should not be logged in and a message ""Incorrect OTP. Please try again"" should be shown","The User is not logged in and a message ""Incorrect OTP. Try Again"" should be shown",Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_17,TS_001 / Verify the Login/Sign up Scenario,Verify functionality of Help icon in OTP page,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Click the Help Icon Button (ER-01)
+5) Click ""I'm unable to login to the app"" (ER-02)
+6) Click Chat (ER-03)","1) The user should be taken to FAQ page
+2) The User should be taken to detailed answers page and should have a Chat button
+3) The User should be taken to conversation page","1) The user is taken to FAQ page
+2) The User is taken to detailed answers page and should have a Chat button
+3) The User is takenn to conversation page",Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_18,TS_001 / Verify the Login/Sign up Scenario,Verify the Back Arrow button functionality in OTP page,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Click back arrow button in top left",The user should be taken to Login Page,The user is taken to Login Page,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_19,TS_001 / Verify the Login/Sign up Scenario,Verify the Back button in mobile functionality in OTP page,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number
+3) Click the Proceed Button
+4) Click back button in mobile",The user should be taken to Login Page,The user is taken to Login Page,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_20,TS_001 / Verify the Login/Sign up Scenario,Verify closing and reopening rapido app does not logout user,"1) Open the Rapido Mobile App
+2) Fill the mobile number field with valid mobile number 
+3) Click the Proceed Button 
+4) Fill the OTP field with valid otp received in the provided mobile number 
+5) Click allow permission 
+6) Click While using the app 
+7) Close rapido app and reopen it",The User should be taken to Homepage and the login should be retained,The User is taken to Homepage and the login is retained,Pass,Nil,"Mobile number:
+**********",The Rapido app should be installed in mobile
+TC_LP_21,TS_001 / Verify the Login/Sign up Scenario,Verify functionality of Help icon in Login page,"1) Open the Rapido Mobile App
+2) Click the Help Icon Button (ER-01)
+3) Click ""I'm unable to login to the app"" (ER-02)
+4) Click Chat (ER-03)","1) The user should be taken to FAQ page
+2) The User should be taken to detailed answers page and should have a Chat button
+3) The User should be taken to conversation page","1) The user is taken to FAQ page
+2) The User is taken to detailed answers page and should have a Chat button
+3) The User is takenn to conversation page",Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_LP_22,TS_001 / Verify the Login/Sign up Scenario,Verify the Back button in mobile functionality in OTP page,"1) Open the Rapido Mobile App
+2) Click back button twice",The Rapido app should be exited,The Rapido app is exited,Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_LP_23,TS_001 / Verify the Login/Sign up Scenario,Verify Terms of Service link works,"1) Open the Rapido Mobile App
+2) Click ""Terms of Service"" link in bottom page",A new page about Terms of Service should open in a browser,A new page about Terms of Service opens in a browser,Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_LP_24,TS_001 / Verify the Login/Sign up Scenario,Verify Privacy Policy link works,"1) Open the Rapido Mobile App
+2) Click ""Privacy Policy"" link in bottom page",A new page about Privacy Policy should open in a browser,A new page about Privacy Policy opens in a browser,Pass,Nil,Not Applicable,The Rapido app should be installed in mobile
+TC_HP_02,TS_002 / Verify the HomePage Scenario,Verify Booking Bike in rapido app to valid locations,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid available location (ER-01)
+4) Click from the available locations (ER-02)
+5) Select Bike
+6) Click Book Bike (ER-03)
+7) Click Confirm Pickup (ER-04)","1) A list of locations should be generated similar to our value
+2) The User should be taken to Booking Page
+3) The User should be taken to Confirm Pickup Page
+4) The Bike should be Booked with showing information about pickup","1) A list of locations is generated similar to our value
+2) The User is taken to Booking Page
+3) The User is taken to Confirm Pickup Page
+4) The Bike is Booked with showing information about pickup",Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_HP_03,TS_002 / Verify the HomePage Scenario,Verify Booking Auto in rapido app to valid locations,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid available location (ER-01)
+4) Click from the available locations (ER-02)
+5) Select Auto
+6) Click Book Auto (ER-03)
+7) Click Confirm Pickup (ER-04)","1) A list of locations should be generated similar to our value
+2) The User should be taken to Booking Page
+3) The User should be taken to Confirm Pickup Page
+4) The Auto should be Booked with showing information about pickup","1) A list of locations is generated similar to our value
+2) The User is taken to Booking Page
+3) The User is taken to Confirm Pickup Page
+4) The Auto is Booked with showing information about pickup",Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_HP_04,TS_002 / Verify the HomePage Scenario,Verify user can see the otp and driver contact details,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid available location 
+4) Click from the available locations
+5) Select Auto
+6) Click Book Auto
+7) Click Confirm Pickup",The User should be able to see the OTP and able to Contact driver,The User is able to see the OTP and able to Contact driver,Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_HP_05,TS_002 / Verify the HomePage Scenario,Verify user can review driver,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid available location 
+4) Click from the available locations
+5) Select Auto
+6) Click Book Auto
+7) Click Confirm Pickup
+8) Complete the ride",The User should be able to leave a review for driver,The User is able to leave a review for driver,Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_HP_06,TS_002 / Verify the HomePage Scenario,Verify Pickup search bar generates List of locations on our keyword,"1) Open the Rapido app
+2) Click Pickup search Bar
+3) Fill a valid location",A list of locations should be generated similar to our value,A list of locations is generated similar to our value,Pass,Nil,Pickup Location : Singanallur,Login with the Valid Mobile number
+TC_HP_07,TS_002 / Verify the HomePage Scenario,Verify Drop Location search bar generates List of locations on our keyword,"1) Open the Rapido app
+2) Click Drop search Bar
+3) Fill a valid location",A list of locations should be generated similar to our value,A list of locations is generated similar to our value,Pass,Nil,Drop Location : Singanallur,Login with the Valid Mobile number
+TC_HP_08,TS_002 / Verify the HomePage Scenario, Verify Pickup Search Bar does not generate location for invalid keyword,"1) Open the Rapido app
+2) Click Pickup search Bar
+3) Fill an invalid location",A list of locations should not be generated,A list of locations is not generated,Pass,Nil,Pickup Location : Konohagakure,Login with the Valid Mobile number
+TC_HP_09,TS_002 / Verify the HomePage Scenario, Verify Drop Search Bar does not generate location for invalid keyword,"1) Open the Rapido app
+2) Click Drop search Bar
+3) Fill an invalid location",A list of locations should not be generated,A list of locations is not generated,Pass,Nil,Drop Location : Konohagakure,Login with the Valid Mobile number
+TC_HP_10,TS_002 / Verify the HomePage Scenario,Verify the Booking functionality does not work for far away locations,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid far away location
+4) Click from the available locations (ER-01)
+5) Click Okay (ER-02)","1) The User should be taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons
+2) The User should be taken to homepage with Present Location being shown","1) The User is taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons
+2) The User is taken to homepage with Present Location being shown",Pass,Nil,"Pickup Location : Coimbatore
+Drop Location:
+Tirupur",Login with the Valid Mobile number
+TC_HP_11,TS_002 / Verify the HomePage Scenario,Verify the x button in Booking page when a far away location is selected,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click drop Location and fill a valid far away location
+4) Click from the available locations (ER-01)
+5) Click x button (ER-02)","1) The User should be taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons
+2) The User should be taken to homepage with Present Location being shown","1) The User is taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons
+2) The User is taken to homepage with Present Location being shown",Pass,Nil,"Pickup Location : Coimbatore
+Drop Location:
+Tirupur",Login with the Valid Mobile number
+TC_HP_12,TS_002 / Verify the HomePage Scenario,Verify adding a location to favourites as Home Address,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click the Favourites icon and click Home",The Location should be set as Home Address,The Location is set as Home Address,Pass,Nil,Pickup Location : Coimbatore,Login with the Valid Mobile number
+TC_HP_13,TS_002 / Verify the HomePage Scenario,Verify adding a location to favourites as Work Address,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click the Favourites icon and click Work",The Location should be set as Work Address,The Location is set as Work Address,Pass,Nil,"Pickup Location:
+Gandhipuram",Login with the Valid Mobile number
+TC_HP_14,TS_002 / Verify the HomePage Scenario,Verify adding a location to favourites as Other,"1) Open the Rapido app
+2) Select a Pickup Location
+3) Click the Favourites icon and click Other 
+4) Fill a name and click arrow icon",The Location should be set as Other Address,The Location is set as Other Address,Pass,Nil,Pickup Location : Sulur,Login with the Valid Mobile number
+TC_HP_15,TS_002 / Verify the HomePage Scenario,Verify selecting an address from Favourites as pickup,"1) Open the Rapido app
+2) Select a Pickup Location search bar
+3) Click a location",The selected location should be pinned in homepage,The selected location is pinned in homepage,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_16,TS_002 / Verify the HomePage Scenario,Verify the Options button function in top left corner of Rapido app,"1) Open Rapido app
+2) Click the options in top left corner",The options should open with Options about the page,The options open with Options about the page,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_17,TS_002 / Verify the HomePage Scenario,Verify the Drop Location shows history of selected Location,"1) Open Rapido app
+2) Click Drop Location Search Box",The Drop Location Search Page should be opened with history of selected locations,The Drop Location Search Page is opened with history of selected locations,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_18,TS_002 / Verify the HomePage Scenario,Verify the current location icon button ,"1) Open Rapido app
+2) Move in map to a different location
+3) Click Current location button",The Pin should move to the current location,The Pin moves to the current location,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_19,TS_002 / Verify the HomePage Scenario,Verify Drop Suggestion are shown in homepage,"1) Open Rapido app
+2) Pick a present location",The Drop Suggestion should be shown with a list of suggested drop location from history,The Drop Suggestion is shown with a list of suggested drop location from history,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_20,TS_002 / Verify the HomePage Scenario,Verify the pickup location can be changed by moving the pickup pin,"1) Open Rapido app
+2) Choose a new location by dragging the pin",The Pickup location should be changed to the new location and the search bar should read the name of new location ,The Pickup location is changed to the new location and the search bar reads the name of new location ,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_21,TS_002 / Verify the HomePage Scenario,Verify changing pickup location using Pickup Location seach Box,"1) Open Rapido app
+2) Click the Search Box on top
+3) Fill a valid location
+4) Click a location from the generated locations",The Pickup Pin should be moved to the selected location,The Pickup Pin is moved to the selected location,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_22,TS_002 / Verify the HomePage Scenario,Verify the Pickup search page shows history of selected locations,"1) Open Rapido app
+2) Click the Search Box on top",The Search Page should show the location history,The Search Page shows the location history,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_23,TS_002 / Verify the HomePage Scenario,Verify the Back Arrow in Pickup Search Page,"1) Open Rapido app
+2) Click the Search Box on top
+3) Click Back Arrow in top right corner",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_24,TS_002 / Verify the HomePage Scenario,Verify the Back Button from Pickup Search Page,"1) Open Rapido app
+2) Click the Search Box on top
+3) Click Back Button in mobile",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_25,TS_002 / Verify the HomePage Scenario,Verify the Back Arrow in Drop Search Page,"1) Open Rapido app
+2) Click the Drop Location Search Box
+3) Click Back Arrow in top right corner",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_26,TS_002 / Verify the HomePage Scenario,Verify the Back Button from Drop Search Page,"1) Open Rapido app
+2) Click the Drop Location Search Box
+3) Click Back Button in mobile",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_27,TS_002 / Verify the HomePage Scenario,Verify selection Drop location using 'Select from map' button ,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar
+4) Click Select from Map button in bottom of the page (ER-01)
+5) Move the pin to a location
+6) Click confirm drop (ER-02)","1) The User should be taken to Drop Location selection page
+2) The User should be taken to Booking page with Drop Location selected","1) The User is taken to Drop Location selection page
+2) The User is taken to Booking page with Drop Location selected",Pass,Nil,Pickup Location: Hopes College,Login with the Valid Mobile number
+TC_HP_28,TS_002 / Verify the HomePage Scenario,Verify the my location icon button in Drop Location selection page ,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar
+4) Click Select from Map button in bottom of the page
+5) Click the current location icon",The Current location of the user should be pinned,The Current location of the user is pinned,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_29,TS_002 / Verify the HomePage Scenario,Verify selection Drop location using 'Select from map' button with Area/Locality/Landmark,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Move the pin to a location
+5) Click Search icon on the address name bar (ER-01)
+6) Fill a valid Area/Locality/Landmark in the search bar (ER-02)
+7) Pick a valid location (ER-03)","1) An Area/Locality/Landmark Search Page should be opened
+2) A list of locations should be generated similar to our value
+3) The User should be taken to Booking page with Drop Location selected","1) An Area/Locality/Landmark Search Page is opened
+2) A list of locations is generated similar to our value
+3) The User is taken to Booking page with Drop Location selected",Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_HP_30,TS_002 / Verify the HomePage Scenario,Verify Back Arrow Button from Drop Location Selection Page,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Click Back Arrow in top left corner",The User should be taken to Drop Search Page,The User is taken to Drop Search Page,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_31,TS_002 / Verify the HomePage Scenario,Verify Back Button from Drop Location Selection Page,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Click Back Button in mobile",The User should be taken to Drop Search Page,The User is taken to Drop Search Page,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_32,TS_002 / Verify the HomePage Scenario,Verify No Location list is generated for invalid value in Area/Locality/Landmark,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Move the pin to a location
+5) Click Search icon on the address name bar (ER-01)
+6) Fill an invalid Area/Locality/Landmark in the search bar (ER-02)","1) An Area/Locality/Landmark Search Page should be opened
+2) No list should be generated for the keyword","1) An Area/Locality/Landmark Search Page is opened
+2) No list is generated for the keyword",Pass,Nil,"Pickup Location: Hopes College
+Drop Location: Sunagakure",Login with the Valid Mobile number
+TC_HP_33,TS_002 / Verify the HomePage Scenario,Verify the Back Arrow in Area/Locality/Landmark Page,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Move the pin to a location
+5) Click Search icon on the address name bar
+6) Click Back Arrow button in top left corner",The User should be taken to Drop Location Page,The User is taken to Drop Location Page,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_34,TS_002 / Verify the HomePage Scenario,Verify the Back Button from Area/Locality/Landmark Page,"1) Open Rapido app
+2) Seelct a Pickup location
+3) Click Drop Location Search Bar and Click 'Select from map' button
+4) Move the pin to a location
+5) Click Search icon on the address name bar
+6) Click Back Button in mobile",The User should be taken to Drop Location Page,The User is taken to Drop Location Page,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_35,TS_002 / Verify the HomePage Scenario,Verify the app shows when rapido is not available in an area,"1) Go to an area where rapido is not available
+2) Open Rapido app (ER-01)
+3) Click Change Location (ER-02)","1) The app should show 'We're not available in your area yet' and Change Location button is visible
+2) The User should be taken to Search Pickup Location Page","1) The app shows 'We're not available in your area yet' and Change Location button is visible
+2) The User is taken to Search Pickup Location Page",Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_36,TS_002 / Verify the HomePage Scenario,Verify app asks location when Location is turned off,"1) Turn off the Location in mobile
+2) Open the Rapido app (ER-01)
+3) Click go (ER-02)","1) An alert should be shown to activate Location
+2) Your Current Location should be Pinned with Searchbar reading 'Your Current Location' with nearby rapido vehicles being shown","1) An alert is shown to activate Location
+2) Your Current Location is Pinned with Searchbar reading 'Your Current Location' with nearby rapido vehicles being shown",Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_37,TS_002 / Verify the HomePage Scenario,Verify app goes to Location permission page when we click No thanks in Location Alert,"1) Turn off the Location in mobile
+2) Open the Rapido app (ER-01)
+3) Click No Thanks (ER-02)
+4) Click allow permission (ER-01)
+5) Click Go (ER-03)","1) An alert should be shown to activate Location
+2) A Location permission page should be opened
+3) Your Current Location should be Pinned with Search bar reading 'Your Current Location' with nearby rapido vehicles being shown","1) An alert is shown to activate Location
+2) A Location permission page is opened
+3) Your Current Location is Pinned with Searchbar reading 'Your Current Location' with nearby rapido vehicles being shown",Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_38,TS_002 / Verify the HomePage Scenario,Verify app goes to Location Permission page when Location permission is turned off,"1) Long press Rapido app icon and select app info
+2) Click permission and Click Location
+3) Click 'Don't Allow'
+4) Open Rapido App (ER-01)
+5) Click allow permission (ER-02)
+6) Click While using the app (ER-03)","1) A Location Permission page should be opened
+2) A Location Permission wizard should be Visible
+3) The User should be taken to Homepage with current location pinned","1) A Location Permission page is opened
+2) A Location Permission wizard is Visible
+3) The User is taken to Homepage with current location pinned",Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_39,TS_002 / Verify the HomePage Scenario,Verify exiting the rapido app by double tapping back button,"1) Open Rapido App
+2) Double click the back button in mobile",The App should be closed,The App is closed,Pass,Nil,Nil,Login with the Valid Mobile number
+TC_HP_40,TS_002 / Verify the HomePage Scenario,Verify exiting the rapido app by clicking exit button,"1) Open Rapido App
+2) Click back button (ER-01)
+3) Click exit (ER-02)","1) An exit button should appear at the bottom
+2) The App should be closed","1) An exit button appears at the bottom
+2) The App is closed",Pass,Nil,Nil,Login with the Valid Mobile number
+TC_BP_02,TS_003 / Verify the Booking Page Scenario,Verify the functionality to edit the pickup location from Booking Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the pickup location Pin
+7) Fill a value and Select a location",The Pickup location should be changed to the newly selected location,The Pickup location is changed to the newly selected location,Pass,Nil,"New Pickup Location: Singanallur
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_BP_03,TS_003 / Verify the Booking Page Scenario,Verify the functionality to edit the pickup location from Booking Page by 'Select from Map' button,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the picup location Pin
+7) Click 'Select from Map' and Select a location
+8) Click Confirm Pickup",The Pickup location should be changed to the newly selected location,The Pickup location is changed to the newly selected location,Pass,Nil,"New Pickup Location: Singanallur
+Drop Location: Sitra",Login with the Valid Mobile number
+TC_BP_04,TS_003 / Verify the Booking Page Scenario,Verify the functionality to edit the Drop location from Booking Page,"1) Open Rapido App
+2) Click Drop selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the Drop location Pin
+7) Fill a value and Select a location",The Drop location should be changed to the newly selected location,The Drop location is changed to the newly selected location,Pass,Nil,"Pickup Location: Singanallur
+New Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_05,TS_003 / Verify the Booking Page Scenario,Verify the functionality to edit the Drop location from Booking Page by 'Select from Map' button,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the Drop location Pin
+7) Click 'Select from Map' and Select a location
+8) Click Confirm Pickup",The Drop location should be changed to the newly selected location,The Drop location is changed to the newly selected location,Pass,Nil,"Pickup Location: Singanallur
+New Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_06,TS_003 / Verify the Booking Page Scenario,Verify the current Location icon in Booking Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Move around the map
+7) Click current location icon",The Pickup location should be zoomed in a bit,The Pickup location is zoomed in a bit,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_07,TS_003 / Verify the Booking Page Scenario,Verify the return icon in Booking page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Move around the map
+7) Click return icon",The pickup and drop locations should be shown in the page,The pickup and drop locations are shown in the page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_08,TS_003 / Verify the Booking Page Scenario,Verify the i buttons in Bike and Auto,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Move around the map
+7) Click i button in Bike (ER-01)
+8) Click Got it button
+8) Click i button in Auto (ER-01)",1) The Details of the pay should be shown in details in a small dialog box,1) The Details of the pay is shown in details in a small dialog box,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_09,TS_003 / Verify the Booking Page Scenario,Verify Selecting a far away location as pickup location,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the pickup location Pin
+7) Fill a far away location and Select a location",The User should be taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons,The User is taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_10,TS_003 / Verify the Booking Page Scenario,Verify Selecting a far away location as Drop location,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click the drop location Pin
+7) Fill a far away location and Select a location",The User should be taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons,The User is taken Booking page with a dialog box showing 'Fare Could not be calculated. No service found' and two buttons,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_11,TS_003 / Verify the Booking Page Scenario,Verify applying a coupon code,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select from the list of Coupon code in Coupon Page (ER-01)
+8) Click Apply (ER-02)","1) The Select button should be changed to remove and an Apply button should be shown with new price
+2) The User should be taken back to the booking page with the coupon applied and prices reduced","1) The Select button is changed to remove and an Apply button is shown with new price
+2) The User is taken back to the booking page with the coupon applied and prices reduced",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_12,TS_003 / Verify the Booking Page Scenario,Verify the remove button after clicking select in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select from the list of Coupon code in Coupon Page (ER-01)
+8) Click Remove (ER-02)
+9) Click Back Arrow Button (ER-03)","1) The Select button should be changed to remove and an Apply button should be shown with new price
+2) The remove button should change to select and the Apply button should disappear 
+3) The Coupon should not be applied","1) The Select button is changed to remove and an Apply button is shown with new price
+2) The remove button changes to select and the Apply button disappears 
+3) The Coupon is not be applied",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_13,TS_003 / Verify the Booking Page Scenario,"Verify Clicking Back button/ Back Arrow and Clicking 'Yes, Leave' Button instead of Apply does not apply coupon code","1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select from the list of Coupon code in Coupon Page
+8) Click Back Button (ER-01)
+9) Click 'Yes, Leave' (ER-02)
+10) Repeat steps 1-7 and Click Back arrow in top left corner (ER-01)
+11) Click 'Yes, Leave' (ER-02)","1) A Dialog Box Should Appear to confirm Exit  
+2) The User should be taken to Booking Page and coupon code should not be applied","1) A Dialog Box Appears to confirm Exit  
+2) The User is taken to Booking Page and coupon code should not be applied",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_14,TS_003 / Verify the Booking Page Scenario,Verify Clicking Back button/ Back Arrow and Clicking 'Apply Saving' Button instead of Apply applies coupon code,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select from the list of Coupon code in Coupon Page
+8) Click Back Button (ER-01)
+9) Click 'Yes, Leave' (ER-02)
+10) Repeat steps 1-7 and Click Back arrow in top left corner (ER-01)
+11) Click 'Apply Saving' (ER-02)","1) A Dialog Box Should Appear to confirm Exit  
+2) The User should be taken to Booking Page and coupon code should not be applied","1) A Dialog Box Appears to confirm Exit  
+2) The User is taken to Booking Page and coupon code should not be applied",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_15,TS_003 / Verify the Booking Page Scenario,Verify Clicking outside the exit dialog box closes the dialog box,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select from the list of Coupon code in Coupon Page
+8) Click Back Button (ER-01)
+9) Click 'Yes, Leave' (ER-02)
+10) Repeat steps 1-7 and Click Back arrow in top left corner (ER-01)
+11) Click outside the dialog box","1) A Dialog Box Should Appear to confirm Exit  
+2) The Dialog Box should disappear","1) A Dialog Box Appears to confirm Exit  
+2) The Dialog box disappears",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_16,TS_003 / Verify the Booking Page Scenario,Verify removing coupon code  after applying coupon code makes the price normal,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Select on a coupon code and click Apply
+8) Click Apply Coupon code and Click remove button
+9) Click Back Button/ Back Arrow Button",The User should be taken to Booking page and the coupon should be removed and the prices should return to normal,The User is taken to Booking page and the coupon is removed and the prices returns to normal,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_17,TS_003 / Verify the Booking Page Scenario,Verify the view details button in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click View Details from a coupon",Terms and Conditions about the Selected Coupon should be shown,Terms and Conditions about the Selected Coupon should be shown,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_18,TS_003 / Verify the Booking Page Scenario,Verify the number of coupons in Coupon button matches the number of coupons in Coupon page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code",The Number shown on the Coupon button should match the number of coupons in Coupon Page,The Number shown on the Coupon button matches the number of coupons in Coupon Page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_19,TS_003 / Verify the Booking Page Scenario,Verify Invalid Coupon code does not work in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Fill an invalid coupon in Enter Coupon Code Field and Click check",A Warning Should be shown under the field as 'Invalid Coupon Code',A Warning is shown under the field as 'Invalid Coupon Code',Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_20,TS_003 / Verify the Booking Page Scenario,Verify Blank Coupon code does not work in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Leave the Enter Coupon Code Field as Empty and Click check",A Warning Should be shown under the field as 'Please provide a promo code to apply!',A Warning is shown under the field as 'Please provide a promo code to apply!',Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_21,TS_003 / Verify the Booking Page Scenario,Verify the Rapido Coin Balance displayed on the Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code",The Rapido Coin Balance displayed should be equal to the Balance in your account,The Rapido Coin Balance displayed is equal to the Balance in your account,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_22,TS_003 / Verify the Booking Page Scenario,Verify the Rapido Coin Banner in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click the Rapido Coin Banner",The User should be taken to Rapido coin information page,The User is taken to Rapido coin information page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_23,TS_003 / Verify the Booking Page Scenario,Verify the Back Arrow button in Rapido Coin information page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click the Rapido Coin Banner
+8) Click the Back Arrow Button in top left corner",The User should be taken the Booking page,The User is taken the Booking page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_24,TS_003 / Verify the Booking Page Scenario,Verify the Back button from Rapido Coin information page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click the Rapido Coin Banner
+8) Click the Back Button in mobile",The User should be taken the Booking page,The User is taken the Booking page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_25,TS_003 / Verify the Booking Page Scenario,Verify x Button in Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click x button in top left corner",The User should be taken to Booking page,The User is taken to Booking page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_26,TS_003 / Verify the Booking Page Scenario,Verify clicking Back Button from Coupon Page,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Apply Coupon Code
+7) Click Back button in mobile",The User should be taken to Booking page,The User is taken to Booking page,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_27,TS_003 / Verify the Booking Page Scenario,Verify the Book button name changes according to the Selected vehicle,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Select Bike (ER-01)
+7) Select Auto (ER-02)","1) The Button should show the text Book Bike
+2) The Button should show the text Book Auto","1) The Button shows the text Book Bike
+2) The Button shows the text Book Auto",Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_28,TS_003 / Verify the Booking Page Scenario,Verify clicking Back button in Booking page takes user to HomePage,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Back button in mobile",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_BP_29,TS_003 / Verify the Booking Page Scenario,Verify clicking Back Arrow button in Booking page takes user to HomePage,"1) Open Rapido App
+2) Click Pickup selection bar and fill a valid value
+3) Select a location
+4) Click Drop Location Search bar and fill a valid value
+5) Select a location
+6) Click Back Arrow button in Top left corner",The User should be taken to HomePage,The User is taken to HomePage,Pass,Nil,"Pickup Location: Singanallur
+Drop Location: Fun mall",Login with the Valid Mobile number
+TC_ND_02,TS_004 / Verify the navigation drawer options,Verify the ability to open profile page from navigation drawer,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username",The profile page should be opened and details about the user should be shown,The profile page is opened and details about the user is shown,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_03,TS_004 / Verify the navigation drawer options,Verify the ability to change username in profile page with valid value,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click the username again
+5) Fill the first name and last name with valid value
+6) Click Save",The new name should be saved and visible in profile page,The new name is saved and visible in profile page,Pass,Nil,"First name:
+Naruto
+Last name:
+Uzumaki",Login with the Valid Mobile number
+TC_ND_04,TS_004 / Verify the navigation drawer options,Verify the ability to change username in profile page with invalid value,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click the username again
+5) Fill the first name and last name with valid value
+6) Click Save","Both the fields should show ""Special characters are not allowed""","Both the fields shows ""Special characters are not allowed""",Pass,Nil,"First name:
+N@&uto
+Last name:
+U*um%@i",Login with the Valid Mobile number
+TC_ND_05,TS_004 / Verify the navigation drawer options,Verify the ability to change username in profile page with Blank value,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click the username again
+5) Leave all the fields blank
+6) Click Save","Both the fields should show ""Special characters are not allowed""","Both the fields shows ""Special characters are not allowed""",Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_06,TS_004 / Verify the navigation drawer options,Verify the mobile number field in not editable,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click the username again
+5) Observe",The Mobile number field should be disabled,The Mobile number field is disabled,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_07,TS_004 / Verify the navigation drawer options,Verify changing the Email using valid value,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Email
+5) Fill the field with valid value
+6) Click Save",The Email should be saved and visible in profile page,The Email is saved and visible in profile page,Pass,Nil,"Email:
+naruto@link.tloz",Login with the Valid Mobile number
+TC_ND_08,TS_004 / Verify the navigation drawer options,Verify changing the Email using invalid value,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Email
+5) Fill the field with invalid value
+6) Click Save","The Email field should show the error ""Required a valid email id""","The Email field shows the error ""Required a valid email id""",Pass,Nil,"Invalid emails:
+1) naruto
+2) naruto@
+3) naruto@link
+4) naruto@link.",Login with the Valid Mobile number
+TC_ND_09,TS_004 / Verify the navigation drawer options,Verify changing the Email using empty,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Email
+5) Leave the email field empty
+6) Click Save","The Email field should show the error ""Required a valid email id""","The Email field shows the error ""Required a valid email id""",Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_10,TS_004 / Verify the navigation drawer options,Verify changing the gender in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Gender
+5) Select a Gender",The Gender should be changed as our selected value,The Gender is changed as our selected value,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_11,TS_004 / Verify the navigation drawer options,Verify changing Date of Birth in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Date of Birth
+5) Select a Date of Birth",The Date of Birth should be changed to the new value,The Date of Birth is changed to the new value,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_12,TS_004 / Verify the navigation drawer options,Verify adding Emergency Contacts in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Emergency Contacts
+5) Click Add Trusted Contacts
+6) Select a few contacts
+7) Click Add",The Selected contacts should be added to the Emergency Contacts Page,The Selected contacts are added to the Emergency Contacts Page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_13,TS_004 / Verify the navigation drawer options,Verify Deleting Emergency conacts in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Emergency Contacts
+5) Click options in a contact
+6) Click Delete",The Contact should be deleted,The Contact is deleted,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_14,TS_004 / Verify the navigation drawer options,Verify only 4 contacts can be added to Emergency Contacts,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Emergency Contacts
+5) Click Add Trusted Contacts
+6) Select more than 4 contacts",It should show the error 'Only 4 contacts can be added',It shows the error 'Only 4 contacts can be added',Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_15,TS_004 / Verify the navigation drawer options,Verify the Member Since in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Observe",The Member since should show the month and year of joining,The Member since shows the month and year of joining,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_16,TS_004 / Verify the navigation drawer options,Verify the functionality of Logout button,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Logout
+5) Click Logout",The user should be Logged out,The user is logged out,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_17,TS_004 / Verify the navigation drawer options,Verify the functionality of Not now in Logout popup,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Logout
+5) Click Not now",The user should not logged out,The user is not logged out,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_18,TS_004 / Verify the navigation drawer options,Verify the Support button in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click Support",The user should be taken to FAQ page,The user is taken to FAQ page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_19,TS_004 / Verify the navigation drawer options,Verify back arrow button in profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click back arrow",The user should be taken to Homepage,The user is taken to Homepage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_20,TS_004 / Verify the navigation drawer options,Verify back button in mobile from profile page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click the username
+4) Click back button in mobile",The user should be taken to Homepage,The user is taken to Homepage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_21,TS_004 / Verify the navigation drawer options,Verify My Rating in options,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click my rating",The user should be shown the rating in options and should be taken to options info page on clicking,The user is shown the rating in options and is taken to options info page on clicking,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_22,TS_004 / Verify the navigation drawer options,Verify the Payment in options,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Payment",The user should be taken to Payment page,The user is taken to Payment page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_23,TS_004 / Verify the navigation drawer options,Verify the linking paytm wallet in Rapido,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Payment
+4) Click link button near Paytm
+5) Fill a valid otp",The paytm should be linked and wallet balance should be added,The paytm is linked and wallet balance is added,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_24,TS_004 / Verify the navigation drawer options,Verify seeing ride history,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My rides",The ride history should be shown,The ride history is shown,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_25,TS_004 / Verify the navigation drawer options,Verify seeing parcel history,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My rides
+4) Click parcel                   ",The parcel history should be shown,The parcel history is shown,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_26,TS_004 / Verify the navigation drawer options,Verify seeing safety information in Rapido options,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My rides
+4) Click Safety                 ",The user should be taken to safety information page,The user is taken to safety information page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_27,TS_004 / Verify the navigation drawer options,Verify refer now button in refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click refer now    ",A share dialog should open with the ability to share refer link,A share dialog opens with the ability to share refer link,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_28,TS_004 / Verify the navigation drawer options,Verify invite by SMS in refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click Invite
+5) Click SMS on a contact ",The refer link with a text should be sent to the contact in SMS,The refer link with a text is sent to the contact in SMS,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_29,TS_004 / Verify the navigation drawer options,Verify invite by WhatsApp in refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click Invite
+5) Click WhatsApp on a contact ",The refer link with a text should be sent to the contact in WhatsApp,The refer link with a text is sent to the contact in WhatsApp,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_30,TS_004 / Verify the navigation drawer options,Verify FAQs button in refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click FAQs ",The user should be taken to FAQ page,The user is taken to FAQ page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_31,TS_004 / Verify the navigation drawer options,Verify back arrow button in refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click back arrow button",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_32,TS_004 / Verify the navigation drawer options,Verify back button in mobile from refer page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Refer and Earn
+4) Click back button in mobile",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_33,TS_004 / Verify the navigation drawer options,Verify My Rewards page has list of rewards,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My Rewards",The user should be taken to My Rewards page with list of rewards,The user is taken to My Rewards page with list of rewards,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_34,TS_004 / Verify the navigation drawer options,Verify back arrow button in rewards page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My Rewards
+4) Click back arrow button",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_35,TS_004 / Verify the navigation drawer options,Verify back button in mobile from rewards page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click My Rewards
+4) Click back button in mobile",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_36,TS_004 / Verify the navigation drawer options,Verify toggling Always use Rapido Coins,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Rapido Coins
+4) Toggle 'Always use Rapido Coins'",The Toggle should work and rides should use rapido coin,The Toggle works and rides use rapido coin,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_37,TS_004 / Verify the navigation drawer options,Verify know more button in Rapido Coin page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Rapido Coins
+4) Click Know more",The user should be taken to Rapido coin information page,The user is taken to Rapido coin information page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_38,TS_004 / Verify the navigation drawer options,Verify back arrow button in Rapido Coins page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Rapido Coins
+4) Click back arrow button",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_39,TS_004 / Verify the navigation drawer options,Verify back button in mobile from Rapido Coins page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Rapido Coins
+4) Click back button in mobile",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_40,TS_004 / Verify the navigation drawer options,Verify power pass page in options,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Power Pass",The user should be taken power pass page and should show coming soon to your city,The user is taken power pass page and should show coming soon to your city,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_41,TS_004 / Verify the navigation drawer options,Verify back arrow button in power pass page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click power pass
+4) Click back arrow button",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_42,TS_004 / Verify the navigation drawer options,Verify back button in mobile from power pass page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click power pass
+4) Click back button in mobile",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_43,TS_004 / Verify the navigation drawer options,Verify the ability to check notifications in rapido,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Notifications",All the previous notification from rapido should be shown in the page,All the previous notification from rapido is shown in the page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_44,TS_004 / Verify the navigation drawer options,Verify the ability to clear notification,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Notifications
+4) Click options icon on top right corner and click clear",The Notifications should be cleared,The Notifications are cleared,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_45,TS_004 / Verify the navigation drawer options,Verify the ability to see claim procedure,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Claims
+4) Click view in Claim procedure",A Webview should be opened with claim procedure site,A Webview is opened with claim procedure site,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_46,TS_004 / Verify the navigation drawer options,Verify the ability to see Terms and Conditions of insurance claim,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Claims
+4) Click view in Terms and Conditions",A Webview should be opened with Terms and Conditions site,A Webview is opened with Terms and Conditions site,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_47,TS_004 / Verify the navigation drawer options,Verify the ability to claim insurance,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Claims
+4) Click Claim Insurance
+5) Select a ride
+6) Select the type of claim and fill the form",The insurance claim procedure should be initiated,The insurance claim procedure are initiated,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_48,TS_004 / Verify the navigation drawer options,Verify back arrow button in Claims page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Claims
+4) Click back arrow button",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_49,TS_004 / Verify the navigation drawer options,Verify back button in mobile from Claims page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Claims
+4) Click back button in mobile",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_50,TS_004 / Verify the navigation drawer options,Verify the Support button in navigation drawer,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Support",The user should be taken to support page,The user is taken to support page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_51,TS_004 / Verify the navigation drawer options,Verify going to profile page from settings page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Profile",The user should be taken to Profile page,The user is taken to Profile page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_52,TS_004 / Verify the navigation drawer options,Verify Adding address in favourites page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Favourites
+5) Click add address
+6) Move the pin to a location and Click Set as Favorite
+7) Choose as title",The address should be added to favorites,The address is added to favorites,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_53,TS_004 / Verify the navigation drawer options,Verify Deleting address in favourites page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Favourites
+5) Click add address
+6) Move the pin to a location and Click Set as Favorite
+7) Choose as title
+8) Click delete icon in an address",The address should be added to deleted,The address is deleted from favorites,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_54,TS_004 / Verify the navigation drawer options,Verify changing language in Rapido,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click App Language
+5) Select a language and click Save",The Language of Rapido app should be changed to the selected language,The Language of Rapido app is changed to the selected language,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_55,TS_004 / Verify the navigation drawer options,Verify Preferences page in Settings Page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Preferences",The user should be taken to preferences page with toggles for various options,The user is taken to preferences page with toggles for various options,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_56,TS_004 / Verify the navigation drawer options,Verify About page in Settings Page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click About Page",The user should be taken to about page with various options,The user is taken to about page with various options,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_57,TS_004 / Verify the navigation drawer options,Verify the Subscribe to Beta button in Settings Page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Subscribe to Beta",The user should be taken play store rapido beta page,The user is taken play store rapido beta page,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+TC_ND_58,TS_004 / Verify the navigation drawer options,Verify Logout from Settings page,"1) Open Rapido app
+2) Click options icon in top left corner
+3) Click Settings
+4) Click Logout
+5) Click Logout in logout dialog",The user should be Logged out,The user is logged out,Pass,Nil,Not Applicable,Login with the Valid Mobile number
+,,,,,,,,,
+,,,,,,,,,
+VELOCITY POINTS :,,,,,,,,,
+,,,,,,,,,
+,NAME,WORKING DAYS,POTENTIAL POINTS,POINTS COMMITTED,COMMENTS,,,,
+,RANJITH C,4,12,12,,,,,
+,,,,,,,,,
+,,,,,,,,,
+EPIC,DETAILS,SUCCESS CRITERIA,POINTS(NUMERICAL VALUE),OWNER,POINTS COMPLETED,HOURS,STATUS,,
+,,,,,,,,,
+Login/Signup,,,2,RANJITH C,2,5,,,
+,Login with mobile number,checked,1,,,,,,
+,Sign up with mobile number,checked,1,,,,,,
+HomePage,,,3,RANJITH C,3,8,,,
+,Pickup selection page,checked,1.5,,,,,,
+,Drop selection page,checked,1.5,,,,,,
+Booking Page,,,3,RANJITH C,3,8,,,
+,Booking Page,checked,1.5,,,,,,
+,Coupon page,checked,1.5,,,,,,
+Navigation Drawer,,,3.5,RANJITH C,3.5,9,,,
+,Profile page,checked,1,,,,,,
+,Settings page,checked,1,,,,,,
+,Other pages,checked,1.5,,,,,,

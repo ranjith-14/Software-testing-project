@@ -1,0 +1,1000 @@
+Version,By,Date,Description,,,,,
+1,Ranjith,03-09-2023 00:00,First version,,,,,
+,,,,,,,,
+,,,,,,,,
+Client,Orange HRM,,,,,,,
+Reference,FRS,,,,,,,
+Created By,Ranjith,,,,,,,
+Creation Date,31-08-2023 00:00,,,,,,,
+Approval Date,31-08-2023 00:00,,,,,,,
+Site,https://opensource-demo.orangehrmlive.com,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Test Scenario ID,Reference,Test Scenario Description,Priority,Number of Test Cases,,,,
+TS_001,FRS,Validate the working of 'Login' functionality,P0,13,,,,
+TS_002,FRS,Validate the working of 'Forgot Password' functionality,P2,9,,,,
+TS_003,FRS,Validate the working of 'My info > Personal Details' functionality,P1,60,,,,
+TS_004,FRS,Validate the working of 'My info > Profile picture',P3,10,,,,
+TS_005,FRS,Validate the working of 'My info > Contact Details',P3,32,,,,
+TS_006,FRS,Validate the working of 'My info > Emergency Contacts',P3,25,,,,
+TS_007,FRS,Validate the working of 'My info > Dependents',P3,27,,,,
+,,,Total,176,,,,
+,,,,,,,,
+,,,,,,,,
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_LF_02,TS_001 (Login),Verify the Username field does not accept empty value,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the valid password
+2) Leave the email id empty
+3) Click Login","Username:
+
+Password:
+Rei@penber2","The User should not be logged in and email field shows ""required"" message",,
+TC_LF_03,TS_001 (Login),Verify the Username Field accepts and trims leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the username with leading and trailing spaces
+2) Fill the valid password
+3) Click Login","Username:
+     Rei Penber    
+Password:
+Rei@penber2",The User should be Logged in and taken to Dashboard,,
+TC_LF_04,TS_001 (Login),Verify the Username Field does not accept accept only spaces as values,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the username with only spaces
+2) Fill the valid password
+3) Click Login","Username:
+    
+Password:
+Rei@penber2",The User should not be logged in and shown the text Invalid credentials,,
+TC_LF_05,TS_001 (Login),Verify the Password fields does not accept blank values,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the password with only spaces
+2) Fill the valid username
+3) Click Login","Username:
+Rei Penber
+Password:
+ ","The User should not be logged in and password field shows ""required"" message",,
+TC_LF_06,TS_001 (Login),Verify the Password fields does not accepts and trims leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the password with only spaces
+2) Fill the valid username
+3) Click Login","Username:
+Rei Penber
+Password:
+    ",The User should be not Logged in,,
+TC_LF_07,TS_001 (Login),Verify the Password field is toggled to invisibilty,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout",1) Fill the username and password fields,"Username:
+Rei Penber
+Password:
+Rei@penber2",The Password should not be shown and shown dots instead,,
+TC_LF_08,TS_001 (Login),Verify the Forgotten Password Link works,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout",1) Click Forgot Password link,Not Applicable,The User should be taken to forgot password page,,
+TC_LF_09,TS_001 (Login),Verify the log in is still there after closing and reopening browser,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the valid username and password
+2) Click Login
+3) Close the browser and reopen the browser
+4) Navigate the site","Username:
+Rei Penber
+Password:
+Rei@penber2",The User should be still logged in,,
+TC_LF_10,TS_001 (Login),Verify clicking the back button does not log out the user,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the valid username and password
+2) Click Login
+3) Click the back button","Username:
+Rei Penber
+Password:
+Rei@penber2",The User should not be taken to Login Page,,
+TC_LF_11,TS_001 (Login),Verify the ability to logout,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the valid username and password
+2) Click Login
+3) Click the profile picture icon dropdown
+4) Click logout",Not Applicable,The User should be logged out and the user should be taken to login page,,
+TC_LF_12,TS_001 (Login),Verify the back button does not login again after logged out,"1) Open the site in any supported browser
+2) Login with admin credentials
+3) Create a user with Login in PIM module
+4) Logout","1) Fill the valid username and password
+2) Click Login
+3) Click the profile picture icon dropdown
+4) Click logout
+5) Click Back button",Not Applicable,The User should stay logged out,,
+TC_LF_13,TS_001 (Login),Verify the labels are correct in login page,Not Applicable,1) Open the site in any supported browser,Not Applicable,The labels should be properly placed,,
+TC_LF_14,TS_001 (Login),Verify the all the fields are present in login page,Not Applicable,1) Open the site in any supported browser,Not Applicable,The fields should be properly placed,,
+TC_LF_15,TS_001 (Login),Verify the all the place holders are present in login page,Not Applicable,1) Open the site in any supported browser,Not Applicable,The place holders should be properly placed,,
+TC_FP_02,"TS_002
+(Forgot Password)",Verify filling invalid credentials in Forgot Password,1) Open the site in any supported browser,"1) Click the Forgot password link
+2) Fill the username with invalid credentials
+3) Click Reset password button","Username:
+Soichi Yagami","The User should be navigated to a page where the user, should be informed that the username is invalid",,
+TC_FP_03,"TS_002
+(Forgot Password)",Verify filling valid credentials in Forgot Password with trailing and leading spaces,1) Open the site in any supported browser,"1) Click the Forgot password link
+2) Fill the username with valid credentials with leading and trailing spaces
+3) Click Reset password button","Username:
+     Rei Penber     ","The spaces are removed and The User should be navigated to email sent page where it informed the user, email is sent to regiestered mail address",,
+TC_FP_04,"TS_002
+(Forgot Password)",Verify leaving the fields empty,1) Open the site in any supported browser,"1) Click the Forgot password link
+2) Leave the username fields and Click Reset password button",Not Applicable,"The Username field should be shown ""Required"" message and the user should be not proceeded further",,
+TC_FP_05,"TS_002
+(Forgot Password)",Verify leaving the fields with only spaces,1) Open the site in any supported browser,"1) Click the Forgot password link
+2) Fill the username field with only spaces and Click Reset password button",Not Applicable,"The Username field should be shown ""Required"" message and the user should be not proceeded further",,
+TC_FP_06,"TS_002
+(Forgot Password)",Verify the function of Cancelbutton,1) Open the site in any supported browser,"1) Click the Forgot password link
+2) Click the Cancel Button",Not Applicable,The User should be taken to the Login Page,,
+TC_FP_07,"TS_002
+(Forgot Password)",Verify the labels are correct in forgot password page,1) Open the site in any supported browser,1) Click the Forgot password link,Not Applicable,The labels should be properly placed,,
+TC_FP_08,"TS_002
+(Forgot Password)",Verify the all the fields are present in forgot password page,1) Open the site in any supported browser,1) Click the Forgot password link,Not Applicable,The fields should be properly placed,,
+TC_FP_09,"TS_002
+(Forgot Password)",Verify the all the place holders are present in forgot password page,1) Open the site in any supported browser,1) Click the Forgot password link,Not Applicable,The place holders should be properly placed,,
+TC_PD_02,TS_003 (Personal Details),Verify the list of row buttons in My info page,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click all the buttons one by one","Username:
+Rei Penber
+Password:
+Rei@penber2",The Page should change to respective button that was clicked,,
+TC_PD_03,TS_003 (Personal Details),Verify Help Button function,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the help button in top right corner","Username:
+Rei Penber
+Password:
+Rei@penber2",A New tab should be opened with help about the details about personal details ,,
+TC_PD_04,TS_003 (Personal Details),Verify only some fields are user editable,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Verify all fileds except Driver's licence number, Date of BIrth and Employee ID are editable ",Not Applicable,"All fields except Driver's licence number, Date of Birth and Employee ID should be editable ",,
+TC_PD_05,TS_003 (Personal Details),Verify the first name for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the first name field with valid credential
+3) Click Save",1) Rei,The credentials should be saved,,
+TC_PD_06,TS_003 (Personal Details),Verify the first name field does not accept empty valuesl,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Leave the first name field empty
+3) Click Save",Not Applicable,"A Warning should be shown as ""Required""",,
+TC_PD_07,TS_003 (Personal Details),Verify the first name for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the first name field with 29 characters (ER-01)
+3) Fill the first name field with 30 characters (ER-01)
+4) Fill the first name field with 31 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under first name field
+2) A Warning should be shown as ""Should not exceed 30 characters""",,
+TC_PD_08,TS_003 (Personal Details),Verify the first name field does not take spaces as valid values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the first name field with only spaces
+3) Click save",Not Applicable,"A Warning should be shown as ""Required""",,
+TC_PD_09,TS_003 (Personal Details),Verify the first name field trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the first name field with valid values with leading and trailing spaces
+3) Click save",Not Applicable,The Leading and trailing spaces should be removed and the name should be saved,,
+TC_PD_10,TS_003 (Personal Details),Verify the last name for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the last name field with valid credential
+3) Click Save",1) Penber,The credentials should be saved,,
+TC_PD_11,TS_003 (Personal Details),Verify the last name field does not accept empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Leave the last name field empty
+3) Click Save",Not Applicable,"A Warning is shown should be shown as ""Required""",,
+TC_PD_12,TS_003 (Personal Details),Verify the last name for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the last name field with 29 characters (ER-01)
+3) Fill the last name field with 30 characters (ER-01)
+4) Fill the last name field with 31 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under last name field
+2) A Warning should be shown as ""Should not exceed 30 characters""",,
+TC_PD_13,TS_003 (Personal Details),Verify the last name field does not take spaces as valid values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the last name field with only spaces
+3) Click save",Not Applicable,"A Warning is shown should be shown as ""Required""",,
+TC_PD_14,TS_003 (Personal Details),Verify the last name field trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the last name field with valid values with leading and trailing spaces
+3) Click save",Not Applicable,The Leading and trailing spaces should be removed and the name should be saved,,
+TC_PD_15,TS_003 (Personal Details),Verify the middle name for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the middle name field with valid credential
+3) Click Save",1) Penber,The credentials should be saved,,
+TC_PD_16,TS_003 (Personal Details),Verify the middle name field accepts empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Leave the middle name field empty
+3) Click Save",Not Applicable,No Warning should be shown,,
+TC_PD_17,TS_003 (Personal Details),Verify the middle name for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the middle name field with 29 characters (ER-01)
+3) Fill the middle name field with 30 characters (ER-01)
+4) Fill the middle name field with 31 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under middle name field
+2) A Warning should be shown as ""Should not exceed 30 characters""",,
+TC_PD_18,TS_003 (Personal Details),Verify the middle name field trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the middle name field with valid values with leading and trailing spaces
+3) Click save",Not Applicable,The Leading and trailing spaces should be removed and the name should be saved,,
+TC_PD_19,TS_003 (Personal Details),Verify the Other Id for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the Other Id field with valid credential
+3) Click Save",1) Rei,The credentials should be saved,,
+TC_PD_20,TS_003 (Personal Details),Verify the Other Id field accepts empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Leave the Other Id field empty
+3) Click Save",Not Applicable,No Warning should be shown,,
+TC_PD_21,TS_003 (Personal Details),Verify the Other Id for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the Other Id field with 29 characters (ER-01)
+3) Fill the Other Id field with 30 characters (ER-01)
+4) Fill the Other Id field with 31 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under Other Id field
+2) A Warning should be shown as ""Should not exceed 30 characters""",,
+TC_PD_22,TS_003 (Personal Details),Verify the Other Id field trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the Other Id field with valid values with leading and trailing spaces
+3) Click save",Not Applicable,The Leading and trailing spaces should be removed and the name should be saved,,
+TC_PD_23,TS_003 (Personal Details),"Verify the License Expiry Date for valid credentials in ""yyyy-mm-dd"" format","1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with valid credentials in ""yyyy-mm-dd"" format
+3) Click Save",1) 2020-09-01,The credentials should be saved,,
+TC_PD_24,TS_003 (Personal Details),Verify the License Expiry Date field accepts empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Leave the License Expiry Date field empty
+3) Click Save",Not Applicable,No Warning should be shown,,
+TC_PD_25,TS_003 (Personal Details),Verify the License Expiry Date does not accept invlid format,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with values in other format than ""yyyy-mm-dd""",Not Applicable,"A Warning should be shown as ""Should be a valid date in yyyy-mm-dd format""",,
+TC_PD_26,TS_003 (Personal Details),Verify the License Expiry Date field does not take spaces as valid values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with only spaces
+3) Click save",Not Applicable,"A Warning should be shown as ""Should be a valid date in yyyy-mm-dd format""",,
+TC_PD_27,TS_003 (Personal Details),"Verify the License Expiry Date for valid credentials in non ""yyyy-mm-dd"" format","1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with valid credentials in not ""yyyy-mm-dd"" format
+3) Click Save",1) 01-02-2020,"A Warning should be shown as ""Should be a valid date in yyyy-mm-dd format""",,
+TC_PD_28,TS_003 (Personal Details),"Verify the License Expiry Date for invalid credentials in ""yyyy-mm-dd"" format","1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with invalid credentials in ""yyyy-mm-dd"" format
+3) Click Save",1) 2021-02-31,"A Warning should be shown as ""Should be a valid date in yyyy-mm-dd format""",,
+TC_PD_29,TS_003 (Personal Details),"Verify the License Expiry Date for invalid credentials in non ""yyyy-mm-dd"" format","1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Fill the License Expiry Date field with invalid credentials in not ""yyyy-mm-dd"" format
+3) Click Save",1) 31-02-2020,"A Warning should be shown as ""Should be a valid date in yyyy-mm-dd format""",,
+TC_PD_30,TS_003 (Personal Details),Verify the Date picker opens when License expiry date fields is clicked,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the License Expiry Date field 
+",Not Applicable,A Date Picker should be shown,,
+TC_PD_31,TS_003 (Personal Details),Verify the calender button in Licence expiry date field,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date",Not Applicable,A Date Picker should be shown,,
+TC_PD_32,TS_003 (Personal Details),Verify the clear button inside calender selector,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Fill the field with valid credential
+4) Click Clear button",1) 01-02-2020,The field should be clear and no warning should be shown,,
+TC_PD_33,TS_003 (Personal Details),Verify the Today button inside calender selector,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click Today Button",Not Applicable,The Field should be filled with Today's date,,
+TC_PD_34,TS_003 (Personal Details),Verify the Close button inside calender selector,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click Close Button",Not Applicable,The Date picker should be closed,,
+TC_PD_35,TS_003 (Personal Details),Verify Today date is highlighted by default in Date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date",Not Applicable,The Today's Date should be highlighted,,
+TC_PD_36,TS_003 (Personal Details),Verify the ability to select date in date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click a date",Not Applicable,The Clicked date should be shown in the field and Date Picker should be closed,,
+TC_PD_37,TS_003 (Personal Details),Verify the ability to change dates after selecting date in date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click a date
+4) Click the calender button in Licence Expiry Date field",Not Applicable,The Clicked date should be shown in the field and Date Picker should be closed,,
+TC_PD_38,TS_003 (Personal Details),Verify the ability to select year in date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click the year dropdown and select a year (ER-01)
+4) Click a date (ER-02)",Not Applicable,"1) The Dates should be listed correctly according to the selected year
+2) The Clicked date should be shown in the field and Date Picker should closed",,
+TC_PD_39,TS_003 (Personal Details),Verify the ability to select month in date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click the month dropdown and select a month (ER-01)
+4) Click a date (ER-02)",Not Applicable,"1) The Dates should be listed correctly according to the selected month
+2) The Clicked date should be shown in the field and Date Picker should be closed",,
+TC_PD_40,TS_003 (Personal Details),Verify the forward and backward buttons in the date picker,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the calender button in License Expiry Date
+3) Click the forward and backward buttons",Not Applicable,"The Date, Month, Year should be changed according to the number click of forward and backward buttons",,
+TC_PD_41,TS_003 (Personal Details),Verify the Nationality Dropdown for selecting nations ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Nationality dropdown
+3) Click a country",Not Applicable,The Dropdown should be closed and the Clicked nation should be selected,,
+TC_PD_42,TS_003 (Personal Details),Verify the Nationality Dropdown highlights already selected nation ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Nationality dropdown
+3) Click a country
+4) Click the Nationality dropdown
+5) Scroll to the selected country (ER-01) 
+6) Click save (ER-02)",Not Applicable,"1) The Seleced country should be highlighted
+2) The selected country should be saved",,
+TC_PD_43,TS_003 (Personal Details),Verify the Marital Status DropDown for selecting Marital Status ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Marital Status Dropdown
+3) Select a value",Not Applicable,The Dropdown should be closed and the Clicked Marital Status should be selected,,
+TC_PD_44,TS_003 (Personal Details),Verify the Marital Status Dropdown highlights already selected Marital Status,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Marital Status dropdown
+3) Click a value
+4) Click the Marital Status dropdown
+5) Scroll to the selected value (ER-01)
+6) Click Save",Not Applicable,"1) The Seleced value should be highlighted
+2) The Selected value should be saved",,
+TC_PD_45,TS_003 (Personal Details),Verify the Gender radio buttons is clickable,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click a gender radio button
+3) Click save",Not Applicable,The selected radio button should be highlighted and saved,,
+TC_PD_46,TS_003 (Personal Details),Verify the ability to add attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file
+4) Click save",Not Applicable,The File should be saved and listed accordingly,,
+TC_PD_47,TS_003 (Personal Details),Verify the ability to add attachements with comments,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file
+4) Fill the comment field with some values
+5) Click save",Not Applicable,The File should be saved and listed accordingly with the comment,,
+TC_PD_48,TS_003 (Personal Details),Verify the cancel button in achivements section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click cancel button",Not Applicable,The add wizard should be closed,,
+TC_PD_49,TS_003 (Personal Details),Verify the delete button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_PD_50,TS_003 (Personal Details),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_PD_51,TS_003 (Personal Details),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_PD_52,TS_003 (Personal Details),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_PD_53,TS_003 (Personal Details),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_PD_54,TS_003 (Personal Details),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_PD_55,TS_003 (Personal Details),Verify the attachements maximum file size is 1 MB,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file more than 1MB
+4) Click Save",Not Applicable,A Warning should be shown that a file size limit is 1 MB,,
+TC_PD_56,TS_003 (Personal Details),Verify the download button in attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement",1) Click Download icon button in any of the attachements,Not Applicable,The File should be downloaded to the pc,,
+TC_PD_57,TS_003 (Personal Details),Verify the edit button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Add a few files to attachement",1) Click Edit icon button in any of the attachements,Not Applicable,A Selection wizard should appear with the attachements already selected where the edit button is clicked,,
+TC_PD_58,TS_003 (Personal Details),Verify the labels are correct in personal details page,"1) Open the site in any supported browser
+2) Login with ESS credentials",1) Click the My Info button,Not Applicable,The labels should be properly placed,,
+TC_PD_59,TS_003 (Personal Details),Verify the all the fields are present in personal details page,"1) Open the site in any supported browser
+2) Login with ESS credentials",1) Click the My Info button,Not Applicable,The fields should be properly placed,,
+TC_PD_60,TS_003 (Personal Details),Verify the all the place holders are present in personal details page,"1) Open the site in any supported browser
+2) Login with ESS credentials",1) Click the My Info button,Not Applicable,The place holders should be properly placed,,
+TC_PP_02,"TS_004 
+(Profile Picture)",Verify the ability to upload valid image as profile picture ,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select an image under 1 MB in File explorer and click open
+4) Click Save",Not Applicable,The Profile picture should be changed and the new picture should be visible in left corner,,
+TC_PP_03,"TS_004 
+(Profile Picture)",Verify the profile picture upload does not take more than maximum size,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select an image above 1 MB in File explorer and click open
+4) Click Save",Not Applicable,"A Warning should be shown as ""Attachment Size Exceeded""",,
+TC_PP_04,"TS_004 
+(Profile Picture)",Verify the profile picture takes exactly maximum size,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select an image below 1 MB in File explorer and click open
+4) Click Save",Not Applicable,The Profile picture should be changed and the new picture should be visible in left corner,,
+TC_PP_05,"TS_004 
+(Profile Picture)",Verify the ability to not upload non supported files,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select a file that is not supported
+4) Click Save",Not Applicable,"A Warning should be shown as ""File type not allowed""",,
+TC_PP_06,"TS_004 
+(Profile Picture)",Verify the ability to upload valid .png files,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select a .png file under 1 MB
+4) Click Save",Not Applicable,The Profile picture should be changed and the new picture should be visible in left corner,,
+TC_PP_07,"TS_004 
+(Profile Picture)",Verify the ability to upload valid .jpg files,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select a .jpg file under 1 MB
+4) Click Save",Not Applicable,The Profile picture should be changed and the new picture should be visible in left corner,,
+TC_PP_08,"TS_004 
+(Profile Picture)",Verify the ability to upload valid .gif files,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click + icon in the center of the page
+3) Select a .gif file under 1 MB
+4) Click Save",Not Applicable,The Profile picture should be changed and the new picture should be visible in left corner,,
+TC_PP_09,"TS_004 
+(Profile Picture)",Verify the working of Help Button in Profile Picture page,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button","1) Click the profile picture icon on the top left corner
+2) Click the Help Icon Button",Not Applicable,A New Window should open with help about Profile Pictures,,
+TC_PP_10,"TS_004 
+(Profile Picture)",Verify the labels are correct in Profile Picture page,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button",1) Click the profile picture icon on the top left corner,Not Applicable,The labels should be properly placed,,
+TC_CD_02,TS_005 (Contact Details),Verify Help Button function,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click the help button in top right corner",Not Applicable,A New tab should be opened with help about the details about Contact Details,,
+TC_CD_03,TS_005 (Contact Details),Verify the fields under Address section for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Address section with valid credential
+4) Click Save",Not Applicable,"The credentials should be saved and A Message should appear as ""Successfully saved""",,
+TC_CD_04,TS_005 (Contact Details),Verify the fields under Address section fields accepts empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Leave the fields under Address section empty
+4) Click Save",Not Applicable,No Warning should be shown,,
+TC_CD_05,TS_005 (Contact Details),Verify the fields under Address section except Postal Code for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Address section with 69 characters (ER-01)
+3) Fill the fields under Address section with 70 characters (ER-01)
+4) Fill the fields under Address section with 71 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under fields under Address Section
+2) A Warning should be shown as ""Should not exceed 70 characters""",,
+TC_CD_06,TS_005 (Contact Details),Verify the Postal Code field for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the Postal Code field with 9 characters (ER-01)
+3) Fill the Postal Code field with 10 characters (ER-01)
+4) Fill the Postal Code field with 11 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under Postal Code field
+2) A Warning should be shown as ""Should not exceed 10 characters""",,
+TC_CD_07,TS_005 (Contact Details),Verify the fields under Address section trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Address section with valid values with leading and trailing spaces
+4) Click save",Not Applicable,The Leading and trailing spaces should be removed and the value should be saved,,
+TC_CD_08,TS_005 (Contact Details),Verify the Country Dropdown for selecting nations ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click the Country dropdown
+4) Click a country",Not Applicable,The Dropdown should be closed and the Clicked nation should be selected,,
+TC_CD_09,TS_005 (Contact Details),Verify the Country Dropdown highlights already selected nation ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click the Country dropdown
+4) Click a country
+5) Click the Nationality dropdown
+6) Scroll to the selected country (ER-01) 
+7) Click save (ER-02)",Not Applicable,"1) The Seleced country should be highlighted
+2) The selected country should be saved",,
+TC_CD_10,TS_005 (Contact Details),Verify the fields under Telephone section for valid credential,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Telephone section with valid credential
+4) Click Save",Not Applicable,"The credentials should be saved and A Message should appear as ""Successfully saved""",,
+TC_CD_11,TS_005 (Contact Details),Verify the fields under Telephone section fields accepts empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Leave the fields under Telephone section empty
+4) Click Save",Not Applicable,No Warning should be shown,,
+TC_CD_12,TS_005 (Contact Details),Verify the fields under Telephone section for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Telephone section with 24 characters (ER-01)
+3) Fill the fields under Telephone section with 25 characters (ER-01)
+4) Fill the fields under Telephone section with 26 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under fields under Telephone section
+2) A Warning should be shown as ""Should not exceed 25 characters""",,
+TC_CD_13,TS_005 (Contact Details),Verify the fields under Telephone section trims out leading and trailing spaces,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Telephone section with valid values with leading and trailing spaces
+4) Click save",Not Applicable,The Leading and trailing spaces should be removed and the value should be saved,,
+TC_CD_14,TS_005 (Contact Details),Verify the fields under Telephone section for invalid charaters,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Telephone section with invalid values 
+4) Click save",Not Applicable,"A Warning should be shown as ""Allows numbers and only + - / ( )""",,
+TC_CD_15,TS_005 (Contact Details),Verify the fields under Email section for valid credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Email section with valid values 
+4) Click save",example@mail.com,"The credentials should be saved and A Message should appear as ""Successfully saved""",,
+TC_CD_16,TS_005 (Contact Details),Verify the fields under Email section for invalid credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Email section with invalid values 
+4) Click save","1) example
+2) example@
+3) example@mail
+4) example@mail.com","A Warning should be shown as ""Expected format: admin@example.com""",,
+TC_CD_17,TS_005 (Contact Details),Verify the fields under Email section for maximum allowed credentials,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Fill the fields under Email section with 49 characters (ER-01)
+3) Fill the fields under Email section with 50 characters (ER-01)
+4) Fill the fields under Email section with 51 charatcters (ER-02)",Not Applicable,"1) No Warning should be shown under fields under Email section
+2) A Warning should be shown as ""Should not exceed 50 characters""",,
+TC_CD_18,TS_005 (Contact Details),Verify the ability to add attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Click save",Not Applicable,The File should be saved and listed accordingly,,
+TC_CD_19,TS_005 (Contact Details),Verify the ability to add attachements with comments,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Fill the comment field with some values
+6) Click save",Not Applicable,The File should be saved and listed accordingly with the comment,,
+TC_CD_20,TS_005 (Contact Details),Verify the cancel button in achivements section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons
+3) Click add under attachements section
+4) Click cancel button",Not Applicable,The add wizard should be closed,,
+TC_CD_21,TS_005 (Contact Details),Verify the delete button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_CD_22,TS_005 (Contact Details),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_CD_23,TS_005 (Contact Details),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_CD_24,TS_005 (Contact Details),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_CD_25,TS_005 (Contact Details),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_CD_26,TS_005 (Contact Details),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_CD_27,TS_005 (Contact Details),Verify the attachements maximum file size is 1 MB,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file more than 1MB
+4) Click Save",Not Applicable,A Warning should be shown that a file size limit is 1 MB,,
+TC_CD_28,TS_005 (Contact Details),Verify the download button in attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement",1) Click Download icon button in any of the attachements,Not Applicable,The File should be downloaded to the pc,,
+TC_CD_29,TS_005 (Contact Details),Verify the edit button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Contact Details Button in left row of buttons
+5) Add a few files to attachement",1) Click Edit icon button in any of the attachements,Not Applicable,A Selection wizard should appear with the attachements already selected where the edit button is clicked,,
+TC_CD_30,TS_005 (Contact Details),Verify the labels are correct in Contact Details page,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons",Not Applicable,The labels should be properly placed,,
+TC_CD_31,TS_005 (Contact Details),Verify the all the fields are present in Contact Details page,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons",Not Applicable,The fields should be properly placed,,
+TC_CD_32,TS_005 (Contact Details),Verify the all the place holders are present in Contact Details page,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Contact Details Button in left row of buttons",Not Applicable,The place holders should be properly placed,,
+TC_EC_02,TS_006 (Emergency Contacts),Verify Help Button function,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click the help button in top right corner",Not Applicable,A New tab should be opened with help about the details about Emergency Contacts,,
+TC_EC_03,TS_006 (Emergency Contacts),Verify adding Emergency Contact with only required fields,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click Add button in Emergency Contact section
+4) Fill the required fields with valid values
+5) Click Save",Not Applicable,The Contact should be added to Emergency Contact section listings,,
+TC_EC_04,TS_006 (Emergency Contacts),Verify adding Emergency Contact with all fields,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click Add button in Emergency Contact section
+4) Fill the all fields with valid values
+5) Click Save",Not Applicable,The Contact should be added to Emergency Contact section listings,,
+TC_EC_05,TS_006 (Emergency Contacts),Verify adding Emergency Contact with empty values,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click Add button in Emergency Contact section
+4) Leave all fields as empty
+5) Click Save",Not Applicable,The Contact should not be added to Emergency Contact section listings,,
+TC_EC_06,TS_006 (Emergency Contacts),Verify the cancel button in add Emergency contacts section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click Add button in Emergency Contact section
+4) Click Cancel",Not Applicable,The fields should be discarded and the add wizard should be closed,,
+TC_EC_07,TS_006 (Emergency Contacts),Verify the edit button in the Emergency Contact Listing,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the edit button icon in a listing
+2) Edit the fields
+3) Click Save",Not Applicable,The Contact should be edited with the given values,,
+TC_EC_08,TS_006 (Emergency Contacts),Verify the delete button in Emergency Contact listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_EC_09,TS_006 (Emergency Contacts),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_EC_10,TS_006 (Emergency Contacts),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_EC_11,TS_006 (Emergency Contacts),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_EC_12,TS_006 (Emergency Contacts),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_EC_13,TS_006 (Emergency Contacts),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few contacts to Emergency Contacts","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_EC_14,TS_006 (Emergency Contacts),Verify the ability to add attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Click save",Not Applicable,The File should be saved and listed accordingly,,
+TC_EC_15,TS_006 (Emergency Contacts),Verify the ability to add attachements with comments,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Fill the comment field with some values
+6) Click save",Not Applicable,The File should be saved and listed accordingly with the comment,,
+TC_EC_16,TS_006 (Emergency Contacts),Verify the cancel button in achivements section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Emergency Contacts Button in left row of buttons
+3) Click add under attachements section
+4) Click cancel button",Not Applicable,The add wizard should be closed,,
+TC_EC_17,TS_006 (Emergency Contacts),Verify the delete button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_EC_18,TS_006 (Emergency Contacts),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_EC_19,TS_006 (Emergency Contacts),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_EC_20,TS_006 (Emergency Contacts),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_EC_21,TS_006 (Emergency Contacts),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_EC_22,TS_006 (Emergency Contacts),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_EC_23,TS_006 (Emergency Contacts),Verify the attachements maximum file size is 1 MB,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file more than 1MB
+4) Click Save",Not Applicable,A Warning shuld be shown that a file size limit is 1 MB,,
+TC_EC_24,TS_006 (Emergency Contacts),Verify the download button in attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement",1) Click Download icon button in any of the attachements,Not Applicable,The File should be downloaded to the pc,,
+TC_EC_25,TS_006 (Emergency Contacts),Verify the edit button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement",1) Click Edit icon button in any of the attachements,Not Applicable,A Selection wizard should appear with the attachements already selected where the edit button is clicked,,
+TC_DP_02,TS_007 (Dependents),Verify Help Button function,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click the help button in top right corner",Not Applicable,A New tab should be opened with help about the details about Dependents,,
+TC_DP_03,TS_007 (Dependents),Verify adding Dependents with only required fields with Relationship as Child,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Select the Relationship as Child
+5) Fill the required fields with valid values
+6) Click Save",Not Applicable,The Dependent details should be added to Dependents section listings,,
+TC_DP_04,TS_007 (Dependents),Verify adding Dependents  with only required fields with Relationship as Other,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Select the Relationship as Other
+5) Fill the required fields with valid values
+6) Click Save",Not Applicable,The Dependent details should be added to Dependents section listings,,
+TC_DP_05,TS_007 (Dependents),Verify adding Dependents with all fields with Relationship as Child,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Select the Relationship as Child
+5) Fill all fields with valid values
+6) Click Save",Not Applicable,The Dependent details should be added to Dependents section listings,,
+TC_DP_06,TS_007 (Dependents),Verify adding Dependents with all fields with Relationship as Other,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Select the Relationship as Other
+5) Fill all fields with valid values
+6) Click Save",Not Applicable,The Dependent details should be added to Dependents section listings,,
+TC_DP_07,TS_007 (Dependents),Verify adding Dependents with all fields as blank,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Leave all fields as Blank
+5) Click Save",Not Applicable,The Dependent details should not be added to Dependents section listings,,
+TC_DP_08,TS_007 (Dependents),Verify the cancel button in add Dependents section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click Add button in Dependents section
+4) Click Cancel",Not Applicable,The fields should be discarded and the add wizard should be closed,,
+TC_DP_09,TS_007 (Dependents),Verify the edit button in the Dependents Listing,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the edit button icon in a listing
+2) Edit the fields
+3) Click Save",Not Applicable,The Dependents listing should be edited with the given values,,
+TC_DP_10,TS_007 (Dependents),Verify the delete button in Dependents listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_DP_11,TS_007 (Dependents),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_DP_12,TS_007 (Dependents),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_DP_13,TS_007 (Dependents),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_DP_14,TS_007 (Dependents),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_DP_15,TS_007 (Dependents),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few Dependents to Dependents section","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_DP_16,TS_007 (Dependents),Verify the ability to add attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Click save",Not Applicable,The File should be saved and listed accordingly,,
+TC_DP_17,TS_007 (Dependents),Verify the ability to add attachements with comments,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents Button in left row of buttons
+3) Click add under attachements section
+4) Click browse and select a file
+5) Fill the comment field with some values
+6) Click save",Not Applicable,The File should be saved and listed accordingly with the comment,,
+TC_DP_18,TS_007 (Dependents),Verify the cancel button in achivements section,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click the Dependents  Button in left row of buttons
+3) Click add under attachements section
+4) Click cancel button",Not Applicable,The add wizard should be closed,,
+TC_DP_19,TS_007 (Dependents),Verify the delete button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Dependents Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click the Confirm delete (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should disappear",,
+TC_DP_20,TS_007 (Dependents),Verify the cancel button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click Cancel Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_DP_21,TS_007 (Dependents),Verify the x button in delete alert dialog,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the delete button in a listing (ER-01)
+2) Click x Button (ER-02) ",Not Applicable,"1) An Alert box should be shown with 2 options
+2) The Listing should not disappear",,
+TC_DP_22,TS_007 (Dependents),Verify the ability to delete multiple listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+3) Click Confirm Delete (ER-03)",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options
+3) The Listing should disappear",,
+TC_DP_23,TS_007 (Dependents),Verify the cancel button in delete alert dialog when multiple listings are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click Cancel Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_DP_24,TS_007 (Dependents),Verify the x button in delete alert dialog when multiple options are selected,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement","1) Click the checkbox in several listings (ER-01)
+2) Click Delete Selected Button (ER-02)
+2) Click x Button (ER-03) ",Not Applicable,"1) The Clicked listings should be selected and Delete Selected Button should appear
+2) An Alert box should be shown with 2 options 
+3) The Alert should disappear and the checkboxes remain selected",,
+TC_DP_25,TS_007 (Dependents),Verify the attachements maximum file size is 1 MB,"1) Open the site in any supported browser
+2) Login with ESS credentials","1) Click the My Info button
+2) Click add under attachements section
+3) Click browse and select a file more than 1MB
+4) Click Save",Not Applicable,A Warning should be shown that a file size limit is 1 MB,,
+TC_DP_26,TS_007 (Dependents),Verify the download button in attachements ,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement",1) Click Download icon button in any of the attachements,Not Applicable,The File should be downloaded to the pc,,
+TC_DP_27,TS_007 (Dependents),Verify the edit button in attachement listings,"1) Open the site in any supported browser
+2) Login with ESS credentials
+3) Click the My Info button
+4) Click the Emergency Contacts Button in left row of buttons
+5) Add a few files to attachement",1) Click Edit icon button in any of the attachements,Not Applicable,A Selection wizard should appear with the attachements already selected where the edit button is clicked,,

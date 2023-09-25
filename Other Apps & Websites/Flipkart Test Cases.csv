@@ -1,0 +1,709 @@
+,,Project Name,Flipkart,,,,,
+,,Client,Flipkart,,,,,
+,,Created By,Ranjith,,,,,
+,,Creation Date,28-06-2023 00:00,,,,,
+,,Approval Date,30-06-2023 00:00,,,,,
+,,Site,https://www.flipkart.com,,,,,
+,,,,,,,,
+,,,,,,,,
+Test Scenario ID,Test Scenario Description,Priority,Number of Test Cases,,,,,
+TS_01,Validate the working of 'Login' functionality,P0,25,,,,,
+TS_02,Validate the working of 'Sign Up' functionality,P0,16,,,,,
+TS_03,Validate the working of 'HomePage' functionality,P1,15,,,,,
+TS_04,Validate the working of 'Search' functionality,P2,18,,,,,
+TS_05,Validate the working of 'Product Page' functionality,P1,19,,,,,
+TS_06,Validate the working of 'Shopping cart' functionality,P1,14,,,,,
+TS_07,Validate the working of 'Checkout' functionality,P1,24,,,,,
+,,Total,131,,,,,
+,,,,,,,,
+,,,,,,,,
+TestCase,Test Scenario,Objective,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC_LG_01,TS_01 (Login),Validate navigating to Login panel from HomePage,"1) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click Sign in dropdown / Login Button in the header,Not Applicable,The Login panel should open,The Login panel is opened,Pass
+TC_LG_02,TS_01 (Login),Validate navigating to Login panel from Sign Up,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown in the header and click Sign up
+2) Click ""Existing User? Log in""",Not Applicable,The Login panel should open,The Login panel is opened,Pass
+TC_LG_03,TS_01 (Login),Validate the Email/Mobile number field for valid existing Mobile number,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number
+3) Click Request OTP",Valid Existing Mobile Number,The User should be taken to OTP page and OTP should be sent to the mobile number,The User is taken to OTP page and OTP is sent to the mobile number,Pass
+TC_LG_04,TS_01 (Login),Validate OTP page for valid OTP for Mobile number,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number
+3) Click Request OTP
+4) Fill the OTP field with valid numerical value we recieved in SMS
+5) Click Verify",Valid OTP we recieved in SMS,The User shoud be taken to HomePage and the Sign in Button should be changed to Account Button,The User is taken to HomePage and the Sign in Button is changed to Account Button,Pass
+TC_LG_05,TS_01 (Login),Validate the Email/Mobile number field for valid existing Email ID,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP",Valid Existing Email ID,The User should be taken to OTP page and OTP should be sent to the Email ID,The User is taken to OTP page and OTP is sent to the Email ID,Pass
+TC_LG_06,TS_01 (Login),Validate OTP page for valid OTP for Mail ID,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP
+4) Fill the OTP field with valid numerical value we recieved in Mail
+5) Click Verify",Valid OTP we recieved in our Mail ID,The User shoud be taken to HomePage and the Sign in Button should be changed to Account Button,The User is taken to HomePage and the Sign in Button is changed to Account Button,Pass
+TC_LG_07,TS_01 (Login),Validatw OTP page for wrong OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Email ID
+3) Click Request OTP
+4) Fill the OTP field with wrong OTP
+5) Click Verify",Not Applicable,"It should show the error message ""OTP is incorrect"" and stay in the page","It shows the error message ""OTP is incorrect"" and stays in the page",Pass
+TC_LG_08,TS_01 (Login),Validate the Email/Mobile number field for invalid Mobile Number in Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with invalid Mobile Number
+3) Click Request OTP","Invalid Mobile Number:
+1) 2
+2) 12244
+3) 123456789
+4) 12345678901","The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_09,TS_01 (Login),Validate the Email/Mobile number field for invalid Email ID in Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with invalid Email ID
+3) Click Request OTP","Invalid Email Number:
+1) test
+2) test@
+3) test@mail
+4) test@mail.","The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_10,TS_01 (Login),Validate Filling Mobile Number reveals the ISD code selection dropdown,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Start Filling the Email/Mobile number with valid Mobile Number
+3) Click Request OTP",Valid Existing Mobile Number,The ISD code selection dropdown should appear and all the Valid ISD codes should be available to select,The ISD code selection dropdown appears and all the Valid ISD codes is available to select,Pass
+TC_LG_11,TS_01 (Login),Validate empty Email/Mobile number field is not allowed,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Do not fill the Email/Mobile number field
+3) Click Request OTP",Not Applicable,"The Email/Mobile number should show the error ""Please enter valid Email ID/Mobile number""","The Email/Mobile number shows the error ""Please enter valid Email ID/Mobile number""",Pass
+TC_LG_12,TS_01 (Login),Validate spaces is not allowed in Email/Mobile number field,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Start Filling the Email/Mobile number with spaces",Not Applicable,The spaces should not get filled in Email/Mobile Number field,The spaces is not filled in Email/Mobile Number field,Pass
+TC_LG_13,TS_01 (Login),Validate OTP page for not accepting non numerical OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Start filling the OTP page with non numerical characters",Valid Existing Mobile Number / Email ID,The non numerical values should not get filled in OTP field,The non numerical values is not filled in OTP field,Pass
+TC_LG_14,TS_01 (Login),Validate OTP page for not accepting spaces as OTP,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Start filling the OTP page with spaces",Valid Existing Mobile Number / Email ID,The spaces should not get filled in OTP field,The spaces should not get filled in OTP field,Pass
+TC_LG_15,TS_01 (Login),Validate resend otp button functionality in OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Click Resend code button",Valid Existing Mobile Number / Email ID,A new OTP should be generated and should be sent to Email / Mobile number,A new OTP is generated and is sent to Email / Mobile number,Pass
+TC_LG_16,TS_01 (Login),Validate change button functionality in OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Click change button",Valid Existing Mobile Number / Email ID,The User should be taken to Login page and the Email/ Mobile Number field should be filled with previously filled Email/Mobile number and the user should be able to change it,The User is taken to Login page and the Email/ Mobile Number field is filled with previously filled Email/Mobile number and the user is able to change it,Pass
+TC_LG_17,TS_01 (Login),Validate clicking back button after login does not log out user,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Fill valid otp and click Verify
+5) Click Back button",Valid Existing Mobile Number / Email ID,The User should not be logged out or be taken to Login page,The User should not be logged out or be taken to Login page,Pass
+TC_LG_18,TS_01 (Login),Validate the OTP expires after 10 minutes,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Fill valid otp after 10 minutes and click Verify
+5) Click Back button",Valid Existing Mobile Number / Email ID,The User should not be logged in and should be shown error,The User is logged in and is shown error,Pass
+TC_LG_19,TS_01 (Login),Validate entering valid existing Mobile Number in Sign Up takes user to Login Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Mobile number with valid existing Mobile number
+3) Click Request OTP",Not Applicable,"It should show the error ""You are registered with us. Please Sign in"" and should be taken to Sign in page with provided mobile number already filled in Mobile number/Email field","It shows the error ""You are registered with us. Please Sign in"" and was taken to Sign in page with provided mobile number already filled in Mobile number/Email field",Pass
+TC_LG_20,TS_01 (Login),Validate entering valid non existing Mobile Number in Login page takes user to Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid non existent Mobile number
+3) Click Request OTP",Not Applicable,"It should show the error ""You are not registered with us. Please sign up"" and should be taken to Sign up page with provided mobile number already filled in Mobile number field","It shows the error ""You are not registered with us. Please sign up"" and was taken to Sign up page with provided mobile number already filled in Mobile number field",Pass
+TC_LG_21,TS_01 (Login),Validate entering valid non existent Email ID takes user to Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid non existent Email ID
+3) Click Request OTP",Not Applicable,"It should show the error ""You are not registered with us. Please sign up"" and should be taken to Sign up page","It shows the error ""You are not registered with us. Please sign up"" and was taken to Sign up page",Pass
+TC_LG_22,TS_01 (Login),Validate Terms of Use link functionality in Login page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Click Terms of Use",Not Applicable,The User should be taken to Terms of Use page,The User is taken to Terms of Use page,Pass
+TC_LG_23,TS_01 (Login),Validate Privacy policy link functionality in Login page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Click Privacy Policy",Not Applicable,The User should be taken to Privacy Policy page,The User is taken to Privacy Policy page,Pass
+TC_LG_24,TS_01 (Login),Validate the UI of Login and OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP",Valid Existing Mobile Number / Email ID,The UI of both the pages should be according to requirements,The UI of both the pages are according to requirements,Pass
+TC_LG_25,TS_01 (Login),Verify the Login Page and OTP page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Fill the Email/Mobile number with valid Mobile number / Email ID
+3) Click Request OTP
+4) Repeat from Step-1 for other environments",Valid Existing Mobile Number / Email ID,The Login page and OTP Page should work in all supported environments,The Login page and OTP page works in all supported environments,Pass
+TC_SU_01,TS_02 (Sign Up),Validate navigating to Sign up page from Login page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Login Button in the header
+2) Click ""New to Flipkart? Create an account"" link",Not Applicable,The User should be taken to Sign up page with the Request Otp page changing to Continue,The User is taken to Sign up page with the Request Otp page changing to Continue,Pass
+TC_SU_02,TS_02 (Sign Up),Validate navigating to Sign up page from Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header
+2) Click Sign up",Not Applicable,The User should be taken to Sign up page,The User is taken to Sign up page,Pass
+TC_SU_03,TS_02 (Sign Up),Validate Sign up using valid Number number,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile Number
+3) Click Continue
+4) Fill the OTP field with otp recieved in SMS
+5) Click Continue",Not Applicable,The Account should be created and The User should be taken to HomePage,The Account should be created and The User should be taken to HomePage,Pass
+TC_SU_04,TS_02 (Sign Up),Validate the Mobile number field for invalid Mobile Number in Sign up Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with invalid Mobile Number
+3) Click Request OTP","Invalid Mobile Number:
+1) 2
+2) 12244
+3) 123456789
+4) 12345678901","The Mobile number should show the error ""Please enter valid Mobile number""","The Mobile number shows the error ""Please enter valid Mobile number""",Pass
+TC_SU_05,TS_02 (Sign Up),Validate Empty field is not allowed for Mobile Number field,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Do not fill Mobile number field
+3) Click Request OTP",Not Applicable,"The Mobile number should show the error ""Please enter valid Mobile number""","The Mobile number shows the error ""Please enter valid Mobile number""",Pass
+TC_SU_06,TS_02 (Sign Up),Validate spaces is not allowed in Mobile number field in Sign Up Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Start Filling the Mobile number with spaces",Not Applicable,The spaces should not get filled in Mobile Number field,The spaces is not filled in Mobile Number field,Pass
+TC_SU_07,TS_02 (Sign Up),Validate OTP page for not accepting non numerical OTP in Sign up OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Start filling the OTP page with non numerical characters",Valid Existing Mobile Number,The non numerical values should not get filled in OTP field,The non numerical values is not filled in OTP field,Pass
+TC_SU_08,TS_02 (Sign Up),Validate OTP page for not accepting spaces as OTP in Sign up OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Start filling the OTP page with spaces",Valid Existing Mobile Number,The spaces should not get filled in OTP field,The spaces should not get filled in OTP field,Pass
+TC_SU_09,TS_02 (Sign Up),Validate resend otp button functionality in OTP page in Sign up OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Click Resend code button",Valid Existing Mobile Number,A new OTP should be generated and should be sent to Mobile number,A new OTP is generated and is sent to Mobile number,Pass
+TC_SU_10,TS_02 (Sign Up),Validate change button functionality in OTP page in Sign up OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Click change button",Valid Existing Mobile Number,The User should be taken to Sign up page and the Mobile Number field should be filled with previously filled Mobile number,The User is taken to Sign up page and the Mobile Number field is filled with previously filled Mobile number,Pass
+TC_SU_11,TS_02 (Sign Up),Validate clicking back button after sign up does not log out user,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Fill valid OTP and click Verify
+5) Click Back button",Valid Existing Mobile Number,The User should not be logged out or be taken to Sign up page,The User should not be logged out or be taken to Sign up page,Pass
+TC_SU_12,TS_02 (Sign Up),Validate the OTP expires after 10 minutes in Sign up OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid Mobile number
+3) Click Request OTP
+4) Fill valid OTP after 10 minutes and click Verify
+5) Click Back button",Valid Existing Mobile Number,The User should not be logged in and should be shown error,The User is logged in and is shown error,Pass
+TC_SU_13,TS_02 (Sign Up),Validate Terms of Use link functionality in Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Click Terms of Use",Not Applicable,The User should be taken to Terms of Use page,The User is taken to Terms of Use page,Pass
+TC_SU_14,TS_02 (Sign Up),Validate Privacy policy link functionality in Sign up page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Click Privacy Policy",Not Applicable,The User should be taken to Privacy Policy page,The User is taken to Privacy Policy page,Pass
+TC_SU_15,TS_02 (Sign Up),Validate the UI of Sign Up and OTP page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid non existent Mobile Number
+3) Click Request OTP",Not Applicable,The UI of both the pages should be according to requirements,The UI of both the pages are according to requirements,Pass
+TC_SU_16,TS_02 (Sign Up),Verify the Login Page and OTP page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click Sign in dropdown Button in the header and click Sign up
+2) Fill the Mobile number with valid non existent Mobile Number
+3) Click Request OTP
+4) Repeat from Step-1 for other environments",Not Applicable,The Login page and OTP Page should work in all supported environments,The Login page and OTP page works in all supported environments,Pass
+TC_HP_01,TS_03 (HomePage),Validate navigating to Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser",Not Applicable,The User should be taken to Home Page,The User is taken to Home Page,Pass
+TC_HP_02,TS_03 (HomePage),Validate the Hero Images in Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser (ER-01, ER-02)
+2) Click the < and > buttons in hero images (ER-03) ",Not Applicable,"1) The Hero Image should be visible on top of Home Page
+2) The Hero Image should scroll every few seconds
+3) The Buttons should change the Hero Images","1) The Hero Image is visible on top of Home Page
+2) The Hero Image scrolls every few seconds
+3) The Buttons change the Hero Images",Pass
+TC_HP_03,TS_03 (HomePage),Validate the Hero Images takes user to respective pages,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Click all the Hero images one by one",Not Applicable,The User should be taken to the page of clicked Hero image,The User is taken to the page of clicked Hero image,Pass
+TC_HP_04,TS_03 (HomePage),Validate the category section below the Hero images,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser",Not Applicable,There should be many rows of sections with many category and Products for each of them,There are many rows of sections with many category and Products for each of them,Pass
+TC_HP_05,TS_03 (HomePage),Validate the subcategories in Category section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser",Not Applicable,Each Category should have relevant subcategories,Each Category has relevant subcategories,Pass
+TC_HP_06,TS_03 (HomePage),Validate clicking the subcateory in Category section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Click the any of the subcategory under Cetegory section",Not Applicable,The User should be taken to page with all the products under the category listed,The User is taken to page with all the products under the category listed,Pass
+TC_HP_07,TS_03 (HomePage),Validate view all button in Category section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Click the view all button in any Cetegory section",Not Applicable,The User should be taken to page with all the products under the category listed,The User is taken to page with all the products under the category listed,Pass
+TC_HP_08,TS_03 (HomePage),Validate view right and left button in Category section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Click the < and > buttons in any Cetegory section",Not Applicable,More subcategories should be loaded for the Category,More subcategories are loaded for the Category,Pass
+TC_HP_09,TS_03 (HomePage),Validate hovering over subcategory images,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Hover over any of the subcategory under Cetegory section",Not Applicable,The Images should be slightly enlarged,The Images are slightly enlarged,Pass
+TC_HP_10,TS_03 (HomePage),Validate the Categories buttons in top of Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Hover over any of the Categories button in top of Home Page",Not Applicable,The Categories button should get highlighted and button with down arrow should expand to reveal subcategories,The Categories button gets highlighted and button with down arrow expands to reveal subcategories,Pass
+TC_HP_11,TS_03 (HomePage),Validate the clicking Categories buttons without down arrow in top of Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Click on any Categories button which are without down arrow",Not Applicable,The user should be taken to page with all the products under the category listed,The user should be taken to page with all the products under the category listed,Pass
+TC_HP_12,TS_03 (HomePage),Validate the clicking Categories buttons with down arrow in top of Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Hover over categories with down arrow
+3) Click any of the main categories",Not Applicable,The user should be taken to page with all the products under the category listed,The user should be taken to page with all the products under the category listed,Pass
+TC_HP_13,TS_03 (HomePage),Validate the clicking the SubCategories in buttons with down arrow in top of Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Hover over categories with down arrow
+3) Hover on any of the main categories
+4) Click a SubCategory",Not Applicable,The user should be taken to page with all the products under the subcategories listed,The user should be taken to page with all the products under the subcategories listed,Pass
+TC_HP_14,TS_03 (HomePage),Validate the UI of Homepage page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser",Not Applicable,The UI of Homepage should be according to requirements,The UI of Homepage is according to requirements,Pass
+TC_HP_15,TS_03 (HomePage),Verify the Homepage functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Repeat Step-1 for other environments",Not Applicable,The Homepage should work in all supported environments,The Homepage works in all supported environments,Pass
+TC_SE_01,TS_04 (Search),Validate searching existing product,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The User should be taken to product list page with list of products relevant to search text,The User is taken to product list page with list of products relevant to search text,Pass
+TC_SE_02,TS_04 (Search),Validate searching existing product by clicking ENTER button in keyboard,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the ENTER button in keyboard","Search text:
+Iphone 14 pro",The User should be taken to product list page with list of products relevant to search text,The User is taken to product list page with list of products relevant to search text,Pass
+TC_SE_03,TS_04 (Search),Validate searching non existing product,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with a non existing product
+3) Click the search icon",Not Applicable,"The User should be taken to product list page with ""Sorry, no results found!
+Please check the spelling or try searching for something else"" text","The User is taken to product list page with ""Sorry, no results found!
+Please check the spelling or try searching for something else"" text",Pass
+TC_SE_04,TS_04 (Search),Validate Search button for empty field,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Click the search icon or ENTER button",Not Applicable,Clicking the Search button should not do anything,Clicking the Search button does not do anything,Pass
+TC_SE_05,TS_04 (Search),Validate the Search button for empty spaces,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with only spaces
+3) Click the search icon",Not Applicable,Clicking the Search button should not do anything,Clicking the Search button does not do anything,Pass
+TC_SE_06,TS_04 (Search),Validate the Search button trims leading and trailing spaces,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with existing product with leading and trailing spaces
+3) Click the search icon","Search text:
+     Iphone 14 pro     ",The User should be taken to product list page with list of products relevant to search text after trimming spaces,The User is taken to product list page with list of products relevant to search text after trimming spaces,Pass
+TC_SE_07,TS_04 (Search),Validate the Search autocorrection,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with existing product with spelling mistakes
+3) Click the search icon (ER-01, ER-02)","Search Term:
+ipone 14 pro","1) The User should be taken to product list page with list of products relevant to search text after spelling mistakes
+2) The Producft list page should have search instead button with original text we entered",The User is taken to product list page with list of products relevant to search text after spelling mistakes,Pass
+TC_SE_08,TS_04 (Search),Validate the Search recommendation,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Start filling the textfield with an existing product","Search Term:
+iphone 14 pro",The Search field should show recommendation after typing a few a few alphabets,The Search field shows recommendation after typing a few a few alphabets,Pass
+TC_SE_09,TS_04 (Search),Validate empty Search bar shows discover more section,"1) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click on the Search Bar at the top,,The Search bar should show discover more section with a few products,The Search bar shows discover more section with a few products,Pass
+TC_SE_10,TS_04 (Search),Validate the breadcrumb of the product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The breadcrumb at the top should be visble and working,The breadcrumb at the top is visble and working,Pass
+TC_SE_11,TS_04 (Search),Validate hovering over the product highlights it,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Hover over any of the products listed","Search text:
+Iphone 14 pro",The hovered over products should be highlighted,The hovered over products is highlighted,Pass
+TC_SE_12,TS_04 (Search),Validate the sort by functionality,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Select all the options in sort by one by one","Search text:
+Iphone 14 pro",The products should be listed according to the selected sort by option,The products is listed according to the selected sort by option,Pass
+TC_SE_13,TS_04 (Search),Validate the filter functionality,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Select all the options in filter one by one","Search text:
+Iphone 14 pro",The products should be filtered according to the selected filter option,The products is filtered according to the selected filter option,Pass
+TC_SE_14,TS_04 (Search),Validate adding products to wish list from product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click the heart button on any of the product listed (ER-01)
+5) Hover over My Account and click Wish List (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) The added product should be displayed in Wish List","1) A message is displayed ""Added to your Wishlist""
+2) The added product is displayed in Wish List",Pass
+TC_SE_15,TS_04 (Search),Validate clicking wish list second time removes the product from wishlist,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click the heart button on any of the product listed (ER-01)
+5) Click the heart button again on the same product (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) A message should be displayed ""Removed from Wishlist""","1) A message is displayed ""Added to your Wishlist""
+2) A message is displayed ""Removed from Wishlist""",Pass
+TC_SE_16,TS_04 (Search),Validate clicking the product takes user to product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed ","Search text:
+Iphone 14 pro",The user should be taken to the product page,The user is taken to the product page,Pass
+TC_SE_17,TS_04 (Search),Validate the UI of Search Bar and Product list page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon","Search text:
+Iphone 14 pro",The UI of Search Bar and Product list page should be according to requirements,The UI of Search Bar and Product list page is according to requirements,Pass
+TC_SE_18,TS_04 (Search),Verify the Home page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Repeat from Step-1 for other environments","Search text:
+Iphone 14 pro",The Homepage should work in all supported environments,The Homepage works in all supported environments,Pass
+TC_PP_01,"TS_05 
+(Product Page)",Validate navigating to product page from search results page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed ","Search text:
+Iphone 14 pro",The user should be taken to the product page,The user is taken to the product page,Pass
+TC_PP_02,"TS_05 
+(Product Page)",Validate adding products to wish list from product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click the heart button on the product listed (ER-01)
+6) Hover over My Account and click Wish List (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) The added product should be displayed in Wish List","1) A message is displayed ""Added to your Wishlist""
+2) The added product is displayed in Wish List",Pass
+TC_PP_03,"TS_05 
+(Product Page)",Validate clicking wish list second time removes the product from wishlist,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click the heart button on the product listed (ER-01)
+6) Click the heart button again (ER-02) ","Search text:
+Iphone 14 pro","1) A message should be displayed ""Added to your Wishlist""
+2) A message should be displayed ""Removed from Wishlist""","1) A message is displayed ""Added to your Wishlist""
+2) A message is displayed ""Removed from Wishlist""",Pass
+TC_PP_04,"TS_05 
+(Product Page)",Validate hovering over bigger thumbnail opens the image bigger,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Hover over bigger thumbnail","Search text:
+Iphone 14 pro",The image should be opened on the side,The image is opened on the side,Pass
+TC_PP_05,"TS_05 
+(Product Page)",Validate hovering over smaller thumbnail opens the selects the image,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Hover over smaller thumbnail (ER-01)
+6) Click on any smaller thumbnail (ER-01)","Search text:
+Iphone 14 pro",The image should be selected,The image is selected,Pass
+TC_PP_06,"TS_05 
+(Product Page)",Validate clicking the arrow buttons in list of thumbnails loads more images,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click on arrow buttons in list of thumbnails","Search text:
+Iphone 14 pro",More thumbnails should be loaded,More thumbnails is loaded,Pass
+TC_PP_07,"TS_05 
+(Product Page)",Validate the breadcrumb of product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed","Search text:
+Iphone 14 pro",The breadcrumb should be visible and working,The breadcrumb is visible and working,Pass
+TC_PP_08,"TS_05 
+(Product Page)",Validate Available offers section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to available section (ER-01)
+6) Click show more button (ER-02)
+7) Click T&C near any offer (ER-03)","Search text:
+Iphone 14 pro","1) The List of offers should be shown with show more button if many offers are available
+2) The full list of offers should be shown
+3) The full terms and conditions should be loaded in a small panel","1) The List of offers is shown with show more button if many offers are available
+2) The full list of offers is shown
+3) The full terms and conditions is loaded in a small panel",Pass
+TC_PP_09,"TS_05 
+(Product Page)",Validate warranty information,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to warranty information (ER-01)
+6) Click know more (ER-02)","Search text:
+Iphone 14 pro","1) The warranty information should be shown
+2) The warranty information should be expanded to show more information","1) The warranty information is shown
+2) The warranty information is expanded to show more information",Pass
+TC_PP_10,"TS_05 
+(Product Page)",Validate available option section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to available option and select any options","Search text:
+Iphone 14 pro",The product should be displayed according to selected option,The product is displayed according to selected option,Pass
+TC_PP_11,"TS_05 
+(Product Page)",Validate highlight options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to highlight sections","Search text:
+Iphone 14 pro",The highlighted specifications should be shown,The highlighted specifications are shown,Pass
+TC_PP_12,"TS_05 
+(Product Page)",Validate easy payment options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Easy payment options (ER-01)
+6) Click view details (ER-02)","Search text:
+Iphone 14 pro","1) The Emi option should be shown in short
+2) All available EMI options should be shown with detailed plans","1) The Emi option is shown in short
+2) All available EMI options are shown with detailed plans",Pass
+TC_PP_13,"TS_05 
+(Product Page)",Validate seller options,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Seller options
+6) Click seller name (ER-01)
+7) Click see other sellers (ER-02)","Search text:
+Iphone 14 pro","1) Details of Seller should be shown in a panel
+2) A page with all other seller should be shown","1) Details of Seller is shown in a panel
+2) A page with all other seller is shown",Pass
+TC_PP_14,"TS_05 
+(Product Page)",Validate Specifications section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Specifications (ER-01)
+6) Click show more (ER-02)","Search text:
+Iphone 14 pro","1) Specifications of product should be shown in brief
+2) Full list of Specifiations should be shown","1) Specifications of product is shown in brief
+2) Full list of Specifiations is shown",Pass
+TC_PP_15,"TS_05 
+(Product Page)",Validate Ratings and Reviews section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Ratings and Reviews (ER-01)
+6) Click All reviews (ER-02)","Search text:
+Iphone 14 pro","1) A list with a few reviews should be shown with rating, review, buyer info
+2) The user should be taken to a page with full list of reviews ","1) A list with a few reviews is shown with rating, review, buyer info
+2) The user is taken to a page with full list of reviews ",Pass
+TC_PP_16,"TS_05 
+(Product Page)",Validate Question and Answer section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Questions and Answers (ER-01)
+6) Click All reviews (ER-02)","Search text:
+Iphone 14 pro","1) A list with a few Questions and Answers should be shown 
+2) The user should be taken to a page with full list of Questions and Answers ","1) A list with a few Questions and Answers is shown
+2) The user is taken to a page with full list of Questions and Answers ",Pass
+TC_PP_17,"TS_05 
+(Product Page)",Validate Similar Products section,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Scroll down to Similar Products (ER-01)","Search text:
+Iphone 14 pro",1) A row with a list of similar products should be shown,1) A row with a list of similar products is shown,Pass
+TC_PP_18,"TS_05 
+(Product Page)",Validate the UI of Product page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed","Search text:
+Iphone 14 pro",The UI of Product page should be according to requirements,The UI of Product page is according to requirements,Pass
+TC_PP_19,"TS_05 
+(Product Page)",Verify the Product page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Repeat from Step-1 for other environments","Search text:
+Iphone 14 pro",The Product page should work in all supported environments,The Product page works in all supported environments,Pass
+TC_SC_01,"TS_06 
+(Shopping Cart)",Validate navigating to Shopping Cart from Home Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click on the Cart button in header,Not Applicable,The User should be taken to shopping cart page,The User is taken to shopping cart page,Pass
+TC_SC_02,"TS_06 
+(Shopping Cart)",Validate navigating to Shopping Cart from Product Page,"1) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Search Bar at the top
+2) Fill the textfield with an existing product
+3) Click the search icon
+4) Click on any product listed
+5) Click on Add to Cart button","Search text:
+Iphone 14 pro",The User should be taken to shopping cart page and the product should be added to Cart ,The User is taken to shopping cart page and the product is added to Cart,Pass
+TC_SC_03,"TS_06 
+(Shopping Cart)",Validate navigating to an empty Shopping cart,"1) The Cart should be empty
+2) Open the site ""https://www.flipkart.com"" in any supported browser",1) Click on the Cart button in header,Not Applicable,"The User should be taken to shopping cart page with text saying ""Your cart is empty!
+Add items to it now.""","The User is taken to shopping cart page with text saying 
+""Your cart is empty!
+Add items to it now.""",Pass
+TC_SC_04,"TS_06 
+(Shopping Cart)",Validate Shop Now button in empty shopping cart,"1) The Cart should be empty
+2) Open the site ""https://www.flipkart.com"" in any supported browser","1) Click on the Cart button in header
+2) Click shop now",Not Applicable,The User should be taken to Home Page,The User is taken to Home Page,Pass
+TC_SC_05,"TS_06 
+(Shopping Cart)",Validate navigating to Shopping cart with a few products,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a few products to cart",1) Click on the Cart button in header,"Products to add:
+1) iphone 14
+2) iphone 14 pro
+3) lenovo yoga",The User should be taken to shopping cart page with the added products listed,The User is taken to shopping cart page with the added products listed,Pass
+TC_SC_06,"TS_06 
+(Shopping Cart)",Validate changing quantity of a product in shopping cart,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click the - and + buttons under the product (ER-01)
+3) Fill a valid numerical value in the text field (ER-02)","Product to add:
+iphone 14 pro","1) The buttons should change the quantity according to our clicks
+2) The quantity should change according to our entered value","1) The buttons changes the quantity according to our clicks
+2) The quantity changes according to our entered value",Pass
+TC_SC_07,"TS_06 
+(Shopping Cart)","Validate Quantity field for not accepting spaces, alphabets, special characters","1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Fill quantity field with Spaces , Alphabets or Special characters","Product to add:
+iphone 14 pro","The quantity field should not detect Spaces, Alphabets or Special Characters as value ","The quantity field does not detect Spaces, Alphabets or Special Characters as value ",Pass
+TC_SC_08,"TS_06 
+(Shopping Cart)",Validate removing product from shopping cart,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click remove
+3) Click remove","Product to add:
+iphone 14 pro",The product should be removed from shopping cart,The product is removed from shopping cart,Pass
+TC_SC_09,"TS_06 
+(Shopping Cart)",Validate Save for Later in shopping cart,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Save for Later","Product to add:
+iphone 14 pro",The product should be added to Save for later section,The product is added to Save for later section,Pass
+TC_SC_10,"TS_06 
+(Shopping Cart)",Validate selecting pincode in shopping cart,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Change button/Enter delivery Pincode in top
+3) Enter a pincode or select use my current location","Product to add:
+iphone 14 pro",The Delivery details should be shown for the pincode,The Delivery details is shown for the pincode,Pass
+TC_SC_11,"TS_06 
+(Shopping Cart)",Validate Prices change according to selected quantity,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Change quantity","Product to add:
+iphone 14 pro",The prices should change accordingly to the quantity selected,The prices changes accordingly to the quantity selected,Pass
+TC_SC_12,"TS_06 
+(Shopping Cart)",Validate Place Order button functionality in Shopping Cart page,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order","Product to add:
+iphone 14 pro",The User should be taken to Checkout page,The User is taken to Checkout page,Pass
+TC_SC_13,"TS_06 
+(Shopping Cart)",Validate the UI of Shopping Cart page,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart",1) Click on the Cart button in header,"Product to add:
+iphone 14 pro",The UI of Shopping Cart page should be according to requirements,The UI of Shopping cart page is according to requirements,Pass
+TC_SC_14,"TS_06 
+(Shopping Cart)",Verify the Shopping Cart page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Repeat from Step-1 for other environments","Product to add:
+iphone 14 pro",The Shopping Cart page should work in all supported environments,The Shopping Cart page works in all supported environments,Pass
+TC_CK_01,TS_07 (Checkout),Validate navigating to Checkout page from Shopping cart page,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order","Product to add:
+iphone 14 pro",The User should be taken to Checkout page,The User is taken to Checkout page,Pass
+TC_CK_02,TS_07 (Checkout),Validate checkout without Sign in,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order","Product to add:
+iphone 14 pro",The User should be taken to Checkout page and asked to Login,The User should be taken to Checkout page and asked to Login,Pass
+TC_CK_03,TS_07 (Checkout),Validate checkout with sign in,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order","Product to add:
+iphone 14 pro",The User should be taken to Checkout page and Sign in details under Login section,The User is taken to Checkout page and Sign in details under Login section,Pass
+TC_CK_04,TS_07 (Checkout),Validate Logout and sign in to another account button in Login section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Click Change button under login (ER-01)
+4) Click Logout and sign in to another account (ER-02) ","Product to add:
+iphone 14 pro","1) The Login section should expand to reveal Logout and sign in to another account option
+2) The User should be redirected to login page","1) The Login section should expand to reveal Logout and sign in to another account option
+2) The User should be redirected to login page",Pass
+TC_CK_05,TS_07 (Checkout),Validate Continue checkout button in Login section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Click Change button under login (ER-01)
+4) Click Continue checkout (ER-02) ","Product to add:
+iphone 14 pro","1) The Login section should expand to reveal Logout and sign in to another account option
+2) The Login section should close and redirect user to Delivery Address section","1) The Login section should expand to reveal Logout and sign in to another account option
+2) The Login section closes and redirects user to Delivery address section",Pass
+TC_CK_06,TS_07 (Checkout),Validate Delivery Address section for Use my current location button,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Click Use my current location button (ER-01, ER-2)
+4) Click Confirm address (ER-03)","Product to add:
+iphone 14 pro","1) The address should be detected using gps in pc and should display Pincode, district and State
+2) Two buttons should be displayed ""Confirm address"" and ""Cancel""
+3) The Pincode, state, Address (Area and street) fields should be filled with fields in add address section",1) The address displayed is wrong,Fail
+TC_CK_07,TS_07 (Checkout),Validate Delivery Address section for Use my current location button and cancel button in that section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Click Use my current location button (ER-01, ER-2)
+4) Click Cancel (ER-03)","Product to add:
+iphone 14 pro","1) The address should be detected using gps in pc and should display Pincode, district and State
+2) Two buttons should be displayed ""Confirm address"" and ""Cancel""
+3) The Pincode, state, Address (Area and street) fields should not be filled with fields in add address section",1) The address displayed is wrong,Fail
+TC_CK_08,TS_07 (Checkout),Validate Delivery address section's add new address fields with filling mandatory fields with Home as delivery type,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Fill all the mandatory fields and select home as Address type
+4) Click Save and deliver here","Product to add:
+iphone 14 pro",The address should be added to account and proceed to order summary section,The address is added to account and proceed to order summary section,Pass
+TC_CK_09,TS_07 (Checkout),Validate Delivery address section's add new address fields with filling all fields with Home as delivery type,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Fill all the fields and select home as Address type
+4) Click Save and deliver here","Product to add:
+iphone 14 pro",The address should be added to account and proceed to order summary section,The address is added to account and proceed to order summary section,Pass
+TC_CK_10,TS_07 (Checkout),Validate Delivery address section's add new address fields with filling mandatory fields with Work as delivery type,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Fill all the mandatory fields and select Work as Address type
+4) Click Save and deliver here","Product to add:
+iphone 14 pro",The address should be added to account and proceed to order summary section,The address is added to account and proceed to order summary section,Pass
+TC_CK_11,TS_07 (Checkout),Validate Delivery address section's add new address fields with filling all fields with Work as delivery type,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Fill all fields and select Work as Address type
+4) Click Save and deliver here","Product to add:
+iphone 14 pro",The address should be added to account and proceed to order summary section,The address is added to account and proceed to order summary section,Pass
+TC_CK_12,TS_07 (Checkout),Validate Delivery address section's add new address fields with leaving all fields as empty,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Do not fill any fields
+4) Click Save and deliver here","Product to add:
+iphone 14 pro",Proper field level warning should be displayed,Proper field level warning should be displayed,Pass
+TC_CK_13,TS_07 (Checkout),Validate change in delivery address section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order 
+3) Click change in delivery section (ER-01 ER-02)
+4) Click Edit (ER-03)","Product to add:
+iphone 14 pro","1) The Default address should be selected automatically
+2) The List of all added addresses should be displayed
+3) The edit address page should open and allow to edit address","1) The Default address is selected automatically
+2) The List of all added addresses is displayed
+3) The edit address page opens and allows to edit address",Pass
+TC_CK_14,TS_07 (Checkout),Validate change in delivery address section for selecting any address,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order 
+3) Click change in delivery section (ER-01 ER-02)
+4) Click Deliver here in any addess (ER-03)","Product to add:
+iphone 14 pro","1) The Default address should be selected automatically
+2) The List of all added addresses should be displayed
+3) The address should be selected and Proceed to Order summary section","1) The Default address is selected automatically
+2) The List of all added addresses is displayed
+3) The address is selected and Proceed to Order summary section",Pass
+TC_CK_15,TS_07 (Checkout),Validate Order summary section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order (ER-01, ER-02, ER-03) ","Product to add:
+iphone 14 pro","1) The Login section should display login info
+2) The delivery address should be selected as default address
+3) The information of all the products should be displayed with functionality to change quantity and remove buttons","1) The Login section displays login info
+2) The delivery address is selected as default address
+3) The information of all the products is displayed with functionality to change quantity and remove button",Pass
+TC_CK_16,TS_07 (Checkout),Validate proceeding out of Order summary section,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter a valid Email ID
+4) Click continue ","Product to add:
+iphone 14 pro",The Order section should close and proceed to Payment option section,The Order section closes and proceed to Payment option section,Pass
+TC_CK_17,TS_07 (Checkout),Validate proceeding out of Order summary section with invalid email address,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an invalid Email ID","Product to add:
+iphone 14 pro
+Invalid Email ID:
+1) test
+2) test@
+3) test@mail
+4) test@mail.",The continue button should not be clickable for invalid email address,The continue button is not clickable for invalid email address,Pass
+TC_CK_18,TS_07 (Checkout),Validate Payment option with Cash on Delivery,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an valid Email ID in order summary section and click continue
+4) Click Cash on Delivery
+5) Enter valid captcha and click Confirm order","Product to add:
+iphone 14 pro",The order should be placed and the user should be taken to Order success page,The order is placed and the user should be taken to Order success page,Pass
+TC_CK_19,TS_07 (Checkout),Validate Order is not cancelled when back button is clicked in order success page,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an valid Email ID in order summary section and click continue
+4) Click Cash on Delivery
+5) Enter valid captcha and click Confirm order
+6) Click Back button in browser
+7) Click My account dropdown and click orders","Product to add:
+iphone 14 pro",The order should not be cancelled and the placed order is displayed in Orders page,The order is not cancelled and the placed order is displayed in Orders page,Pass
+TC_CK_20,TS_07 (Checkout),Validate Cancel order process,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an valid Email ID in order summary section and click continue
+4) Click Cash on Delivery
+5) Enter valid captcha and click Confirm order
+6) Click My account dropdown and click orders
+7) Click the order to be cancelled
+8) Click cancel order
+9) Select reason to cancel dropdown and fill the details
+10) Click continue","Product to add:
+iphone 14 pro",The user should be taken to order setails page and the order should be shown as cancelled,The user is taken to order setails page and the order is shown as cancelled,Pass
+TC_CK_21,TS_07 (Checkout),Validate Payment option with Cash on Delivery for invalid captcha,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an valid Email ID in order summary section and click continue
+4) Click Cash on Delivery
+5) Enter invalid captcha and click Confirm order","Product to add:
+iphone 14 pro","It should show the error ""Invalid text entered and please continue again"" and should not proceed further","It shows the error ""Invalid text entered and please continue again"" and should not proceed further",Pass
+TC_CK_22,TS_07 (Checkout),Validate Payment option with Cash on Delivery for empty captcha,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Sign in using valid credentials
+3) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Enter an valid Email ID in order summary section and click continue
+4) Click Cash on Delivery
+5) Do not fill captcha and click Confirm order","Product to add:
+iphone 14 pro","It should show the error ""Please fill out this field"" under captcha textfield and should not proceed further","It shows the error ""Please fill out this field"" under captcha textfield and does not proceed further",Pass
+TC_CK_23,TS_07 (Checkout),Validate the UI of Checkout page,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order","Product to add:
+iphone 14 pro",The UI of Checkout page should be according to requirements,The UI of Checkout page is according to requirements,Pass
+TC_CK_24,TS_07 (Checkout),Verify the Checkout page functionality in all the supported environments,"1) Open the site ""https://www.flipkart.com"" in any supported browser
+2) Add a product to cart","1) Click on the Cart button in header
+2) Click Place Order
+3) Repeat from Step-1 for other environments","Product to add:
+iphone 14 pro",The Checkout page should work in all supported environments,The Checkout page works in all supported environments,Pass
