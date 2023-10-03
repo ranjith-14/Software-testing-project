@@ -1,0 +1,1802 @@
+Test Application ID,,TC_001,Test Application Description,TESTING THE WHATSAPP APP,,,,,
+System,,WHATSAPP,Sub System,ALL WHATSAPP FUNCTIONS,,,,,
+Created By,,RANJITH C,Reviewed By,RANJITH C,,,,,
+Date Created,,25-09-2023 00:00,Date Reviewed,30-09-2023 00:00,,,,,
+Pre-Conditions,,ABLE TO USE WHATSAPP,Post Conditions,Nil,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Scenario ID,No of Test Cases,Test Scenario Description,,,,,,,
+TS_001,30,Verify the Login/Sign up Scenario,,,,,,,
+TS_002,76,Verify the Chats screen & Select Contacts Screen Scenarios,,,,,,,
+TS_003,72,Verify the Updates & Channel Screen Scenarios,,,,,,,
+TS_004,92,Verify the Conversation screen scenarios,,,,,,,
+TS_005,57,Verify Contact/Group info screen scenarios,,,,,,,
+Total,327,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Case ID,Test Case ID/Test Scenario,Test Case Name,Test Steps,Expected Results,Actual Results,Status (Pass/Fail),Comments,Test Data,Prerequisites
+TC_LS_02,TS_001 / Verify the Login/Sign up Scenario,Verify user sign up with a valid mobile number and otp,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Verify another way (ER-04)
+7) Fill the otp and click next
+8) Fill a name
+9) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page
+5) The user should be taken to Homepage with no previous chats/groups","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page
+5) The user is taken to Homepage with no previous chats/groups",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_03,TS_001 / Verify the Login/Sign up Scenario,Verify user can automatic verified Login with a valid mobile number in new mobile ,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill a name
+8) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+5) The user should be taken to Homepage with all the previously joined groups available","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+5) The user is taken to Homepage with all the previously joined groups available",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_04,TS_001 / Verify the Login/Sign up Scenario,Verify user can automatic verified Login with a valid mobile number in same mobile ,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill a name
+8) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+5) The user should be taken to Homepage with all the previous chats imported","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+5) The user is taken to Homepage with all the previous chats imported",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_05,TS_001 / Verify the Login/Sign up Scenario,Verify user automatic verified sign up with a valid mobile number and otp,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill a name
+8) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+ 5) The user should be taken to Homepage with no previous chats/groups","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+ 5) The user is taken to Homepage with no previous chats/groups",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_06,TS_001 / Verify the Login/Sign up Scenario,Verify user can login with two step verification active,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number with two step verification active
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill a valid two step verification Pin (ER-05)
+8) Fill a name
+9) Click next and fill verification code (ER-06)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to two step verification page
+5) The user should be taken to otp page and autoverified by call
+6) The user should be taken to Homepage with all the previously joined groups available","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to two step verification page
+5) The user is taken to otp page and autoverified by call
+6)  The user is taken to Homepage with all the previously joined groups available",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_07,TS_001 / Verify the Login/Sign up Scenario,Verify name and Profile picture is auto filled when logging in,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill a name
+8) Observe (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+5) The Name and Picture field should show the previously used values","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+5)  The Name and Picture field should show the previously used values",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_08,TS_001 / Verify the Login/Sign up Scenario,Verify user can setup profile picture when Sign up / Login,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Verify another way (ER-04)
+7) Fill the otp and click next
+8) Fill a name and add a profile picture
+9) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page
+5) The user should be taken to Homepage with the provided name and Profile picture added","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page
+5) The user should be taken to Homepage with the provided name and Profile picture added",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_09,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot login with invalid two step verification active,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number with two step verification active
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Fill an invalid two step verification Pin (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to two step verification page
+5) The user should be shown the error that the Login Pin is invalid","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to two step verification page
+5) The user is shown the error that the Login Pin is invalid",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_10,TS_001 / Verify the Login/Sign up Scenario,Verify user can restore backed up chats when logged in,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number with chats backued up
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Login with google account and click Restore
+8) Fill a name
+9) Click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+5) The user should be taken to Homepage with all the previous chats imported","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+5) The user is taken to Homepage with all the previous chats imported",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_11,TS_001 / Verify the Login/Sign up Scenario,Verify user can login as companion device,"1) Open Whatsapp in primary device
+2) Select a language and ok
+3) Click options icon and click Link as companion device
+4) Go to whatsapp in a logged in secondary device
+5) Click Linked devices
+6) Click link device and scan the qr code from primary device",The Chats in secondary device should be imported into the primary device and linked,The Chats in secondary device are imported into the primary device and linked,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_12,TS_001 / Verify the Login/Sign up Scenario,Verify user can login into Web.whatsapp.com,"1) Go to Web.whatsapp.com
+2) Go to whatsapp in a logged in mobile
+5) Click Linked devices
+6) Click link device and scan the qr code from web.whatsapp.com",The Chats in mobile should be imported into the Whatsapp web and linked,The Chats in mobile is imported into the Whatsapp web and linked,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_13,TS_001 / Verify the Login/Sign up Scenario,Verify user can login into desktop whatsapp,"1) Install and open whatsapp desktop
+2) Go to whatsapp in a logged in mobile
+5) Click Linked devices
+6) Click link device and scan the qr code from Whatsapp desktop",The Chats in mobile should be imported into the desktop whatsapp and linked,The Chats in mobile is imported into the desktop whatsapp and linked,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_14,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot sign up/ login using invalid mobile number,"1) Open Whatsapp
+2) Click Agree and continue
+3)  Fill the mobile number field with shorter mobile number and Click Next (ER-01)
+4) Fill the mobile number field with longer mobile numer and Click Next (ER-02)
+5) Fill the mobile number field with Invalid mobile number (ER-03)","1) It should show the error ' The phone number you entered is too short for the country:[Selected country' and should not proceed further
+2) It should show the error ' The phone number you entered is too long for the country:[Selected country' and should not proceed further
+3) It should show the error ' Your mobile number is not a valid mobile number for the country' and should not proceed further","1) It shows the error ' The phone number you entered is too short for the country:[Selected country' and does not proceed further
+2) It shows the error ' The phone number you entered is too long for the country:[Selected country' and does not proceed further
+3) It shows the error ' Your mobile number is not a valid mobile number for the country' and does not proceed further",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_15,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot sign up/ login using empty phone number,"1) Open Whatsapp
+2) Click Agree and continue
+3) Leave the mobile number field empty and Click Next","The user should not be proceeded to next page and is shown the error ""Please enter your phone number""","The user is not proceeded to next page and is shown the error ""Please enter your phone number""",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_16,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot login with invalid OTP,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Verify another way (ER-04)
+7) Fill an invalid otp and click next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page
+5) The user should be notified that is an invalid otp and should not proceed further","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page
+5) ) The user should be notified that is an invalid otp and should not proceed further",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_17,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot login with empty name,"1) Open Whatsapp 
+2) Select a language and ok (ER-01)
+3) Fill a valid Mobile number
+4) Click next (ER-02)
+5) Click Ok (ER-03)
+6) Click Continue (ER-04)
+7) Leave the name empty and click Next (ER-05)","1) The user should be taken to Welcome to Whatsapp page
+2) A confirmation dialog should be shown with edit button
+3) The user should be taken to a page where user should be asked to be verified by call
+4) The user should be taken to otp page and autoverified by call
+5) The user should be notified that account cannot be created without name","1) The user is taken to Welcome to Whatsapp page
+2) A confirmation dialog is shown with edit button
+3) The user is taken to a page where user is asked to be verified by call
+4) The user is taken to otp page and autoverified by call
+5) The user should be notified that account cannot be created without name",Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_18,TS_001 / Verify the Login/Sign up Scenario,Verify user can go to Login page by clicking edit in mobile number confirmation dialog,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill a valid mobile number
+4) Click Next
+5) Click Edit",The dialog should disappear and the user should stay on login page,The dialog disappears and the user stays on login page,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_19,TS_001 / Verify the Login/Sign up Scenario,Verify user can change the country of login mobile number,"1) Open Whatsapp
+2) Click Agree and continue
+3) Click on a country name
+4) Select a country",The Country name should change and the country code should change according to the country,The Country name changes and the country code changes according to the country,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_20,TS_001 / Verify the Login/Sign up Scenario,Verify user can manually enter country code,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill a valid country code in the country code field",The Country code should change and the country name should change according to the country,The Country code changes and the country name changes according to the country,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_21,TS_001 / Verify the Login/Sign up Scenario,Verify user is notified of invalid country code,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill an invalid country code in the country code field",The country name should inform it is an invalid country code,The country name should informs it is an invalid country code,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_22,TS_001 / Verify the Login/Sign up Scenario,Verify user cannot login with invalid otp sms,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill a valid mobile number and Click Next
+4) Click Continue
+5) Fill an invalid otp ",The User should be notified of invalid code and should not be allowed further,The User is notified of invalid code and is not allowed further,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_23,TS_001 / Verify the Login/Sign up Scenario,Verify user can request another otp in sms,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill a valid mobile number and Click Next
+4) Click Continue
+5) Wait for some time
+6) Click Didn't receive code?
+7) Click Resend sms ",An sms should be resent to the user,An sms is resent to the user,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_24,TS_001 / Verify the Login/Sign up Scenario,Verify the functionality of wrong number link button,"1) Open Whatsapp
+2) Click Agree and continue
+3) Fill a valid mobile number
+4) Click Ok
+5) Click 'Wrong number?' Link",The user should be taken to Login page,The user is taken to Login page,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_25,TS_001 / Verify the Login/Sign up Scenario,Verify the ability to search Support query from WhatsApp page,"1) Open Whatsapp
+2) Click Options button
+3) Click Help
+4) Fill the field Describe your problem
+5) Click next",The user should be taken to help center page with FAQ help,The user is taken to help center page with FAQ help,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_26,TS_001 / Verify the Login/Sign up Scenario,Verify the ability to search Support query from Login page,"1) Open Whatsapp
+2) Click Agree and continue
+3) Click Options button
+4) Click Help
+5) Fill the field Describe your problem
+6) Click next",The user should be taken to help center page with FAQ help,The user is taken to help center page with FAQ help,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_27,TS_001 / Verify the Login/Sign up Scenario,Verify user is able to go to Terms and Service policy page from Welcome to WhatsApp page,"1) Open Whatsapp
+2) Click Terms of Service link",The user should be taken to Terms of Service in a browser,The user is taken to Terms of Service in a browser,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_28,TS_001 / Verify the Login/Sign up Scenario,Verify user is able to go to Privacy policy page from Welcome to WhatsApp page,"1) Open Whatsapp
+2) Click Privacy Policy link",The user should be taken to Privacy Policy in a browser,The user is taken to Privacy Policy in a browser,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_29,TS_001 / Verify the Login/Sign up Scenario,Verify user is able to change language in Welcome to WhatsApp page,"1) Open Whatsapp
+2) Click English on Welcome to WhatsApp page
+3) Select a language",The language of the App should change as the Selected Language,The language of the App changes as the Selected Language,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_LS_30,TS_001 / Verify the Login/Sign up Scenario,Verify user is able to select a language in first page,"1) Open Whatsapp
+2) Click English on First page
+3) Select a language",The language of the App should change as the Selected Language,The language of the App changes as the Selected Language,Pass,Nil,Not Applicable,The App should be installed in mobile
+TC_CS_02,TS002 / Verify the Chats screen Scenario,Verify the list of chats and groups are shown in Chats screen,"1) Receive some messages
+2) Open Whatsapp
+3) Observe",Number of chats and groups should be shown in chats screen,Number of chats and groups is shown in chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_03,TS002 / Verify the Chats screen Scenario,Verify the user can open chats/groups conversation page by clicking on chat banner,"1) Receive some messages
+2) Open Whatsapp
+3) Click a chat/group banner",The user should be taken to the chat/group conversation page where all the previous conversations are shown,The user is taken to the chat/group conversation page where all the previous conversations are shown,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_04,TS002 / Verify the Chats screen Scenario,Verify the user can see the most recent conversation in chat/gropu banner in chats screen,"1) Receive some messages
+2) Open Whatsapp
+3) Observe",The most recent conversation from each chat/group should be displayed,The most recent conversation from each chat/group is displayed,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_05,TS002 / Verify the Chats screen Scenario,Verify the number of messages unread is shown in the topbar near Chats,"1) Receive some messages
+2) Open Whatsapp
+3) Observe",The number of unread messages should be shown near Chats button,The number of unread messages is shown near Chats button,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_06,TS002 / Verify the Chats screen Scenario,Verify the unread messages are shown in chats and groups,"1) Receive some messages
+2) Open Whatsapp
+3) Observe",The unread message with number of unread messages should be shown in each chats and groups,The unread message with number of unread messages is shown in each chats and groups,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_07,TS002 / Verify the Chats screen Scenario,Verify the user can see profile picture of chats and groups,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups (ER-01)
+3) Click on the picture (ER-02) ","1) The Profile picture should be opened in a small windwos
+2) The profile picture should be opened in ful screen","1) The Profile picture is opened in a small windwos
+2) The profile picture is opened in ful screen",Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_08,TS002 / Verify the Chats screen Scenario,Verify user can close the full screen profile picture by clicking back arrow button in top left corner,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click on the picture
+4) Click back arrow button in top left corner",The profile picture should be closed and the user should be taken to chats screen,The profile picture is closed and the user is taken to chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_09,TS002 / Verify the Chats screen Scenario,Verify user can close the full screen profile picture by clicking back button in mobile,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click on the picture
+4) Click back arrow in mobile",The profile picture should be closed and the user should be taken to chats screen,The profile picture is closed and the user is taken to chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_10,TS002 / Verify the Chats screen Scenario,Verify user can close the full screen profile picture by swiping up or down,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click on the picture
+4) Swipe the picture up or down",The profile picture should be closed and the user should be taken to chats screen,The profile picture is closed and the user is taken to chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_11,TS002 / Verify the Chats screen Scenario,Verify user can close small profile picture window by clicking outside picture,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click outside the profile picture",The small window should be closed,The small window is closed,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_12,TS002 / Verify the Chats screen Scenario,Verify user can close small profile picture window by clicking back button in mobile,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click back button in mobile",The small window should be closed,The small window is closed,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_13,TS002 / Verify the Chats screen Scenario,Verify user can enter video call from Chats screen,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click video call icon",The user should be taken to voice caller screen with the selected user on call,The user is taken to voice caller screen with the selected user on call,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_14,TS002 / Verify the Chats screen Scenario,Verify user can enter voice call from Chats screen,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click voice call icon",The user should be taken to video caller screen with the selected user on call,The user is taken to video caller screen with the selected user on call,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_15,TS002 / Verify the Chats screen Scenario,Verify user can enter contact info page from Chats screen,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click I icon",The user should be taken to contact info page,The user is taken to contact info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_16,TS002 / Verify the Chats screen Scenario,Verify user can enter chat conversation page from Chats screen after clicking profile picture,"1) Open Whatsapp
+2) Click on the profile picture of chats/groups
+3) Click Chats icon",The user should be taken to conversation page of ,The user is taken to contact info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_17,TS002 / Verify the Chats screen Scenario,Verify user can pin a chat/group to top,"1) Open Whatsapp
+2) Long press a Group/Chat
+3) Click the pin icon",The chat/group should be pinned to top,The chat/group is pinned to top,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_18,TS002 / Verify the Chats screen Scenario,Verify user can pin multiple chat/group to top,"1) Open Whatsapp
+2) Long press multiple Groups/chats
+3) Click the pin icon",The chats/groups should be pinned to top,The chats/groups is pinned to top,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_19,TS002 / Verify the Chats screen Scenario,Verify user can unpin a chat/group to top,"1) Open Whatsapp
+2) Long press a Group/Chat
+3) Click the pin icon
+4) Long press a pinned Group/chat
+5) Click the unpin icon",The group/chat should be unpinned,The group/chat is unpinned,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_20,TS002 / Verify the Chats screen Scenario,Verify user can unpin multiple chat/group to top,"1) Open Whatsapp
+2) Long press multiple Groups/chats
+3) Click the pin icon
+4) Long press multiple pinned Groups/chats
+5) Click the unpin icon",The groups/chats should be unpinned,The groups/chats is unpinned,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_21,TS002 / Verify the Chats screen Scenario,Verify user can mute notification of chat/group,"1) Open Whatsapp
+2) Long press a Group/Chat
+3) Click the mute icon (ER-01)
+4) Select a time period between 8 hours/1 week/ Always
+5) Click ok",The chat/group's should notification should be muted for the selected period,The chat/group's should notification should be muted for the selected period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_22,TS002 / Verify the Chats screen Scenario,Verify user can mute notificationof of multiple chat/group,"1) Open Whatsapp
+2) Long press multiple Groups/Chats
+3) Click the mute icon
+4) Select a time period between 8 hours/1 week/ Always
+5) Click ok",The chats/groups' should notification should be muted for the selected period,The chats/groups' should notification should be muted for the selected period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_23,TS002 / Verify the Chats screen Scenario,Verify chats/groups unmute itself after the muted time,"1) Open Whatsapp
+2) Long press a Group/Chat
+3) Click the mute icon
+4) Select a fixed time period between 8 hours/1 week
+5) Click ok
+6) Wait for the fixed time period
+7) Open Whatsapp",The chat/group should have unmuted itself,The chat/group has unmuted itself,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_24,TS002 / Verify the Chats screen Scenario,Verify user can unmute notification of chat/group,"1) Open Whatsapp
+2) Long press a muted Group/Chat
+3) Click unmute icon",The group/chat's notification should be unmuted,The group/chat's notification is unmuted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_25,TS002 / Verify the Chats screen Scenario,Verify user can unmute notification of multiple chat/group,"1) Open Whatsapp
+2) Long press multiple muted Groups/Chats
+3) Click unmute icon",The groups/chats' notification should be unmuted,The groups/chats' notification is unmuted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_26,TS002 / Verify the Chats screen Scenario,Verify user can archive chat/group,"1) Open Whatsapp
+2) Long press a Group/Chat
+3) Click the archive icon",The chat/group should be archived,The chat/group is archived,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_27,TS002 / Verify the Chats screen Scenario,Verify user can archive multiple chat/groups,"1) Open Whatsapp
+2) Long press multiple Groups/chats
+3) Click the archive icon",The chats/groups should be archived,The chats/groups is archived,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_28,TS002 / Verify the Chats screen Scenario,Verify user can view all archived chats/group,"1) Open Whatsapp
+2) Archive some chats/groups
+3) Click archive button on top",All the archived chats/groups should be shown here,All the archived chats/groups is shown here,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_29,TS002 / Verify the Chats screen Scenario,Verify user can unarchive chat/group,"1) Open Whatsapp
+2) Archive a chat/group
+3) Click archive button on top
+4) Long press a chat/group
+5) Click unarchive button",The chat/group should be unarchived,The chat/group is unarchived,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_30,TS002 / Verify the Chats screen Scenario,Verify user can exit group from chats screen,"1) Open Whatsapp
+2) Long press a group
+3) Click options
+4) Click exit group (ER-01)
+5) Click exit (ER-02)","1) An exit confirmation dialog should be opened
+2) The user should exit from the group","1) An exit confirmation dialog is opened
+2) The user is exited from the group",Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_31,TS002 / Verify the Chats screen Scenario,Verify user can use archive instead button in group,"1) Open Whatsapp
+2) Long press a group
+3) Click options
+4) Click exit group (ER-01)
+5) Click Archive instead (ER-02)","1) An exit confirmation dialog should be opened
+2) The group should be archived instead of exiting","1) An exit confirmation dialog is opened
+2)The group should be archived instead of exiting",Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_32,TS002 / Verify the Chats screen Scenario,Verify user can use cancel button on exit group dialog,"1) Open Whatsapp
+2) Long press a group
+3) Click options
+4) Click exit group (ER-01)
+5) Click cancel (ER-02)","1) An exit confirmation dialog should be opened
+2) The exit confirmation dialog should be closed","1) An exit confirmation dialog is opened
+2)The exit confirmation dialog is closed",Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_33,TS002 / Verify the Chats screen Scenario,Verify user can add group/chat to mobile homescreen,"1) Open Whatsapp
+2) Long press a group/chat
+3) Click options
+4) Click add chat shortcut
+5) Click add",The char/group should be added as shortcut to mobile homescreen,The char/group is added as shortcut to mobile homescreen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_34,TS002 / Verify the Chats screen Scenario,Verify user can go to group info from  chats screen,"1) Open Whatsapp
+2) Long press a group/chat
+3) Click options
+4) Click group info",The user should be taken to group info page,The user is taken to group info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_35,TS002 / Verify the Chats screen Scenario,Verify group/chat can be marked as read from chats screen,"1) Open Whatsapp
+2) Long press an unread group/chat
+3) Click options
+4) Click mark as read",The chat/group should be read and the unread notification should gone,The chat/group is read and the unread notification is gone,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_36,TS002 / Verify the Chats screen Scenario,Verify Block button of chats in chats screen,"1) Open Whatsapp
+2) Long press a chat
+3) Click options
+4) Click Block
+5) Click Block",The chat should be blocked,The chat is blocked,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_37,TS002 / Verify the Chats screen Scenario,Verify select all button in chats screen,"1) Open Whatsapp
+2) Long press a chat
+3) Click options
+4) Click Select all",All chats/groups should be selected,All chats/groups are selected,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_38,TS002 / Verify the Chats screen Scenario,Verify group/chat can be marked as unread from chats screen,"1) Open Whatsapp
+2) Long press an already chat/group
+3) Click options
+4) Click mark as unread",A small unread green icon should be shown on group/chat,A small unread green icon is shown on group/chat,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_39,TS002 / Verify the Chats screen Scenario,Verify add to contacts button for contacts not in out mobile,"1) Open Whatsapp
+2) Long press a chat which is not already in contact list
+3) Click options
+4) Click Add to contacts
+5) Fill the details and Click save",The Contact should be added to contact,The Contact is added to contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_40,TS002 / Verify the Chats screen Scenario,Verify deleting group/chats from chats screen without deleting media,"1) Open Whatsapp
+2) Long press a chat/group
+3) Click Delete icon
+4) Uncheck delete media checkbox
+5) Click delete",The chat/group should be deleted but the media received should remain,The chat/group is deleted but the media received remains,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_41,TS002 / Verify the Chats screen Scenario,Verify deleting group/chats from chats screen with deleting media,"1) Open Whatsapp
+2) Long press a chat/group
+3) Click Delete icon
+4) Check delete media checkbox
+5) Click delete",The chat/group should be deleted  and the media should be also deleted,The chat/group is deleted  and the media received is also deleted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_42,TS002 / Verify the Chats screen Scenario,Verify cancel button in delete dialog,"1) Open Whatsapp
+2) Long press a chat/group
+3) Click Delete icon
+4) Click cancel",The chat/group should not be deleted and the delete dialog should close,The chat/group is not deleted and the delete dialog closed,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_43,TS002 / Verify the Chats screen Scenario,Verify view contact button in chats screen for chats,"1) Open Whatsapp
+2) Long press a group/chat
+3) Click options
+4) Click Conact",The user should be taken to contact info page,The user is taken to contact info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_44,TS002 / Verify the Chats screen Scenario,Verify user can cancel selection by clicking back arrow button,"1) Open Whatsapp
+2) Long press a few groups/chats
+3) Click back arrow button in top left corner",The selections should be cancelled,The selections is cancelled,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_45,TS002 / Verify the Chats screen Scenario,Verify user can cancell selection by clicking back button in mobile,"1) Open Whatsapp
+2) Long press a few groups/chats
+3) Click back button in mobile",The selections should be cancelled,The selections is cancelled,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_46,TS002 / Verify the Chats screen Scenario,Verify the existing chat with contact name can be searched,"1) Open Whatsapp
+2) Click Search icon
+3) Fill a contact name",The filled name should appear at top,The filled name appears at top,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_47,TS002 / Verify the Chats screen Scenario,Verify the user can search content of the chats,"1) Open Whatsapp
+2) Click Search icon
+3) Fill a content",The chats with the searched keyword should appear,The chats with the searched keyword appears,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_48,TS002 / Verify the Chats screen Scenario,Verify searching value with filters,"1) Open Whatsapp
+2) Click Search icon
+3) Fill a content
+4) Click a filter",The chats with the searched keyword should appear with filter selected,The chats with the searched keyword appears with filter selected,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_49,TS002 / Verify the Chats screen Scenario,Verify new group button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click new group",The user should be taken to contact selection wizard with a provision to create a new group,The user is taken to contact selection wizard with a provision to create a new group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_50,TS002 / Verify the Chats screen Scenario,Verify new broadcast button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click new broadcast",The user should be taken to contact selection wizard with a provision to create a new broadcast,The user is taken to contact selection wizard with a provision to create a new broadcast,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_51,TS002 / Verify the Chats screen Scenario,Verify linked devices button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click linked devices",The user should be taken to linked devices page,The user is taken to linked devices page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_52,TS002 / Verify the Chats screen Scenario,Verify starred messages button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click starred messages",The user should be taken to starred messages page,The user is taken to starred messages page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_53,TS002 / Verify the Chats screen Scenario,Verify Payments button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click Payments",The user should be taken to Payments page,The user is taken Payments page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_54,TS002 / Verify the Chats screen Scenario,Verify settings button in options menu,"1) Open Whatsapp
+2) Click 3 dot menu icon
+3) Click settings",The user should be taken to settings page,The user is taken to settings page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_55,TS002 / Verify the Chats screen Scenario,Verify the camera icon in chats screen,"1) Open Whatsapp
+2) Click camera icon",The User should be taken to camera page,The User is taken to camera page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_56,TS002 / Verify the Chats screen Scenario,Verify the ability to move between pages by clicking screen name,"1) Open Whatsapp
+2) Click a screen name",The screen should change to the selected screen,The screen changes to the selected screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_57,TS002 / Verify the Chats screen Scenario,Verify the ability to switch between pages by swiping left or right,"1) Open Whatsapp
+2) Swipe right or left",The sceen should switch according to the swipe,The screen changes to the swiped screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_58,TS002 / Verify the Chats screen Scenario,Verify starting a chat with a new contact,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a message",The user should be able to send a message to the new contact,The user is able to send a message to the new contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_59,TS002 / Verify the Chats screen Scenario,Verify starting a new group without filling name,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Click tick bubble button",The group should be created in creator name,The group is created in creator name,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_60,TS002 / Verify the Chats screen Scenario,Verify starting a new group with filling name,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Fill a new valid name In name field
+8) Click tick bubble button",The group should be created in filled name,The group is created in filled name,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_61,TS002 / Verify the Chats screen Scenario,Verify creating a group with emoji as a group profile picture,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Click profile picture icon
+8) Click emoji icon
+9) Select a background and Select an emoji
+10) Click tick bubble button",The new group should be created with the selected emoji and background as group picture,The new group is created with the selected emoji and background as group picture,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_62,TS002 / Verify the Chats screen Scenario,Verify creating a group with sticker as a group profile picture,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Click profile picture icon
+8) Click emoji icon
+9) Select a background and Select sticker
+10) Click tick bubble button",The new group should be created with the selected sticker and background as group picture,The new group is created with the selected sticker and background as group picture,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_63,TS002 / Verify the Chats screen Scenario,Verify creating a group with gallery picture as a group profile picture,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Click profile picture icon
+8) Click gallery icon
+9) Select a picture
+10) Click tick bubble button",The new group should be created with the selected group picture,The new group is created with the selected group picture,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_64,TS002 / Verify the Chats screen Scenario,Verify creating a group with camera picture as a group profile picture,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Click profile picture icon
+8) Click camera icon
+9) Click a picture and click ok
+10) Click tick bubble button",The new group should be created with the selected group picture,The new group is created with the selected group picture,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_65,TS002 / Verify the Chats screen Scenario,Verify group name cannot be 100 characters long,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Fill the name field with more than 100 characters
+8) Click tick bubble button",The Name of the group should be first 100 characters the user filled ,The Name of the group is first 100 characters the user filled ,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_66,TS002 / Verify the Chats screen Scenario,Verify the group can be created with disappearing messages activated,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Select a few contacts
+6) Click forward arrow button
+7) Fill the name field with a valid name
+8) Click disappearing messages and select a period
+8) Click tick bubble button",The new group should be created with disappearing messages activated and messages should disappear after the selected period,The new group is created with disappearing messages activated and messages disappear after the selected period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_67,TS002 / Verify the Chats screen Scenario,Verify group cannot be created without atleast 1 participant,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click a contact
+4) Send a new group
+5) Click the tick bubble button",The Whatsapp should alert the user that atleast 1 contact must be selected,The Whatsapp alerts the user that atleast 1 contact must be selected,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_68,TS002 / Verify the Chats screen Scenario,Verify starting a new chat by scanning qr code,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click qr code icon in New Contact button
+4) Scan a code",The user should be able to send a message to the new contact,The user is able to send a message to the new contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_69,TS002 / Verify the Chats screen Scenario,Verify sharing qr code to start chat with new user,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click qr code icon in New Contact button
+4) Scan my code",The other user with scan code option should be able to start conversation with the user,The other user with scan code option is able to start conversation with the user,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_70,TS002 / Verify the Chats screen Scenario,Verify search button in add contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click search icon and fill a value",The filled contact should appear on top,The filled contact appears on top,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_71,TS002 / Verify the Chats screen Scenario,Verify the back arrow button in top left corner in select contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click back arrow in top left corner",The user should be taken to chats screen,The user is taken to chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_72,TS002 / Verify the Chats screen Scenario,Verify the back button in mobile from select contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click back button in mobile",The user should be taken to chats screen,The user is taken to chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_73,TS002 / Verify the Chats screen Scenario,Verify invite a friend button in options menu in Select contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click options menu
+4) Click invite a friend button and select messages to send invite link",The invite link for whatsapp should be send to a contact with sms,The invite link for whatsapp is send to a contact with sms,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_74,TS002 / Verify the Chats screen Scenario,Verify contacts button in options menu in Select contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click options menu
+4) Click Contacts button",The user should be taken to Contacts app in mobile,The user is taken to Contacts app in mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_75,TS002 / Verify the Chats screen Scenario,Verify Refresh button in options menu in Select contact page,"1) Add a new whatsapp contact in mobile
+2) Open Whatsapp
+3) Click chat bubble button
+4) Click options menu
+5) Click Refresh button",The newly added contact should be available in Select contacts page,The newly added contact is available in Select contacts page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CS_76,TS002 / Verify the Chats screen Scenario,Verify Help button in options menu in Select contact page,"1) Open Whatsapp
+2) Click chat bubble button
+3) Click options menu
+4) Click Help button",The user should be taken to Help article page,The user is taken to Help article page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_02,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the ability to go to updates by swiping,"1) Open Whatsapp
+2) Swipe right from Chats page (ER-01)
+3) Swipe right
+4) Swipe left from Calls page (ER-01)",1) The User should be taken to updates page,1) The User is taken to updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_03,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify all the statuses posted by our contacts are shown,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Observe",The Statuses posted by our contacts with contact name should be shown sorted by posting time,The Statuses posted by our contacts with contact name are shown sorted by posting time,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_04,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify opening the status by clicking on the statuses,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click a status",The clicked status should open in full screen,The clicked status opens in full screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_05,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the number of statuses of a contact is shown by dividing the circle on status a number of times,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Observe",The number of statuses a person posted should be represented by diving the circle surrounding the status corresponding to number,The number of statuses a person posted is represented by diving the circle surrounding the status corresponding to number,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_06,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify viewing a contacts status completely moves it to viewed updates section,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch a status completely
+4) Click viewed updates",The watched status should move to viewed updates section ,The watched status moves to viewed updates section ,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_07,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the statuses posted disappear after 24 hours of the status upload  in viewed updates,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch a status completely
+4) Click viewed updates in 24 Hours after the status is posted",The Status should disappear after 24 hours,The Status disappeared after 24 hours,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_08,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the statuses posted disappear after 24 hours of the status upload even without viewing,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Observe the updates section
+4) Go to updates in 24 hours after a status is posted",The Status should disappear after 24 hours,The Status disappeared after 24 hours,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_09,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify only the statuses posted by a user after 24 hours of the status upload disappear ,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch some status of a user with a few statuses
+4) Go to updates in 24 hours after the status is posted",The statuses for which 24 hours is gone should completely disappear,The statuses for which 24 hours is gone completely disappeared,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_10,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the status comes out of viewed updates if a user posts a new status before it disappears with already viewed updates grayed out,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch some status of a user with a few statuses
+4) Wait for the user to post another status before the viewed updates disappear",The status should come out of viewed updates to updates page with the already viewed statuses greyed out,The status comes out of viewed updates to updates page with the already viewed statuses greyed out,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_11,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify if viewing less number of statuses than user posted keeps the statuses in updates page but the viewed number of status is greyed out in circle,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch only a few status from a user
+4) Click viewed updates in 24 Hours after the status is posted",The status should stay in updates page but the number of statuses we saw should be greyed out in the circle,The status stays in updates page but the number of statuses we saw is greyed out in the circle,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_12,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify continuing the status watching continues the status from where we left off,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch only a few status from a user with more statuses
+4) Open the status from the same user again",The status should continue from where we left off,The status continues from where we left off,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_13,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the ability to view already completely viewed updates,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch a status completely
+4) Click viewed updates
+5) Click an already viewed status",The user should be able to view the already viewed update,The user is able to view the already viewed update,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_14,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify muting status updates,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Long press a user status (ER-01)
+4) Click mute (ER-02)
+5) Click the options icon near status button in top
+6) Click muted status (ER-03)","1) A mute dialog should appear with mute and cancel buttons
+2) The status should disappear
+3) The muted status page should open with all the muted statuses in the page","1) A mute dialog appears with mute and cancel buttons
+2) The status disappears
+3) The muted status page should open with all the muted statuses in the page",Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_15,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the cancel button in mute dialog,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Long press a user status
+4) Click cancel",The mute dialog should disappear and the status shoud stay in the updates page,The mute dialog disappears and the status shoud stay in the updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_16,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify going to user contact info page from status view,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Watch a status
+4) Before the status closes click the username on top",The user should be taken to the contact info page of clicked contact,The user is taken to the contact info page of clicked contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_17,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the status privacy option with my contacts,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the options button near status  option
+4) Click contacts
+5) Click back button
+6) Click text button in updates page",The default privacy option selected should be contacts,The default privacy option selected is contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_18,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the status privacy option with my contacts except option,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the options button near status  option
+4) Click my contacts except and select a few contacts
+5) Click back button
+6) Click text button in updates page",The default privacy option selected should be my contacts except with number of exclusions,The default privacy option selected is my contacts except with number of exclusions,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_19,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the status privacy option with only share with option,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the options button near status  option
+4) Click only share and select a few contacts
+5) Click back button
+6) Click text button in updates page",The default privacy option selected should be only share with number of inclusions,The default privacy option selected is only share with number of inclusions,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_20,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a text status,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the pencil icon
+4) Select a background color and add text
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_21,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a voice status,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the pencil icon
+4) Hold the mic button and add audio
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_22,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a picture status from gallery,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_23,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a video status from gallery,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a video
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_24,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a camera picture in whatsapp camera wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Click the shutter icon
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_25,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a video picture in whatsapp camera wizard by holding the camera shutter button,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Hold shutter icon and film a video
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_26,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a video picture in whatsapp camera wizard by video option,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Click the video option and shoot a video
+5) Click send button",The Status should be posted for the contacts,The Status is posted for the contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_27,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify posting a picture/video status with captions,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Add captions and click send",The Status should be posted for the contacts with captions,The Status is posted for the contacts with captions,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_28,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify resizing wizard in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click crop icon and edit the image by resizing or rotating
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_29,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding stickers to pictures in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click sticker icon and select a sticker
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_30,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding emoji to pictures in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click sticker icon and click emoji and select an emoji
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_31,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding text to pictures in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click Text icon and add text
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_32,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding text to pictures in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click Text icon and add text
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_33,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding paint to pictures in picture status wizard,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Click pencil icon and paint items in text
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_34,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify adding filter to a picture,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click the camera icon in bottom
+4) Select a picture
+5) Swipe up and add a filter
+6) Click send",The edited image status should be posted for contacts,The edited image status is posted for contacts,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_35,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify following channel from channel suggestions,"1) Open Whatsapp
+2) Click updates button in top bar (ER-01)
+3) Click follow button in a channel (ER-02)","1) The suggestions for channels should be shown in bottom
+2) The Channel should be added to updates Channel section in Updates","1) The suggestions for channels is shown in bottom
+2) The Channel is added to updates Channel section in Updates",Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_36,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify clicking on a channel takes user to conversation page of the channel,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Follow a channel
+4) Click a channel",The user should be taken to conversation page of the channel,The user is taken to conversation page of the channel,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_37,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify clicking on a channel takes user to conversation page of the channel without following,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a channel in find channel section",The user should be taken to conversation page of the channel,The user is taken to conversation page of the channel,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_38,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify following by clicking follow in conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a channel in find channel section
+4) Click follow in top right corner",The Channel should be added to updates' Channel section in Updates,The Channel is added to updates' Channel section in Updates,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_39,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify see all button in find channel section,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section",The user should be taken to channel page with list of suggestions,The user is taken to channel page with list of suggestions,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_40,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify following channel from channel suggestions page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click + button in channel page",The Channel should be added to updates' Channel section in Updates,The Channel is added to updates' Channel section in Updates,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_41,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify using filter in channel suggestion page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click on a filter suggestion in below search button",The Channel suggestion should be filtered according to the selected filter,The Channel suggestion is filtered according to the selected filter,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_42,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify using search in channel suggestion page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click on search and fill a keyword ",The channel suggestion should be filtered according to the keyword,The channel suggestion is filtered according to the keyword,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_43,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify back arrow button in channel suggestion page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click back arrow button in top left corner",The User should be taken to updates page,The User is taken to updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_44,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify back button from channel suggestion page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click back button in mobile from channel suggestion page",The User should be taken to updates page,The User is taken to updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_45,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify filter by region in channel suggestion,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click See all in find channel section
+4) Click on region and select a country ",The Channel suggestion should be filtered according to the selected country,The Channel suggestion is filtered according to the selected country,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_46,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify find channel button in Channel section,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click + button in Channel section and click find channel",The user should be taken to Channel suggestion page,The user is taken to Channel suggestion page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_47,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify creating a channel without description,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click + button in Channel section and Click Create channel
+4) Fill a name and click create",The channel should be created and added to updates section,The channel is created and added to updates section,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_48,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify creating a channel with description,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click + button in Channel section and Click Create channel
+4) Fill a name and description
+5) Click create",The channel should be created with description and added to updates section,The channel is created with description and added to updates section,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_49,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify user cannot create a channel without name,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click + button in Channel section and Click Create channel
+4) Leave the name field empty
+5) Click create",The channel should not be created and should be shown the error that the name field is empty,The channel is not created and is shown the error that the name field is empty,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_50,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unfollowing a channel from channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click following
+6) Click unfollow",The Channel should be unfollowed and disappear from channel section,The Channel is unfollowed and disappeared from channel section,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_51,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unfollowing a channel from channel conversations page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the options button
+5) Click unfollow
+6) Click unfollow in confirmation dialog",The Channel should be unfollowed and disappear from channel section,The Channel is unfollowed and disappeared from channel section,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_52,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unfollowing a channel from channel suggestion page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click see all in find channel section
+4) Search for the followed channel
+5) Click tick icon
+6) Click unfollow",The tick should change to + button,The tick is changed to + button,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_53,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify forward button in channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click forward
+6) Select a few chat/group and click send",The invite link to the channel should be send to the selected chats/groups,The invite link to the channel is send to the selected chats/groups,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_54,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify share button in channell info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click share
+6) Select an app to send",The invite link to the channel should be sent on the selected app,The invite link to the channel is sent on the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_55,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify muting notification of channel from conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click the bell icon in top",The notification should be turned off,The notification is turned off,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_56,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unmuting notification of a channel from conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click the bell icon in top",The notification should be turned on,The notification is turned on,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_57,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify muting notification of channel from channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on top bar
+5) Toggle the mute notification toggle on",The notification should be turned off,The notification is turned off,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_58,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unmuting notification of a channel from channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on top bar
+5) Toggle the mute notification toggle off",The notification should be turned on,The notification is turned on,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_59,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify unfollow button in channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click unfollow button in bottom
+5) Click unfollow",The Channel should be unfollowed and disappear from channel section,The Channel is unfollowed and disappeared from channel section,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_60,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify reporting a channel,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click Report in bottom
+6) Click report in report confirmation dialog",The user should be taken to updates page with a toast message showing report sent,The user is taken to updates page with a toast message showing report sent,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_61,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify reporting a channel with unfollow toggled on,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click Report in bottom
+6) Click unfollow and click report in report confirmation dialog",The user should be taken to updates page with a toast message showing report sent and the channel should be unfollowed,The user is taken to updates page with a toast message showing report sent and the channel is unfollowed,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_62,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify cancel button in report dialog,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click Report in bottom
+6) Click cancel in report confirmation dialog",The dialog should disappear,The dialog disappears,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_63,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the profile privacy text button ,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click Profile privacy text (ER-01)
+6) Click ok (ER-02)","1) The info page about privacy of channel should be shown
+2) The info page should disappear","1) The info page about privacy of channel is shown
+2) The info page disappears",Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_64,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the learn more button in profile privacy info,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click Profile privacy text (ER-01)
+6) Click Learn more (ER-02)","1) The info page about privacy of channel should be shown
+2) The detail about the info privacy should open in a browser","1) The info page about privacy of channel is shown
+2) The detail about the info privacy should open in a browser",Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_65,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the user can see full page profile picture button in channel info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click on the profile picture",The Profile picture should open in full screen,The Profile picture opens in full screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_66,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the user can use back arrow button to go back to conversation page from group info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click on back arrow in top left corner",The user should be taken to conversation page of the channel,The user is taken to conversation page of the channel,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_67,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify the user can use back button in mobile to go back to conversation page from group info page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on the top bar
+5) Click on back button in mobile",The user should be taken to conversation page of the channel,The user is taken to conversation page of the channel,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_68,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify reporting from conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on options button
+5) Click report
+6) Click report on report confirmation dialog",The user should be taken to updates page with a toast message showing report sent and the channel should be unfollowed,The user is taken to updates page with a toast message showing report sent and the channel is unfollowed,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_69,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify share button in converation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click on options button
+5) Click Share
+6) Choose an app and send",The invite link to the channel should be sent on the selected app,The invite link to the channel is sent on the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_70,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify using back arrow button in conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click back arrow button in top left corner",The user should be taken to Updates page,The user is taken to Updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_71,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify using back button in mobile from conversation page,"1) Open Whatsapp
+2) Click updates button in top bar 
+3) Click a followed channel in Channel section
+4) Click back button in mobile",The user should be taken to Updates page,The user is taken to Updates page,Pass,Nil,Not Applicable,Install the app and Login
+TC_UC_72,TS_003 / Verify the Updates & Channel Screen Scenarios ,Verify settings button in options menu,"1) Open Whatsapp
+2) Click updates button in top bar
+3) Click 3 dot menu icon
+4) Click settings",The user should be taken to settings page,The user is taken to settings page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_02,TS_004 / Verify the Conversation screen scenarios,Verify user can send text messages to chats,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message text field with valid value
+4) Click Send Icon",The message should be send to the contact and notification should be shown to users according to notification settings,The message is send to the contact and notification is shown to users according to notification settings,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_03,TS_004 / Verify the Conversation screen scenarios,Verify the sender can see single tick on the message if the message was not received on the receivor's mobile,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message text field with valid value
+4) Click Send Icon",The User should see a single grey tick if the receiver did not receive the message yet,The User can see a single grey tick if the receiver did not receive the message yet,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_04,TS_004 / Verify the Conversation screen scenarios,Verify the sender can see double tick on the message if the message was received on the receivor's mobile,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message text field with valid value
+4) Click Send Icon",The User should see double grey tick if the receiver received the message but has not read it,The User can see double grey tick if the receiver received the message but has not read it,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_05,TS_004 / Verify the Conversation screen scenarios,Verify the sender can see double tick on the message if the message was read by the receiver,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message text field with valid value
+4) Click Send Icon",The User should see double blue tick if the receiver read the message,The User can see double blue tick if the receiver read the message,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_06,TS_004 / Verify the Conversation screen scenarios,Verify user cannot send blank message,"1) Open Whatsapp
+2) Click a chat/group
+3) Leave the Message text field empty
+4) Try to click Send Icon",The Send icon should not appear,The Send icon does not appear,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_07,TS_004 / Verify the Conversation screen scenarios,Verify user cannot send just spaces,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message text field with just spaces
+4) Try to click Send Icon",The Send icon should not appear,The Send icon does not appear,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_08,TS_004 / Verify the Conversation screen scenarios,Verify user can send voice message by holding the mic icon,"1) Open Whatsapp
+2) Click a chat/group
+3) Hold the mic icon and record audio
+4) After recording release the click",The audio message should be sent automatically to the chat,The audio message is sent automatically to the chat,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_09,TS_004 / Verify the Conversation screen scenarios,Verify user can discard voice message by sliding the mic icon left,"1) Open Whatsapp
+2) Click a chat/group
+3) Hold the mic icon and record audio
+4) After recording slide the mic icon left",The audio message should be discarded and should not be sent,The audio message is discarded and is not sent,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_10,TS_004 / Verify the Conversation screen scenarios,Verify user can record audio without holding by sliding mic icon up,"1) Open Whatsapp
+2) Click a chat/group
+3) Slide the mic icon up",The Mic icon should stay and record,The Mic icon stays and records,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_11,TS_004 / Verify the Conversation screen scenarios,Verify user can pause and resume audio recording,"1) Open Whatsapp
+2) Click a chat/group
+3) Slide the mic icon up
+4) After recording for time click the pause icon
+5) Click the resume icon to start recording",The recording should pause and resume accordingly,The recording pauses and resumes accordingly,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_12,TS_004 / Verify the Conversation screen scenarios,Verify user can send emoji with text to chats ,"1) Open Whatsapp
+2) Click a chat/group
+3) Fill the Message with text
+4) Click the emoji icon
+5) Click some emojis to fill",The emojis should get filled in textfilled corresponding to clicks,The emojis gets filled in textfilled corresponding to clicks,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_13,TS_004 / Verify the Conversation screen scenarios,Verify user can send gif images to chats,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the emoji icon
+4) Click on Gif button
+5) Click on a Gif to send",The user should be able to send Gif images to the chats and groups,The user is able to send Gif images to the chats and groups,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_14,TS_004 / Verify the Conversation screen scenarios,Verify user can send Sticker images to chats,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the emoji icon
+4) Click on Sticker button
+5) Click on a Sticker to send",The user should be able to send Sticker images to the chats and groups,The user is able to send Sticker images to the chats and groups,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_15,TS_004 / Verify the Conversation screen scenarios,Verify user can send Audio files to a chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Audio
+5) Select an audio and click send",The Audio should be sent to the chat/group,The Audio is sent to the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_16,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple audio files to a chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Audio
+5) Select multiple audio files and click send icom",The Audios should be sent to the chat/group,The Audios is sent to the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_17,TS_004 / Verify the Conversation screen scenarios,Verify user can send a Contact to a chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Contacts
+5) Select a Contact
+6) Click Forward arrow
+7) Click Send",The Contact should be sent to the chat/group,The Contact is sent to the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_18,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Contacts to a chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Contacts
+5) Select multiple Contacts
+6) Click Forward arrow
+7) Click Send",The multiple Contacts should be sent to the chat/group,The multiple Contacts is sent to the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_19,TS_004 / Verify the Conversation screen scenarios,Verify user can send Documents through whatsapp,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Documents
+5) Select a document and Click Send",The Selected document should be sent to chat/group,The Selected documents should be sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_20,TS_004 / Verify the Conversation screen scenarios,Verify user can send Documents with captions through whatsapp,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Documents
+5) Select a document
+6) Add a message and Click Send",The Selected document should be sent to chat/group,The Selected documents should be sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_21,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Documents through whatsapp,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Documents
+5) Long press a document
+6) Select multiple documents 
+7) Click Send",The Selected documents should be sent to chat/group,The Selected documents should be sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_22,TS_004 / Verify the Conversation screen scenarios,Verify user can send a Picture with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Pictures
+5) Select a picture
+6) Add Captions
+7) Click Send",The Picture should be sent to chat/group with caption,The Picture is sent to chat/group with caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_23,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Pictures with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Pictures
+5) Long press a picture
+6) Now Select multiple images
+7) Add captions
+8) Click Send",The Picture should be sent to chat/group with caption,The Picture is sent to chat/group with caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_24,TS_004 / Verify the Conversation screen scenarios,Verify user can send a Picture without captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Pictures
+5) Select a picture
+6) Click Send",The Picture should be sent to chat/group without caption,The Picture is sent to chat/group without caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_25,TS_004 / Verify the Conversation screen scenarios,Verify sending hd picture to chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Pictures
+5) Select a picture
+6) Click hd on top corner
+7) Click Send",The hd picture should be sent to chat/group,The hd picture is sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_26,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Pictures with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Pictures
+5) Long press a picture
+6) Now Select multiple images
+7) Click Send",The Picture should be sent to chat/group without caption,The Picture is sent to chat/group without caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_27,TS_004 / Verify the Conversation screen scenarios,Verify user can send a Video with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Videos
+5) Select a Video
+6) Add Captions
+7) Click Send",The Video should be sent to chat/group with caption,The Video is sent to chat/group with caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_28,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Videos with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Videos
+5) Long press a Video
+6) Now Select multiple images
+7) Add captions
+8) Click Send",The Video should be sent to chat/group with caption,The Video is sent to chat/group with caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_29,TS_004 / Verify the Conversation screen scenarios,Verify user can send a Video without captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Videos
+5) Select a Video
+6) Click Send",The Video should be sent to chat/group without caption,The Video is sent to chat/group without caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_30,TS_004 / Verify the Conversation screen scenarios,Verify user can send multiple Videos with captions,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Videos
+5) Long press a Video
+6) Now Select multiple images
+7) Click Send",The Video should be sent to chat/group without caption,The Video is sent to chat/group without caption,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_31,TS_004 / Verify the Conversation screen scenarios,Verify sending picture through camera to chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Camera
+5) Click the shutter button
+6) Click ok
+7) Click Send",The picture should be sent to chat/group,The picture is sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_32,TS_004 / Verify the Conversation screen scenarios,Verify sending video through camera to chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Camera
+5) Click the video button
+6) Record a video
+7) Click ok
+8) Click Send",The video should be sent to chat/group,The video is sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_33,TS_004 / Verify the Conversation screen scenarios,Verify sending live location to chat/group with comment,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Location
+5) Click share live location
+6) Click Continue for location dialog
+7) Pick a time period
+8) Add a comment
+9) Click Send",The Live location should be shared to chat/group for the picked time period,The Live location is shared to chat/group for the picked time period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_34,TS_004 / Verify the Conversation screen scenarios,Verify sending live location to chat/group without comment,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Location
+5) Click share live location
+6) Click Continue for location dialog
+7) Pick a time period
+8) Click Send",The Live location should be shared to chat/group for the picked time period,The Live location is shared to chat/group for the picked time period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_35,TS_004 / Verify the Conversation screen scenarios,Verify Live location expires after the selected time period,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Location
+5) Click share live location
+6) Click Continue for location dialog
+7) Pick a time period
+8) Click Send
+9) Wait for the period and Open Whatsapp",The location should be stopped sharing after the period,The location is stopped sharing after the period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_36,TS_004 / Verify the Conversation screen scenarios,Verify stop sharing live location before it expires,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Location
+5) Click share live location
+6) Click Continue for location dialog
+7) Pick a time period
+8) Click Send
+9) Click Stop Sharing",The location sharing should be stopped ,The location sharing  is stopped,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_37,TS_004 / Verify the Conversation screen scenarios,Verify sending current location to chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Location
+5) Click Send your current location",The Current Location should be shared,The Current Location is shared,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_38,TS_004 / Verify the Conversation screen scenarios,Verify Sharing Poll to chat/group,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Poll
+5) Fill Question and 2 options
+6) Click Send",The Poll should be sent to chat/group,The Poll is sent to chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_39,TS_004 / Verify the Conversation screen scenarios,Verify Poll cannot be created without name,"1) Open Whatsapp
+2) Click a chat/group
+3) Click on the paperclip icon
+4) Click Poll
+5) Click Send",Whatsapp should alert the user that poll cannot be created,Whatsapp alerts the user that poll cannot be created,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_40,TS_004 / Verify the Conversation screen scenarios,Verify user can react to a message from primary emojis,"1) Open Whatsapp
+2) Click a chat/group
+3) Long press a message (ER-01)
+4) Click an emoji (ER-02)","1) A react popup should be shown with a list of emoji
+2) The emoji should be attached to a message","1) A react popup is shown with a list of emoji
+2) The emoji is attached to a message",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_41,TS_004 / Verify the Conversation screen scenarios,Verify user can react to a message from any emojis,"1) Open Whatsapp
+2) Click a chat/group
+3) Long press a message (ER-01)
+4) Click the + icon
+5) Select an emoji (ER-02)","1) A react popup should be shown with a list of emoji
+2) The emoji should be attached to a message","1) A react popup is shown with a list of emoji
+2) The emoji is attached to a message",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_42,TS_004 / Verify the Conversation screen scenarios,Verify user can remove react primary emoji from a message by long pressing the message,"1) Open Whatsapp
+2) Click a chat/group
+3) Long press an already reacted message (ER-01)
+4) Click on the highlighted emoji (ER-02)","1) The used emoji should be highlighted in emoji suggestion
+2) The emoji should disappear from the message for all users","1) The used emoji is highlighted in emoji suggestion
+2) The emoji disappears from the message for all users",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_43,TS_004 / Verify the Conversation screen scenarios,Verify user can remove react emoji from all emojis from a message by long pressing the message,"1) Open Whatsapp
+2) Click a chat/group
+3) Long press an already reacted message (ER-01)
+4) Click on the highlighted emoji (ER-02)","1) The used emoji should be highlighted in emoji suggestion in place of +
+2) The emoji should disappear from the message for all users","1) The used emoji is highlighted in emoji suggestion in place of +
+2) The emoji disappears from the message for all users",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_44,TS_004 / Verify the Conversation screen scenarios,Verify user can change emoji from an already reacted message,"1) Open Whatsapp
+2) Click a chat/group
+3) Long press an already reacted message (ER-01)
+4) Click on the an emoji (ER-02)","1) The used emoji should be highlighted in emoji suggestion
+2) The emoji should change from the message for all users","1) The used emoji is highlighted in emoji suggestion
+2) The emoji change from the message for all users",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_45,TS_004 / Verify the Conversation screen scenarios,Verify user can see all the reacts by members from groups,"1) Open Whatsapp
+2) Click a group
+3) Click emoji on an already reacted message by other members",The list of emoji by all users should be grouped by emoji with count,The list of emoji by all users is grouped by emoji with count,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_46,TS_004 / Verify the Conversation screen scenarios,Verify user can remove react emoji from a message by clicking the emoji,"1) Open Whatsapp
+2) Click a group
+3) Click emoji on an already reacted message (ER-01)
+4) Click on our emoji (ER-02)","1) Our emoji should be shown on top with other users emoji with tap to remove text on our emoji
+2) The emoji should be removed from the message","1) Our emoji is shown on top with other users emoji with tap to remove text on our emoji
+2) The emoji is removed from the message",Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_47,TS_004 / Verify the Conversation screen scenarios,Verify messages are categorized by date in conversations,"1) Open Whatsapp
+2) Click a group/chat
+3) Scroll to see messages ",The messages should be categorized by date of arrival,The messages are categorized by date of arrival,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_48,TS_004 / Verify the Conversation screen scenarios,Verify user can star a message,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat
+4) Click Star icon ",The message should be starred,The message is starred,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_49,TS_004 / Verify the Conversation screen scenarios,Verify user can star multiple messages,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat
+4) Click multiple chats
+5) Click Star icon",The messages should be starred,The messages are starred,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_50,TS_004 / Verify the Conversation screen scenarios,Verify user can reply to messages by swiping right on a message,"1) Open Whatsapp
+2) Click a group/chat
+3) Swipe right a chat
+4) Fill a message in message text box
+5) Click Send",The Message should be sent as a reply,The Message is sent as a reply,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_51,TS_004 / Verify the Conversation screen scenarios,Verify user can reply to messages by Long pressing a chat,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat and click reply icon
+4) Fill a message in message text box
+5) Click Send",The Message should be sent as a reply,The Message is sent as a reply,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_52,TS_004 / Verify the Conversation screen scenarios,Verify user can copy a message,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat
+4) Click options button and click Copy",The Message should be copied to clipboard,The Message is copied to clipboard,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_53,TS_004 / Verify the Conversation screen scenarios,Verify user can forward a chat to a chat/group,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat
+4) Click forward button
+5) Select Contacts to forward
+6) Click Send",The Selected message should be forwarded to Selected chat/groups with a forward text on top of it,The Selected message is forwarded to Selected chat/groups with a forward text on top of it,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_54,TS_004 / Verify the Conversation screen scenarios,Verify user can Share sended message,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a sended chat
+4) Click Share button
+5) Select an app and Send",The message should be sent on the selected app,The message is sent on the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_55,TS_004 / Verify the Conversation screen scenarios,Verify user is able to report a chat,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a chat
+4) Click options and Click report",The Chat should be reported to whatsapp,The Chat is reported to whatsapp,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_56,TS_004 / Verify the Conversation screen scenarios,Verify user is able to delete a received message,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Click Delete icon
+5) Click Delete for me icon in delete message",The Message should be deleted on our mobile,The Message is deleted on our mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_57,TS_004 / Verify the Conversation screen scenarios,Verify clicking cancel in delete dialog does not delete message but keep the selection active,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Click Delete icon
+5) Click Cancel",The Delete dialog should disappear and the message should not be deleted and the selection should remain,The Delete dialog disappears and the message does not deleted and the selection remains,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_58,TS_004 / Verify the Conversation screen scenarios,Verify clicking outside the delete dialog in delete dialog does not delete message but keep the selection active,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Click Delete icon
+5) Click Outside the dialog",The Delete dialog should disappear and the message should not be deleted and the selection should remain,The Delete dialog disappears and the message does not deleted and the selection remains,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_59,TS_004 / Verify the Conversation screen scenarios,Verify clicking back button in mobile in delete dialog does not delete message but keep the selection active,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Click Delete icon
+5) Click Back button in mobile",The Delete dialog should disappear and the message should not be deleted and the selection should remain,The Delete dialog disappears and the message does not deleted and the selection remains,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_60,TS_004 / Verify the Conversation screen scenarios,Verify user is able to delete multiple messages,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Select a few messages
+5) Click Delete icon
+6) Select Delete for me",The Message should be deleted on our mobile,The Message is deleted on our mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_61,TS_004 / Verify the Conversation screen scenarios,Verify deleting message with media,"1) Open Whatsapp
+2) Click a group/chat
+3) Long press a message
+4) Click Delete icon
+5) Select delete media checkbox
+6) Click Delete media",The Message should be deleted on our mobile,The Message is deleted on our mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_62,TS_004 / Verify the Conversation screen scenarios,Verify deleting message for everyone,"1) Open Whatsapp
+2) Click a group/chat
+3) Send a message to contact
+4) Long press the message
+5) Click Delete icon
+6) Click Delete for everyone",The Message should be replaced by message deleted on the receivors end,The Message is replaced by message deleted on the receivors end,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_63,TS_004 / Verify the Conversation screen scenarios,Verify clicking I button in sended message in contact shows the message info ,"1) Open Whatsapp
+2) Click a chat
+3) Send a message to contact
+4) Long press the message
+5) Click I icon",The user should be taken to message info page with info about the time of delivery and time of reading,The user is taken to message info page with info about the time of delivery and time of reading,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_64,TS_004 / Verify the Conversation screen scenarios,Verify clicking I button in sended message in group shows the message info ,"1) Open Whatsapp
+2) Click a group
+3) Send a message to contact
+4) Long press the message
+5) Click I icon",The user should be taken to message info page with info about the time of delivery and time of reading for contacts in the group,The user is taken to message info page with info about the time of delivery and time of reading for contacts in the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_65,TS_004 / Verify the Conversation screen scenarios,Verify clicking back arrow button in message info ,"1) Open Whatsapp
+2) Click a group
+3) Send a message to contact
+4) Long press the message
+5) Click I icon
+6) Click back arrow button",The user should be taken to Conversation page,The user is taken to Conversation page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_66,TS_004 / Verify the Conversation screen scenarios,Verify clicking back button in mobile from message info ,"1) Open Whatsapp
+2) Click a group
+3) Send a message to contact
+4) Long press the message
+5) Click I icon
+6) Click back button in mobile",The user should be taken to Conversation page,The user is taken to Conversation page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_67,TS_004 / Verify the Conversation screen scenarios,Verify user is able to voice call a contact,"1) Open Whatsapp
+2) Click a contact
+3) Click voice call icon",The user should be taken to voice call page with voice call to the selected contact,The user is taken to voice call page with voice call to the selected contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_68,TS_004 / Verify the Conversation screen scenarios,Verify user is able to video call a contact,"1) Open Whatsapp
+2) Click a contact
+3) Click video call icon",The user should be taken to video call page with video call to the selected contact,The user is taken to video call page with video call to the selected contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_69,TS_004 / Verify the Conversation screen scenarios,Verify user is able to go to contact info page by clicking options,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Contact/group info",The user should be taken to contact/group info page,The user is taken to contact/group info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_70,TS_004 / Verify the Conversation screen scenarios,Verify user is able to go to contact info page by clicking Contact name,"1) Open Whatsapp
+2) Click a chat/group
+3) Click contact/group name",The user should be taken to contact/group info page,The user is taken to contact/group info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_71,TS_004 / Verify the Conversation screen scenarios,Verify user is able to see all media/links/docs received on the group/contact,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click media, links and docs",The user should be taken to media page with all the media received is shown on the page,The user is taken to media page with all the media received is shown on the page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_72,TS_004 / Verify the Conversation screen scenarios,Verify user is able to search the messages on the group/contact,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click search
+5) Fill a keyword
+6) Use up or down arrows to navigated",The user should be shown all the messages that matched with the keyword and is able to navigate through it using up or down arrows,The user is shown all the messages that matched with the keyword and is able to navigate through it using up or down arrows,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_73,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to mute notification from conversation page,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click search
+5) Mute notification
+6) Pick a time period and click ok",The message notification should be muted for the user for picked time,The message notification is muted for the user for picked time,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_74,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to unmute notification from conversation page,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click search
+5) Unmute notification",The message notification should be unmuted for the user,The message notification is unmuted for the user,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_75,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to activate disappearing messages from conversation page,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Disappearing messages
+5) Choose a period in which the messages should disappear
+6) Click back arrow at the top",The Messages should disappear after the picked period,The Messages disappears after the picked period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_76,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to deactivate disappearing messages from conversation page,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Disappearing messages
+5) Choose off
+6) Click back arrow at the top",The disappearing message feature should be turned off,The disappearing message feature is turned off,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_77,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to change background wallpaper for a contact/group in the user mobile,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Wallpaper
+5) Click Change
+6) Pick a wallpaper from gallery",The picked wallpaper should be displayed as message background,The picked wallpaper is displayed as message background,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_78,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to change background wallpaper to default for a contact/group in the user mobile,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Wallpaper
+5) Click Change
+6) Click default wallpaper",The wallpaper should be changed to default,The wallpaper is changed to default,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_79,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to adjust the dim levels of the wallpaper,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click Wallpaper
+5) Adjust the level",The wallpaper dimness should be set accordingly,The wallpaper dimness is set accordingly,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_80,TS_004 / Verify the Conversation screen scenarios,Verify the  user is able to clear chat without deleting media,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Clear chat
+6) Check media checkbox
+7) Click Clear",The Chat should be cleared without deleting any media received,The Chat is cleared without deleting any media received,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_81,TS_004 / Verify the Conversation screen scenarios,Verify the  user is able to clear chat and the received media,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Clear chat
+6) Check media checkbox
+7) Click Clear",The Chat should be cleared and the media received should be deleted,The Chat is cleared and the media received should be deleted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_82,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to report the contact from conversation page with blocking,"1) Open Whatsapp
+2) Click a chat
+3) Click options icon
+4) Click More
+5) Click Report
+6) Check block checkbox
+7) Click report",The contact should be reported and blocked,The contact is reported and blocked,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_83,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to report the contact from conversation page without blocking,"1) Open Whatsapp
+2) Click a chat
+3) Click options icon
+4) Click More
+5) Click Report
+6) Uncheck block checkbox
+7) Click report",The contact should be reported but not blocked,The contact is reported but not blocked,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_84,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to block without reporting the user from conversation page,"1) Open Whatsapp
+2) Click a chat
+3) Click options icon
+4) Click More
+5) Click Block
+6) Uncheck Report checkbox
+7) Click Block",The contact should be Blocked but not Reported,The contact is Blocked but not Reported,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_85,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to block with reporting the user from conversation page,"1) Open Whatsapp
+2) Click a chat
+3) Click options icon
+4) Click More
+5) Click Block
+6) Check Report checkbox
+7) Click Block",The contact should be Blocked and Reported,The contact is Blocked and Reported,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_86,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to unblock the user from conversation page,"1) Open Whatsapp
+2) Click a blocked chat
+3) Click options icon
+4) Click More
+5) Click Unblock",The contact should be unblocked,The contact is unblocked,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_87,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to export the chat with media,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Export chat
+6) Click with media
+7) Pick an app and send",The chat should be exported with all the media included in the selected app,The chat is exported with all the media included in the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_88,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to export the chat without media,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Export chat
+6) Click without media
+7) Pick an app and send",The chat should be exported without any media included in the selected app,The chat is exported without any  the media included in the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_89,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to exit group from conversation page,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Exit group
+6) Click exit on exit dialog",The group should be exited,The group is exited,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_90,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to add chat shortcut to mobile homescreen,"1) Open Whatsapp
+2) Click a chat/group
+3) Click options icon
+4) Click More
+5) Click Add chat shortcut
+6) Click add",The chat shortcut should be added to mobile homescreen,The chat shortcut is added to mobile homescreen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_91,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to go to chats screen by clicking back arrow button,"1) Open Whatsapp
+2) Click a chat/group
+3) Click back arrow at the top right corner",The user should be taken to Chats screen,The user is taken to Chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CO_92,TS_004 / Verify the Conversation screen scenarios,Verify the user is able to go to chats screen by clicking back button in mobile,"1) Open Whatsapp
+2) Click a chat/group
+3) Click back button in mobile",The user should be taken to Chats screen,The user is taken to Chats screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_02,TS_005 / Verify Contact/Group info screen scenarios,Verify group info is properly displayed for groups,"1) Open Whatsapp
+2) Click a group
+3) Click on the top bar",The user should be taken to group info page,The user is taken to group info page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_03,TS_005 / Verify Contact/Group info screen scenarios,Verify user can see profile picture of the contact/group,"1) Open Whatsapp
+2) Click a group/chat
+3) Click on the top bar
+4) Click profile picture",The profile picture should open full screen,The profile picture opens full screen,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_04,TS_005 / Verify Contact/Group info screen scenarios,Verify user of the group can change the profile picture,"1) Open Whatsapp
+2) Click a group
+3) Click on the top bar
+4) Click profile picture
+5) Click the pencil icon
+6) Click gallery and pick an image",The new image should be set as dp,The new image is set as dp,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_05,TS_005 / Verify Contact/Group info screen scenarios,Verify user of the group can delete the profile picture,"1) Open Whatsapp
+2) Click a group
+3) Click on the top bar
+4) Click profile picture
+5) Click the pencil icon
+6) Click delete icon and confirm",The dp should be deleted,The dp is deleted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_06,TS_005 / Verify Contact/Group info screen scenarios,Verify user of the group can share the profile picture,"1) Open Whatsapp
+2) Click a group
+3) Click on the top bar
+4) Click profile picture
+5) Click share icon and share on an app",The image should be shared on the selected app,The image is shared on the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_07,TS_005 / Verify Contact/Group info screen scenarios,Verify user is prompted to set dp when there is no dp when clicked,"1) Open Whatsapp
+2) Click a group without dp
+3) Click on the top bar
+4) Click profile picture",The user should be prompted image selector to set a dp,The user is prompted image selector to set a dp,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_08,TS_005 / Verify Contact/Group info screen scenarios,Verify user can change the description of the group,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click Description
+5) Fill the text field
+6) Click ok",The user should be able to change description of the group,The user is able to change description of the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_09,TS_005 / Verify Contact/Group info screen scenarios,Verify user can remove the description of the group,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click Description
+5) Empty the text field
+6) Click ok",The user should be able to remove the description,The user is able to remove the description,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_10,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able change group name,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click change group name
+6) Fill the name and Click Save",The Name of the group should be changed and announced to the group,The Name of the group is changed and announced to the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_11,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to start voice call from group/chat info,"1) Open Whatsapp
+2) Click a group/chat
+3) Click on the top bar
+4) Click Voice call icon",The User should be able to start voice call with the selected contact,The User is able to start voice call with the selected contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_12,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to start video call from group/chat info,"1) Open Whatsapp
+2) Click a group/chat
+3) Click on the top bar
+4) Click Video call icon",The User should be able to start video call with the selected contact,The User is able to start video call with the selected contact,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_13,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to add participants by using options menu,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Add participants
+6) Select contacts
+7) Click Add",The New participants should be added to the group,The New participants is added to the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_14,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to add participants by using Add icon button,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click Add icon
+5) Select contacts
+6) Click Add",The New participants should be added to the group,The New participants is added to the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_15,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to go to group permission page by using options menu,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions",The user should be taken to Group permissions page where admin should be able to change the permission of other participants,The user is taken to Group permissions page where admin is able to change the permission of other participants,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_16,TS_005 / Verify Contact/Group info screen scenarios,Verify changing the group permission for participants to edit group settings,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions
+6) Toggle the Edit group settings off","The Participants in the group should not be able to edit group settings includinf name, icon, description, desappearing messages timer etc..","The Participants in the group is not  able to edit group settings includinf name, icon, description, desappearing messages timer etc..",Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_17,TS_005 / Verify Contact/Group info screen scenarios,Verify changing the group permission for participants to send messages,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions
+6) Toggle send messages off",The Participants in the group should not be able to send messages in the group,The Participants in the group is not be able to send messages in the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_18,TS_005 / Verify Contact/Group info screen scenarios,Verify changing group permission to allow adding other participants,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions
+6) Toggle add other participants off",No participants could be further added into the group,No participants can be further added into the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_19,TS_005 / Verify Contact/Group info screen scenarios,Verify activating new participants approval in group permissions,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions
+6) Toggle Approve new participants",The admin should be able approve new anyone who wants to join the group,The admin is able to approve new anyone who wants to join the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_20,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to edit group admins in group permission page,"1) Open Whatsapp
+2) Click a group 
+3) Click on the top bar
+4) Click options menu
+5) Click Group permissions
+6) Click edit group admin
+7) Select contacts
+8) Click Add",The selected contacts should be made as admin,The selected contacts are made as admin,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_21,TS_005 / Verify Contact/Group info screen scenarios,Verify the group has some default permissions on in group permission page,"1) Open Whatsapp
+2) Create a group
+3) Click on the group 
+4) Click on the top bar
+5) Click options menu
+6) Click Group permissions","The Default Group options should have Edit group settings, Send messages, Add other options activated","The Default Group options has Edit group settings, Send messages, Add other options activated",Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_22,TS_005 / Verify Contact/Group info screen scenarios,"Verify media, links, and docs section in group/contact info","1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Scroll down to Media, links, and docs section","The Section should have all media, links, and docs listed in grid format and be horizonttally scrollable","The Section has all media, links, and docs listed in grid format and is horizonttally scrollable",Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_23,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to mute notification of group/contact,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Toggle mute notifications on
+5) Select a time period and click ok",The Notification from the group/contact should be muted for the selected period,The Notification from the group/contact is muted for the selected period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_24,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to unmute notification of group/contact,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Toggle mute notifications off",The Notification should be unmuted,The Notification is unmuted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_25,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to activate custom notification settings,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click custom notification
+5) Choose necessary options",The custom notification should be changed accordingly,The custom notification is changed accordingly,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_26,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to reset custom notification settings,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click custom notification
+5) Click options icon
+6) Click reset notification settings",The custom notification settings should be resetted,The custom notification settings are resetted,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_27,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to change the media visibility to no,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Media visibility
+5) Click No
+6) Download Media",The Media should be downloaded and viewable but cannot be seen in gallery,The Media is downloaded and viewable but cannot be seen in gallery,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_28,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to change the media visibility to yes,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Media visibility
+5) Click Yes
+6) Download Media",The Media should be downloaded and added to gallery,The Media is downloaded and added to gallery,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_29,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to see encryption info,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Encryption (ER-01)
+5) Click Learn more (ER-02)","1) The user should be shown info about the encryption in whatsapp
+2) The user should be taken to secure by design page in a browser","1) The user is shown info about the encryption in whatsapp
+2) The user is taken to secure by design page in a browser",Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_30,TS_005 / Verify Contact/Group info screen scenarios,Verify the user is able to activate disappearing messages from group/chat info page,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Disappearing messages
+5) Choose a period in which the messages should disappear
+6) Click back arrow at the top",The Messages should disappear after the picked period,The Messages disappears after the picked period,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_31,TS_005 / Verify Contact/Group info screen scenarios,Verify the user is able to deactivate disappearing messages from group/chat info page,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Disappearing messages
+5) Choose off
+6) Click back arrow at the top",The disappearing message feature should be turned off,The disappearing message feature is turned off,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_32,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to go to group information page by clicking group information button,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Group information button",The user should be able to go to group information page,The user is able to go to group information page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_33,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to activate chat lock,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Chat lock
+5) Toggle chat lock on
+6) Verify fingerprint",The chat lock should be activated for the chat/group,The chat lock is activated for the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_34,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to deactivate chat lock,"1) Open Whatsapp
+2) Click on a chat/group 
+3) Click on the top bar
+4) Click Chat lock
+5) Toggle chat lock off
+6) Verify fingerprint",The chat lock should be deactivated for the chat/group,The chat lock is deactivated for the chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_35,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to see all the participants in a group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants",All the participants in the group should be shown,All the participants in the group are shown,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_36,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to search participants of the group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click search icon
+6) Fill a valid keyword",The participants should be shown according to the keyword,The participants are shown according to the keyword,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_37,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to add participants by clicking add participants button,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click Add participants button
+6) Select some contacts and click add",The selected contacts should be added to the group,The selected contacts are added to the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_38,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to share invite link for the group in whatsapp,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click invite via link
+6) Click send link via whatsapp
+7) Select group and click Send",The invite link should be shared to the selected chat/group,The invite link is shared to the selected chat/group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_39,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to copy invite link for the group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click invite via link
+6) Click Copy Link",The invite Link should be copied to the clipboard,The invite Link is copied to the clipboard,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_40,TS_005 / Verify Contact/Group info screen scenarios,Veridy user is able to share invite link to other app,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click invite via link
+6) Click Share Link
+7) Select an app and send",The invite link should be shared to the selected app,The invite link is shared to the selected app,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_41,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to generate qr code for the group invite link,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click invite via link
+6) Click Qr code",The qr code for the invite link should be generated,The qr code for the invite link ia generated,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_42,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to reset the invite link,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click invite via link
+6) Click Reset link",The old invite link should be nullified and no longer work,The old invite link is nullified and no longer works,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_43,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to convert a partcipant to admin,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant
+6) Click make as admin",The user should be converted to an admin,The user is converted to an admin,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_44,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to dismiss someone as admin,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on an admin participant
+6) Click dismiss as admin",The user should be converted to normal participant,The user is converted to normal participant,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_45,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to message a participant in a group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant
+6) Click message to participant",The user should be taken to conversation page of the selected participant,The user is taken to conversation page of the selected participant,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_46,TS_005 / Verify Contact/Group info screen scenarios,Verify admin user is able to remove a participant from a group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant
+6) Click remove
+7) Click remove in confirmation dialog",The participant should be removed from the group,The participant is removed from the group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_47,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to view contact info of an exisiting contact in a group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant whose number user saved on mobile
+6) Click View contact",The user should be taken to contact info page of the user,The user is taken to contact info page of the user,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_48,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to add a contact to mobile,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant whose number user did not save on mobile
+6) Click Add to contact
+7) Click Save",The contact should be added to mobile,The contact is added to mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_49,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to add to existing contact in mobile,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant whose number user did not save on mobile
+6) Click Add to existing contact
+7) Select an exisiting contact
+8) Click save",The contact should be added to existing contact in mobile,The contact is added to existing contact in mobile,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_50,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to verify security code,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click on a participant
+6) Click verify secturity code",The end to end encryption code should be verified,The end to end encryption code is verified,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_51,TS_005 / Verify Contact/Group info screen scenarios,Verify user can see all the past participants in a group,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Scroll down to Participants
+5) Click past participants",The user should be taken to past participants page with all the participants shown,The user is taken to past participants page with all the participants shown,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_52,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to exit group from group info,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Click exit group in bottom
+5) Click exit in confirmation dialog",The group should be exited,The group is exited,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_53,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to report group from group info,"1) Open Whatsapp
+2) Click on a group 
+3) Click on the top bar
+4) Click report in bottom
+5) Click report in confirmation dialog",The group should be reported,The group is reported,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_54,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to see groups in common for a contact,"1) Open Whatsapp
+2) Click on a chat 
+3) Click on the top bar
+4) Scroll to group in common section",The groups in common with the user and contact should be shown,The groups in common with the user and contact is shown,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_55,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to go to a group by clicking a group from group in common,"1) Open Whatsapp
+2) Click on a chat 
+3) Click on the top bar
+4) Scroll to group in common section
+5) Click on a group",The user should be taken to the clicked group,The user is taken to the clicked group,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_56,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to go back to conversation page by clicking back arrow,"1) Open Whatsapp
+2) Click on a chat/group
+3) Click on the top bar
+4) Click back arrow in top right corner",The user should be taken to conversation page,The user is taken to conversation page,Pass,Nil,Not Applicable,Install the app and Login
+TC_CG_57,TS_005 / Verify Contact/Group info screen scenarios,Verify user is able to go back to conversation page by clicking back button in mobile,"1) Open Whatsapp
+2) Click on a chat/group
+3) Click on the top bar
+4) Click back button in mobile",The user should be taken to conversation page,The user is taken to conversation page,Pass,Nil,Not Applicable,Install the app and Login
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,NAME,WORKING DAYS,POTENTIAL POINTS,POINTS COMMITTED,COMMENTS,,,,
+,RANJITH C,6,18,18,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,EPIC,DETAILS,SUCCESS CRITERIA,POINTS(NUMERICAL VALUE),OWNER,POINTS COMPLETED,HOURS,
+,,,,,,,,,
+,,Login/Signup,,,3.5,RANJITH C,3.5,9,
+,,,Login with mobile number,checked,1,,,,
+,,,Sign up with mobile number,checked,1,,,,
+,,,Link a device,checked,1.5,,,,
+,,Chats & Contacts,,,3,RANJITH C,3,8,
+,,,Chats screen,checked,2.5,,,,
+,,,Contact page,checked,0.5,,,,
+,,Updates & Channels,,,4,RANJITH C,4,10,
+,,,Viewing status,checked,1,,,,
+,,,Setting status,checked,1,,,,
+,,,View and create channels,checked,2,,,,
+,,Conversation,,,4,RANJITH C,4,10,
+,,,Message sending and receive,checked,2.5,,,,
+,,,Message options,checked,1.5,,,,
+,,Channel & Group info,,,3.5,RANJITH C,3.5,9,
+,,,Channel info,checked,1.5,,,,
+,,,Group info,checked,2,,,,

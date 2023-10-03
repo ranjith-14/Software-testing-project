@@ -34,5 +34,6 @@ This repository showcases my software testing skills, developed through a variet
 
 ### Other Apps & Websites
 - Flipkart
-- Rapido
+- Rapido App
 - Instagram Login and Sign up page
+- WhatsApp App
