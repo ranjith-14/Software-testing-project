@@ -20,9 +20,7 @@ Welcome to my software testing portfolio! Here, I demonstrate my proficiency in 
 - Visual test automation reports.
 - Seamless integration with Cucumber and Maven.
 
-### OpenCart - Manual Test
-
-[OpenCart](/OpenCart%20-%20Manual%20Test)
+### [OpenCart - Manual Test](/OpenCart%20-%20Manual%20Test)
 
 **Description:** Thorough manual testing of an e-commerce web application for functional and usability testing.
 
