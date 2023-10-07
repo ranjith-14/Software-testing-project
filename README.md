@@ -6,7 +6,7 @@ Welcome to my software testing portfolio! Here, I demonstrate my proficiency in 
 
 ### OrangeHRM - Automation Test
 
-![OrangeHRM](/OrangeHRM%20-%20Automation%20Test)
+[OrangeHRM](/OrangeHRM%20-%20Automation%20Test)
 
 **Description:** Automated testing for an HR management system.
 
@@ -22,7 +22,7 @@ Welcome to my software testing portfolio! Here, I demonstrate my proficiency in 
 
 ### OpenCart - Manual Test
 
-![OpenCart](/OpenCart%20-%20Manual%20Test)
+[OpenCart](/OpenCart%20-%20Manual%20Test)
 
 **Description:** Thorough manual testing of an e-commerce web application for functional and usability testing.
 
