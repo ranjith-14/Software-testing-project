@@ -4,9 +4,7 @@ Welcome to my software testing portfolio! Here, I demonstrate my proficiency in 
 
 ## Project List
 
-### OrangeHRM - Automation Test
-
-[OrangeHRM](/OrangeHRM%20-%20Automation%20Test)
+### [OrangeHRM - Automation Test](/OrangeHRM%20-%20Automation%20Test)
 
 **Description:** Automated testing for an HR management system.
 
