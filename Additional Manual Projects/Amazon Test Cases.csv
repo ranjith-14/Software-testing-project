@@ -1,0 +1,1195 @@
+Test Application ID,,TC_001,Test Application Description,,TESTING THE AMAZON APP,,,,
+System,,AMAZON,Sub System,,ALL AMAZON FUNCTIONS,,,,
+Created By,,RANJITH C,Reviewed By,,RANJITH C,,,,
+Date Created,,03-10-2023 00:00,Date Reviewed,,07-10-2023 00:00,,,,
+Pre-Conditions,,ABLE TO USE AMAZON,Post Conditions,,Nil,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Scenario ID,No of Test Cases,Test Scenario Description,,,,,,,
+TS_001,27,Verify the Installation/Login/Sign up Scenario,,,,,,,
+TS_002,30,Verify the HomePage Scenarios,,,,,,,
+TS_003,41,Verify the Search Scenarios,,,,,,,
+TS_004,54,Verify the Product Page Scenarios,,,,,,,
+TS_005,25,Verify the Cart page Scenarios,,,,,,,
+TS_006,25,Verify Checkout page scenarios,,,,,,,
+TS_007,36,"Verify the orders, lists, other pages scenarios",,,,,,,
+Total,238,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Test Case ID,Test Case ID/Test Scenario,Test Case Name,Test Steps,Expected Results,Actual Results,Status (Pass/Fail),Comments,Test Data,Prerequisites
+TC_LS_02,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify splash screen is properly displayed,"1) Open Amazon App
+2) Observe",The Amazon splash screen is displayed,The Amazon splash screen is displayed,Pass,Nil,Nil,The Amazon App is installed and Not Logged in
+TC_LS_03,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can Sign up using valid credentials,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Mobile number, Password field with valid credentials
+4) Click Verify mobile number (ER-01)
+5) Fill the otp field with valid otp
+6) Click Create your Amazon Account (ER-02)","1) The user should be taken to Otp page
+2) The user should be logged in and new account should be created","1) The user is taken to Otp page
+2) The user is logged in and new account is created",Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_04,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign up with all values as blank,"1) Open Amazon App
+2) Click Sign Up
+3) Leave all the values as blank
+4) Click Verify mobile number",All the fields should show warning that the field cannot be blank,All the fields shows warning that the field cannot be blank,Pass,Nil,Nil,The Amazon App is installed and Not Logged in
+TC_LS_05,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign up using invalid mobile number,"1) Open Amazon App
+2) Click Sign Up
+3) Fill the name, Password as valid values
+4) Fill the mobile number as invalid value
+5) Click Verify mobile number",It should show a warning that the mobile number is invalid,It shows a warning that the mobile number is invalid,Pass,Nil,"Name: Goku
+Mobile number: +447893
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_06,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can change the Isd code of mobile number,"1) Open Amazon App
+2) Click Sign Up
+3) Click on the Isd code
+4) Choose an ISD code",The new Isd code should be displayed,The new Isd code is displayed,Pass,Nil,ISD code:+44,The Amazon App is installed and Not Logged in
+TC_LS_07,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign up using invalid password,"1) Open Amazon App
+2) Click Sign Up
+3) Fill the name, Mobile number as valid values
+4) Fill the Password as invalid value
+5) Click Verify mobile number",It should show a warning that the password should be 6 or more characters,It shows a warning that the password should be 6 or more characters,Pass,Nil,Password:***,The Amazon App is installed and Not Logged in
+TC_LS_08,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can see filled password,"1) Open Amazon App
+2) Click Sign Up
+3) Fill the password field
+4) Click Show password checkbox",The Filled password should be displayed,The Filled password is displayed,Pass,Nil,Password: ramiro,The Amazon App is installed and Not Logged in
+TC_LS_09,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign up using invalid otp,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Mobile number, Password field with valid credentials
+4) Click Verify mobile number (ER-01)
+5) Fill the otp field with invalid otp
+6) Click Create your Amazon Account (ER-02)","1) The user should be taken to Otp page
+2) The user should be shown the warning that the otp is invalid and should not proceed further","1) The user is taken to Otp page
+2) The user is shown the warning that the otp is invalid and should not proceed further",Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_10,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can receive the otp in mobile number,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Mobile number, Password field with valid credentials
+4) Click Verify mobile number",The Otp should be received on the mobile number,The Otp is received on the mobile number,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_11,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can resend Otp,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Mobile number, Password field with valid credentials
+4) Click Verify mobile number
+5) Click Resend Otp",The Otp should be resent to the mobile number,The Otp is resent to the mobile number,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_12,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user is taken to already in use page when using existing mobile number,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Password field with valid credentials
+4) Fill the mobile number field with existing number
+5) Click Verify mobile number",The user should be taken to a page with a warning that the mobile number is already in use,The user is taken to a page with a warning that the mobile number is already in use,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_13,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can go to sign up from already in use page,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Password field with valid credentials
+4) Fill the mobile number field with existing number
+5) Click Verify mobile number
+6) Click Sign up with different mobile number",The user should be taken to sign up page,The user is taken to sign up page,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_14,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can go to sign in from already in use page,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Password field with valid credentials
+4) Fill the mobile number field with existing number
+5) Click Verify mobile number
+6) Click Sign in with the mobile number",The user should be taken to sign in page,The user is taken to sign in page,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_15,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can change password using forgotten password,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Password field with valid credentials
+4) Fill the mobile number field with existing number
+5) Click Verify mobile number
+6) Click Forgotten password
+7) Fill the mobile number field with valid existing mobile number
+8) Fill the otp field with valid otp and click Verify
+9) Set a new password and click ok ",The old password should be changed to new,The old password is changed to new,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_16,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can force recreate an account with existing mobile number,"1) Open Amazon App
+2) Click Sign Up
+3) Fill name, Password field with valid credentials
+4) Fill the mobile number field with existing number
+5) Click Verify mobile number
+6) Click create account with existing number
+7) Click confirm in confirmation dialog
+8) Fill the otp with valid otp
+9) Click verify",The old account should be deleted and new account should be created with new values,The old account is deleted and new account is created with new values,Pass,Nil,"Name: Goku
+Mobile number: +447893983840
+Password:******",The Amazon App is installed and Not Logged in
+TC_LS_17,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can sign in using valid mobile number and otp,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid mobile number
+4) Click Sign in
+5) Fill the Otp and click Continue",The user should be logged in,The user is logged in,Pass,Nil,Mobile number: +447893983840,The Amazon App is installed and Not Logged in
+TC_LS_18,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can sign in using valid mail account and password,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid email
+4) Click Sign in
+5) Fill the Password and click Continue",The user should be logged in,The user is logged in,Pass,Nil,Nil,The Amazon App is installed and Not Logged in
+TC_LS_19,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign in with invalid mobile number,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with invalid mobile number
+4) Click Sign in",The user should not be proceeded and shown a warning,The user does not be proceeded and shown a warning,Pass,Nil,Mobile number: +443840,The Amazon App is installed and Not Logged in
+TC_LS_20,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign in with invalid otp,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid mobile number
+4) Click Sign in
+5) Fill the Otp field with invalid otp and Click Continue",The user should be shown the warning that the otp is invaid,The user is shown the warning that the otp is invaid,Pass,Nil,Mobile number: +447893983840,The Amazon App is installed and Not Logged in
+TC_LS_21,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign in with invalid  password,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid email
+4) Click Sign in
+5) Fill the Password field with invalid Password and Click Continue",The user should be shown the warning that the password is invaid,The user is shown the warning that the password is invaid,Pass,Nil,Mail: temp@maz.com,The Amazon App is installed and Not Logged in
+TC_LS_22,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can change password using forgotten password in login page,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid email
+4) Click Sign in
+5) Click forgotten password
+6) Fill the email field with valid email and click Continue
+7) Fill the Otp with valid otp and click Verify
+8) Create a new password",The old password should be changed to new,The old password should be changed to new,Pass,Nil,Mail: temp@maz.com,The Amazon App is installed and Not Logged in
+TC_LS_23,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can sign in using new password after changing,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid email in which password was changed
+4) Fill the password field with new passoword
+5) Click Continue",The user should be logged in,The user is logged in,Pass,Nil,Mail: temp@maz.com,The Amazon App is installed and Not Logged in
+TC_LS_24,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user cannot sign in using old password after changing,"1) Open Amazon App
+2) Click Sign in
+3) Fill the mobile number/email field with valid email in which password was changed
+4) Fill the password field with old passoword
+5) Click Continue",The user should be shown the warning that the password is invaid,The user is shown the warning that the password is invaid,Pass,Nil,Mail: temp@maz.com,The Amazon App is installed and Not Logged in
+TC_LS_25,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can add multiple accounts to amazon,"1) Open Amazon App
+2) Sign in with valid account
+3) Click Menu in bottom bar
+4) Scroll down and click settings
+5) Click Switch Account
+6) Click Add account
+7) Sign in with valid account",The two accounts should be added and should be switchable,The two accounts is added and should be switchable,Pass,Nil,"Mobile number: +918858555855
+Mobile number: +447893983840",The Amazon App is installed and Not Logged in
+TC_LS_26,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify user can logout the app,"1) Open Amazon App
+2) Sign in with valid account
+3) Click Menu in bottom bar
+4) Scroll down and click settings
+5) Click Sign out",The Account should be logged out,The Account is logged out,Pass,Nil,Mobile number: +447893983840,The Amazon App is installed and Not Logged in
+TC_LS_27,TS_001 / Verify the Installation/Login/Sign up Scenario,Verify amazon app can be uninstalled,"1) Go to mobile homescreen
+2) Hold the Amazon icon
+3) Click Uninstall
+4) Click confirm",The Amazon app should be uninstalled,The Amazon app is uninstalled,Pass,Nil,Nil,The Amazon App is installed and Not Logged in
+TC_HP_02,TS_002 / Verify the HomePage Scenarios,Verify clicking a category takes user to the respective Category page,"1) Open Amazon App
+2) Click a Category (ER-01)
+3) Repeat steps 1 to 2",1) The user should be taken to the Category page of the clicked category,1) The user is taken to the Category page of the clicked category,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_03,TS_002 / Verify the HomePage Scenarios,Verify user is able to scroll Hero images by swiping left and right,"1) Open Amazon App
+2) Swipe hero images left or right",The hero images should respond and change accordingly,The hero images respond and change accordingly,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_04,TS_002 / Verify the HomePage Scenarios,Verify clicking a Offer Hero Images takes user to the respective Offer Hero Images page,"1) Open Amazon App
+2) Click a Offer Hero Images (ER-01)
+3) Repeat steps 1 to 2",1) The user should be taken to the Offer page of the clicked Offer Hero Images,1) The user is taken to the Offer page of the clicked Offer Hero Images,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_05,TS_002 / Verify the HomePage Scenarios,Verify clicking a Product Hero Images takes user to the respective Product Hero Images page,"1) Open Amazon App
+2) Click a Product Hero Images (ER-01)
+3) Repeat steps 1 to 3",1) The user should be taken to the Product page of the clicked Product Hero Images,1) The user is taken to the Product page of the clicked Product Hero Images,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_06,TS_002 / Verify the HomePage Scenarios,Verify the dots under hero images show number of hero images,"1) Open Amazon App
+2) Observe",The Dots under hero images should indicate the number of hero images available and should highlight the displayed hero image,The Dots under hero images indicate the number of hero images available and highlight the displayed hero image,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_07,TS_002 / Verify the HomePage Scenarios,Verify amazon pay related buttons loads in offers section,"1) Open Amazon App
+2) Observe",The Offer section should have amazon pay section,The Offer sections have amazon pay section,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_08,TS_002 / Verify the HomePage Scenarios,Verify user is able to access offer page by clicking an offer in Offers section,"1) Open Amazon App
+2) Click on an offer from offers section",The user should be taken to the offer page of clicked offer,The user is taken to the offer page of clicked offer,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_09,TS_002 / Verify the HomePage Scenarios,Verify the sponsored section takes user to the sponsored product page,"1) Open Amazon App
+2) Click on a sponsored image",The user should be taken to the Sponsoed section page,The user is taken to the Sponsoed section page,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_10,TS_002 / Verify the HomePage Scenarios,Verify user is able to leave feedback without description in Sponsored,"1) Open Amazon App
+2) Click I button under the sponsored image (ER-01)
+3) Select a checkbox and click Submit (ER-02)","1) A leave feedback dialog box should open with feedback checkbox and Description Box
+2) The feedback for ads should be submitted to amazon","1) A leave feedback dialog box opens with feedback checkbox and Description Box
+2) The feedback for ads is submitted to amazon",Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_11,TS_002 / Verify the HomePage Scenarios,Verify user is able to leave feedback with description in Sponsored,"1) Open Amazon App
+2) Click I button under the sponsored image (ER-01)
+3) Select a checkbox
+4) Fill the description
+5) Click Submit (ER-02)","1) A leave feedback dialog box should open with feedback checkbox and Description Box
+2) The feedback for ads should be submitted to amazon","1) A leave feedback dialog box opens with feedback checkbox and Description Box
+2) The feedback for ads is submitted to amazon",Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_12,TS_002 / Verify the HomePage Scenarios,Verify user is not able to leave feedback without selecting a checkbox in Sponsored,"1) Open Amazon App
+2) Click I button under the sponsored image
+3) Try clicking submit",The submit button should be disabled,The submit button is disabled,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_13,TS_002 / Verify the HomePage Scenarios,Verify the cancel button in feedback dialog takes user to homepage in Sponsored,"1) Open Amazon App
+2) Click I button under the sponsored image
+3) Click Cancel",The Feedback dialog should disappear,The Feedback dialog disappears,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_14,TS_002 / Verify the HomePage Scenarios,Verify the x button in feedback dialog takes user to homepage in Sponsored,"1) Open Amazon App
+2) Click I button under the sponsored image
+3) Click x",The Feedback dialog should disappear,The Feedback dialog disappears,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_15,TS_002 / Verify the HomePage Scenarios,Verify user is able to change location for product availability by using valid Pincode,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode (ER-01)
+4) Fill a valid pincode
+5) Click Apply (ER-02)","1) A Location selector should be shown
+2) The Location related to pincode should be shown and products should be related to pincode","1) A Location selector is shown
+2) The Location related to pincode is shown and products are related to pincode",Pass,Nil,Pincode: 641013,Amazon App is installed and Not Logged in
+TC_HP_16,TS_002 / Verify the HomePage Scenarios,Verify user is not able to change location for product availability by using invalid Pincode,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode (ER-01)
+4) Fill an invalid pincode
+5) Click Apply (ER-02)","1) A Location selector should be shown
+2) A message 'Enter a valid pincode' should be shown","1) A Location selector is shown
+2) A message 'Enter a valid pincode' is shown",Pass,Nil,Pincode: 677778,Amazon App is installed and Not Logged in
+TC_HP_17,TS_002 / Verify the HomePage Scenarios,Verify user is not able to change location for product availability by using empty Pincode,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode (ER-01)
+4) Leave the Pincode field empty
+5) Click Apply (ER-02)","1) A Location selector should be shown
+2) A message 'Enter a valid pincode' should be shown","1) A Location selector is shown
+2) A message 'Enter a valid pincode' is shown",Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_18,TS_002 / Verify the HomePage Scenarios,Verify user is able to go to location selector by clicking back arrow in pincode dialog,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode
+4) Click Back arrow",The user should be taken back to Location selector dialog,The user is taken back to Location selector dialog,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_19,TS_002 / Verify the HomePage Scenarios,Verify user is able to go to homepage from location dialog by clicking back button in mobile,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode
+4) Click Back button in mobile",The location selector dialog should be closed,The location selector dialog is closed,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_20,TS_002 / Verify the HomePage Scenarios,Verify user is able to go to homepage from location dialog by clicking outside the location dialog,"1) Open Amazon App
+2) Click Deliver to
+3) Click Enter an Indian pincode
+4) Click outside the dialog",The location selector dialog should be closed,The location selector dialog is closed,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_21,TS_002 / Verify the HomePage Scenarios,Verify user is able to change location for product availability by using Current location without giving location permission,"1) Open Amazon App
+2) Click Deliver to
+3) Click Use my current location
+4) Click Allow access and allow the permission",The current Location should be shown near deliver to button and products should be related to pincode,The current Location is shown near deliver to button and products are related to pincode,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_22,TS_002 / Verify the HomePage Scenarios,Verify user is able to change location for product availability by using Current location after giving location permission,"1) Open Amazon App
+2) Click Deliver to
+3) Click Use my current location",The current Location should be shown near deliver to button and products should be related to pincode,The current Location is shown near deliver to button and products are related to pincode,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_23,TS_002 / Verify the HomePage Scenarios,Verify user is able to change location for product availability by using Deliver Outside Location,"1) Open Amazon App
+2) Click Deliver to
+3) Click Deliver outside india
+4) Select a country from available options",The Location should be shown near deliver to button and products should be related to pincode,The Location is shown near deliver to button and products are related to pincode,Pass,Nil,Location: Bangladesh,Amazon App is installed and Not Logged in
+TC_HP_24,TS_002 / Verify the HomePage Scenarios,Verify user is able to go to location selector by clicking back arrow in deliver outside india dialog,"1) Open Amazon App
+2) Click Deliver to
+3) Click Deliver outside india
+4) Click Back arrow",The user should be taken back to Location selector dialog,The user is taken back to Location selector dialog,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_25,TS_002 / Verify the HomePage Scenarios,Verify user is able to select location from saved addresses without login,"1) Open Amazon App
+2) Click Deliver to",It should show the dialog Login to see the saved addresses,It shows the dialog Login to see the saved addresses,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_26,TS_002 / Verify the HomePage Scenarios,Verify user is able to select location from saved addresses after login,"1) Open Amazon App
+2) Add some addresses
+3) Click Deliver to
+4) Select an address",The Location should be shown near deliver to button and products should be related to pincode,The Location is shown near deliver to button and products are related to pincode,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_HP_27,TS_002 / Verify the HomePage Scenarios,Verify user is able to search product by using alexa,"1) Open Amazon App
+2) Click alexa icon
+3) Tell a valid product keyword",The keyword should be searched and should be taken to search page with results,The keyword is searched and taken to search page with results,Pass,Nil,Keyword to speak: Oneplus 7t,Amazon App is installed and Not Logged in
+TC_HP_28,TS_002 / Verify the HomePage Scenarios,Verify user is able to ask general questions to alexa,"1) Open Amazon App
+2) Click alexa icon
+3) Ask a general question",Alexa should answer the question in speech,Alexa answered the question in speech,Pass,Nil,Question: Who is the president of America?,Amazon App is installed and Not Logged in
+TC_HP_29,TS_002 / Verify the HomePage Scenarios,Verify alexa dialog closes when nothing is spoken to it,"1) Open Amazon App
+2) Click alexa icon
+3) Do not speak anything",The alexa dialog should close,The alexa dialog is closed,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_HP_30,TS_002 / Verify the HomePage Scenarios,Verify user is able to navigate to the pages using bottom bar,"1) Open Amazon App
+2) Click an option in bottom bar (ER-01)
+3) Repeat step 1 to 2 for all the options",1) The user should be taken to the pages of clicked button,1) The user is taken to the pages of clicked button,Pass,Nil,Not Applicable,Amazon App is installed and Not Logged in
+TC_SC_02,TS_003 / Verify the Search Scenarios,Verify user cannot search without keyword,"1) Open Amazon App
+2) Click Search Box
+3) Leave the search box empty
+4) Click Enter button in Keyboard",The user should not be moved out of search box,The user is not moved out of search box,Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_03,TS_003 / Verify the Search Scenarios,Verify the leading and trailing spaces are trimmed before searching,"1) Open Amazon App
+2) Click Search Box
+3) Fill valid keyword in search box with leading and trailing spaces 
+4) Click Enter button in Keyboard",The user should be taken to search results page with results for the keyword after spaces are trimmed,The user is taken to search results page with results for the keyword after spaces are trimmed,Pass,Nil,Search Term:           LG tv      ,Amazon App is installed and Logged in
+TC_SC_04,TS_003 / Verify the Search Scenarios,Verify the search box for invaid search term,"1) Open Amazon App
+2) Click Search Box
+3) Fill an invalid keyword
+4) Click Enter button in Keyboard",The user should be taken to search page with a text saying ' No results for keyword ' and related keywords,The user is taken to search page with a text saying ' No results for keyword ' and related keywords,Pass,Nil,Search Term: hhhhhhhh,Amazon App is installed and Logged in
+TC_SC_05,TS_003 / Verify the Search Scenarios,Verify user can search by clicking a term from history,"1) Open Amazon App
+2) Click Search Box (ER-01)
+3) Click on a term (ER-02)","1) The List of history terms should be loaded
+2) The user should be taken to search page with results for clicked search term","1) The List of history terms are loaded
+2) The user is taken to search page with results for clicked search term",Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_06,TS_003 / Verify the Search Scenarios,Verify user can edit a history term before searching,"1) Open Amazon App
+2) Click Search Box (ER-01)
+3) Click diagonal icon in the search terms (ER-02)
+4) Edit the search term
+5) Click Search icon in keyboard (ER-03)","1) The List of history terms should be loaded
+2) The keyword should appear on the search box and be editable
+3)  The user should be taken to search page with results for edited search term","1) The List of history terms are loaded
+2) The keyword appears on the search box and be editable
+3)  The user is taken to search page with results for edited search term",Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_07,TS_003 / Verify the Search Scenarios,Verify the search term can be cleared using x button in search box,"1) Open Amazon App
+2) Click Search Box (ER-01)
+3) Fill the search button with some keywords (ER-02)
+4) Click x button (ER-03)","1) The Search box should be focused with Mic button shown in the corner
+2) The Mic button should change to x button
+3) The Search term should be cleared","1) The Search box is focused with Mic button shown in the corner
+2) The Mic button is changed to x button
+3) The Search term is cleared",Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_08,TS_003 / Verify the Search Scenarios,Verify user can delete a history using x button in the list of terms,"1) Open Amazon App
+2) Click Search Box (ER-01)
+3) Click x on a search term (ER-02)","1) The List of history terms should be loaded
+2) The keyword should disappear","1) The List of history terms is loaded
+2) The keyword disappears",Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_09,TS_003 / Verify the Search Scenarios,Verify search box shows amazon lens and mic icon,"1) Open Amazon App
+2) Observe",Mic icon and a lens icon should be displayed in the search bar,Mic icon and a lens icon is displayed in the search bar,Pass,Nil,Not applicable,Amazon App is installed and Logged in
+TC_SC_10,TS_003 / Verify the Search Scenarios,Verify user is able to search product by using mic icon in search box,"1) Open Amazon App
+2) Click mic icon in search box
+3) Tell a valid product keyword",The keyword should be searched and should be taken to search page with results,The keyword is searched and taken to search page with results,Pass,Nil,Keyword to speak: Oneplus 7t,Amazon App is installed and Logged in
+TC_SC_11,TS_003 / Verify the Search Scenarios,Verify user is able to ask general questions to alexa by using mic icon in search box,"1) Open Amazon App
+2) Click mic icon in search box
+3) Ask a general question",Alexa should answer the question in speech,Alexa answered the question in speech,Pass,Nil,Question: Who is the president of America?,Amazon App is installed and Logged in
+TC_SC_12,TS_003 / Verify the Search Scenarios,Verify alexa dialog closes when nothing is spoken to it,"1) Open Amazon App
+2) Click mic icon in search box
+3) Do not speak anything",The alexa dialog should close,The alexa dialog is closed,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_13,TS_003 / Verify the Search Scenarios,Verify user can go to amazon lens page by clicking lens icon in search box ,"1) Open Amazon App
+2) Click lens icon in the search box",The user should be taken to Amazon lens page,The user is taken to Amazon lens page,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_14,TS_003 / Verify the Search Scenarios,Verify user can go to amazon lens page by clicking search with photo in search box page,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo",The user should be taken to Amazon lens page with shop the look page,The user is taken to Amazon lens page with shop the look page,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_15,TS_003 / Verify the Search Scenarios,Verify user can go to search by camera page from amazon lens page ,"1) Open Amazon App
+2) Click lens icon in the search box
+3) Click Search icon",The user should be taken to camera page,The user is taken to camera page,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_16,TS_003 / Verify the Search Scenarios,Verify user can go to search by camera page by clicking  search by camera button in search box page,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera",The user should be taken to camera page,The user is taken to camera page,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_17,TS_003 / Verify the Search Scenarios,Verify user can search using a valid product in camera,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Take photo of a valid product",The user should be taken to search page with results related to image,The user is taken to search page with results related to image,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_18,TS_003 / Verify the Search Scenarios,Verify user can search using a invalid product in camera,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Take photo of an invalid product (ER-01)
+5) Click Try Again (ER-02)","1) It should show the error 'Could not find a match'
+2) The user should be taken to Camera page again","1) It shows the error 'Could not find a match'
+2) The user is taken to Camera page again",Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_19,TS_003 / Verify the Search Scenarios,Verify type to search button in We could not find a match dialog,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Take photo of an invalid product (ER-01)
+5) Click Type to search (ER-02)","1) It should show the error 'Could not find a match'
+2) The user should be taken to Search box to fill a keyword","1) It shows the error 'Could not find a match'
+2) The user is taken to Search box to fill a keyword",Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_20,TS_003 / Verify the Search Scenarios,Verify user can go to help page of search by camera page,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Click Help icon",The user should be taken to Help page for search by camera,The user is taken to Help page for search by camera,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_21,TS_003 / Verify the Search Scenarios,Verify user can use flashlight when searching using camera,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Click Flashlight icon",The Flashlight should be activated for taking clear pictures,The Flashlight is activated for taking clear pictures,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_22,TS_003 / Verify the Search Scenarios,Verify user can search with image combined with text,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Take photo of a valid product
+5) Click Search box
+6) Fill a related keyword and click enter",The results should be more personalized with keyword and search image,The results is more personalized with keyword and search image,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_23,TS_003 / Verify the Search Scenarios,Verify user can send money using qr code,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Click Qr code
+5) Scan the qr code",The user should be taken to amazon pay page to send money to that contact,The user is taken to amazon pay page to send money to that contact,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_24,TS_003 / Verify the Search Scenarios,Verify user can send money using qr code on gallery,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Click Qr code
+5) Click Scan from Gallery
+6) Select a valid image",The user should be taken to amazon pay page to send money to that contact,The user is taken to amazon pay page to send money to that contact,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_25,TS_003 / Verify the Search Scenarios,Verify user cannot send money to invalid qr code,"1) Open Amazon App
+2) Click Search Box
+3) Click Search by Camera
+4) Click Qr code
+5) Scan the invalid qr code",It should show the error somethin wrong,It shows the error somethin wrong,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_26,TS_003 / Verify the Search Scenarios,Verify user is able to search using gallery picture,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click Upload a photo
+5) Select a picture",The user should be taken to search page with results related to image,The user is taken to search page with results related to image,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_27,TS_003 / Verify the Search Scenarios,Verify user is able to click a look from list of style photos posted,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click a picture from the list of styles",The user should be taken to search page with results related to image,The user is taken to search page with results related to image,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_28,TS_003 / Verify the Search Scenarios,Verify user is able to search using barcode,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click barcode
+5) Scan a barcode",The user should be taken to search page with results related to barcode,The user is taken to search page with results related to barcode,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_29,TS_003 / Verify the Search Scenarios,Verify user is not able to search using invalid barcode,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click barcode
+5) Scan an invalid barcode",It should show the error somethin wrong,It shows the error somethin wrong,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_30,TS_003 / Verify the Search Scenarios,Verify user is able to go to help page of shop the look page,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click the Help icon",The user should be taken to Help page of shop the look,The user is taken to Help page of shop the look,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_31,TS_003 / Verify the Search Scenarios,Verify user is able to go to homepage from amazon lens by clicking back button in mobile,"1) Open Amazon App
+2) Click Search Box
+3) Click Search with photo
+4) Click back button In mobile",The user should be taken to Homepage,The user is taken to Homepage,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_32,TS_003 / Verify the Search Scenarios,Verify the back arrow button in search box focused page,"1) Open Amazon App
+2) Click Search Box
+3) Click back arrow button in left corner",The user should be taken to Homepage,The user is taken to Homepage,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_33,TS_003 / Verify the Search Scenarios,Verify user is able to filter only prime products in search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Toggle Prime button",The results should be filtered as prime offers,The results are filtered as prime offers,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_34,TS_003 / Verify the Search Scenarios,Verify user is able to apply filter on search results,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Filter
+5) Apply some filters (ER-01)
+6) Click Show results button (ER-02)","1) The Number of Applied Filters should be shown in top left corner and show results button should show the number of resuls after applying filter
+2) The Filter dialog should close and filtered results should be shown","1) The Number of Applied Filters is shown in top left corner and show results button shows the number of resuls after applying filter
+2) The Filter dialog closes and filtered results are shown",Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_35,TS_003 / Verify the Search Scenarios,Verify user is able to clear filters on search filters,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Filter
+5) Apply some filters
+6) Click Show results button
+7) Click Filter
+8) Click Clear Filters",The Filter dialog should close and unfiltered results should be shown,The Filter dialog should close and unfiltered results is shown,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_36,TS_003 / Verify the Search Scenarios,Verify user is able to close filter dialog by clicking close button,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Filter
+5) Click Close",The Filter dialog should be closed,The Filter dialog is closed,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_37,TS_003 / Verify the Search Scenarios,Verify user is able to go to product page of a product in search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click a product from the result",The user should be taken to product page of the clicked product,The user is taken to product page of the clicked product,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_38,TS_003 / Verify the Search Scenarios,Verify user is able to add a product to cart from search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Add to Cart button on a product",The number of the product in cart should be shown under Add to Cart button with a remove button,The number of the product in cart is shown under Add to Cart button with a remove button,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_39,TS_003 / Verify the Search Scenarios,Verify user is able to add a product in multiple quantities to cart from search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Add to Cart button on a product 5 times",The number of the product in cart should be shown as 5,The number of the product in cart is shown as 6,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_40,TS_003 / Verify the Search Scenarios,Verify user is able to remove a product from cart from search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click Add to Cart button on a product
+5) Click Remove",The product should be removed from the cart,The product is removed from the cart,Pass,Nil,Not Applicable,Amazon App is installed and Logged in
+TC_SC_41,TS_003 / Verify the Search Scenarios,Verify user is able to go to Homepage from search results page,"1) Open Amazon App
+2) Click Search Box
+3) Fill a keyword and click enter
+4) Click back arrow button in top left corner",The user should be taken to Homepage,The user is taken to Homepage,Pass,Nil,Search Term:  Acer laptop,Amazon App is installed and Logged in
+TC_PP_02,TS_004 / Verify the Product Page Scenarios,Verify the primary information are bold and big,"1) Open Amazon App
+2) Open the product page of a product
+3) Observe",All the section titles and primary informations should be bold,All the section titles and primary informations are bold,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_03,TS_004 / Verify the Product Page Scenarios,Verify user is able to see images fullscreen,"1) Open Amazon App
+2) Open the product page of a product
+3) Click on the image (ER-01)
+4) Click on a smaller image (ER-02)
+5) Click back arrow in top left corner (ER-03)","1) The image should be opened in fullscreen and all the other images are shown smaller as bottom bar 
+2) The clicked image should be full screen and highlighted
+3) The Full screen image should be closed","1) The image is opened in fullscreen and all the other images are shown smaller as bottom bar 
+2) The clicked image is full screen and highlighted
+3) The Full screen image is closed",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_04,TS_004 / Verify the Product Page Scenarios,Verify user is able to see other images by swiping horizontally on an image in product page,"1) Open Amazon App
+2) Open the product page of a product
+3) Swipe horizontally on an image",The image should be shown according to swipes and the respective dot should be highlighted,The image is shown according to swipes and the respective dot is highlighted,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_05,TS_004 / Verify the Product Page Scenarios,Verify user is able to see other images by swiping horizontally on an image in fullscreen,"1) Open Amazon App
+2) Open the product page of a product
+3) Click on an image
+4) Swipe horizontally on an image",The image should be shown according to swipes and the respective small image should be highlighted,The image is shown according to swipes and the respective small image is highlighted,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_06,TS_004 / Verify the Product Page Scenarios,Verify number of images are shown as dots and video is shown as play icon,"1) Open Amazon App
+2) Observe",The dots and play icon should be shown accordingly,The dots and play icon are shown accordingly,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_07,TS_004 / Verify the Product Page Scenarios,Verify user is able to play product videos in product page,"1) Open Amazon App
+2) Open the product page of a product
+3) Swipe to a video
+4) Click on the play icon (ER-01)
+5) Click x icon (ER-02)","1) The video should be opened in full screen
+2) The video should be closed and taken to product page","1) The video is opened in full screen
+2) The video is closed and taken to product page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_08,TS_004 / Verify the Product Page Scenarios,Verify videos can be played with subtitles,"1) Open Amazon App
+2) Open the product page of a product
+3) Click cc icon",The video should be played in full screen with subtitles,The video is opened in full screen with subtitles,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_09,TS_004 / Verify the Product Page Scenarios,Verify videos can be played without sound,"1) Open Amazon App
+2) Open the product page of a product
+3) Click sound icon (ER-01)
+4) Click on sound icon again (ER-02)","1) The video should be played in full screen without sound
+2) The video should be played in full screen with sound","1) The video is played in full screen without sound
+2) The video is played in full screen with sound",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_10,TS_004 / Verify the Product Page Scenarios,Verify videos can be paused and seeked,"1) Open Amazon App
+2) Open the product page of a product
+3) Click play icon (ER-01)
+4) Seek the video (ER-02)
+5) Click play icon again (ER-03)","1) The video should be paused
+2) The video should be seeked to the position
+3) The video should be played again","1) The video is paused
+2) The video is seeked to the position
+3) The video is played again",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_11,TS_004 / Verify the Product Page Scenarios,Verify user is able to share the product link to other apps,"1) Open Amazon App
+2) Open the product page of a product
+3) Click share icon
+4) Choose an app and send",The Product link should be shared in the selected app,The Product link is shared in the selected app,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_12,TS_004 / Verify the Product Page Scenarios,Verify user is able to open product page by clicking shared link,"1) Receive an amazon product link in an app
+2) Click on the link",The product page of the link should be opened,The product page of the link is opened,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_13,TS_004 / Verify the Product Page Scenarios,Verify user is able to add a product to wishlist,"1) Open Amazon App
+2) Open the product page of a product
+3) Click heart icon",The product should be added to wishlist and the heart icon should be highlihted,The product is added to wishlist and the heart icon is highlihted,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_14,TS_004 / Verify the Product Page Scenarios,Verify user is able to remove a product from wishlist,"1) Open Amazon App
+2) Open the product page of a product
+3) Click heart icon
+4) Click the heart icon again",The product should be removed from wishlist and the heart icon should not be highlihted,The product is removed from wishlist and the heart icon is not highlihted,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_15,TS_004 / Verify the Product Page Scenarios,Verify user is able to customize the product before buying,"1) Open Amazon App
+2) Open the product page of a product
+3) Choose some options from available customizable options",All the information and price should change accordingly to the selected customized options,All the information and price changes accordingly to the selected customized options,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_16,TS_004 / Verify the Product Page Scenarios,Verify user is able to view all the offers for the product,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to offers (ER-01)
+4) Click View All Offers (ER-02)","1) A few offers for the product should be shown 
+2) All the offers for the product should be shown","1) A few offers for the product is shown 
+2) All the offers for the product is shown",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_17,TS_004 / Verify the Product Page Scenarios,Verify user is able to view details for the products,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to offers 
+4) Click details on an offer",The details for the offer should be shown,The details for the offer is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_18,TS_004 / Verify the Product Page Scenarios,Verify user is able to see details of the delivery charge and delivery time,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Delivery details (ER-01)
+4) Click Details (ER-02)","1) The Delivery time and price should be shown for the selected location
+2) The Details of the delivery charge should be shown","1) The Delivery time and price is shown for the selected location
+2) The Details of the delivery charge is shown",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_19,TS_004 / Verify the Product Page Scenarios,Verify user is able to change location to see the delivery details accordingly,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Delivery details
+4) Click Deliver to and choose a loction (ER-01)
+4) Click Details (ER-02)","1) The Delivery time and price should be shown for the selected location
+2) The Details of the delivery charge should be shown","1) The Delivery time and price is shown for the selected location
+2) The Details of the delivery charge is shown",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_20,TS_004 / Verify the Product Page Scenarios,Verify user is able to view the details of seller of the product,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll below Buy Now button
+4) Click on the seller name link near Sold by",The User should be taken to the Detail page of the seller with details and review about the seller,The User is taken to the Detail page of the seller with details and review about the seller,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_21,TS_004 / Verify the Product Page Scenarios,Verify user is able to add to cart from other sellers,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll below Buy Now button
+4) Click on the Other sellers on Amazon section (ER-01)
+5) Click Add to Cart Button (ER-02)
+6) Click Quantity button and select a new quantity
+7) Click Add to Cart (ER-03)","1) The user should be taken to Other sellers page with Other sellers and price points
+2) The Product should be added to cart from other sellers with their price with Quantity shown
+3) The New Quantity should be added to our old value","1) The user is taken to Other sellers page with Other sellers and price points
+2) The Product is added to cart from other sellers with their price with Quantity shown
+3) The Quantity is updated to our new value",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_22,TS_004 / Verify the Product Page Scenarios,Verify the Qty dropdown is 1 by default,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Qty dropdown",The Qty dropdown should show as 1,The Qty dropdown is shown as 1,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_23,TS_004 / Verify the Product Page Scenarios,Verify user is able to Add to Cart with selected qty,"1) Open Amazon App
+2) Open the product page of a product
+3) Select a Qty in Qty dropdown
+4) Click Add to cart (ER-01)
+5) Click Cart button (ER-02)","1) The Cart icon in bottom bar should show the qty of items in it
+2) The added product should be shown with Qty as selected","1) The Cart icon in bottom bar shows the qty of items in it
+2) The added product is shown with Qty as selected",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_24,TS_004 / Verify the Product Page Scenarios,Verify the qty is added when Add to Cart is clicked for an item in  cart,"1) Open Amazon App
+2) Open the product page of a product
+3) Select a Qty in Qty dropdown
+4) Click Add to cart
+5) Click Cart button 
+6) Go back to the same product page
+7) Select a qty and click Add to Cart",The new quantity should be added to the old quantity,The new quantity is added to the old quantity,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_25,TS_004 / Verify the Product Page Scenarios,Verify user is taken to Login page when clicked Buy now without Login,"1) Open Amazon App
+2) Open the product page of a product
+3) Click Buy now",The user should be taken to Login page,The user is taken to Login page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is not logged in
+TC_PP_26,TS_004 / Verify the Product Page Scenarios,Verify the product details section,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Product Details section",The details of the product should be shown in brief,The details of the product is shown in brief,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_27,TS_004 / Verify the Product Page Scenarios,Verify the product description section,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Product Description section",The full details of the products with images should be shown,The full details of the products with images are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_28,TS_004 / Verify the Product Page Scenarios,Verify the user was able to see rating stars and number of reviews,"1) Open Amazon App
+2) Open the product page of a product (ER-01)
+3) Click on the review (ER-02)","1) The number of stars and number of reviews should be shown under images
+2) The user should be taken to detailed review section","1) The number of stars and number of reviews is shown under images
+2) The user is taken to detailed review section",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_29,TS_004 / Verify the Product Page Scenarios,Verify user is able to search in q&a and reviews using valid keyword,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Questions search box section
+4) Fill a valid keyword",The answers and reviews based on the keywords should be shown,The answers and reviews based on the keywords are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_30,TS_004 / Verify the Product Page Scenarios,Verify user can post a question,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Questions search box section
+4) Fill a keyword
+5) Click Post your Question
+6) Fill the textbox with a question and click Post",The Questions should be posted for others to answer,The Questions are posted for others to answer,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_31,TS_004 / Verify the Product Page Scenarios,Verify user is able to search in q&a and reviews using invalid keyword,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Questions search box section
+4) Fill an invalid keyword",No answers should be shown,No answers are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_32,TS_004 / Verify the Product Page Scenarios,Verify user is able to watch video reviews,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on a video review",The review video should be played,The review video should be played,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_33,TS_004 / Verify the Product Page Scenarios,Verify all the top pictures from the reviews are shown above the reviews,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Observe",The Pictures in a reviews should be shown above the top reviews section,The Pictures in a reviews are shown above the top reviews section,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_34,TS_004 / Verify the Product Page Scenarios,Verify top reviews from india are shown,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Observe",A few Top reviews from India should be shown,A few Top reviews from India are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_35,TS_004 / Verify the Product Page Scenarios,Verify user can mark a review a helpful,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section (ER-01)
+4) Click Helpful on a review (ER-02)","1) The number of people who marked the review as helpful should be shown
+2) The Helpful button should disappear and should be shown Thank you for your feedback","1) The number of people who marked the review as helpful are shown
+2) The Helpful button should disappear and is shown Thank you for your feedback",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_36,TS_004 / Verify the Product Page Scenarios,Verify user can share a particular review,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click share button on a review
+5) Select an app and send",The review along with product link should be shared on the selected app,The review along with product link are shared on the selected app,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_37,TS_004 / Verify the Product Page Scenarios,Verify user can report a review,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click Report
+5) Click Report on confirmation dialog",The user should be shown Thank you for your review,The user is shown Thank you for your review,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_38,TS_004 / Verify the Product Page Scenarios,Verify user can see the profile of a reviewer,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on the name of a reviewer",The user should be taken to profile information page with their previous reviews should be shown,The user is taken to profile information page with their previous reviews are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_39,TS_004 / Verify the Product Page Scenarios,Verify user can see all the reviews of a product by clicking see more reviews,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and click see more reviews",The user should be taken to customer review page with star rating and all the reviews should be shown,The user is taken to customer review page with star rating and all the reviews are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_40,TS_004 / Verify the Product Page Scenarios,Verify user can see all reviews by clicking on the stars section,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on customer reviews section",The user should be taken to customer review page with star rating and all the reviews should be shown,The user is taken to customer review page with star rating and all the reviews are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_41,TS_004 / Verify the Product Page Scenarios,Verify user can see How are ratings calculated?,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on customer reviews section
+5) Click on How are ratings calculated? Button",The rating calculation method information should be shown,The rating calculation method information is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_42,TS_004 / Verify the Product Page Scenarios,Verify user can see either top reviews or recent reviews,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on customer reviews section
+5) Click on the dropdown and click Most recent (ER-01)
+6) Click on the dropdown and click Top reviews (ER-02)","1) The most recent reviews should be shown
+2) The Top reviews should be shown","1) The most recent reviews are shown
+2) The Top reviews are shown",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_43,TS_004 / Verify the Product Page Scenarios,Verify user can Filter a review,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Click on customer reviews section
+5) Click Filter and select a filter",The reviews should be filtered according to the review,The reviews are filtered according to the review,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_44,TS_004 / Verify the Product Page Scenarios,Verify user cannot review without meeting minimum eligibilty,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and click write a review",It should show a warning that the account is not meeting minimum eligibility and should not allow the user to leave the review,It shows a warning that the account is not meeting minimum eligibility and does not allow the user to leave the review,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_45,TS_004 / Verify the Product Page Scenarios,Verify eligible user can Write a review in Customer reviews page,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and click see more reviews
+5) Click Write a review
+6) Select a star rating and click submit",The review should be submitted to amazon,The review is submitted to amazon,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_46,TS_004 / Verify the Product Page Scenarios,Verify eligible user can create video review,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and Click Create a video review
+5) Select a star rating and add a video
+6) Click Submit",The review should be submitted to amazon,The review is submitted to amazon,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_47,TS_004 / Verify the Product Page Scenarios,Verify user can see only review with a particular star rating,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and click see more reviews
+5) Click on a star rating",The reviews should be filtered according to the star rating,The reviews are filtered according to the star rating,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_48,TS_004 / Verify the Product Page Scenarios,Verify user can see photos and videos of a review,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down to Reviews section
+4) Scroll down and click see more reviews
+5) Click on pictures (ER-01)
+6) Click on video (ER-02)","1) The user should be taken to media page with photos section highlighted
+2) The user should be taken to video section","1) The user is taken to media page with photos section highlighted
+2) The user is taken to video section",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_49,TS_004 / Verify the Product Page Scenarios,Verify user should be taken to address selection in checkout page when clicked Buy Now,"1) Open Amazon App
+2) Open the product page of a product
+3) Click Buy Now",The user should be taken to address selection page for checkout,The user is taken to address selection page for checkout,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_50,TS_004 / Verify the Product Page Scenarios,Verify user can go to a section by clicking on the section selector in top,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down a bit (ER-01)
+4) Click on a section (ER-02)","1) A new section selector should be shown on top
+2) The user should be taken to the clicked section","1) A new section selector ia shown on top
+2) The user is taken to the clicked section",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_51,TS_004 / Verify the Product Page Scenarios,Verify user can go to top by clicking up arrow button,"1) Open Amazon App
+2) Open the product page of a product
+3) Scroll down a bit (ER-01)
+4) Click up arrow in the section (ER-02)","1) A new section selector should be shown on top
+2) The user should be taken to top of the page","1) A new section selector ia shown on top
+2) The user is taken to top of the page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_52,TS_004 / Verify the Product Page Scenarios,Verify add to cart and buy now button should not be available for unavailable product,"1) Open Amazon App
+2) Open the product page of an unavailable product",It should show the text unavailable and should not have add to cart and buy now button,It shows the text unavailable and does not have add to cart and buy now button,Pass,Nil,Product name : Htc desire 526 g plus,The Amazon app is installed and is logged in
+TC_PP_53,TS_004 / Verify the Product Page Scenarios,Verify clicking back arrow button to top left corner takes user to search results page,"1) Open Amazon App
+2) Open the product page of a product
+3) Click back arrow in top left corner",The user should be taken to previous page like homepage or search results page,The user is taken to previous page like homepage or search results page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_PP_54,TS_004 / Verify the Product Page Scenarios,Verify clicking back button in mobile takes user to search results page,"1) Open Amazon App
+2) Open the product page of a product
+3) Click back button in mobile",The user should be taken to previous page like homepage or search results page,The user is taken to previous page like homepage or search results page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_02,TS_005 / Verify the Cart page Scenarios,Verify cart for empty,"1) Open Amazon App
+2) Ensure Cart is empty
+3) Click Cart icon in bottom bar",The Cart icon in bottom should show 0 and the page should show Your Amazon Cart is empty,The Cart icon in bottom shows 0 and the page shows Your Amazon Cart is empty,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_03,TS_005 / Verify the Cart page Scenarios,Verify user can see browsing history,"1) Open Amazon App
+2) Ensure Cart is empty
+3) Click Cart icon in bottom bar
+4) Click Pick up where you left off link (ER-01)
+5) Click your browsing history (ER-02)","1) A popup dialog should be shown with a few browsing history
+2) History page should open with all the history of user","1) A popup dialog is shown with a few browsing history
+2) History page opens with all the history of user",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_04,TS_005 / Verify the Cart page Scenarios,Verify item suggestions are shown in cart,"1) Open Amazon App
+2) Click Cart icon in bottom bar
+3) Scroll down and Observe",There should be a few suggestion section with a few items based on our history ,There are a few suggestion section with a few items based on our history ,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_05,TS_005 / Verify the Cart page Scenarios,Verify the suggested items can be scrolled horizontally,"1) Open Amazon App
+2) Click Cart icon in bottom bar
+3) Scroll down
+4) Scroll horizontally on the products",The user should be able to scroll horizontally,The user is able to scroll horizontally,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_06,TS_005 / Verify the Cart page Scenarios,Verify the continue shopping button when cart is empty,"1) Open Amazon App
+2) Ensure Cart is empty
+3) Click Cart icon in bottom bar
+4) Scroll down and Click Continue Shopping",The user should be taken to HomePage,The user is taken to HomePage,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_07,TS_005 / Verify the Cart page Scenarios,Verify the subtotal is properly displayed,"1) Open Amazon App
+2) Add a few items to cart
+3) Click Cart icon in bottom bar
+4) Observe",The subtotal should be valid,The subtotal is valid,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_08,TS_005 / Verify the Cart page Scenarios,Verify user can delete a product from cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Click Delete on a product",The product should be deleted and The subtotal should be changed accordingly and the number of items in cart should change,The product is deleted and The subtotal is changed accordingly and the number of items in cart changes,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_09,TS_005 / Verify the Cart page Scenarios,Verify user can save a product for save for later section,"1) Open Amazon App
+2) Add a few items to cart
+3) Click Save for later in a product","The product should be moved to Saved for later section and subtotal,number of items in cart should be changed","The product is moved to Saved for later section and subtotal,number of items in cart is changed",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_10,TS_005 / Verify the Cart page Scenarios,Verify user can move a product with saved section to Cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Move a few items to Saved for later
+4) Click Move to Cart","The product should be moved to Cart section and subtotal,number of items in cart should be changed","The product is moved to Cart section and subtotal,number of items in cart is changed",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_11,TS_005 / Verify the Cart page Scenarios,Verify user can delete a product from saved for later section,"1) Open Amazon App
+2) Add a few items to cart
+3) Move a few items to Saved for later
+4) Click Delete",The product should be deleted from Saved for Later section,The product is deleted from Saved for Later section,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_12,TS_005 / Verify the Cart page Scenarios,Verify user can See more items like the product in cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Move a few items to Saved for later
+4) Click See more like this button",A new popup dialog with product suggestions should be displayed,A new popup dialog with product suggestions are displayed,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_13,TS_005 / Verify the Cart page Scenarios,Verify user can add a product to cart from cart suggestion,"1) Open Amazon App
+2) Add a few items to cart
+3) Scroll down
+4) Click Add to Cart on a product","The product should be added to cart and subtotal, cart number should be changed accordingly","The product is added to cart and subtotal, cart number is changed accordingly",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_14,TS_005 / Verify the Cart page Scenarios,Verify user can add a product to cart from see more like this dialog,"1) Open Amazon App
+2) Add a few items to cart
+3) Move a few items to Saved for later
+4) Click See more like this button
+5) Click Add to Cart on a product","The product should be added to cart and subtotal, cart number should be changed accordingly","The product is added to cart and subtotal, cart number is changed accordingly",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_15,TS_005 / Verify the Cart page Scenarios,Verify quantity of an item can be increased by using + button ,"1) Open Amazon App
+2) Add a few items to cart
+3) Click + button on a product for multiple times",The Quantity should increase according to the number of clicks,The Quantity is increased according to the number of clicks,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_16,TS_005 / Verify the Cart page Scenarios,Verify quantity of an item can be decreased by using - button ,"1) Open Amazon App
+2) Add a few items to cart
+3) Click + button on a product for multiple times
+4) Click - button on a product for multiple items",The Quantity should increase according to the number of clicks,The Quantity is increased according to the number of clicks,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_17,TS_005 / Verify the Cart page Scenarios,Verify there is delete icon instead of - button when quantity is 1,"1) Open Amazon App
+2) Add a few items to cart
+3) Make the quantity of a product as 1",The delete button should be displayed instead of - on the left side of quantity dropdown,The delete button is displayed instead of - on the left side of quantity dropdown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_18,TS_005 / Verify the Cart page Scenarios,Verify clicking delete icon deletes the item from cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Make the quantity of a product as 2
+4) Click the delete icon on the left side of dropdown",The product should be deleted and The subtotal should be changed accordingly and the number of items in cart should change,The product is deleted and The subtotal is changed accordingly and the number of items in cart changes,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_19,TS_005 / Verify the Cart page Scenarios,Verify quantity of an item is shown in a textbox,"1) Open Amazon App
+2) Add a few items to cart
+3) Observe",The quantity of the product in cart should be displayed under the image,The quantity of the product in cart is displayed under the image,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_20,TS_005 / Verify the Cart page Scenarios,Verify user can change quantity of an item using the quantity dropdown,"1) Open Amazon App
+2) Add a few items to cart
+3) Click on the quantity dropdown
+4) Select a quantity","The quantity, subtotal, number of items in cart should be changed accordingly","The quantity, subtotal, number of items in cart are changed accordingly",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_21,TS_005 / Verify the Cart page Scenarios,Verify proceed button shows the total number of items in cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Observe",The Proceed to Buy button should show the total number of items in cart,The Proceed to Buy button shows the total number of items in cart,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_22,TS_005 / Verify the Cart page Scenarios,Verify cart button shows total number of items In cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Observe",The Proceed to Buy button should show the total number of items in cart,The Proceed to Buy button shows the total number of items in cart,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_23,TS_005 / Verify the Cart page Scenarios,Verify user is taken to product page from cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Click on the product name",The user should be taken to product page of clicked item,The user is taken to product page of clicked item,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_24,TS_005 / Verify the Cart page Scenarios,Verify user is taken to seller page from cart,"1) Open Amazon App
+2) Add a few items to cart
+3) Click on the seller name",The user should be taken to seller page of clicked item,The user is taken to seller page of clicked item,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CT_25,TS_005 / Verify the Cart page Scenarios,Verify Proceed button takes user to address selection page for checkout,"1) Open Amazon App
+2) Add a few items to cart
+3) Click Proceed to Buy",The user should be taken to address selection page for checkout,The user is taken to address selection page for checkout,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_02,TS_006 / Verify Checkout page scenarios,Verify user can place order using UPI payment,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Click Place order and confirm pay
+7) Complete payment by filling upi pin",The order should be placed with UPI payment,The order is placed with UPI payment,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_03,TS_006 / Verify Checkout page scenarios,Verify user can place order using Debit card payment,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select debit or credit card
+6) Click Place order and confirm pay
+7) Complete payment by filling debit card details
+8) Fill the otp and click Confirm",The order should be placed with Debit card payment,The order is placed with Debit card payment,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_04,TS_006 / Verify Checkout page scenarios,Verify user is able to use valid gift card/promo code,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Click promo code/gift card
+7) Fill a valid promo code/gift card code
+8) Click apply",The promo code/gift card code should be applied,The promo code/gift card code is applied,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_05,TS_006 / Verify Checkout page scenarios,Verify user is not able to use invalid promo code/gift card,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Click promo code/gift card
+7) Fill an invalid promo code/gift card code
+8) Click apply",It should show an error that the promo code is invalid,It shows an error that the promo code is invalid,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_06,TS_006 / Verify Checkout page scenarios,Verify user is able to change quantity In order page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Click quantity dropdown of a product
+7) Select a quantity",The quantity should be changed accordingly and the subtotal should change accordingly,The quantity is changed accordingly and the subtotal changes accordingly,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_07,TS_006 / Verify Checkout page scenarios,Verify user is able to add gift options,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Select gift options 
+7) Add a gift message and click apply
+8) Click place order",The order should be placed with gift message,The order is placed with gift message,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_08,TS_006 / Verify Checkout page scenarios,Verify user is able to add add ons to gift,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery
+6) Select gift options 
+7) Add a gift message and click apply
+8) Select a gift box add on and click apply
+9) Place order",The order should be placed with gift add on and price should be changed accordingly,The order is placed with gift add on and price is changed accordingly,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_09,TS_006 / Verify Checkout page scenarios,Verify user is able to go to payment options from place order page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery (ER-01)
+6) Click on the payment option (ER-02)","1) The order page should show selected payment option
+2) The user should be taken to payment option page","1) The order page shows selected payment option
+2) The user is taken to payment option page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_10,TS_006 / Verify Checkout page scenarios,Verify user is able to go to address page from order page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery (ER-01)
+6) Click on the address (ER-02)","1) The order page should show selected Address
+2) The user should be taken to Address page","1) The order page shows selected Address
+2) The user is taken to Address page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_11,TS_006 / Verify Checkout page scenarios,Verify user is able to go to delivery options page from order page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery (ER-01)
+6) Click on the Delivery option (ER-02)","1) The order page should show selected Delivery option
+2) The user should be taken to Delivery option page","1) The order page shows selected Delivery option
+2) The user is taken to Delivery option page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_12,TS_006 / Verify Checkout page scenarios,Verify user is able to go to Checkout page from Cart page,"1) Open Amazon App
+2) Add some items to cart
+3) Click Cart icon
+4) Click Proceed to Buy",The User should be taken to address selection of checkout page,The User is taken to address selection of checkout page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_13,TS_006 / Verify Checkout page scenarios,Verify user is able to go to Checkout page from Product page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button",The User should be taken to address selection of checkout page,The User is taken to address selection of checkout page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_14,TS_006 / Verify Checkout page scenarios,Verify user is able add address with all fields from checkout page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Click Add new Address
+5) Fill all fields and Click confirm",The Address should be added to account and the user should be taken to next page,The Address is added to account and the user should be taken to next page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_15,TS_006 / Verify Checkout page scenarios,Verify adding address with mandatory fields only,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Click Add new Address
+5) Fill only mandatory fields and Click confirm",The Address should be added to account and the user should be taken to next page,The Address is added to account and the user should be taken to next page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_16,TS_006 / Verify Checkout page scenarios,Verify user is able to select address from available list,"1) Open Amazon App
+2) Go to account section
+3) Add a few addresses
+4) Go to a product page
+5) Click Buy Now button
+6) Click on the list of addresses and click Deliver to this address",The user should be taken to next page and the address should be selected,The user is taken to next page and the address should be selected,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_17,TS_006 / Verify Checkout page scenarios,Verify user is able to find pickup location near us,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now
+4) Select Pickup location button
+5) Fill the field with landmark/pincode/city and click ok (ER-01)
+6) Select a pickup location (ER-02)","1) List of pickup locations should be generated
+2) The user should be taken to next page and the pickup location should be selected","1) List of pickup locations is generated
+2) The user is taken to next page and the pickup location should be selected",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_18,TS_006 / Verify Checkout page scenarios,Verify user is not able to find pickup location near us with invaid value,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now
+4) Select Pickup location button
+5) Fill the field with invalid landmark/pincode/city and click ok",List of pickup locations should not be generated,List of pickup locations is not generated,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_19,TS_006 / Verify Checkout page scenarios,Verify user is able to find pickup location near us by using current location,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now
+4) Select Pickup location button
+5) Click find using current location
+6) Select a pickup location",The user should be taken to next page and the pickup location should be selected,The user is taken to next page and the pickup location should be selected,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_20,TS_006 / Verify Checkout page scenarios,Verify user is able to edit address before selection,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now
+4) Click on an address
+5) Click Edit address
+6) Edit the fields
+7) Click confirm",The user should be taken to next page and the edited address should be selected,The user is taken to next page and the edited address should be selected,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_21,TS_006 / Verify Checkout page scenarios,Verify user is able to add delivery instruction to an address,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now
+4) Click on an address
+5) Click Add delivery instruction
+6) Select delivery instruction options
+7) Click Save",The user should be taken to address page and the delivery instruction should be added,The user is taken to address page and the delivery instruction is added,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_22,TS_006 / Verify Checkout page scenarios,Verify delivery options page is skipped when only one delivery option is available,"1) Open Amazon App
+2) Go to a product page of a product with a single delivery option
+3) Click Buy Now
+4) Select an address
+5) Click Deliver to this address",The user should be taken to Payment selection page,The user is taken to Payment selection page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_23,TS_006 / Verify Checkout page scenarios,Verify delivery option page is shown when multiple delivery options are available,"1) Open Amazon App
+2) Go to a product page of a product with a multiple delivery option
+3) Click Buy Now
+4) Select an address
+5) Click Deliver to this address (ER-01)
+6) Select a delivery option and click save (ER-02)","1) The user should be taken to Delivery options page
+2) The user should be taken to Payment selection page","1) The user is taken to Delivery options page
+2) The user is taken to Payment selection page",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_24,TS_006 / Verify Checkout page scenarios,Verify all the information in in place order screen is valid ,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery","Verify the subtotal, payment option and delivery options must be correct","Verify the subtotal, payment option and delivery options are correct",Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_CH_25,TS_006 / Verify Checkout page scenarios,Verify the breadcrumb of the checkout page,"1) Open Amazon App
+2) Go to a product page
+3) Click Buy Now button
+4) Select an address
+5) Select cash on delivery",The Breadcrumb should be displayed and completed pages should show tick mark and the breadcrumb should be clickable to navigate,The Breadcrumb is displayed and completed pages shows tick mark and the breadcrumb is clickable to navigate,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_02,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to see all the previous orders ,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders",The user should be taken to previous order page with list of last three months of orders shown,The user is taken to previous order page with last three months of orders months shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_03,"TS_007 / Verify the orders, lists, other pages scenarios",Verify order section when no orders were placed,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders",No orders should be shown and a text no orders should be shown,No orders are and a text no orders are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_04,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to search all orders,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on search bar
+5) Fill a keyword and click search button on keyboard",List of all orders matching the keywords should be shown,List of all orders matching the keywords are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_05,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is not able to search all orders with invalid keyword,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on search bar
+5) Fill an invalid keyword and click search button on keyboard",No orders should be shown for the keyword,No orders is shown for the keyword,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_06,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to see the delivery details of an undelivered order,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an undelivered order",The user should be taken to order page with delivery eta and places shown,The user is taken to order page with delivery eta and places shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_07,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to update delivery instruction of an undelivered order,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an undelivered order
+5) Click update delivery instruction
+6) Edit the details and click save",The delivery instruction should be updated,The delivery instruction is updated,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_08,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to cancel delivery of an undelivered order without  cancellation reason,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an undelivered order
+5) Click Cancel order
+6) Select the products to be cancelled
+7) Click request cancellation",The order should be cancelled,The order is cancelled,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_09,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to cancel delivery of an undelivered order with cancellation reason,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an undelivered order
+5) Click Cancel order
+6) Select the products to be cancelled
+7) Click on the cancellation order dropdown and click on an option
+8) Click request cancellation",The order should be cancelled,The order is cancelled,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_10,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user can return delivered items,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order in which user can apply return/replacement
+5) Select a reason
+6) Select upi for return payment
+7) Select pickup address and click continue",The order should be requested for returns,The order is requested for returns,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_11,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user can replace delivered items,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order in which user can apply replacement
+5) Select a reason
+6) Select pickup address and click continue",The order should be requested for replacement,The order is requested for replacement,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_12,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user can get support for delivered item,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order
+5) Click Product service",The user should be taken to product service page,The user is taken to product service page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_13,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to filter orders by cancelled,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click filter
+5) Select cancelled radio button
+6) Click apply",The cancelled orders should be shown,The cancelled orders are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_14,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to filter orders by not yet shipped,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click filter
+5) Select not yet shipped radio button
+6) Click apply",The not yet shipped orders should be shown,The not yet shipped orders are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_15,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to filter orders by year,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click filter
+5) Select a year
+6) Click apply",The orders should be filtered by the selected order,The orders are filtered by the selected order,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_16,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to filter orders by last 30 days,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click filter
+5) Select a last 30 days
+6) Click apply",The orders of last 30 days should be shown,The orders of last 30 days are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_17,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to filter orders by last 90 days,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click filter
+5) Select a last 90 days
+6) Click apply",The orders of last 90 days should be shown,The orders of last 90 days are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_18,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to Buy an order again,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an order
+5) Click Buy again",The user should be taken to buy again page of an order,The user is taken to buy again page of an order,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_19,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to download invoice of an order,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order
+5) Click Download invoice
+6) Select download invoice and click confirm",The invoice should be downloaded,The invoice is downloaded,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_20,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to download warranty/pslip of an order,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order
+5) Click Download warranty/pslip
+6) Select download warranty/pslip and click confirm",The warranty/pslip should be downloaded,The warranty/pslip is downloaded,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_21,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to view order details,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an order
+5) Click view order details",The user should be taken to order details page with the detail of the orders displayed,The user is taken to order details page with the detail of the orders displayed,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_22,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to download invoice in order details page,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order
+5) Click view order details
+6) Click Download warranty/pslip
+7) Select download warranty/pslip and click confirm",The invoice should be downloaded,The invoice is downloaded,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_23,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to download warranty/pslip in order details page,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on a delivered order
+5) Click view order details
+6) Click Download warranty/pslip
+7) Select download warranty/pslip and click confirm",The warranty/pslip should be downloaded,The warranty/pslip is downloaded,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_24,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to go to product page from order page,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an order
+5) Click on the name of the product",The user should be taken to the product page,The user is taken to the product page,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_25,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to share a product from order page,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click your orders
+4) Click on an order
+5) Click share this item
+6) Click on an app and send",The product link should be sent to the selected user,The product link is sent to the selected user,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_26,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to go to buy again page from you,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Buy again",The user should be taken to buy again page and recent orders should be shown,The user is taken to buy again page and recent orders should be shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_27,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to go to account page from you,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Account",The user should be taken to account page with a lot of account options,The user is taken to account page with a lot of account options,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_28,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to go to your lists page from you,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Your lists",The user should be taken to lists page with all the product which was added to wishlist are shown,The user is taken to lists page with all the product which was added to wishlist are shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_29,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to see our wishlist only,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Your lists
+4) Click our list",Only wishlist added by user should be shown,Only wishlist added by user is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_30,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to see alexa wishlist only,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Your lists
+4) Click alexa's list",Only wishlist added by alexa should be shown,Only wishlist added by alexa is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_31,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to delete a product from wishlist,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Your lists
+4) Click options icon
+5) Click Delete",The product should be deleted from wishlist,The product is deleted from wishlist,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_32,"TS_007 / Verify the orders, lists, other pages scenarios",Verify user is able to add a product to cart from wishlist,"1) Open Amazon App
+2) Click you button in bottom bar
+3) Click Add to cart
+4) Click cart icon",The product should be added to cart,The product is added to cart,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_33,"TS_007 / Verify the orders, lists, other pages scenarios",Verify notification is displayed in mobile for dispatched orders,"1) Open Amazon App
+2) Place an order for a product
+3) Wait for the order to dispatch
+4) Check notification",A notification with product and dispatch details should be shown,A notification with product and dispatch details is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_34,"TS_007 / Verify the orders, lists, other pages scenarios",Verify notification is displayed in mobile for out for delivery orders,"1) Open Amazon App
+2) Place an order for a product
+3) Wait for the order to be out for delivery
+4) Check notification",A notification with product and out for delivery details should be shown,A notification with product and out for delivery details is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_35,"TS_007 / Verify the orders, lists, other pages scenarios",Verify notification is displayed in mobile for delivered orders,"1) Open Amazon App
+2) Place an order for a product
+3) Wait for the order to be delivered
+4) Check notification",A notification with product and delivery details should be shown,A notification with product and delivery details is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+TC_OL_36,"TS_007 / Verify the orders, lists, other pages scenarios",Verify notification is displayed in mobile for cancelled orders,"1) Open Amazon App
+2) Place an order for a product
+3) Raise a cancellation request
+4) Wait for it to be cancelled
+5) Check notification",A notification with product and Cancellation details should be shown,A notification with product and Cancellation details is shown,Pass,Nil,Product name: Noise pulse 2 max,The Amazon app is installed and is logged in
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,NAME,WORKING DAYS,POTENTIAL POINTS,POINTS COMMITTED,COMMENTS,,,
+,,RANJITH C,5,15.5,15.5,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,EPIC,DETAILS,SUCCESS CRITERIA,POINTS(NUMERICAL VALUE),OWNER,POINTS COMPLETED,HOURS,
+,,,,,,,,,
+,,Login/Signup/Installtion,,,2,RANJITH C,2,5,
+,,,Login,checked,1,,,,
+,,,Sign up,checked,1,,,,
+,,HomePage,,,1.5,RANJITH C,1.5,4,
+,,,Categories,checked,0.5,,,,
+,,,Sponsored,checked,0.5,,,,
+,,,Offer,checked,0.5,,,,
+,,Search,,,2.5,RANJITH C,2.5,6,
+,,,Search box,checked,0.5,,,,
+,,,Search results page,checked,1,,,,
+,,,Search image,checked,1,,,,
+,,Product page,,,3,RANJITH C,3,7,
+,,,Product information,checked,1.5,,,,
+,,,Review,checked,1.5,,,,
+,,Cart,,checked,2,RANJITH C,2,5,
+,,Checkout,,,2.5,RANJITH C,2.5,6,
+,,,Address,checked,1,,,,
+,,,Payment,checked,0.5,,,,
+,,,Place order,checked,1,,,,
+,,"Orders, Lists",,,2,RANJITH C,2,5,
+,,,Orders,checked,1,,,,
+,,,Lists,checked,0.5,,,,
+,,,Others,checked,0.5,,,,
